@@ -1,8 +1,9 @@
-require("dotenv").config();
-console.log("Server started...");
 import cors from "cors";
+import dotenv from "dotenv";
 import express from "express";
 import OpenAI from "openai";
+dotenv.config();
+console.log("Server started...");
 
 const app = express();
 app.use(cors());
