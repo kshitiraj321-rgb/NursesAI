@@ -1,35 +1,45 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { IconSymbol } from "@/components/ui/icon-symbol";
+import { Tabs } from "expo-router";
+import React from "react";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+        tabBarStyle: {
+          backgroundColor: "#000",
+          borderTopColor: "#111",
+        },
+        tabBarActiveTintColor: "#007AFF",
+        tabBarInactiveTintColor: "#888",
+        tabBarHideOnKeyboard: true,
+      }}
+    >
+      {/* MAIN TABS */}
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol name="house.fill" size={26} color={color} />
+          ),
         }}
       />
+
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: "Explore",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol name="paperplane.fill" size={26} color={color} />
+          ),
         }}
       />
+
+      {/* HIDDEN SCREENS (IMPORTANT FIX) */}
+      <Tabs.Screen name="askai" options={{ href: null }} />
+      <Tabs.Screen name="quicklearn" options={{ href: null }} />
     </Tabs>
   );
 }
