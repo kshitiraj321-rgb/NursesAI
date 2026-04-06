@@ -7,25 +7,27 @@
     "icon": "./assets/images/icon.png",
     "scheme": "nursesai",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
+      "softwareKeyboardLayoutMode": "pan",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
       "package": "com.kshitij.nurseai"
     },
+
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+
     "plugins": [
       "expo-router",
       [
@@ -41,14 +43,16 @@
         }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
     },
+
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "c2637019-1dab-48e6-8564-5fb356a51f38"
+        "projectId": "a2b213e4-d72f-4f12-abf4-eeca8ba919b7"
       }
     }
   }
