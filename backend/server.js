@@ -18,102 +18,49 @@ const openai = new OpenAI({
 });
 
 app.post("/ask", async (req, res) => {
-  console.log("🔥 NEW PROMPT ACTIVE");
   try {
+    console.log("🔥 NEW PROMPT ACTIVE");
+
     const { messages, mode } = req.body;
-    console.log("MODE RECEIVED:", mode);
+
+    // ✅ SAFE FALLBACK (VERY IMPORTANT)
+    if (!messages || !Array.isArray(messages)) {
+      return res.status(400).json({ error: "Messages missing" });
+    }
+
+    // ✅ REMOVE "Thinking..."
+    const cleanMessages = messages.filter(
+      (msg) => msg.content !== "Thinking..."
+    );
 
     let systemPrompt = "";
 
-    if (mode && mode.toLowerCase() === "quiz") {
+    if (mode === "quiz") {
       systemPrompt = `
-You are NurseAI.
-
-The user is in QUIZ mode.
-
-IMPORTANT:
-- IGNORE the user's wording
-- DO NOT explain anything
-- ONLY generate MCQs
-
-Create exactly 3 MCQs.
-
-Format strictly:
-
-🩺 Topic: <topic>
-
-❓ Question 1:
-A. ...
-B. ...
-C. ...
-D. ...
-✅ Answer: ...
-
-❓ Question 2:
-...
-
-❓ Question 3:
-...
-
-DO NOT add explanations.
+Create 3 MCQs for nursing students.
+Clean format. No markdown.
 `;
-    } else if (mode && mode.toLowerCase() === "summary") {
+    } else if (mode === "summary") {
       systemPrompt = `
-You are NurseAI.
-
-The user is in SUMMARY mode.
-
-IMPORTANT:
-- IGNORE detailed explanations
-- DO NOT explain
-- ONLY give short revision points
-
-Format:
-
-🩺 Topic: <topic>
-
-⚡ Summary:
-• Point 1
-• Point 2
-• Point 3
+Give short revision notes.
 `;
     } else {
-     systemPrompt = `
-You are NurseAI.
-
-The user is in EXPLAIN mode.
-
-Provide structured clinical explanation.
-
-Format:
-
-🩺 Topic:
-📌 Definition:
-⚠️ Causes:
-🧪 Signs & Symptoms:
-💊 Nursing Management:
-🚨 Red Flags:
-
-Rules:
-- No markdown
-- Short bullet points
+      systemPrompt = `
+Provide structured nursing explanation:
+Definition, Causes, Symptoms, Management.
+No markdown.
 `;
     }
 
     const response = await openai.chat.completions.create({
       model: "gpt-4.1-mini",
       temperature: 0.4,
-      max_tokens: 250, // 🔥 Prevent long outputs
-     messages: [
-  {
-    role: "system",
-    content: systemPrompt
-  },
-  ...messages
-]
+      messages: [
+        { role: "system", content: systemPrompt },
+        ...cleanMessages
+      ]
     });
 
-    // ✅ CLEAN RESPONSE (VERY IMPORTANT)
     let aiText = response.choices[0].message.content;
 
     aiText = aiText
@@ -123,13 +70,10 @@ Rules:
       .replace(/\*/g, "")
       .trim();
 
-    // ✅ SEND CLEAN RESPONSE
-    res.json({
-      answer: aiText
-    });
+    res.json({ answer: aiText });
 
   } catch (err) {
-    console.error(err);
+    console.error("SERVER ERROR:", err);
     res.status(500).json({ error: err.message });
   }
 });
