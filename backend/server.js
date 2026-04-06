@@ -19,16 +19,9 @@ const openai = new OpenAI({
 
 app.post("/ask", async (req, res) => {
   try {
-    console.log("🔥 NEW PROMPT ACTIVE");
-
     const { messages, mode } = req.body;
 
-    // ✅ SAFE FALLBACK (VERY IMPORTANT)
-    if (!messages || !Array.isArray(messages)) {
-      return res.status(400).json({ error: "Messages missing" });
-    }
-
-    // ✅ REMOVE "Thinking..."
+    // ✅ NOW messages exists
     const cleanMessages = messages.filter(
       (msg) => msg.content !== "Thinking..."
     );
@@ -36,25 +29,15 @@ app.post("/ask", async (req, res) => {
     let systemPrompt = "";
 
     if (mode === "quiz") {
-      systemPrompt = `
-Create 3 MCQs for nursing students.
-Clean format. No markdown.
-`;
+      systemPrompt = "Create MCQs";
     } else if (mode === "summary") {
-      systemPrompt = `
-Give short revision notes.
-`;
+      systemPrompt = "Give summary";
     } else {
-      systemPrompt = `
-Provide structured nursing explanation:
-Definition, Causes, Symptoms, Management.
-No markdown.
-`;
+      systemPrompt = "Explain topic clearly";
     }
 
     const response = await openai.chat.completions.create({
       model: "gpt-4.1-mini",
-      temperature: 0.4,
       messages: [
         { role: "system", content: systemPrompt },
         ...cleanMessages
@@ -63,17 +46,9 @@ No markdown.
 
     let aiText = response.choices[0].message.content;
 
-    aiText = aiText
-      .replace(/\*\*/g, "")
-      .replace(/###/g, "")
-      .replace(/##/g, "")
-      .replace(/\*/g, "")
-      .trim();
-
     res.json({ answer: aiText });
 
   } catch (err) {
-    console.error("SERVER ERROR:", err);
     res.status(500).json({ error: err.message });
   }
 });
