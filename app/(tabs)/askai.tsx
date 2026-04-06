@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   FlatList,
   KeyboardAvoidingView,
+  Platform,
   Text,
   TextInput,
   TouchableOpacity,
@@ -13,6 +14,8 @@ export default function AskAI() {
   const [question, setQuestion] = useState("");
   const [messages, setMessages] = useState<any[]>([]);
   const [selectedMode, setSelectedMode] = useState("explain");
+  const [typingText, setTypingText] = useState("");
+const [isTyping, setIsTyping] = useState(false);
 
   const flatListRef = useRef<FlatList>(null);
 
@@ -31,10 +34,13 @@ export default function AskAI() {
   headers: {
     "Content-Type": "application/json",
   },
-  body: JSON.stringify({
-    question: question,
-    mode: selectedMode,
-  }),
+ body: JSON.stringify({
+  messages: [
+    ...messages,
+    { role: "user", content: question }
+  ],
+  mode: selectedMode,
+}),
 });
 
 if (!res.ok) {
@@ -47,14 +53,32 @@ if (!data || !data.answer) {
   throw new Error("Invalid response from server");
 }
 
-      setMessages((prev) => {
-        const updated = [...prev];
-        updated[updated.length - 1] = {
-          role: "assistant",
-          content: data.answer,
-        };
-        return updated;
-      });
+      // 🔥 REMOVE "Thinking..." first
+setMessages((prev) => prev.slice(0, -1));
+
+setIsTyping(true);
+setTypingText("");
+
+const fullText = data.answer;
+let index = 0;
+
+const interval = setInterval(() => {
+  index++;
+
+  setTypingText(fullText.slice(0, index));
+
+  if (index >= fullText.length) {
+    clearInterval(interval);
+
+    setMessages((prev) => [
+      ...prev,
+      { role: "assistant", content: fullText },
+    ]);
+
+    setTypingText("");
+    setIsTyping(false);
+  }
+}, 12); // speed (10–20 ideal)
     }catch (err: any) {
   console.log("ERROR:", err?.message || err);
 
@@ -77,7 +101,7 @@ if (!data || !data.answer) {
     <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior="height"
+        behavior={Platform.OS === "android" ? undefined : "padding"}
         keyboardVerticalOffset={0}
       >
         {/* 🔥 HEADER */}
@@ -147,7 +171,7 @@ if (!data || !data.answer) {
                 alignSelf:
                   item.role === "user" ? "flex-end" : "flex-start",
                 marginVertical: 6,
-                maxWidth: "90%",
+                maxWidth: "78%",
               }}
             >
               {/* 👇 AI Avatar */}
@@ -168,16 +192,28 @@ if (!data || !data.answer) {
               )}
 
               {/* 💬 MESSAGE */}
-              <View
-                style={{
-                  backgroundColor:
-                    item.role === "user" ? "#007AFF" : "#1c1c1e",
-                  padding: 12,
-                  borderRadius: 16,
-                  borderWidth: item.role === "assistant" ? 1 : 0,
-                  borderColor: "#2a2a2a",
-                }}
-              >
+            <View
+  style={{
+    backgroundColor:
+      item.role === "user" ? "#0A84FF" : "#1c1c1e",
+
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+
+    borderRadius: 18,
+
+    borderWidth: item.role === "assistant" ? 1 : 0,
+    borderColor: "#2a2a2a",
+
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 3,
+
+    marginLeft: item.role === "user" ? 40 : 0,
+    marginRight: item.role === "assistant" ? 40 : 0,
+  }}
+>
                 <Text style={{ color: "white", lineHeight: 20 }}>
                   {item.content}
                 </Text>
@@ -207,6 +243,45 @@ if (!data || !data.answer) {
               color: "white",
             }}
           />
+          {isTyping && (
+  <View
+    style={{
+      flexDirection: "row",
+      alignSelf: "flex-start",
+      marginHorizontal: 12,
+      marginBottom: 10,
+    }}
+  >
+    <View
+      style={{
+        width: 32,
+        height: 32,
+        borderRadius: 16,
+        backgroundColor: "#007AFF",
+        justifyContent: "center",
+        alignItems: "center",
+        marginRight: 8,
+      }}
+    >
+      <Text style={{ color: "white" }}>🧑‍⚕️</Text>
+    </View>
+
+    <View
+      style={{
+        backgroundColor: "#1c1c1e",
+        padding: 12,
+        borderRadius: 16,
+        borderWidth: 1,
+        borderColor: "#2a2a2a",
+        maxWidth: "80%",
+      }}
+    >
+      <Text style={{ color: "white", lineHeight: 20 }}>
+        {typingText}
+      </Text>
+    </View>
+  </View>
+)}
 
           <TouchableOpacity
             onPress={askAI}

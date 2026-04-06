@@ -9,6 +9,9 @@ console.log("Server started...");
 const app = express();
 app.use(cors());
 app.use(express.json());
+const cleanMessages = messages.filter(
+  (msg) => msg.content !== "Thinking..."
+);
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
@@ -17,7 +20,7 @@ const openai = new OpenAI({
 app.post("/ask", async (req, res) => {
   console.log("🔥 NEW PROMPT ACTIVE");
   try {
-    const { question, mode } = req.body;
+    const { messages, mode } = req.body;
     console.log("MODE RECEIVED:", mode);
 
     let systemPrompt = "";
@@ -101,16 +104,13 @@ Rules:
       model: "gpt-4.1-mini",
       temperature: 0.4,
       max_tokens: 250, // 🔥 Prevent long outputs
-      messages: [
-        {
-          role: "system",
-          content: systemPrompt
-        },
-        {
-  role: "user",
-  content: `Mode: ${mode}\nQuestion: ${question}`
-}
-      ]
+     messages: [
+  {
+    role: "system",
+    content: systemPrompt
+  },
+  ...messages
+]
     });
 
     // ✅ CLEAN RESPONSE (VERY IMPORTANT)
