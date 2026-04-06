@@ -18,7 +18,12 @@ app.post("/ask", async (req, res) => {
   try {
     const { messages, mode } = req.body;
 
-    // ✅ NOW messages exists
+    // ✅ Safety check
+    if (!messages || !Array.isArray(messages)) {
+      return res.status(400).json({ error: "Messages missing" });
+    }
+
+    // ✅ Remove "Thinking..."
     const cleanMessages = messages.filter(
       (msg) => msg.content !== "Thinking..."
     );
@@ -26,26 +31,67 @@ app.post("/ask", async (req, res) => {
     let systemPrompt = "";
 
     if (mode === "quiz") {
-      systemPrompt = "Create MCQs";
+      systemPrompt = `
+Create 3 MCQs for nursing students.
+
+Format:
+Question + 4 options + correct answer.
+No extra explanation.
+`;
     } else if (mode === "summary") {
-      systemPrompt = "Give summary";
+      systemPrompt = `
+Give short revision notes in bullet points.
+`;
     } else {
-      systemPrompt = "Explain topic clearly";
+      systemPrompt = `
+You are NurseAI, a clinical nursing assistant.
+
+The topic is ALWAYS medical unless user says otherwise.
+
+Always respond in STRICT format:
+
+🩺 Topic:
+📌 Definition:
+⚠️ Causes:
+🧪 Signs & Symptoms:
+💊 Nursing Management:
+🚨 Red Flags:
+
+Rules:
+- Assume BP = Blood Pressure (medical)
+- Do NOT give multiple meanings
+- Do NOT explain unrelated contexts
+- Keep answers SHORT and structured
+- Use bullet points only
+- No markdown symbols (**, ###, etc.)
+- Focus only on latest question using previous context
+`;
     }
 
     const response = await openai.chat.completions.create({
       model: "gpt-4.1-mini",
+      temperature: 0.3,
+      max_tokens: 200,
       messages: [
         { role: "system", content: systemPrompt },
-        ...cleanMessages
+        ...cleanMessages.slice(-6) // ✅ memory limit
       ]
     });
 
     let aiText = response.choices[0].message.content;
 
+    // ✅ Clean formatting
+    aiText = aiText
+      .replace(/\*\*/g, "")
+      .replace(/###/g, "")
+      .replace(/##/g, "")
+      .replace(/\*/g, "")
+      .trim();
+
     res.json({ answer: aiText });
 
   } catch (err) {
+    console.error("SERVER ERROR:", err);
     res.status(500).json({ error: err.message });
   }
 });
