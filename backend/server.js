@@ -9,9 +9,6 @@ console.log("Server started...");
 const app = express();
 app.use(cors());
 app.use(express.json());
-const cleanMessages = messages.filter(
-  (msg) => msg.content !== "Thinking..."
-);
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
