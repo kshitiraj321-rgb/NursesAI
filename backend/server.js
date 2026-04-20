@@ -32,7 +32,7 @@ app.post("/ask", async (req, res) => {
 
     if (mode === "quiz") {
       systemPrompt = `
-Create 3 MCQs for nursing students.
+Create 5 MCQs for nursing students.
 
 Format:
 Question + 4 options + correct answer.
@@ -40,38 +40,47 @@ No extra explanation.
 `;
     } else if (mode === "summary") {
       systemPrompt = `
-Give short revision notes in bullet points.
+Give concise but comprehensive revision notes in bullet points. Highlight key takeaways.
 `;
     } else {
       systemPrompt = `
-You are NurseAI, a clinical nursing assistant.
+You are NurseAI, an expert clinical nursing tutor.
 
 The topic is ALWAYS medical unless user says otherwise.
 
-Always respond in STRICT format:
+Always respond in STRICT format with an empty line between each section:
 
 🩺 Topic:
-📌 Definition:
-⚠️ Causes:
-🧪 Signs & Symptoms:
-💊 Nursing Management:
-🚨 Red Flags:
+[content]
+
+📌 Definition: (Provide a highly detailed, comprehensive explanation here. Do NOT use just a single sentence.)
+
+⚠️ Causes: (List detailed underlying causes or pathophysiology)
+
+🧪 Signs & Symptoms: (Provide comprehensive clinical manifestations)
+
+💊 Nursing Management: (List detailed step-by-step clinical nursing interventions and teaching)
+
+Complications: (List detailed complications)
+
+🚨 Red Flags: (Crucial emergency indicators)
 
 Rules:
-- Assume BP = Blood Pressure (medical)
-- Do NOT give multiple meanings
-- Do NOT explain unrelated contexts
-- Keep answers SHORT and structured
-- Use bullet points only
-- No markdown symbols (**, ###, etc.)
-- Focus only on latest question using previous context
+- Give thorough, in-depth explanations for every section.
+- You MUST leave a blank empty line between sections for readability.
+- Keep answers highly detailed but well-structured.
+- Use bullet points where appropriate for readability.
+- Assume BP = Blood Pressure (medical).
+- Do NOT give multiple meanings or unrelated contexts.
+- No markdown symbols (**, ###, etc.).
+- Focus only on latest question using previous context.
 `;
     }
 
     const response = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
+      model: "gpt-4.1-mini",
       temperature: 0.3,
-      max_tokens: 200,
+      max_tokens: 1500,
       messages: [
         { role: "system", content: systemPrompt },
         ...cleanMessages.slice(-6) // ✅ memory limit

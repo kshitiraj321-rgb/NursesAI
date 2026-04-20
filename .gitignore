@@ -43,3 +43,6 @@ app-example
 /android
 .env
 backend/.env
+scratch/
+dataraw_pdfs/
+*.apk
