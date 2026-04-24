@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { getAuth } from "firebase/auth";
-import { addDoc, collection, doc, increment, serverTimestamp, setDoc } from "firebase/firestore";
+import { addDoc, collection, doc, increment, serverTimestamp, setDoc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -12,6 +12,7 @@ import QuizView from "../components/Shared/QuizView";
 import { norcetSubjectGroups } from "../data/norcetSubjects";
 import pyqDataJson from "../data/pyqData.json";
 import { db } from "../firebase";
+import { useIntelligence } from "../hooks/useIntelligence";
 
 export default function QuizScreen() {
   const { topic, type, mode, topics } = useLocalSearchParams();
@@ -35,6 +36,8 @@ export default function QuizScreen() {
   const [showResult, setShowResult] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
   const [pyqData, setPyqData] = useState<any[]>([]);
+
+  const { weakestTopic } = useIntelligence(getAuth().currentUser?.uid);
 
   useEffect(() => {
     if (typeParam === "pyq") {
@@ -136,13 +139,7 @@ export default function QuizScreen() {
       }
 
       if (modeParam === "revision") {
-        let revisionTopics: string[] = [];
-
-        try {
-          revisionTopics = topicsParam ? JSON.parse(topicsParam) : [];
-        } catch {
-          revisionTopics = [];
-        }
+        let revisionTopics: string[] = weakestTopic ? [weakestTopic] : [];
 
         const revisionRows = revisionTopics
           .map((weakTopic) => clean(String(weakTopic || "")))
@@ -155,7 +152,7 @@ export default function QuizScreen() {
           return matchesHierarchy(questionSubject, questionTopic, revisionRows);
         });
         const shuffled = shuffleArray(filtered);
-        const selected = shuffled.slice(0, 15);
+        const selected = shuffled.slice(0, 10);
 
         setQuestions(selected);
         setLoading(false);
@@ -178,7 +175,7 @@ export default function QuizScreen() {
       }
 
       const shuffled = shuffleArray(filtered);
-      setQuestions(shuffled.slice(0, 15));
+      setQuestions(shuffled.slice(0, 10));
       setLoading(false);
       return;
     }
@@ -211,9 +208,12 @@ export default function QuizScreen() {
         topic: parsedTopic.name,
         score: finalScore,
         total: questions.length,
+        correctAnswers: finalScore,
+        totalQuestions: questions.length,
         weakTopics: weakTopics,
         strongTopics: strongTopics,
         createdAt: serverTimestamp(),
+        lastAttemptAt: serverTimestamp(),
       });
 
       await setDoc(doc(db, "users", user.uid, "topicProgress", safeTopicId), {
@@ -222,6 +222,51 @@ export default function QuizScreen() {
         attempts: increment(1),
         updatedAt: serverTimestamp()
       }, { merge: true });
+
+      // Daily Goal & Streak Logic (Steps 4 & 5)
+      const metaRef = doc(db, "users", user.uid, "meta", "retention");
+      const metaSnap = await getDoc(metaRef);
+      const todayString = new Date().toISOString().split('T')[0];
+      
+      let metaData = metaSnap.exists() ? metaSnap.data() : {
+        dailyGoal: 10,
+        todayProgress: 0,
+        lastActiveDate: todayString,
+        streak: 0,
+        completedToday: {}
+      };
+
+      const lastActive = metaData.lastActiveDate || todayString;
+      
+      // Reset if new day
+      if (lastActive !== todayString) {
+        const lastActiveDate = new Date(lastActive);
+        const todayDate = new Date(todayString);
+        const diffDays = Math.floor((todayDate.getTime() - lastActiveDate.getTime()) / (1000 * 3600 * 24));
+        
+        if (diffDays > 1) {
+          metaData.streak = 0; // Missed a day
+        }
+        
+        metaData.todayProgress = 0;
+        metaData.completedToday = {};
+        metaData.lastActiveDate = todayString;
+      }
+
+      // Track unique attempts
+      if (!metaData.completedToday[safeTopicId]) {
+        const previousProgress = metaData.todayProgress;
+        metaData.todayProgress += questions.length;
+        metaData.completedToday[safeTopicId] = true;
+
+        // Check if just reached goal
+        if (previousProgress < metaData.dailyGoal && metaData.todayProgress >= metaData.dailyGoal) {
+          metaData.streak += 1;
+        }
+      }
+
+      await setDoc(metaRef, metaData, { merge: true });
+
     } catch (err) {
       console.log("Save error:", err);
     }
@@ -245,12 +290,22 @@ export default function QuizScreen() {
         <Text className="text-blue-400 text-xl font-bold tracking-wide mb-6">{parsedTopic.name}</Text>
 
         {!hasStarted ? (
-          <TouchableOpacity
-            onPress={handleStartQuiz}
-            className="bg-green-600 p-4 rounded-xl items-center mt-4"
-          >
-            <Text className="text-white font-bold tracking-wide text-[16px]">Start Assessment 📝</Text>
-          </TouchableOpacity>
+          <View className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-6">
+            <Text className="text-white/60 text-sm font-medium mb-1">Topic</Text>
+            <Text className="text-white text-lg font-bold mb-4">{parsedTopic.name}</Text>
+            
+            <Text className="text-white/60 text-sm font-medium mb-1">Details</Text>
+            <Text className="text-white text-[15px] font-medium mb-6">
+              10 questions • {modeParam === "revision" ? "Based on weak areas" : "Real Exam Questions"}
+            </Text>
+
+            <TouchableOpacity
+              onPress={handleStartQuiz}
+              className="bg-green-600 p-4 rounded-xl items-center"
+            >
+              <Text className="text-white font-bold tracking-wide text-[16px]">Start Assessment</Text>
+            </TouchableOpacity>
+          </View>
         ) : loading ? (
           <View className="flex-1 justify-center items-center">
             <ActivityIndicator size="large" color="#4FC3F7" />

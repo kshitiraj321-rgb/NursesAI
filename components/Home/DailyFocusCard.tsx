@@ -15,9 +15,10 @@ interface Props {
   dailyTopic: string;
   progress: number;
   delay: number;
+  topicStat?: { accuracy: number; mistakes: number } | null;
 }
 
-export default function DailyFocusCard({ dailyTopic, progress, delay }: Props) {
+export default function DailyFocusCard({ dailyTopic, progress, delay, topicStat }: Props) {
   const router = useRouter();
 
   const opacity = useSharedValue(0);
@@ -52,9 +53,13 @@ export default function DailyFocusCard({ dailyTopic, progress, delay }: Props) {
   };
 
   const traverse = () => {
-    if (!dailyTopic) return;
-
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    
+    if (!dailyTopic) {
+      router.push("/(tabs)/learn" as any);
+      return;
+    }
+
     router.push({
       pathname: "/quiz" as any,
       params: { type: "pyq", topic: dailyTopic },
@@ -70,8 +75,21 @@ export default function DailyFocusCard({ dailyTopic, progress, delay }: Props) {
       <BlurView intensity={40} tint="dark" className="border border-white/10 rounded-[20px] p-5 min-h-[120px] overflow-hidden bg-white/5">
         <View className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl" />
 
-        <Text className="text-blue-400 text-lg font-bold mb-1">Daily Focus</Text>
-        <Text className="text-white text-xl font-bold mb-3">{dailyTopic || "No weak topics yet"}</Text>
+        <Text className="text-blue-400 text-lg font-bold mb-1">
+          {dailyTopic ? "Recommended for You" : "Start your first topic"}
+        </Text>
+        
+        {dailyTopic ? (
+          <>
+            <Text className="text-white text-xl font-bold mb-1">{dailyTopic}</Text>
+            <Text className="text-white/60 text-sm mb-3">Based on your weak areas</Text>
+            {topicStat && (
+              <Text className="text-white/80 text-sm font-medium mb-3">
+                Accuracy: {topicStat.accuracy}% • {topicStat.mistakes} mistakes
+              </Text>
+            )}
+          </>
+        ) : null}
 
         <View className="h-1.5 bg-white/10 border border-white/20 rounded-full mb-4 overflow-hidden shadow-sm">
           <Animated.View style={[progressAnimStyle, { height: "100%", borderRadius: 4 }]}>

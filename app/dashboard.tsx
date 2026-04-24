@@ -6,76 +6,20 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, TouchableOpacity, View } from "react-native";
 
 import { db } from "../firebase";
+import { useIntelligence } from "../hooks/useIntelligence";
 
 type TopicEntry = [string, number];
 
 export default function DashboardScreen() {
   const router = useRouter();
-  const [loading, setLoading] = useState(true);
-  const [accuracy, setAccuracy] = useState("0");
-  const [totalAttempts, setTotalAttempts] = useState(0);
-  const [topWeak, setTopWeak] = useState<TopicEntry[]>([]);
-  const [topStrong, setTopStrong] = useState<TopicEntry[]>([]);
+  const { loading, globalAccuracy: accuracy, totalAttempts, topicStats, strongestTopics } = useIntelligence(getAuth().currentUser?.uid);
 
-  useEffect(() => {
-    const loadDashboard = async () => {
-      try {
-        const user = getAuth().currentUser;
-        if (!user) {
-          setLoading(false);
-          return;
-        }
+  const topWeak = Object.entries(topicStats)
+    .filter(([_, stat]) => stat.status === "weak")
+    .sort((a, b) => b[1].intelligenceScore - a[1].intelligenceScore)
+    .map(([topic, stat]) => [topic, stat.attempts] as TopicEntry);
 
-        const snapshot = await getDocs(
-          collection(db, "users", user.uid, "quizResults")
-        );
-
-        let attempts = snapshot.size;
-        let totalScore = 0;
-        let totalQuestions = 0;
-
-        let weakMap: Record<string, number> = {};
-        let strongMap: Record<string, number> = {};
-
-        snapshot.forEach((doc) => {
-          const data = doc.data();
-
-          totalScore += data.score || 0;
-          totalQuestions += data.total || 0;
-
-          Object.entries(data.weakTopics || {}).forEach(([topic, count]) => {
-            weakMap[topic] = (weakMap[topic] || 0) + Number(count);
-          });
-
-          Object.entries(data.strongTopics || {}).forEach(([topic, count]) => {
-            strongMap[topic] = (strongMap[topic] || 0) + Number(count);
-          });
-        });
-
-        const calculatedAccuracy =
-          totalQuestions > 0 ? ((totalScore / totalQuestions) * 100).toFixed(1) : "0";
-
-        const weak = Object.entries(weakMap)
-          .sort((a, b) => b[1] - a[1])
-          .slice(0, 3) as TopicEntry[];
-
-        const strong = Object.entries(strongMap)
-          .sort((a, b) => b[1] - a[1])
-          .slice(0, 3) as TopicEntry[];
-
-        setTotalAttempts(attempts);
-        setAccuracy(calculatedAccuracy);
-        setTopWeak(weak);
-        setTopStrong(strong);
-      } catch (error) {
-        console.log("Dashboard load error:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadDashboard();
-  }, []);
+  const topStrong = strongestTopics.map(topic => [topic, topicStats[topic].attempts] as TopicEntry);
 
   if (loading) {
     return (
@@ -115,23 +59,28 @@ export default function DashboardScreen() {
             </View>
 
             <Text style={{ color: "#FFFFFF", fontSize: 20, fontWeight: "700", marginBottom: 10 }}>
-              Weak Topics
+              Needs Improvement
             </Text>
             {topWeak.length === 0 ? (
-              <Text style={{ color: "#A3A3A3", marginBottom: 20 }}>No weak topics yet</Text>
+              <Text style={{ color: "#A3A3A3", marginBottom: 20 }}>No topics need improvement yet</Text>
             ) : (
-              topWeak.map(([topic, count]) => (
-                <Text key={`weak-${topic}`} style={{ color: "#E5E7EB", marginBottom: 6 }}>
-                  {topic} ({count})
-                </Text>
-              ))
+              topWeak.map(([topic, count]) => {
+                const trend = topicStats[topic].trend;
+                const trendLabel = trend === "improving" ? "↑ improving" : trend === "declining" ? "↓ declining" : "";
+                const trendColor = trend === "improving" ? "#34D399" : "#F87171";
+                return (
+                  <Text key={`weak-${topic}`} style={{ color: "#E5E7EB", marginBottom: 6 }}>
+                    {topic} ({count}) {trendLabel ? <Text style={{ color: trendColor }}> {trendLabel}</Text> : null}
+                  </Text>
+                );
+              })
             )}
 
             <Text style={{ color: "#FFFFFF", fontSize: 20, fontWeight: "700", marginTop: 20, marginBottom: 10 }}>
-              Strong Topics
+              Mastered
             </Text>
             {topStrong.length === 0 ? (
-              <Text style={{ color: "#A3A3A3" }}>No strong topics yet</Text>
+              <Text style={{ color: "#A3A3A3" }}>No mastered topics yet</Text>
             ) : (
               topStrong.map(([topic, count]) => (
                 <Text key={`strong-${topic}`} style={{ color: "#E5E7EB", marginBottom: 6 }}>

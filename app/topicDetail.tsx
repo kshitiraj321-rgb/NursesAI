@@ -2,10 +2,18 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { FlatList, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import { useIntelligence } from "../hooks/useIntelligence";
+import { getAuth } from "firebase/auth";
+
 export default function TopicDetailScreen() {
   const { topic } = useLocalSearchParams();
   const parsedTopic = JSON.parse(topic as string);
   const router = useRouter();
+
+  const { topicStats } = useIntelligence(getAuth().currentUser?.uid);
+  const stat = topicStats[parsedTopic.name];
+  const isWeak = stat?.status === "weak";
+  const isNew = !stat || stat.attempts === 0;
 
   return (
     <SafeAreaView className="flex-1 bg-black">
@@ -24,17 +32,21 @@ export default function TopicDetailScreen() {
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={() => router.push({ pathname: "/(tabs)/askai" as any, params: { prompt: `Explain ${parsedTopic.name} for nursing exam. Include definition, causes, symptoms, treatment and key exam points.` } })}
-          className="bg-blue-600 p-4 rounded-xl mb-3 items-center shadow-lg shadow-blue-500/20"
+          className={`${isNew ? "bg-blue-500 border border-blue-400/50" : "bg-blue-600"} p-4 rounded-xl mb-3 items-center shadow-lg shadow-blue-500/20`}
         >
-          <Text className="text-white font-bold tracking-wide">Learn with AI</Text>
+          <Text className="text-white font-bold tracking-wide">
+            {isNew ? "Recommended: Learn with AI" : "Learn with AI"}
+          </Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={() => router.push({ pathname: "/quiz" as any, params: { type: "pyq", topic: parsedTopic.name } })}
-          className="bg-purple-600 p-4 rounded-xl mb-3 items-center shadow-lg shadow-purple-500/20"
+          className={`${isWeak ? "bg-purple-500 border border-purple-400/50" : "bg-purple-600"} p-4 rounded-xl mb-3 items-center shadow-lg shadow-purple-500/20`}
         >
-          <Text className="text-white font-bold tracking-wide">Practice PYQs</Text>
+          <Text className="text-white font-bold tracking-wide">
+            {isWeak ? "Recommended: Practice PYQs" : "Practice PYQs (Real Exam Questions)"}
+          </Text>
         </TouchableOpacity>
 
         <TouchableOpacity
