@@ -18,7 +18,7 @@ export default function Login() {
   const login = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      router.replace("/(tabs)");
+      router.replace("/(tabs)" as any);
     } catch (e: any) {
       alert(e.message);
     }
@@ -27,18 +27,20 @@ export default function Login() {
   const signup = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      router.replace("/(tabs)");
+      router.replace("/(tabs)" as any);
     } catch (e: any) {
       alert(e.message);
     }
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
-      <View style={{ padding: 20 }}>
-
-        <Text style={{ color: "white", fontSize: 24 }}>
-          NurseAI Login
+    <SafeAreaView className="flex-1 bg-black">
+      <View className="p-5 flex-1 justify-center -mt-16">
+        <Text className="text-white text-3xl font-bold tracking-tight mb-2">
+          NurseAI 
+        </Text>
+        <Text className="text-neutral-400 text-base mb-8">
+          Sign in to access premium AI study resources.
         </Text>
 
         <TextInput
@@ -46,13 +48,9 @@ export default function Login() {
           placeholderTextColor="#888"
           value={email}
           onChangeText={setEmail}
-          style={{
-            backgroundColor: "#1c1c1e",
-            color: "white",
-            padding: 10,
-            borderRadius: 10,
-            marginTop: 20,
-          }}
+          className="bg-[#1c1c1e] text-white p-4 rounded-xl mt-2 text-[15px] border border-[#2c2c2e]"
+          keyboardType="email-address"
+          autoCapitalize="none"
         />
 
         <TextInput
@@ -61,43 +59,28 @@ export default function Login() {
           secureTextEntry
           value={password}
           onChangeText={setPassword}
-          style={{
-            backgroundColor: "#1c1c1e",
-            color: "white",
-            padding: 10,
-            borderRadius: 10,
-            marginTop: 10,
-          }}
+          className="bg-[#1c1c1e] text-white p-4 rounded-xl mt-3 text-[15px] border border-[#2c2c2e]"
         />
 
         <TouchableOpacity
+          activeOpacity={0.8}
           onPress={login}
-          style={{
-            backgroundColor: "#007AFF",
-            padding: 12,
-            borderRadius: 10,
-            marginTop: 20,
-          }}
+          className="bg-blue-600 p-4 rounded-xl mt-8 items-center"
         >
-          <Text style={{ color: "white", textAlign: "center" }}>
+          <Text className="text-white text-[15px] font-bold tracking-wide">
             Login
           </Text>
         </TouchableOpacity>
 
         <TouchableOpacity
+          activeOpacity={0.8}
           onPress={signup}
-          style={{
-            backgroundColor: "#34C759",
-            padding: 12,
-            borderRadius: 10,
-            marginTop: 10,
-          }}
+          className="bg-green-600 p-4 rounded-xl mt-3 items-center"
         >
-          <Text style={{ color: "white", textAlign: "center" }}>
-            Sign Up
+          <Text className="text-white text-[15px] font-bold tracking-wide">
+            Create Account
           </Text>
         </TouchableOpacity>
-
       </View>
     </SafeAreaView>
   );

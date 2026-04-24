@@ -1,1 +1,7 @@
-# UI/Layout Fixes for Home Screen\n\n## Steps:\n1. [x] Update ScrollView contentContainerStyle: add `paddingTop: insets.top + 12`\n2. [x] Logout button: `marginBottom: 12`\n3. [x] Greeting: `marginBottom: 2`\n4. [x] Title: `marginBottom: 6`, add `backgroundColor: 'rgba(96,165,250,0.15)'`, adjust color to `#3B82F6`\n5. [x] Verify icons, progress bar visibility (already good: Ionicons present, progress in card)\n6. [x] Test in Expo (recommend `npx expo start`)\n7. [x] Complete task
+# Fix NurseAI Typing Indicator
+
+## Steps:
+- [x] Step 1: Edit app/(tabs)/askai.tsx - Remove invalid JSX from askAI() function ✅ COMPLETE
+- [ ] Step 2: Test the fix by running the app and sending a message
+- [ ] Step 3: Verify typing indicator shows during API response
+

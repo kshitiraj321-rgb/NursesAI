@@ -1,301 +1,281 @@
-import { useEffect, useRef, useState } from "react";
+import axios from "axios";
+import { useLocalSearchParams } from "expo-router";
 import {
-  FlatList,
-  KeyboardAvoidingView,
-  Platform,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+  addDoc,
+  collection,
+  getDocs,
+  orderBy,
+  query,
+  serverTimestamp,
+} from "firebase/firestore";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { FlatList, KeyboardAvoidingView, Platform, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { auth, db } from "../../firebase";
+
+import AskAIHeader from "../../components/AskAI/AskAIHeader";
+import ChatBubble from "../../components/AskAI/ChatBubble";
+import ChatInput from "../../components/AskAI/ChatInput";
+import TypingIndicator from "../../components/AskAI/TypingIndicator";
 
 export default function AskAI() {
   const [question, setQuestion] = useState("");
   const [messages, setMessages] = useState<any[]>([]);
   const [selectedMode, setSelectedMode] = useState("explain");
-  const [typingText, setTypingText] = useState("");
-const [isTyping, setIsTyping] = useState(false);
-
+  const [isTyping, setIsTyping] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [feedbackMap, setFeedbackMap] = useState<{ [key: string]: string }>({});
+  const [showThanks, setShowThanks] = useState(false);
   const flatListRef = useRef<FlatList>(null);
+  const { prompt } = useLocalSearchParams();
+
+  const handleFeedback = async (messageId: string, type: string) => {
+    try {
+      const user = auth.currentUser;
+      if (!user) return;
+
+      if (feedbackMap[messageId]) return;
+
+      await addDoc(collection(db, "users", user.uid, "feedback"), {
+        messageId,
+        type,
+        createdAt: serverTimestamp(),
+      });
+
+      setFeedbackMap((prev) => ({
+        ...prev,
+        [messageId]: type,
+      }));
+      setShowThanks(true);
+
+      setTimeout(() => {
+        setShowThanks(false);
+      }, 2000);
+    } catch (error) {
+      console.log("❌ Feedback error:", error);
+    }
+  };
 
   const askAI = async () => {
     if (!question.trim()) return;
 
-    const userMessage = { role: "user", content: question };
-    const thinkingMessage = { role: "assistant", content: "Thinking..." };
+    const user = auth.currentUser;
+    if (!user) return;
 
-    setMessages((prev) => [...prev, userMessage, thinkingMessage]);
+    const userMessage = {
+      id: Date.now().toString(),
+      role: "user",
+      content: question,
+    };
+
+    setMessages((prev) => [...prev, userMessage]);
     setQuestion("");
+    setLoading(true);
+    setIsTyping(true);
+
+    await addDoc(collection(db, "users", user.uid, "messages"), {
+      ...userMessage,
+      createdAt: serverTimestamp(),
+    });
 
     try {
-      const res = await fetch("https://nursesai.onrender.com/ask", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
- body: JSON.stringify({
-  messages: [
-    ...messages,
-    { role: "user", content: question }
-  ],
-  mode: selectedMode,
-}),
-});
+      const response = await axios.post("https://nursesai.onrender.com/ask", {
+        messages: [...messages, userMessage],
+        mode: selectedMode,
+      });
 
-if (!res.ok) {
-  throw new Error("Network response failed");
-}
+      const fullText = response.data.answer;
+      let index = 0;
 
-const data = await res.json();
+      const aiMessage = {
+        id: Date.now().toString() + "-ai",
+        role: "assistant",
+        content: "",
+      };
 
-if (!data || !data.answer) {
-  throw new Error("Invalid response from server");
-}
+      setMessages((prev) => [...prev, aiMessage]);
 
-      // 🔥 REMOVE "Thinking..." first
-setMessages((prev) => prev.slice(0, -1));
+      const interval = setInterval(() => {
+        if (index < fullText.length) {
+          index++;
+          setMessages((prev) =>
+            prev.map((msg) =>
+              msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
+            )
+          );
+        } else {
+          clearInterval(interval);
+        }
+      }, 15);
 
-setIsTyping(true);
-setTypingText("");
+      await addDoc(collection(db, "users", user.uid, "messages"), {
+        ...aiMessage,
+        createdAt: serverTimestamp(),
+      });
+    } catch (error) {
+      console.log("AskAI error:", error);
+      const errorMsg = {
+        id: Date.now().toString() + "-error",
+        role: "assistant",
+        content: "Sorry, NurseAI server is temporarily unavailable. Try again soon. (Check Render deploy)",
+      };
+      setMessages((prev) => [...prev, errorMsg]);
+    } finally {
+      setIsTyping(false);
+      setLoading(false);
+    }
+  };
 
-const fullText = data.answer;
-let index = 0;
+  const askAIWithPrompt = async (customPrompt: string) => {
+    if (!customPrompt.trim()) return;
 
-const interval = setInterval(() => {
-  index++;
+    const user = auth.currentUser;
+    if (!user) return;
 
-  setTypingText(fullText.slice(0, index));
-
-  if (index >= fullText.length) {
-    clearInterval(interval);
-
-    setMessages((prev) => [
-      ...prev,
-      { role: "assistant", content: fullText },
-    ]);
-
-    setTypingText("");
-    setIsTyping(false);
-  }
-}, 12); // speed (10–20 ideal)
-    }catch (err: any) {
-  console.log("ERROR:", err?.message || err);
-
-  setMessages((prev) => {
-    const updated = [...prev];
-    updated[updated.length - 1] = {
-      role: "assistant",
-      content: "Server error. Try again.",
+    const userMessage = {
+      id: Date.now().toString(),
+      role: "user",
+      content: customPrompt,
     };
-    return updated;
-  });
-}
+
+    setMessages((prev) => [...prev, userMessage]);
+    setLoading(true);
+    setIsTyping(true);
+
+    await addDoc(collection(db, "users", user.uid, "messages"), {
+      ...userMessage,
+      createdAt: serverTimestamp(),
+    });
+
+    try {
+      const response = await axios.post("https://nursesai.onrender.com/ask", {
+        messages: [...messages, userMessage],
+        mode: selectedMode,
+      });
+
+      const fullText = response.data.answer;
+      let index = 0;
+
+      const aiMessage = {
+        id: Date.now().toString() + "-ai",
+        role: "assistant",
+        content: "",
+      };
+
+      setMessages((prev) => [...prev, aiMessage]);
+
+      const interval = setInterval(() => {
+        if (index < fullText.length) {
+          index++;
+          setMessages((prev) =>
+            prev.map((msg) =>
+              msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
+            )
+          );
+        } else {
+          clearInterval(interval);
+        }
+      }, 15);
+
+      await addDoc(collection(db, "users", user.uid, "messages"), {
+        ...aiMessage,
+        createdAt: serverTimestamp(),
+      });
+    } catch (error) {
+      console.log("AskAI error:", error);
+    } finally {
+      setIsTyping(false);
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
-    flatListRef.current?.scrollToEnd({ animated: true });
+    const user = auth.currentUser;
+    if (!user) return;
+
+    const loadMessages = async () => {
+      const q = query(collection(db, "users", user.uid, "messages"), orderBy("createdAt", "asc"));
+      const snapshot = await getDocs(q);
+      const loaded = snapshot.docs.map((doc: any) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setMessages(loaded);
+    };
+
+    loadMessages();
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      flatListRef.current?.scrollToEnd({ animated: true });
+    }, 100);
   }, [messages]);
 
+  useEffect(() => {
+    if (prompt && typeof prompt === "string") {
+      setQuestion(prompt);
+      setTimeout(() => {
+        askAIWithPrompt(prompt);
+      }, 300);
+    }
+  }, [prompt]);
+
+  const formatTime = (timestamp: any) => {
+    if (!timestamp) return "";
+    const date = timestamp.toDate();
+    const now = new Date();
+    const diff = (now.getTime() - date.getTime()) / 1000;
+    if (diff < 60) return "Just now";
+    if (diff < 3600) return `${Math.floor(diff / 60)} min ago`;
+    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  };
+
+  const renderMessage = useCallback(
+    ({ item, index }: any) => (
+      <ChatBubble
+        item={item}
+        isSameSender={messages[index - 1]?.role === item.role}
+        feedbackMap={feedbackMap}
+        handleFeedback={handleFeedback}
+        formatTime={formatTime}
+      />
+    ),
+    [messages, feedbackMap]
+  );
+
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
-      <KeyboardAvoidingView
-        style={{ flex: 1 }}
-        behavior={Platform.OS === "android" ? undefined : "padding"}
-        keyboardVerticalOffset={0}
-      >
-        {/* 🔥 HEADER */}
-        <View
-          style={{
-            paddingHorizontal: 16,
-            paddingTop: 10,
-            paddingBottom: 12,
-            borderBottomWidth: 1,
-            borderBottomColor: "#111",
-          }}
-        >
-          <Text
-            style={{
-              color: "white",
-              fontSize: 20,
-              fontWeight: "600",
-              marginBottom: 10,
-            }}
-          >
-            NurseAI Assistant
-          </Text>
+    <KeyboardAvoidingView
+      className="flex-1 bg-[#0F172A]"
+      behavior={Platform.OS === "ios" ? "padding" : "padding"}
+      keyboardVerticalOffset={Platform.OS === "ios" ? 60 : 25}
+    >
+      <View className="flex-1">
+        <AskAIHeader selectedMode={selectedMode} setSelectedMode={setSelectedMode} />
 
-          {/* 🔥 MODE BUTTONS */}
-          <View style={{ flexDirection: "row" }}>
-            {["explain", "quiz", "summary"].map((mode) => (
-              <TouchableOpacity
-                key={mode}
-                onPress={() => setSelectedMode(mode)}
-                style={{
-                  paddingVertical: 8,
-                  paddingHorizontal: 14,
-                  marginRight: 8,
-                  borderRadius: 20,
-                  backgroundColor:
-                    selectedMode === mode ? "#007AFF" : "#1c1c1e",
-                }}
-              >
-                <Text
-                  style={{
-                    color: "white",
-                    fontSize: 13,
-                    fontWeight: "500",
-                  }}
-                >
-                  {mode.toUpperCase()}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-        </View>
-
-        {/* 🔥 CHAT LIST */}
         <FlatList
           ref={flatListRef}
           data={messages}
-          keyExtractor={(_, i) => i.toString()}
-          contentContainerStyle={{
-            padding: 12,
-            paddingBottom: 20,
-          }}
+          keyExtractor={(item, index) => item.id || index.toString()}
+          contentContainerStyle={{ padding: 12, paddingTop: 140, paddingBottom: 40 }}
+          renderItem={renderMessage}
+          initialNumToRender={15}
+          maxToRenderPerBatch={10}
+          windowSize={10}
+          removeClippedSubviews={Platform.OS === 'android'}
           keyboardShouldPersistTaps="handled"
-          renderItem={({ item }) => (
-            <View
-              style={{
-                flexDirection: "row",
-                alignSelf:
-                  item.role === "user" ? "flex-end" : "flex-start",
-                marginVertical: 6,
-                maxWidth: "78%",
-              }}
-            >
-              {/* 👇 AI Avatar */}
-              {item.role === "assistant" && (
-                <View
-                  style={{
-                    width: 32,
-                    height: 32,
-                    borderRadius: 16,
-                    backgroundColor: "#007AFF",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginRight: 8,
-                  }}
-                >
-                  <Text style={{ color: "white" }}>🧑‍⚕️</Text>
-                </View>
-              )}
-
-              {/* 💬 MESSAGE */}
-            <View
-  style={{
-    backgroundColor:
-      item.role === "user" ? "#0A84FF" : "#1c1c1e",
-
-    paddingVertical: 10,
-    paddingHorizontal: 14,
-
-    borderRadius: 18,
-
-    borderWidth: item.role === "assistant" ? 1 : 0,
-    borderColor: "#2a2a2a",
-
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 3,
-
-    marginLeft: item.role === "user" ? 40 : 0,
-    marginRight: item.role === "assistant" ? 40 : 0,
-  }}
->
-                <Text style={{ color: "white", lineHeight: 20 }}>
-                  {item.content}
-                </Text>
-              </View>
-            </View>
-          )}
         />
 
-        {/* 🔥 INPUT */}
-        <View
-          style={{
-            flexDirection: "row",
-            padding: 10,
-            marginBottom: 10,
-          }}
-        >
-          <TextInput
-            value={question}
-            onChangeText={setQuestion}
-            placeholder="Ask nursing questions..."
-            placeholderTextColor="#888"
-            style={{
-              flex: 1,
-              backgroundColor: "#1c1c1e",
-              padding: 12,
-              borderRadius: 12,
-              color: "white",
-            }}
-          />
-          {isTyping && (
-  <View
-    style={{
-      flexDirection: "row",
-      alignSelf: "flex-start",
-      marginHorizontal: 12,
-      marginBottom: 10,
-    }}
-  >
-    <View
-      style={{
-        width: 32,
-        height: 32,
-        borderRadius: 16,
-        backgroundColor: "#007AFF",
-        justifyContent: "center",
-        alignItems: "center",
-        marginRight: 8,
-      }}
-    >
-      <Text style={{ color: "white" }}>🧑‍⚕️</Text>
-    </View>
+        <TypingIndicator isTyping={isTyping} />
 
-    <View
-      style={{
-        backgroundColor: "#1c1c1e",
-        padding: 12,
-        borderRadius: 16,
-        borderWidth: 1,
-        borderColor: "#2a2a2a",
-        maxWidth: "80%",
-      }}
-    >
-      <Text style={{ color: "white", lineHeight: 20 }}>
-        {typingText}
-      </Text>
-    </View>
-  </View>
-)}
+        {showThanks && (
+          <View className="absolute bottom-24 self-center bg-[#1c1c1e] py-2 px-4 rounded-full border border-[#2a2a2a] z-50">
+            <Text className="text-white text-[13px] font-medium">Thanks for your feedback 🙌</Text>
+          </View>
+        )}
 
-          <TouchableOpacity
-            onPress={askAI}
-            style={{
-              backgroundColor: "#007AFF",
-              padding: 12,
-              borderRadius: 12,
-              marginLeft: 6,
-            }}
-          >
-            <Text style={{ color: "white" }}>Send</Text>
-          </TouchableOpacity>
-        </View>
-      </KeyboardAvoidingView>
-    </SafeAreaView>
+        <ChatInput question={question} setQuestion={setQuestion} onSend={askAI} loading={loading} />
+      </View>
+    </KeyboardAvoidingView>
   );
 }

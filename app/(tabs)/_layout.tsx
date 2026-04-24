@@ -30,18 +30,34 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="explore"
+        name="learn"
         options={{
-          title: "Explore",
+          title: "Learn",
           tabBarIcon: ({ color }) => (
-            <IconSymbol name="paperplane.fill" size={26} color={color} />
+            <IconSymbol name="book.fill" size={26} color={color} />
           ),
         }}
       />
-
-      {/* HIDDEN SCREENS (IMPORTANT FIX) */}
-      <Tabs.Screen name="askai" options={{ href: null }} />
-      <Tabs.Screen name="quicklearn" options={{ href: null }} />
+      
+      <Tabs.Screen
+        name="askai"
+        options={{
+          title: "Ask AI",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol name="sparkles" size={26} color={color} />
+          ),
+        }}
+      />
+      
+      <Tabs.Screen
+        name="progress"
+        options={{
+          title: "Progress",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol name="chart.bar.fill" size={26} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
