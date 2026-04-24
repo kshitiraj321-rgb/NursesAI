@@ -119,6 +119,7 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
       >
         <HomeHeader greeting={greeting} onLogout={handleLogout} />
+        <Text style={{ color: "red", textAlign: "center", fontWeight: "bold", marginVertical: 10, fontSize: 18 }}>VERSION 3 - NEW BUILD</Text>
         <DailyFocusCard dailyTopic={dailyTopic} progress={Math.min(completedCount / 10, 1)} delay={100} />
         <TouchableOpacity
           onPress={handleSmartRevision}
