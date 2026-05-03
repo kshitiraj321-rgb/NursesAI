@@ -16,5 +16,5 @@ NursesAI has undergone significant modernization to prepare for production (APK)
 - **Implementation:** Built the `backend/server.js` Express application. Configured the OpenAI API token limit to 1500 `max_tokens` and engineered strict response schemas (Definition, Causes, UI/UX, Signs/Symptoms).
 
 ## Phase 4: Big Data PYQ Structuring
-- **Objective:** Implement 600+ NORCET Previous Year Questions.
-- **Implementation:** Formatted PDF extractions into `data/pyqData.json`. Connected it to the Quiz component which identifies array properties dynamically.
+- **Objective:** Implement scalable NORCET PYQ ingestion and retrieval.
+- **Implementation:** Parsed attached OneNote sources into `data/pyq/chunks/*.json`, generated `data/pyq/manifest.json`, and integrated lazy loading through `data/pyq/repository.ts`.

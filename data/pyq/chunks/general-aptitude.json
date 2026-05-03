@@ -1,0 +1,97 @@
+[
+  {
+    "id": "07-gk-pdf-1",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "General Aptitude",
+    "subCategory": "International",
+    "topic": "G20",
+    "question": "Which of the following countries is NOT a recognized member of the G-20?",
+    "options": [
+      "Canada",
+      "China",
+      "Pakistan",
+      "Brazil"
+    ],
+    "answer": "Pakistan",
+    "explanation": "Correct - C: G-20 = 19 countries + EU. India, China, Brazil, Canada members hain. Pakistan NOT member. South Africa is only African member. Incorrect - A/B/D: Teeno G-20 members hain. Trick: G-20 me \"G\" nahi \"G\"ulf countries. Saudi Arabia hai, par Pakistan nahi.",
+    "difficulty": "easy",
+    "verified": true,
+    "tags": [
+      "General Aptitude",
+      "International",
+      "G20",
+      "PYQ",
+      "GK",
+      "CurrentAffairs",
+      "StaticGK"
+    ],
+    "source": "07_GK.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "07-gk-pdf-3",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "General Aptitude",
+    "subCategory": "Sociology",
+    "topic": "Founders",
+    "question": "Who is considered as the father of sociology?",
+    "options": [
+      "Auguste Comte",
+      "Maclver",
+      "Emile Durkheim",
+      "Kingsley Davis"
+    ],
+    "answer": "Auguste Comte",
+    "explanation": "Correct - A: Auguste Comte = Father of Sociology. Coined term \"sociology\" 1838. Proposed scientific study of society. Positivism founder. Incorrect - C: Durkheim = Father of modern sociology, social facts. Incorrect - B/D: MacIver & Davis = sociologists, not father. Trick: \"Comte = Come to study society\". First to call it sociology.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "General Aptitude",
+      "Sociology",
+      "Founders",
+      "PYQ",
+      "GK",
+      "AugusteComte"
+    ],
+    "source": "07_GK.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "07-gk-pdf-4",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "General Aptitude",
+    "subCategory": "Current Affairs",
+    "topic": "Infrastructure",
+    "question": "Bullet train in India was run with the help of which country?",
+    "options": [
+      "Japan GK 26 April 2026 22:49 GK Page 1",
+      "China",
+      "Russia",
+      "USA"
+    ],
+    "answer": "Japan GK 26 April 2026 22:49 GK Page 1",
+    "explanation": "Correct - A: Mumbai-Ahmedabad Bullet Train = Japan's Shinkansen technology. JICA loan, technical support. Started 2017. Incorrect - B/C/D: China/Russia/USA not involved in Indian bullet train. Trick: \"Bullet train = Japan ka Jadoo\". Shinkansen = Japanese tech.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "General Aptitude",
+      "Current Affairs",
+      "Infrastructure",
+      "PYQ",
+      "GK",
+      "CurrentAffairs",
+      "BulletTrain",
+      "Japan"
+    ],
+    "source": "07_GK.pdf.pdf",
+    "integrityFlags": [
+      "corrupted_options"
+    ],
+    "quizReady": true
+  }
+]

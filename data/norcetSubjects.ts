@@ -1,12 +1,6 @@
-export type Topic = {
-  id: string;
-  name: string;
-};
-
 export type SubCategory = {
   id: string;
   name: string;
-  topics: Topic[];
 };
 
 export type Subject = {
@@ -22,222 +16,34 @@ export type SubjectGroup = {
   subjects: Subject[];
 };
 
+const sub = (id: string, name: string): SubCategory => ({ id, name });
+
 export const norcetSubjectGroups: SubjectGroup[] = [
   {
-    title: "🔥 High Weightage Subjects",
+    title: "High Weightage Subjects",
     type: "high_weightage",
     subjects: [
-      {
-        id: "msn",
-        name: "Medical-Surgical Nursing",
-        weightage: "30–45%",
-        subCategories: [
-          {
-            id: "cardio",
-            name: "Cardiovascular",
-            topics: [
-              { id: "ecg", name: "ECG" },
-              { id: "mi", name: "Myocardial Infarction (MI)" },
-              { id: "hf", name: "Heart Failure" },
-            ],
-          },
-          {
-            id: "resp",
-            name: "Respiratory",
-            topics: [
-              { id: "abg", name: "ABG Analysis" },
-              { id: "vent", name: "Ventilator Settings" },
-              { id: "copd", name: "COPD" },
-            ],
-          },
-          {
-            id: "renal",
-            name: "Renal",
-            topics: [
-              { id: "dialysis", name: "Dialysis" },
-              { id: "fluid", name: "Fluid & Electrolyte Balance" },
-            ],
-          },
-          {
-            id: "neuro",
-            name: "Neurology",
-            topics: [
-              { id: "gcs", name: "GCS" },
-              { id: "stroke", name: "Stroke" },
-              { id: "icp", name: "Increased ICP" },
-            ],
-          },
-        ],
-      },
-      {
-        id: "fundamentals",
-        name: "Fundamentals of Nursing",
-        weightage: "15–25%",
-        subCategories: [
-          {
-            id: "infection",
-            name: "Infection Control",
-            topics: [
-              { id: "bmw", name: "BMW (Bio-Medical Waste)" },
-              { id: "hw", name: "Handwashing" },
-              { id: "ppe", name: "PPE" },
-            ],
-          },
-          {
-            id: "general_fundamentals",
-            name: "General",
-            topics: [
-              { id: "vitals", name: "Vital Signs Interpretation" },
-              { id: "adpie", name: "Nursing Process (ADPIE)" },
-              { id: "position", name: "Patient Positioning" },
-              { id: "cpr", name: "CPR / BLS" },
-            ],
-          },
-        ],
-      },
-      {
-        id: "obgyn",
-        name: "Obstetrics & Gynaecology",
-        weightage: "12–20%",
-        subCategories: [
-          {
-            id: "general_obgyn",
-            name: "General",
-            topics: [
-              { id: "labour", name: "Stages of Labour" },
-              { id: "family_planning", name: "Family Planning Methods" },
-            ],
-          },
-          {
-            id: "complications",
-            name: "Complications",
-            topics: [
-              { id: "pph", name: "PPH" },
-              { id: "eclampsia", name: "Eclampsia" },
-              { id: "abruptio", name: "Abruptio Placentae" },
-            ],
-          },
-          {
-            id: "newborn",
-            name: "Newborn Care",
-            topics: [
-              { id: "apgar", name: "APGAR Score" },
-              { id: "np_resuscitation", name: "Resuscitation" },
-            ],
-          },
-        ],
-      },
-      {
-        id: "pediatric",
-        name: "Pediatric Nursing",
-        weightage: "8–12%",
-        subCategories: [
-          {
-            id: "gen_pediatrics",
-            name: "General",
-            topics: [
-              { id: "growth", name: "Growth & Development" },
-              { id: "immunization", name: "Immunization Schedule" },
-              { id: "neo_emergencies", name: "Neonatal Emergencies" },
-            ],
-          },
-          {
-            id: "diseases",
-            name: "Diseases",
-            topics: [
-              { id: "diarrhea", name: "Diarrhea (ORS/Dehydration)" },
-              { id: "pneumonia", name: "Pneumonia" },
-            ],
-          },
-        ],
-      },
-      {
-        id: "community",
-        name: "Community Health Nursing",
-        weightage: "10–12%",
-        subCategories: [
-          {
-            id: "gen_community",
-            name: "General",
-            topics: [
-              { id: "national", name: "National Health Programs" },
-              { id: "epi", name: "Epidemiology Basics" },
-              { id: "prevention", name: "Levels of Prevention" },
-              { id: "indicators", name: "Health Indicators (IMR, MMR)" },
-            ],
-          },
-        ],
-      },
+      { id: "medical-surgical-nursing", name: "Medical-Surgical Nursing", weightage: "30-45%", subCategories: [sub("ms-cardiovascular", "Cardiovascular"), sub("ms-respiratory", "Respiratory"), sub("ms-renal", "Renal"), sub("ms-neurology", "Neurology"), sub("ms-endocrine", "Endocrine"), sub("ms-gi", "GI"), sub("ms-emergency", "Emergency"), sub("ms-oncology", "Oncology")] },
+      { id: "fundamentals-of-nursing", name: "Fundamentals of Nursing", weightage: "15-25%", subCategories: [sub("fn-infection-control", "Infection Control"), sub("fn-nursing-procedures", "Nursing Procedures"), sub("fn-patient-safety", "Patient Safety"), sub("fn-vital-signs", "Vital Signs"), sub("fn-cpr-bls", "CPR/BLS"), sub("fn-communication", "Communication")] },
+      { id: "obstetrics-gynaecology", name: "Obstetrics & Gynaecology", weightage: "12-20%", subCategories: [sub("obg-antenatal", "Antenatal"), sub("obg-labour", "Labour"), sub("obg-complications", "Complications"), sub("obg-newborn-care", "Newborn Care"), sub("obg-family-planning", "Family Planning")] },
+      { id: "pediatric-nursing", name: "Pediatric Nursing", weightage: "8-12%", subCategories: [sub("ped-growth-development", "Growth Development"), sub("ped-neonatal", "Neonatal"), sub("ped-diseases", "Diseases"), sub("ped-immunization", "Immunization")] },
+      { id: "community-health-nursing", name: "Community Health Nursing", weightage: "10-12%", subCategories: [sub("chn-epidemiology", "Epidemiology"), sub("chn-national-programs", "National Programs"), sub("chn-prevention", "Prevention"), sub("chn-demography", "Demography")] },
     ],
   },
   {
-    title: "⚡ Supporting Subjects",
+    title: "Supporting Subjects",
     type: "supporting",
     subjects: [
-      {
-        id: "pharma",
-        name: "Pharmacology",
-        weightage: "8–10%",
-        subCategories: [
-          {
-            id: "emergency",
-            name: "Emergency Drugs",
-            topics: [
-              { id: "adrenaline", name: "Adrenaline" },
-              { id: "atropine", name: "Atropine" },
-              { id: "digoxin", name: "Digoxin" },
-            ],
-          },
-          {
-            id: "antidotes",
-            name: "Antidotes",
-            topics: [
-              { id: "heparin", name: "Heparin / Warfarin" },
-              { id: "insulin", name: "Insulin" },
-            ],
-          },
-          {
-            id: "math",
-            name: "Calculations",
-            topics: [
-              { id: "dose", name: "Drug Dose Calculations" },
-            ],
-          },
-        ],
-      },
-      {
-        id: "psych",
-        name: "Psychiatric Nursing",
-        weightage: "4–6%",
-        subCategories: [
-          {
-            id: "gen_psych",
-            name: "General",
-            topics: [
-              { id: "comm", name: "Therapeutic Communication" },
-              { id: "schizo", name: "Schizophrenia" },
-              { id: "mood", name: "Mood Disorders" },
-              { id: "acts", name: "Mental Health Acts" },
-            ],
-          },
-        ],
-      },
-      {
-        id: "aptitude",
-        name: "General Aptitude",
-        weightage: "Varies",
-        subCategories: [
-          {
-            id: "gen_aptitude",
-            name: "General Category",
-            topics: [
-              { id: "news", name: "Health News (AIIMS/WHO)" },
-              { id: "logical", name: "Logical Reasoning" },
-              { id: "quant", name: "Quantitative Aptitude" },
-            ],
-          },
-        ],
-      },
+      { id: "pharmacology", name: "Pharmacology", weightage: "6-10%", subCategories: [sub("ph-emergency-drugs", "Emergency Drugs"), sub("ph-antibiotics", "Antibiotics"), sub("ph-endocrine-drugs", "Endocrine Drugs"), sub("ph-cvs-drugs", "CVS Drugs"), sub("ph-calculations", "Calculations"), sub("ph-antidotes", "Antidotes")] },
+      { id: "psychiatric-nursing", name: "Psychiatric Nursing", weightage: "4-6%", subCategories: [sub("psy-disorders", "Disorders"), sub("psy-communication", "Communication"), sub("psy-therapies", "Therapies"), sub("psy-mental-health-acts", "Mental Health Acts")] },
+      { id: "nursing-management", name: "Nursing Management", weightage: "3-5%", subCategories: [sub("nm-leadership", "Leadership"), sub("nm-administration", "Administration"), sub("nm-budgeting", "Budgeting"), sub("nm-research", "Research"), sub("nm-statistics", "Statistics")] },
+      { id: "anatomy", name: "Anatomy", weightage: "2-4%", subCategories: [sub("an-bones", "Bones"), sub("an-cns", "CNS"), sub("an-cvs", "CVS"), sub("an-respiratory", "Respiratory"), sub("an-abdomen", "Abdomen")] },
+      { id: "physiology", name: "Physiology", weightage: "2-4%", subCategories: [sub("phy-blood", "Blood"), sub("phy-renal", "Renal"), sub("phy-endocrine", "Endocrine"), sub("phy-neuro", "Neuro"), sub("phy-reproductive", "Reproductive")] },
+      { id: "nutrition", name: "Nutrition", weightage: "2-4%", subCategories: [sub("nu-vitamins", "Vitamins"), sub("nu-deficiency", "Deficiency"), sub("nu-therapeutic-diet", "Therapeutic Diet"), sub("nu-macronutrients", "Macronutrients")] },
+      { id: "microbiology", name: "Microbiology", weightage: "2-4%", subCategories: [sub("mb-organisms", "Organisms"), sub("mb-sterilization", "Sterilization"), sub("mb-immunology", "Immunology"), sub("mb-infections", "Infections")] },
+      { id: "general-aptitude", name: "General Aptitude", weightage: "Varies", subCategories: [sub("ga-reasoning", "Reasoning"), sub("ga-quant", "Quant"), sub("ga-gk", "GK"), sub("ga-current-affairs", "Current Affairs")] },
     ],
   },
 ];
+
+export type NorcetSubjectName = (typeof norcetSubjectGroups)[number]["subjects"][number]["name"];

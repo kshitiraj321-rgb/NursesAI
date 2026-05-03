@@ -4,10 +4,9 @@ import { BlurView } from "expo-blur";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming, withDelay } from "react-native-reanimated";
 
 interface Props {
-  completedCount: number;
-  totalTopics: number;
+  todayProgress: number;
+  dailyGoal: number;
   streak: number;
-  xp: number;
   delay: number;
 }
 

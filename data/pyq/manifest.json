@@ -1,0 +1,40 @@
+{
+  "total": 227,
+  "chunks": [
+    {
+      "subject": "Community Health Nursing",
+      "file": "community-health-nursing.json",
+      "count": 3
+    },
+    {
+      "subject": "Fundamentals of Nursing",
+      "file": "fundamentals-of-nursing.json",
+      "count": 63
+    },
+    {
+      "subject": "General Aptitude",
+      "file": "general-aptitude.json",
+      "count": 3
+    },
+    {
+      "subject": "Medical-Surgical Nursing",
+      "file": "medical-surgical-nursing.json",
+      "count": 113
+    },
+    {
+      "subject": "Obstetrics & Gynaecology",
+      "file": "obstetrics-gynaecology.json",
+      "count": 26
+    },
+    {
+      "subject": "Pediatric Nursing",
+      "file": "pediatric-nursing.json",
+      "count": 14
+    },
+    {
+      "subject": "Psychiatric Nursing",
+      "file": "psychiatric-nursing.json",
+      "count": 5
+    }
+  ]
+}

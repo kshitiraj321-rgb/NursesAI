@@ -1,0 +1,65 @@
+{
+  "overview": {
+    "totalRecords": 299,
+    "totalSafe": 249,
+    "totalQuarantined": 50,
+    "safePercentage": "83.28%",
+    "quarantinedPercentage": "16.72%"
+  },
+  "bySubject": {
+    "Community Health Nursing": {
+      "total": 3,
+      "safe": 3,
+      "quarantined": 0,
+      "safePercentage": "100.00%"
+    },
+    "Fundamentals of Nursing": {
+      "total": 63,
+      "safe": 54,
+      "quarantined": 9,
+      "safePercentage": "85.71%"
+    },
+    "Fundamentals": {
+      "total": 63,
+      "safe": 54,
+      "quarantined": 9,
+      "safePercentage": "85.71%"
+    },
+    "General Aptitude": {
+      "total": 3,
+      "safe": 2,
+      "quarantined": 1,
+      "safePercentage": "66.67%"
+    },
+    "Medical-Surgical Nursing": {
+      "total": 113,
+      "safe": 95,
+      "quarantined": 18,
+      "safePercentage": "84.07%"
+    },
+    "Obstetrics & Gynaecology": {
+      "total": 26,
+      "safe": 24,
+      "quarantined": 2,
+      "safePercentage": "92.31%"
+    },
+    "Pediatric Nursing": {
+      "total": 14,
+      "safe": 13,
+      "quarantined": 1,
+      "safePercentage": "92.86%"
+    },
+    "Pharmacology": {
+      "total": 9,
+      "safe": 0,
+      "quarantined": 9,
+      "safePercentage": "0.00%"
+    },
+    "Psychiatric Nursing": {
+      "total": 5,
+      "safe": 4,
+      "quarantined": 1,
+      "safePercentage": "80.00%"
+    }
+  }
+}

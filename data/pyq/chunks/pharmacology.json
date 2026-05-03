@@ -1,0 +1,209 @@
+[
+  {
+    "id": "med-surg-one-27",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "Which serum electrolyte must be closely monitored in",
+    "question": "Which serum electrolyte must be closely monitored in a patient receiving Digoxin to prevent life-threatening drug toxicity?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-18",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "Which of the following is the antidote for benzodiaz",
+    "question": "Which of the following is the antidote for benzodiazepine overdose?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-3",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "A nurse is caring for a patient who is receiving a h",
+    "question": "A nurse is caring for a patient who is receiving a high dose of corticosteroids. Which of the following is a common side effect of corticosteroid therapy?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-49",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "Which of the following is considered an intermediate",
+    "question": "Which of the following is considered an intermediate-acting (basal) insulin used for maintenance therapy?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-92",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "Which of the following is the most common cause of d",
+    "question": "Which of the following is the most common cause of death in drug overdose?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-42",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "A patient with cirrhosis develops hepatic encephalop",
+    "question": "A patient with cirrhosis develops hepatic encephalopathy. Which of the following drugs is commonly prescribed?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-10",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "What is the correct pharmacological antidote for a H",
+    "question": "What is the correct pharmacological antidote for a Heparin overdose or toxicity?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-1",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "A nurse is assessing a patient who has just been sta",
+    "question": "A nurse is assessing a patient who has just been started on heparin therapy. Which of the following laboratory tests should be monitored regularly?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  },
+  {
+    "id": "med-surg-one-21",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pharmacology",
+    "subCategory": "Calculations",
+    "topic": "Which of the following is the antidote for paracetam",
+    "question": "Which of the following is the antidote for paracetamol overdose?",
+    "options": [],
+    "answer": "",
+    "explanation": "",
+    "source": "Med-Surg.one",
+    "verified": false,
+    "answerSource": "missing",
+    "tags": [
+      "Pharmacology",
+      "Calculations"
+    ],
+    "integrityFlags": [
+      "options_count_mismatch",
+      "answer_mismatch"
+    ]
+  }
+]

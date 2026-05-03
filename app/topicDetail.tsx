@@ -1,19 +1,44 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { FlatList, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useEffect, useMemo, useState } from "react";
+import { loadAllPyq, isQuizReadyPyq, mapRecordToCategory, normalizeSubjectAlias } from "../data/pyq/repository";
+import type { PyqRecord } from "../data/pyq/types";
 
-import { useIntelligence } from "../hooks/useIntelligence";
-import { getAuth } from "firebase/auth";
+type CategoryPayload = {
+  id: string;
+  name: string;
+  subjectName?: string;
+};
+
+import notesIndex from "../data/quickLearnIndex.json";
 
 export default function TopicDetailScreen() {
   const { topic } = useLocalSearchParams();
-  const parsedTopic = JSON.parse(topic as string);
+  const parsedTopic: CategoryPayload = JSON.parse(String(topic || "{}"));
   const router = useRouter();
 
-  const { topicStats } = useIntelligence(getAuth().currentUser?.uid);
-  const stat = topicStats[parsedTopic.name];
-  const isWeak = stat?.status === "weak";
-  const isNew = !stat || stat.attempts === 0;
+  const [pyq, setPyq] = useState<PyqRecord[]>([]);
+  const [noteCount, setNoteCount] = useState(0);
+
+  useEffect(() => {
+    loadAllPyq().then(setPyq).catch((err) => console.log("PYQ load error:", err));
+
+    const key = `${parsedTopic.subjectName || ""}|${(parsedTopic.name || "").toLowerCase()}`;
+    setNoteCount((notesIndex as Record<string, number>)[key] || 0);
+  }, [parsedTopic.name, parsedTopic.subjectName]);
+
+  const pyqCount = useMemo(() => {
+    const subject = normalizeSubjectAlias(parsedTopic.subjectName || "");
+    const category = (parsedTopic.name || "").toLowerCase();
+    return pyq.filter((r) => normalizeSubjectAlias(r.subject) === subject && mapRecordToCategory(r).toLowerCase() === category).length;
+  }, [pyq, parsedTopic.name, parsedTopic.subjectName]);
+
+  const quizReadyCount = useMemo(() => {
+    const subject = normalizeSubjectAlias(parsedTopic.subjectName || "");
+    const category = (parsedTopic.name || "").toLowerCase();
+    return pyq.filter((r) => normalizeSubjectAlias(r.subject) === subject && mapRecordToCategory(r).toLowerCase() === category && isQuizReadyPyq(r)).length;
+  }, [pyq, parsedTopic.name, parsedTopic.subjectName]);
 
   return (
     <SafeAreaView className="flex-1 bg-black">
@@ -21,57 +46,54 @@ export default function TopicDetailScreen() {
         <TouchableOpacity onPress={() => router.back()} className="mb-4">
           <Text className="text-blue-500 font-semibold text-[15px]">← Back</Text>
         </TouchableOpacity>
-        
+
         <Text className="text-white text-3xl font-bold tracking-tight mb-2">{parsedTopic.name}</Text>
+        <Text className="text-neutral-400 mb-1 text-sm">Subject: {parsedTopic.subjectName || "Nursing"}</Text>
+        <Text className="text-neutral-400 mb-1 text-sm">Available PYQs: {pyqCount}</Text>
+        <Text className="text-neutral-400 mb-6 text-sm">Available Notes: {noteCount}</Text>
 
-        {parsedTopic.highYield && <Text className="text-yellow-400 mb-2 font-semibold">🔥 High Yield Topic</Text>}
-        {parsedTopic.prepType && <Text className="text-neutral-400 mb-6 font-medium text-[15px]">Prep Type: {parsedTopic.prepType}</Text>}
+        {pyqCount === 0 && (
+          <View className="bg-white/5 border border-white/10 rounded-xl p-4 mb-4">
+            <Text className="text-neutral-300 text-sm">More questions coming soon</Text>
+          </View>
+        )}
 
-        <Text className="text-neutral-400 mb-6 text-sm">How would you like to prepare for this topic?</Text>
+        <Text className="text-neutral-400 mb-6 text-sm">How would you like to prepare for this category?</Text>
 
         <TouchableOpacity
           activeOpacity={0.8}
-          onPress={() => router.push({ pathname: "/(tabs)/askai" as any, params: { prompt: `Explain ${parsedTopic.name} for nursing exam. Include definition, causes, symptoms, treatment and key exam points.` } })}
-          className={`${isNew ? "bg-blue-500 border border-blue-400/50" : "bg-blue-600"} p-4 rounded-xl mb-3 items-center shadow-lg shadow-blue-500/20`}
+          onPress={() =>
+            router.push({
+              pathname: "/(tabs)/askai" as never,
+              params: {
+                prompt: `Explain ${parsedTopic.name} in ${parsedTopic.subjectName || "Nursing"} for nursing exam. Include definition, key facts, nursing points and exam tricks.`,
+              } as never,
+            })
+          }
+          className="bg-blue-600 p-4 rounded-xl mb-3 items-center shadow-lg shadow-blue-500/20"
         >
-          <Text className="text-white font-bold tracking-wide">
-            {isNew ? "Recommended: Learn with AI" : "Learn with AI"}
-          </Text>
+          <Text className="text-white font-bold tracking-wide">Learn with AI</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           activeOpacity={0.8}
-          onPress={() => router.push({ pathname: "/quiz" as any, params: { type: "pyq", topic: parsedTopic.name } })}
-          className={`${isWeak ? "bg-purple-500 border border-purple-400/50" : "bg-purple-600"} p-4 rounded-xl mb-3 items-center shadow-lg shadow-purple-500/20`}
+          onPress={() => router.push({ pathname: "/quiz" as never, params: { type: "pyq", topic: parsedTopic.name } as never })}
+          className="bg-purple-600 p-4 rounded-xl mb-3 items-center shadow-lg shadow-purple-500/20"
         >
-          <Text className="text-white font-bold tracking-wide">
-            {isWeak ? "Recommended: Practice PYQs" : "Practice PYQs (Real Exam Questions)"}
-          </Text>
+          <Text className="text-white font-bold tracking-wide">Practice PYQs</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           activeOpacity={0.8}
-          onPress={() => router.push({ pathname: "/quiz" as any, params: { topic: JSON.stringify(parsedTopic) } })}
+          onPress={() => router.push({ pathname: "/quiz" as never, params: { topic: JSON.stringify(parsedTopic) } as never })}
           className="bg-green-600 p-4 rounded-xl mb-6 items-center shadow-lg shadow-green-500/20"
         >
           <Text className="text-white font-bold tracking-wide">Practice Quiz</Text>
         </TouchableOpacity>
 
-        {parsedTopic.subtopics && parsedTopic.subtopics.length > 0 && (
-          <>
-            <Text className="text-white text-xl font-bold mb-3 mt-2 tracking-tight">Key Elements</Text>
-            <FlatList
-              data={parsedTopic.subtopics}
-              keyExtractor={(item, index) => index.toString()}
-              showsVerticalScrollIndicator={false}
-              renderItem={({ item }) => (
-                <View className="p-4 border-b border-[#2c2c2e] bg-[#1c1c1e] rounded-xl mb-2">
-                  <Text className="text-[#ccc] text-[15px] font-medium">• {item}</Text>
-                </View>
-              )}
-            />
-          </>
-        )}
+        <View className="bg-white/5 border border-white/10 rounded-xl p-4">
+          <Text className="text-neutral-400 text-xs">Quiz-ready PYQs in this category: {quizReadyCount}</Text>
+        </View>
       </View>
     </SafeAreaView>
   );

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "05-community-pdf-1",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Community Health Nursing",
+    "subCategory": "Immunization",
+    "topic": "Cold Chain",
+    "question": "Which vaccine can be frozen?",
+    "options": [
+      "BCG",
+      "Polio",
+      "MMR",
+      "DPT/DT"
+    ],
+    "answer": "MMR",
+    "explanation": "Correct - C: MMR = Live attenuated, freeze-dried → CAN be frozen -20°C. Diluent separate. OPV also can be frozen. Incorrect - A: BCG = Freeze-dried but NOT frozen, store 2-8°C. Freezing destroys. Incorrect - B: OPV can be frozen but not given as option with MMR. If both present, OPV also correct. Incorrect - D: DPT/DT = T-series vaccines, NEVER freeze. Alum adjuvant precipitates. Trick: \"MMR = Measles Must Refrigerate or Freeze\". \"T-series = Thaw NOT, Shake test\".",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Community Health Nursing",
+      "Immunization",
+      "Cold Chain",
+      "PYQ",
+      "HighYield",
+      "Community",
+      "ColdChain",
+      "MMR",
+      "NCLEX"
+    ],
+    "source": "05_Community.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "05-community-pdf-2",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Community Health Nursing",
+    "subCategory": "Infection Control",
+    "topic": "NSI",
+    "question": "What will you do if you have a needle stick injury from an HIV patient?",
+    "options": [
+      "Give an incision to the injury",
+      "Suck out the blood",
+      "Squeeze out the blood",
+      "Wash with soap and water"
+    ],
+    "answer": "Wash with soap and water",
+    "explanation": "Correct - D: NSI protocol: 1) Wash immediately with soap + water 2) Don't squeeze/suck 3) Report 4) PEP within 72hrs if HIV/HBV/HCV 5) Baseline testing. Incorrect - A/B/C: Incision/sucking/squeezing ↑tissue damage, ↑infection risk. Trick: \"Needle Stick = Wash Quick\". No milking wound. PEP within 2hrs best.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Community Health Nursing",
+      "Infection Control",
+      "NSI",
+      "PYQ",
+      "HighYield",
+      "Community",
+      "InfectionControl",
+      "HIV",
+      "PEP",
+      "NCLEX"
+    ],
+    "source": "05_Community.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "05-community-pdf-3",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Community Health Nursing",
+    "subCategory": "Immunization",
+    "topic": "UIP",
+    "question": "Which disease is not included in Mission Indradhanush?",
+    "options": [
+      "Tetanus",
+      "Diphtheria",
+      "Pneumonia",
+      "Whooping cough"
+    ],
+    "answer": "Pneumonia",
+    "explanation": "Correct - C: Mission Indradhanush = 12 diseases: DPT, Polio, Measles, HepB, TB, JE, Rotavirus, Hib, Rubella, Pertussis, Tetanus, Pneumococcal. Pneumonia itself not vaccine, PCV for pneumococcal included but pneumonia as disease not listed separately. Incorrect - A/B/D: Tetanus/Diphtheria/Pertussis = DPT included. Trick: \"Indradhanush = 12 colors = 12 vaccines\". Pneumonia = syndrome, not specific vaccine name.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Community Health Nursing",
+      "Immunization",
+      "UIP",
+      "PYQ",
+      "HighYield",
+      "Community",
+      "Indradhanush",
+      "NCLEX"
+    ],
+    "source": "05_Community.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  }
+]

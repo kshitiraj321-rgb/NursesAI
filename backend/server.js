@@ -2,8 +2,42 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import OpenAI from "openai";
+import admin from "firebase-admin";
 
 dotenv.config();
+
+if (process.env.FIREBASE_SERVICE_ACCOUNT) {
+  try {
+    const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+    admin.initializeApp({
+      credential: admin.credential.cert(serviceAccount)
+    });
+    console.log("Firebase Admin initialized with FIREBASE_SERVICE_ACCOUNT");
+  } catch (err) {
+    console.error("Failed to parse FIREBASE_SERVICE_ACCOUNT:", err);
+    admin.initializeApp();
+  }
+} else {
+  admin.initializeApp();
+  console.log("Firebase Admin initialized with default credentials");
+}
+
+const verifyToken = async (req, res, next) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith("Bearer ")) {
+    return res.status(401).json({ error: "Missing or invalid token" });
+  }
+
+  const token = authHeader.split("Bearer ")[1];
+  try {
+    const decodedToken = await admin.auth().verifyIdToken(token);
+    req.user = decodedToken;
+    next();
+  } catch (error) {
+    console.error("Token verification failed:", error);
+    return res.status(401).json({ error: "Unauthorized: Invalid token" });
+  }
+};
 console.log("Server started...");
 
 const app = express();
@@ -14,7 +48,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-app.post("/ask", async (req, res) => {
+app.post("/ask", verifyToken, async (req, res) => {
   try {
     const { messages, mode } = req.body;
 

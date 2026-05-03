@@ -64,12 +64,9 @@ export default function RootLayout() {
       <Stack.Screen name="login" />
       <Stack.Screen name="(tabs)" />
       <Stack.Screen name="dailytopics" />
-      <Stack.Screen name="subjects" />
       <Stack.Screen name="topics" />
       <Stack.Screen name="topicDetail" />
       <Stack.Screen name="quiz" />
-      <Stack.Screen name="dashboard" />
-      <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
     </Stack>
   );
 }

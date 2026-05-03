@@ -9,8 +9,8 @@ Initializes Firebase Auth and Firestore. Specifically modified to handle cross-p
 ### `backend/server.js`
 The Express middleware providing a proxy bridge to OpenAI to prevent shipping raw API keys inside the client APK. Employs heavy custom system prompts tuned for clinical accuracy.
 
-### `data/pyqData.json`
-A lightweight local static database holding 600+ structural NORCET clinical questions. Avoids reliance on cloud database reads and speeds up the application significantly.
+### `data/pyq/repository.ts`
+Typed PYQ data access layer. Loads subject chunks lazily from `data/pyq/chunks/*.json` using manifest metadata and supports search for AskAI context retrieval.
 
 ### `package.json`
 Manages the massive dependency ecosystem including core (Expo, React Native), UX (Confetti Cannon, Haptics), Navigation (React Navigation, Expo Router), and Styling (NativeWind, Tailwind).

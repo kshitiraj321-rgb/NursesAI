@@ -19,8 +19,8 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       router.replace("/(tabs)" as any);
-    } catch (e: any) {
-      alert(e.message);
+    } catch (e: unknown) {
+      alert((e as Error).message);
     }
   };
 
@@ -28,8 +28,8 @@ export default function Login() {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       router.replace("/(tabs)" as any);
-    } catch (e: any) {
-      alert(e.message);
+    } catch (e: unknown) {
+      alert((e as Error).message);
     }
   };
 

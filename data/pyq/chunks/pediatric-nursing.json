@@ -1,0 +1,453 @@
+[
+  {
+    "id": "04-pediatric-pdf-1",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "GI",
+    "topic": "Diarrhea Management",
+    "question": "A mother of a 4-month-old infant with diarrhea is being taught about preventing dehydration. Which of the following is the most appropriate feeding choice?",
+    "options": [
+      "Fruit juice",
+      "Diluted carbonated drink",
+      "Soy-based lactose-free formula",
+      "Regular formula mixed with electrolyte solution"
+    ],
+    "answer": "Soy-based lactose-free formula",
+    "explanation": "Correct - C: Diarrhea causes secondary lactase deficiency. Lactose-free soy formula provides nutrition without worsening diarrhea. WHO/IMNCI recommends continued breastfeeding + ORS, but if formula-fed, switch to lactose-free temporarily. Incorrect - A/B: High osmolarity pulls water into gut → osmotic diarrhea worsens. Incorrect - D: Don't mix ORS with formula. Give separately. Trick: Students choose D thinking \"electrolyte\" is good, but mixing dilutes both.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "GI",
+      "Diarrhea Management",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "IMNCI",
+      "Nutrition",
+      "TrickQ"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-2",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Neonatal",
+    "topic": "Hyperbilirubinemia",
+    "question": "Which nursing intervention is a top priority when caring for a newborn actively receiving continuous phototherapy for hyperbilirubinemia?",
+    "options": [
+      "Remove eye patches frequently",
+      "Change the baby's position every 4 hours",
+      "Encourage breastfeeding as much as possible",
+      "Apply thick lotion to prevent skin breakdown"
+    ],
+    "answer": "Encourage breastfeeding as much as possible",
+    "explanation": "Correct - C: Phototherapy = ↑insensible water loss + loose stools. Risk: Dehydration. Priority: Hydration via frequent breastfeeding q2-3h. Also promotes stool excretion of bilirubin. Incorrect - A: Eye patches MUST stay on 24/7. Remove only for feeds. Retinal damage risk. Incorrect - B: Position change q2h, not q4h. Expose max skin surface. Incorrect - D: NO lotions/oils - causes burns under lights. Skin kept dry. Trick: \"Photo = Fluid Loss = Feed More\". No lotion, no diaper, yes eye patch, yes rotation.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Neonatal",
+      "Hyperbilirubinemia",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Phototherapy",
+      "Priority",
+      "NCLEX"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-3",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Neuro",
+    "topic": "Meningitis",
+    "question": "Which of the following is considered an early clinical manifestation of meningitis in a neonate?",
+    "options": [
+      "Neck stiffness (Nuchal rigidity)",
+      "Positive Kernig's sign",
+      "High-pitched cry",
+      "Photophobia"
+    ],
+    "answer": "High-pitched cry",
+    "explanation": "Correct - C: Neonates <3 months: No nuchal rigidity/Kernig/Brudzinski. Open fontanelles decompress pressure. Early signs: Poor feeding, lethargy, irritability, HIGH-PITCHED CRY, seizures, bulging fontanelle. Incorrect - A/B/D: These are ADULT signs. Photophobia in older kids, not neonates. Trick: \"Baby can't complain neck pain, so baby CRIES high-pitched\". Neonate = Nonspecific signs.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Neuro",
+      "Meningitis",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Infection",
+      "Emergency",
+      "NCLEX"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-4",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Growth",
+    "topic": "Anthropometry",
+    "question": "How is the physical growth parameter (height) measured in a healthy 2-year-old child?",
+    "options": [
+      "Standing height using a stadiometer",
+      "Crown-rump length",
+      "Supine length (lying down)",
+      "Arm span"
+    ],
+    "answer": "Supine length (lying down)",
+    "explanation": "Correct - C: WHO/CDC: <24 months = Supine length on infantometer. ≥24 months = Standing height on stadiometer. 2-yr-old = 24 months = transition age, but standard is still supine if <2yr. Standing height ~0.7cm less than supine. Incorrect - A: Standing after 2 years when child can stand straight. Incorrect - B: Crown-rump = sitting height, for disproportionate growth. Trick: \"2 saal ke neeche Letao, 2 ke upar Khada karo\". Length vs Height terminology.",
+    "difficulty": "easy",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Growth",
+      "Anthropometry",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Assessment",
+      "WHO"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-5",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Growth",
+    "topic": "Milestones",
+    "question": "At what age does a healthy infant's birth weight typically triple?",
+    "options": [
+      "6 months",
+      "9 months",
+      "1 year",
+      "2 years"
+    ],
+    "answer": "1 year",
+    "explanation": "Correct - C: Birth weight: Double by 5-6 months, Triple by 12 months/1 year, Quadruple by 2 years. Incorrect - A: 6 months = double only. Incorrect - B/D: 9 months ya 2 years me triple nahi hota. Trick: \"Double 6, Triple 12, Quadruple 24 months\". 6-12-24 pattern.",
+    "difficulty": "easy",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Growth",
+      "Milestones",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Formula"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-6",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Neonatal",
+    "topic": "KMC",
+    "question": "What is the primary clinical purpose of providing Kangaroo Mother Care (KMC) to a premature infant?",
+    "options": [
+      "To prevent infection",
+      "To provide contraception for the mother",
+      "to a premature infant?",
+      "To prevent hyperthermia"
+    ],
+    "answer": "to a premature infant?",
+    "explanation": "Correct - C: KMC = Skin-to-skin contact, exclusive breastfeeding, early discharge. Primary goal: Prevent hypothermia in LBW/preterm. Maintains temp 36.5-37.5°C. Also ↑bonding, ↑weight gain, ↑O2 sat. Incorrect - A: Infection ↓ hoti hai but primary nahi. Incorrect - B/D: No relation to contraception. Prevents hypo, not hyperthermia. Trick: \"Kangaroo = Keep warm\". LBW <2500g ke liye mandatory.",
+    "difficulty": "easy",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Neonatal",
+      "KMC",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "WHO",
+      "LBW"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [
+      "corrupted_options"
+    ],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-7",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Procedures",
+    "topic": "Suctioning",
+    "question": "Which size suction catheter is typically appropriate for clearing the airway of a pediatric patient?",
+    "options": [
+      "8 French",
+      "10 French",
+      "12 French",
+      "14 French"
+    ],
+    "answer": "8 French",
+    "explanation": "Correct - A: Pediatrics: 6-10 Fr. Formula = (Age in years + 16) / 2. Or ETT size x 2. 8Fr safe for infants/children. Incorrect - B: 10 Fr = older child/teen. Incorrect - C/D: 12-14 Fr = adults. Pediatric airway me trauma karega. Trick: \"Small child = Small size\". Adult = 12-16Fr. Never occlude >50% of ETT.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Procedures",
+      "Suctioning",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Airway"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-9",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Neonatal",
+    "topic": "Infection",
+    "question": "A newborn whose mother is positive for Chlamydia trachomatis should be optimally treated with which of these to prevent ophthalmia neonatorum?",
+    "options": [
+      "Oral Erythromycin",
+      "Erythromycin 0.5% ointment",
+      "Tetracycline 1% ointment",
+      "Silver nitrate 1% drops"
+    ],
+    "answer": "Oral Erythromycin",
+    "explanation": "Correct - A: Chlamydia trachomatis = systemic infection. Oral Erythromycin 50mg/kg/day x 14 days needed. Prevents pneumonia also. Topical not enough. Incorrect - B/C: Erythromycin/Tetra ointment = for Gonococcal ophthalmia prophylaxis at birth, NOT treatment. Chlamydia needs systemic. Incorrect - D: Silver nitrate = for Gonorrhea prophylaxis, banned now due to chemical conjunctivitis. Not for Chlamydia. Trick: \"Chlamydia = Chronic systemic = Oral needed\". \"Gonorrhea = Genital local = Topical ok\". Chlamydia causes pneumonia later if not treated.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Neonatal",
+      "Infection",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "STI",
+      "Pharma",
+      "NCLEX"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-12",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Immunization",
+    "topic": "Vaccine Types",
+    "question": "Which of the following is a live attenuated vaccine?",
+    "options": [
+      "Polio (Salk)",
+      "BCG",
+      "Hepatitis B",
+      "Rabies (inactivated)"
+    ],
+    "answer": "BCG",
+    "explanation": "Correct - B: Live attenuated: BCG, MMR, OPV Sabin, Varicella, Yellow fever, Rotavirus. BCG = Mycobacterium bovis live attenuated. Incorrect - A: Salk Polio = Killed/inactivated. Incorrect - C: Hep B = Recombinant subunit. Incorrect - D: Rabies = Inactivated. Trick: \"Live = BCG, Measles, Mumps, Rubella, OPV, Varicella\". Killed = Salk, Hep A, Rabies, Influenza.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Immunization",
+      "Vaccine Types",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "VaccineTypes",
+      "UIP"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-13",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "GI",
+    "topic": "Diarrhea",
+    "question": "Which of the following is the most common cause of diarrhea in children?",
+    "options": [
+      "Rotavirus",
+      "E. coli",
+      "Salmonella",
+      "Shigella"
+    ],
+    "answer": "Rotavirus",
+    "explanation": "Pediatric Page 4 Explanation: Correct - A: Rotavirus = #1 cause of severe dehydrating diarrhea in <5 years globally. Winter peak. Vaccine available. Watery, non-bloody. Incorrect - B/C/D: E. coli, Salmonella, Shigella = bacterial, bloody diarrhea. Less common than rota. Trick: \"Rota = Real common in kids\". Winter diarrhea = Rota. Summer = E.coli.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "GI",
+      "Diarrhea",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Viral",
+      "WHO"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-14",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Respiratory",
+    "topic": "Pneumonia",
+    "question": "Which of the following is the most common cause of pneumonia in children?",
+    "options": [
+      "Streptococcus pneumoniae",
+      "Staphylococcus aureus",
+      "Klebsiella pneumoniae",
+      "Haemophilus influenzae"
+    ],
+    "answer": "Streptococcus pneumoniae",
+    "explanation": "Correct - A: S. pneumoniae = Most common bacterial pneumonia all ages. Lobar pneumonia. PCV vaccine given. Incorrect - B: Staph aureus = post-influenza, abscess, pneumatoceles. Incorrect - C: Klebsiella = alcoholics, DM, currant jelly sputum. Incorrect - D: H. influenzae type B = 2nd common before Hib vaccine, now less. Trick: \"Pneumo = Pneumonia\". PCV vaccine for Pneumo.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Respiratory",
+      "Pneumonia",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Bacterial"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-15",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Neonatal",
+    "topic": "Meningitis",
+    "question": "Which of the following is the most common cause of meningitis in neonates?",
+    "options": [
+      "Group B Streptococcus",
+      "E. coli",
+      "Listeria monocytogenes",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "Correct - D: Neonatal meningitis <28 days: GBS 50%, E. coli 20%, Listeria 5-10%. All 3 main causes. Vertical transmission. Incorrect - A/B/C: Alone galat, all 3 common. Trick: \"Neonatal meningitis = GEL: GBS, E.coli, Listeria\". After 1 month = S. pneumo, N. meningitidis, H. flu.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Neonatal",
+      "Meningitis",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Infection",
+      "NCLEX"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-17",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Infectious",
+    "topic": "Pertussis",
+    "question": "Which of the following is the most common cause of death in pertussis?",
+    "options": [
+      "Pneumonia",
+      "Encephalopathy",
+      "Apnea",
+      "Seizures"
+    ],
+    "answer": "Pneumonia",
+    "explanation": "Correct - A: Pertussis/Whooping cough = Secondary bacterial pneumonia #1 cause of death. Esp <6 months. Also apnea in infants. Incorrect - B: Encephalopathy 1% cases, due to hypoxia. Incorrect - C: Apnea common in infants but pneumonia kills more. Incorrect - D: Seizures due to hypoxia/encephalopathy. Trick: \"Pertussis = Pneumonia kills\". Whooping cough → lung infection.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Infectious",
+      "Pertussis",
+      "PYQ",
+      "HighYield",
+      "Pediatric",
+      "Pneumonia",
+      "Mortality"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "04-pediatric-pdf-26",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Pediatric Nursing",
+    "subCategory": "Infectious",
+    "topic": "Meningitis",
+    "question": "Which of the following is the most common cause of meningitis in children?",
+    "options": [
+      "Streptococcus pneumoniae",
+      "Haemophilus influenzae",
+      "Neisseria meningitidis",
+      "E. coli"
+    ],
+    "answer": "Haemophilus influenzae",
+    "explanation": "Correct - B: H.influenzae type b = #1 in unvaccinated <5yr. Hib vaccine reduced it. Now Strep pneumo commonest. Incorrect - A: Strep pneumo = adults + post-vaccine era kids. Incorrect - C: N.meningitidis = teens/young adults. Pediatric Page 8 Incorrect - C: N.meningitidis = teens/young adults. Incorrect - D: E.coli = neonates. Trick: \"Hib = Head infection in babies\". Hib vaccine at 6,10,14wk.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Pediatric Nursing",
+      "Infectious",
+      "Meningitis",
+      "PYQ",
+      "HighYield",
+      "Pediatrics",
+      "Hib",
+      "NCLEX"
+    ],
+    "source": "04_Pediatric.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  }
+]

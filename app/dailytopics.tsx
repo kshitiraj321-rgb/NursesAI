@@ -1,6 +1,7 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
+
 import axios from "axios";
 import { useLocalSearchParams, useRouter } from "expo-router";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -12,12 +13,13 @@ import {
 } from "react-native";
 import ConfettiCannon from "react-native-confetti-cannon";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { auth, db } from "../firebase";
 
 import StreakPopup from "../components/DailyTopics/StreakPopup";
 import QuizView from "../components/Shared/QuizView";
 
-const logDebug = (label: string, data?: any) => { console.log(`🧠 [${label}]`, data || ""); };
-const logError = (label: string, error: any) => { console.log(`❌ [${label}]`, error); };
+const logDebug = (label: string, data?: unknown) => { console.log(`🧠 [${label}]`, data || ""); };
+const logError = (label: string, error: unknown) => { console.log(`❌ [${label}]`, error); };
 
 export default function DailyTopics() {
   const { topic: passedTopic } = useLocalSearchParams();
@@ -27,6 +29,7 @@ export default function DailyTopics() {
   const [content, setContent] = useState("");
   const [loading, setLoading] = useState(true);
   const [quizLoading, setQuizLoading] = useState(false);
+  const [quizError, setQuizError] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [streak, setStreak] = useState(0);
@@ -35,7 +38,6 @@ export default function DailyTopics() {
   const scaleAnim = useState(new Animated.Value(0))[0];
   const opacityAnim = useState(new Animated.Value(0))[0];
   
-  const [xp, setXp] = useState(0);
   const [gainedXP, setGainedXP] = useState(0);
 
   // 🧠 QUIZ STATE
@@ -48,31 +50,38 @@ export default function DailyTopics() {
   const fetchTopic = async () => {
     setLoading(true);
     try {
+      const token = await auth.currentUser?.getIdToken();
+      if (!token) throw new Error("Auth token missing");
+
       const res = await axios.post("https://nursesai.onrender.com/ask", {
         messages: [{ role: "user", content: topic }],
-      });
+      }, { headers: { Authorization: `Bearer ${token}` } });
 
       if (!res.data.answer) throw new Error("No response");
       setContent(res.data.answer);
+      setUnlockedStep(2);
     } catch (error) {
       console.log("FETCH ERROR:", error);
-      setTimeout(fetchTopic, 2000);
+      setContent("Our AI service is experiencing high demand. Please try reloading the topic!");
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
-    setUnlockedStep(2);
-    await AsyncStorage.setItem("dailyProgress", JSON.stringify({ step: 1, unlockedStep: 2, completed: false }));
   };
 
   const generateQuiz = async () => {
     setQuizLoading(true);
     setQuizMode(true);
+    setQuizError(false);
     try {
+      const token = await auth.currentUser?.getIdToken();
+      if (!token) throw new Error("Auth token missing");
+
       const res = await axios.post("https://nursesai.onrender.com/ask", {
         messages: [{
           role: "user",
           content: `Generate exactly 5 MCQ questions. Return ONLY valid JSON array. No text.\n[\n  {\n    "question": "",\n    "options": ["", "", "", ""],\n    "answer": ""\n  }\n]\nTopic: ${topic}`,
         }],
-      });
+      }, { headers: { Authorization: `Bearer ${token}` } });
 
       let cleaned = res.data.answer.trim();
       if (!cleaned.endsWith("]")) cleaned = cleaned.substring(0, cleaned.lastIndexOf("}") + 1) + "]";
@@ -80,35 +89,47 @@ export default function DailyTopics() {
     } catch (error) {
       console.log("Quiz generation error:", error);
       setQuestions([]);
+      setQuizError(true);
+    } finally {
+      setQuizLoading(false);
     }
-    setQuizLoading(false);
   };
 
   const markComplete = async (score: number | null) => {
     try {
-      const today = new Date().toDateString();
-      const lastDate = await AsyncStorage.getItem("lastCompletedDate");
-      let newStreak = parseInt((await AsyncStorage.getItem("streak")) || "0");
-      const isSameDay = lastDate === today;
+      const user = auth.currentUser;
+      if (user) {
+        const metaRef = doc(db, "users", user.uid, "meta", "retention");
+        const metaSnap = await getDoc(metaRef);
+        const todayString = new Date().toISOString().split("T")[0];
 
-      if (!isSameDay) {
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        if (lastDate === yesterday.toDateString()) { newStreak += 1; } else { newStreak = 1; }
+        let metaData = metaSnap.exists() ? metaSnap.data() : { dailyGoal: 10, todayProgress: 0, lastActiveDate: todayString, streak: 0, completedToday: {} as Record<string, boolean> };
+        const lastActive = String(metaData.lastActiveDate || todayString);
+        
+        if (lastActive !== todayString) {
+          const diffDays = Math.floor((new Date(todayString).getTime() - new Date(lastActive).getTime()) / (1000 * 3600 * 24));
+          if (diffDays > 1) metaData.streak = 0;
+          metaData.todayProgress = 0;
+          metaData.completedToday = {};
+          metaData.lastActiveDate = todayString;
+        }
 
-        await AsyncStorage.setItem("streak", newStreak.toString());
-        await AsyncStorage.setItem("lastCompletedDate", today);
-        setStreak(newStreak);
-        setShowStreak(true);
+        const safeTopicId = topic.replace(/\//g, "-");
+        if (!metaData.completedToday[safeTopicId]) {
+          const previousProgress = metaData.todayProgress;
+          metaData.todayProgress += questions.length || 5;
+          metaData.completedToday[safeTopicId] = true;
+          if (previousProgress < metaData.dailyGoal && metaData.todayProgress >= metaData.dailyGoal) {
+            metaData.streak += 1;
+            setStreak(metaData.streak);
+            setShowStreak(true);
+          }
+        }
+        await setDoc(metaRef, metaData, { merge: true });
       }
 
-      let currentXP = parseInt((await AsyncStorage.getItem("xp")) || "0");
       let earnedXP = (score && score >= 4) ? 15 : (score && score >= 2) ? 10 : 5;
       setGainedXP(earnedXP);
-
-      currentXP += earnedXP;
-      await AsyncStorage.setItem("xp", currentXP.toString());
-      setXp(currentXP);
 
       Animated.parallel([
         Animated.spring(scaleAnim, { toValue: 1, friction: 5, useNativeDriver: true }),
@@ -121,13 +142,6 @@ export default function DailyTopics() {
         opacityAnim.setValue(0);
       }, 3000);
 
-      const saved = await AsyncStorage.getItem("completedTopics");
-      let topicsList = saved ? JSON.parse(saved) : [];
-
-      if (!topicsList.includes(topic)) {
-        topicsList.push(topic);
-        await AsyncStorage.setItem("completedTopics", JSON.stringify(topicsList));
-      }
       setCompleted(true);
     } catch (error) {
       logError("markComplete error", error);
@@ -135,37 +149,31 @@ export default function DailyTopics() {
   };
 
   useEffect(() => {
-    const loadProgress = async () => {
-      const saved = await AsyncStorage.getItem("dailyProgress");
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        setStep(parsed.step || 1);
-        setUnlockedStep(parsed.unlockedStep || 1);
-        setCompleted(parsed.completed || false);
-      }
-    };
-    loadProgress();
+
 
     const loadTopic = async (selectedTopic: string) => {
       setLoading(true);
       try {
+        const token = await auth.currentUser?.getIdToken();
+        if (!token) throw new Error("Auth token missing");
+
         const res = await axios.post("https://nursesai.onrender.com/ask", {
           messages: [{ role: "user", content: selectedTopic }],
-        });
+        }, { headers: { Authorization: `Bearer ${token}` } });
 
         if (!res.data.answer) {
-          setContent("Server waking up... try again");
+          setContent("Our AI service is experiencing high demand. Please try reloading the topic!");
           return;
         }
 
         const formatted = res.data.answer.replace(/\*\*/g, "").replace(/\n{2,}/g, "\n\n").replace(/- /g, "\n- ").trim();
         setContent(formatted);
+        setUnlockedStep(2);
       } catch (error) {
-        setContent("Error loading topic");
+        setContent("Our AI service is experiencing high demand. Please try reloading the topic!");
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
-      setUnlockedStep(2);
-      await AsyncStorage.setItem("dailyProgress", JSON.stringify({ step: 1, unlockedStep: 2, completed: false }));
     };
 
     if (passedTopic) loadTopic(passedTopic as string); else fetchTopic();
@@ -176,7 +184,6 @@ export default function DailyTopics() {
     setQuizMode(false);
     setUnlockedStep(3);
     setStep(3);
-    await AsyncStorage.setItem("dailyProgress", JSON.stringify({ step: 3, unlockedStep: 3, completed: false }));
   };
 
   return (
@@ -222,22 +229,43 @@ export default function DailyTopics() {
               </ScrollView>
             )}
 
-            <TouchableOpacity
-              disabled={unlockedStep < 2}
-              onPress={() => { if (unlockedStep >= 2) { setStep(2); generateQuiz(); } }}
-              className={`p-4 rounded-xl mt-4 items-center ${unlockedStep >= 2 ? "bg-blue-600" : "bg-[#2c2c2e] opacity-50"}`}
-              style={unlockedStep >= 2 ? { elevation: 5, shadowColor: '#3b82f6', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 4 } : undefined}
-            >
-              <Text className="text-white font-bold tracking-wide">Start AI Quiz 🧠 →</Text>
-            </TouchableOpacity>
+            {content.includes("high demand") ? (
+              <TouchableOpacity
+                onPress={() => { if (passedTopic) { /* loadTopic is inside useEffect, we will use fetchTopic as a fallback */ fetchTopic(); } else fetchTopic(); }}
+                className="mt-4 p-4 bg-red-500/20 rounded-xl items-center border border-red-500/50"
+              >
+                <Text className="text-red-400 font-bold">Retry Loading Topic 🔄</Text>
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity
+                disabled={unlockedStep < 2}
+                onPress={() => { if (unlockedStep >= 2) { setStep(2); generateQuiz(); } }}
+                className={`p-4 rounded-xl mt-4 items-center ${unlockedStep >= 2 ? "bg-blue-600" : "bg-[#2c2c2e] opacity-50"}`}
+                style={unlockedStep >= 2 ? { elevation: 5, shadowColor: '#3b82f6', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 4 } : undefined}
+              >
+                <Text className="text-white font-bold tracking-wide">Start AI Quiz 🧠 →</Text>
+              </TouchableOpacity>
+            )}
           </>
         ) : step === 2 ? (
-          <QuizView 
-            questions={questions} 
+          quizError ? (
+            <View className="flex-1 justify-center items-center mt-10">
+              <Text className="text-white text-center mb-4">Our AI service is experiencing high demand. Failed to generate quiz.</Text>
+              <TouchableOpacity
+                onPress={() => generateQuiz()}
+                className="p-4 bg-red-500/20 rounded-xl border border-red-500/50"
+              >
+                <Text className="text-red-400 font-bold">Retry Generating Quiz 🔄</Text>
+              </TouchableOpacity>
+            </View>
+          ) : (
+            <QuizView 
+              questions={questions} 
             loading={quizLoading} 
             onExit={() => { setQuizMode(false); setStep(1); }}
-            onComplete={onQuizComplete}
-          />
+              onComplete={onQuizComplete}
+            />
+          )
         ) : null}
 
         {step === 3 && finalScore !== null && (
@@ -257,7 +285,6 @@ export default function DailyTopics() {
                 await markComplete(finalScore);
                 setCompleted(true);
                 setShowConfetti(true); setTimeout(() => setShowConfetti(false), 4000);
-                await AsyncStorage.setItem("dailyProgress", JSON.stringify({ step: 3, unlockedStep: 3, completed: true }));
               }
             }}
             className={`p-4 rounded-xl mt-8 items-center ${unlockedStep >= 3 ? "bg-blue-600" : "bg-[#2c2c2e] opacity-50"}`}

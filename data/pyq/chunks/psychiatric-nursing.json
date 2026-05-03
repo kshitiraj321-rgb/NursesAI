@@ -1,0 +1,166 @@
+[
+  {
+    "id": "06-psychiatry-pdf-1",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Psychiatric Nursing",
+    "subCategory": "Grief",
+    "topic": "Kubler-Ross",
+    "question": "According to Kübler-Ross's stages of grief (DABDA), a profound feeling of \"hopelessness\" is characteristically observed during which stage?",
+    "options": [
+      ", a profound feeling of \"hopelessness\" is characteristically observed during which stage?",
+      "Anger",
+      "Bargaining",
+      "Depression"
+    ],
+    "answer": "Depression",
+    "explanation": "Correct - D: DABDA = Denial, Anger, Bargaining, Depression, Acceptance. Depression = reality sets in → hopelessness, withdrawal, sadness. Patient quiet, cries. Incorrect - A: Denial = \"This can't be happening\". Shock phase. Incorrect - B: Anger = \"Why me?\" Rage at God, doctors, family. Incorrect - C: Bargaining = \"If I live, I'll...\" False hope, deals with God. Trick: DABDA sequence yaad rakho. Depression = 4th stage, Acceptance = final.",
+    "difficulty": "easy",
+    "verified": true,
+    "tags": [
+      "Psychiatric Nursing",
+      "Grief",
+      "Kubler-Ross",
+      "PYQ",
+      "HighYield",
+      "Psychiatry",
+      "DABDA",
+      "Conceptual"
+    ],
+    "source": "06_Psychiatry.pdf.pdf",
+    "integrityFlags": [
+      "corrupted_options"
+    ],
+    "quizReady": true
+  },
+  {
+    "id": "06-psychiatry-pdf-2",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Psychiatric Nursing",
+    "subCategory": "Substance Abuse",
+    "topic": "Stimulants",
+    "question": "A patient is admitted to the emergency room experiencing hallucinations, agitation, and has an irritated nasal septum. Her friend reports she ingested a substance of abuse an hour ago. Which substance is most likely responsible?",
+    "options": [
+      "Heroin",
+      "Cocaine",
+      "LSD",
+      "Marijuana"
+    ],
+    "answer": "Cocaine",
+    "explanation": "Correct - B: Cocaine snorting = nasal septum perforation/irritation, epistaxis. S/S: Agitation, hallucinations, tachycardia, HTN, mydriasis, hyperthermia. Vasoconstrictor effect. Incorrect - A: Heroin = CNS depressant. Pinpoint pupils, resp depression, euphoria. IV use, not nasal usually. Incorrect - C: LSD = visual hallucinations but no nasal damage. Oral. Incorrect - D: Marijuana = relaxation, conjunctival injection, ↑appetite. No nasal septum damage. Trick: \"Cocaine = Coke nose\". Irritated nose + wired = Cocaine. Heroin = Nodding off.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "Psychiatric Nursing",
+      "Substance Abuse",
+      "Stimulants",
+      "PYQ",
+      "HighYield",
+      "Psychiatry",
+      "SubstanceAbuse",
+      "Emergency",
+      "Toxicology"
+    ],
+    "source": "06_Psychiatry.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "06-psychiatry-pdf-3",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Psychiatric Nursing",
+    "subCategory": "Dementia",
+    "topic": "Behavioral",
+    "question": "Which of the following is an appropriate nursing intervention for a patient with dementia who develops a catastrophic reaction?",
+    "options": [
+      "Employ a negative response to the behavior",
+      "Use touch to communicate",
+      "Eliminate or reduce the environmental stimulation",
+      "Maintain close personal boundaries"
+    ],
+    "answer": "Eliminate or reduce the environmental stimulation",
+    "explanation": "Correct - C: Catastrophic reaction = overwhelming stimuli → anxiety, agitation, aggression. Priority: ↓noise, ↓lights, ↓people. Calm, quiet environment. Redirect, don't argue. Incorrect - A: Negative response = worsens agitation. Psychiatry 26 April 2026 22:58 Psychiatry Page 1 Incorrect - A: Negative response = worsens agitation. Incorrect - B: Touch may be perceived as threat during reaction. Ask permission first. Incorrect - D: Close boundaries = invasion of space = ↑agitation. Give space. Trick: \"Catastrophe = Calm environment\". Reduce STIMULI. Speak low, slow, simple.",
+    "difficulty": "hard",
+    "verified": true,
+    "tags": [
+      "Psychiatric Nursing",
+      "Dementia",
+      "Behavioral",
+      "PYQ",
+      "HighYield",
+      "Psychiatry",
+      "Priority",
+      "NCLEX"
+    ],
+    "source": "06_Psychiatry.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "06-psychiatry-pdf-4",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Psychiatric Nursing",
+    "subCategory": "Thought Process",
+    "topic": "Abnormalities",
+    "question": "The nurse is performing a Mental Status Examination (MSE) and the patient is continuously saying, without any context, \"I want to go home, home, home.\" What can this be interpreted as?",
+    "options": [
+      "Perseveration",
+      "Verbigeration",
+      "Echopraxia",
+      "Echolalia"
+    ],
+    "answer": "Verbigeration",
+    "explanation": "Correct - B: Verbigeration = meaningless repetition of words/phrases. \"Home home home\". Seen in schizophrenia, catatonia. Incorrect - A: Perseveration = persistent reply to diff questions with same answer. \"Q: Name? A: Home. Q: Age? A: Home.\" Incorrect - C: Echopraxia = copying movements. Incorrect - D: Echolalia = copying speech of others. Trick: \"Verbi = Verb/word, geration = generate again\". Persevere = stuck on topic. Echo = copy.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "Psychiatric Nursing",
+      "Thought Process",
+      "Abnormalities",
+      "PYQ",
+      "HighYield",
+      "Psychiatry",
+      "MSE",
+      "ThoughtProcess",
+      "Terminology"
+    ],
+    "source": "06_Psychiatry.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  },
+  {
+    "id": "06-psychiatry-pdf-5",
+    "exam": "NORCET",
+    "year": null,
+    "subject": "Psychiatric Nursing",
+    "subCategory": "Cognitive",
+    "topic": "MMSE",
+    "question": "A patient's Mini-Mental State Examination (MMSE) score is 19. What does this score indicate?",
+    "options": [
+      "Normal",
+      "Mild cognitive impairment",
+      "Moderate cognitive impairment",
+      "Severe cognitive impairment"
+    ],
+    "answer": "Mild cognitive impairment",
+    "explanation": "Correct - B: MMSE: 24-30 Normal, 19-23 Mild, 10-18 Moderate, <10 Severe. Score 19 = Mild CI. Incorrect - A/C/D: 19 not normal, not moderate/severe. Trick: \"MMSE: 24+ Normal, 19-23 Mild, 10-18 Moderate, <10 Severe\". Remember ranges.",
+    "difficulty": "medium",
+    "verified": true,
+    "tags": [
+      "Psychiatric Nursing",
+      "Cognitive",
+      "MMSE",
+      "PYQ",
+      "HighYield",
+      "Psychiatry",
+      "Assessment",
+      "Formula"
+    ],
+    "source": "06_Psychiatry.pdf.pdf",
+    "integrityFlags": [],
+    "quizReady": true
+  }
+]

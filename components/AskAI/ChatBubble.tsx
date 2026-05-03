@@ -7,7 +7,7 @@ interface Message {
   id: string;
   role: string;
   content: string;
-  createdAt: any;
+  createdAt: unknown;
 }
 
 interface ChatBubbleProps {
@@ -15,7 +15,7 @@ interface ChatBubbleProps {
   isSameSender: boolean;
   feedbackMap: Record<string, string>;
   handleFeedback: (messageId: string, type: string) => void;
-  formatTime: (timestamp: any) => string;
+  formatTime: (timestamp: unknown) => string;
 }
 
 const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, formatTime }: ChatBubbleProps) => {

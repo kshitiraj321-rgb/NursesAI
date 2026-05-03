@@ -17,6 +17,7 @@ import AskAIHeader from "../../components/AskAI/AskAIHeader";
 import ChatBubble from "../../components/AskAI/ChatBubble";
 import ChatInput from "../../components/AskAI/ChatInput";
 import TypingIndicator from "../../components/AskAI/TypingIndicator";
+import { searchPyq } from "../../data/pyq/repository";
 
 export default function AskAI() {
   const [question, setQuestion] = useState("");
@@ -28,6 +29,14 @@ export default function AskAI() {
   const [showThanks, setShowThanks] = useState(false);
   const flatListRef = useRef<FlatList>(null);
   const { prompt } = useLocalSearchParams();
+
+  const buildRetrievalContext = async (userQuery: string): Promise<string> => {
+    const hits = await searchPyq(userQuery);
+    const top = hits.slice(0, 5);
+    if (top.length === 0) return "";
+    const lines = top.map((h, i) => `${i + 1}. [${h.subject} > ${h.subCategory} > ${h.topic}] ${h.question}`);
+    return `\nUse these PYQ references if relevant:\n${lines.join("\n")}`;
+  };
 
   const handleFeedback = async (messageId: string, type: string) => {
     try {
@@ -79,10 +88,15 @@ export default function AskAI() {
     });
 
     try {
+      const retrieval = await buildRetrievalContext(question);
+      const enrichedMessage = { ...userMessage, content: `${question}\n${retrieval}` };
+      const token = await user.getIdToken();
+      if (!token) throw new Error("Auth token missing");
+
       const response = await axios.post("https://nursesai.onrender.com/ask", {
-        messages: [...messages, userMessage],
+        messages: [...messages, enrichedMessage],
         mode: selectedMode,
-      });
+      }, { headers: { Authorization: `Bearer ${token}` } });
 
       const fullText = response.data.answer;
       let index = 0;
@@ -117,7 +131,7 @@ export default function AskAI() {
       const errorMsg = {
         id: Date.now().toString() + "-error",
         role: "assistant",
-        content: "Sorry, NurseAI server is temporarily unavailable. Try again soon. (Check Render deploy)",
+        content: "Our AI service is currently taking a quick nap or experiencing high demand. Please try asking again in a moment!",
       };
       setMessages((prev) => [...prev, errorMsg]);
     } finally {
@@ -148,10 +162,15 @@ export default function AskAI() {
     });
 
     try {
+      const retrieval = await buildRetrievalContext(customPrompt);
+      const enrichedMessage = { ...userMessage, content: `${customPrompt}\n${retrieval}` };
+      const token = await user.getIdToken();
+      if (!token) throw new Error("Auth token missing");
+
       const response = await axios.post("https://nursesai.onrender.com/ask", {
-        messages: [...messages, userMessage],
+        messages: [...messages, enrichedMessage],
         mode: selectedMode,
-      });
+      }, { headers: { Authorization: `Bearer ${token}` } });
 
       const fullText = response.data.answer;
       let index = 0;
@@ -183,6 +202,12 @@ export default function AskAI() {
       });
     } catch (error) {
       console.log("AskAI error:", error);
+      const errorMsg = {
+        id: Date.now().toString() + "-error",
+        role: "assistant",
+        content: "Our AI service is currently taking a quick nap or experiencing high demand. Please try asking again in a moment!",
+      };
+      setMessages((prev) => [...prev, errorMsg]);
     } finally {
       setIsTyping(false);
       setLoading(false);

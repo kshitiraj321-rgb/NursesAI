@@ -1,0 +1,17 @@
+{
+  "totalExtracted": 227,
+  "quizReady": 227,
+  "quarantined": 0,
+  "subjectCounts": {
+    "Community Health Nursing": 3,
+    "Fundamentals of Nursing": 63,
+    "General Aptitude": 3,
+    "Medical-Surgical Nursing": 113,
+    "Obstetrics & Gynaecology": 26,
+    "Pediatric Nursing": 14,
+    "Psychiatric Nursing": 5
+  },
+  "duplicatesRemoved": 130,
+  "safeQuizRecords": 249,
+  "quarantinedRecords": 50
+}

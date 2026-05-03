@@ -27,7 +27,7 @@ export default function LearnScreen() {
                 {group.subjects.map((subject) => (
                   <TouchableOpacity
                     key={subject.id}
-                    onPress={() => router.push({ pathname: "/subjects" as any, params: { subjectGroupStr: JSON.stringify(subject) } })}
+                    onPress={() => router.push({ pathname: "/topics" as any, params: { subjectName: subject.name } })}
                     activeOpacity={0.8}
                     className={`p-4 rounded-2xl border ${
                       group.type === "high_weightage" ? "bg-[#1E293B]/80 border-blue-500/30" : "bg-[#1c1c1e] border-[#2c2c2e]"

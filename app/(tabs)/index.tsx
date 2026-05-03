@@ -1,5 +1,5 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useFocusEffect, useRouter } from "expo-router";
+
+import { useRouter } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
@@ -19,8 +19,7 @@ export default function HomeScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   
-  const [completedCount, setCompletedCount] = useState(0);
-  const [xp, setXp] = useState(0);
+
   const [user, setUser] = useState<any>(null);
   const [showComeback, setShowComeback] = useState(false);
   const [comebackTopic, setComebackTopic] = useState("");
@@ -55,19 +54,7 @@ export default function HomeScreen() {
   const recommendedTopic = intelligenceData.recommendedTopic || "";
   const topicStat = recommendedTopic ? intelligenceData.topicStats[recommendedTopic] : null;
 
-  const loadLocalProgress = async () => {
-    try {
-      const storedXP = await AsyncStorage.getItem("xp");
-      const storedTopics = await AsyncStorage.getItem("completedTopics");
 
-      if (storedXP) setXp(parseInt(storedXP));
-      if (storedTopics) setCompletedCount(JSON.parse(storedTopics).length);
-    } catch (e) {
-      console.log("Error loading progress:", e);
-    }
-  };
-
-  useFocusEffect(useCallback(() => { loadLocalProgress(); }, []));
 
   const handleLogout = async () => {
     try {
@@ -104,20 +91,13 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
       >
         <HomeHeader greeting={greeting} onLogout={handleLogout} />
-        <DailyFocusCard dailyTopic={recommendedTopic} topicStat={topicStat} progress={Math.min(completedCount / 10, 1)} delay={100} />
+        <DailyFocusCard dailyTopic={recommendedTopic} topicStat={topicStat} progress={Math.min((retentionData.todayProgress || 0) / (retentionData.dailyGoal || 10), 1)} delay={100} />
         <TouchableOpacity
           onPress={handleSmartRevision}
           activeOpacity={0.85}
           className="bg-white/10 border border-white/15 py-4 px-5 rounded-[20px] items-center shadow-xl mb-6"
         >
           <Text className="text-white text-[15px] font-bold tracking-wide">Improve Weak Areas</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => router.push("/dashboard" as any)}
-          activeOpacity={0.85}
-          className="bg-white/10 border border-white/15 py-4 px-5 rounded-[20px] items-center shadow-xl mb-6"
-        >
-          <Text className="text-white text-[15px] font-bold tracking-wide">View Progress</Text>
         </TouchableOpacity>
         <QuickActions delay={200} />
         <ProgressCard todayProgress={retentionData.todayProgress} dailyGoal={retentionData.dailyGoal} streak={retentionData.streak} delay={300} />

@@ -20,4 +20,4 @@
 - **State Management:** Live stream authentication tied to the root router layout.
 
 ## Static Data Infrastructure
-- Heavy JSON database approach (`data/pyqData.json`) handling 600+ static Previous Year Questions (PYQs) to minimize JS bundle compilation times and optimize offline-ready rendering.
+- Chunked PYQ repository (`data/pyq/manifest.json` + `data/pyq/chunks/*.json`) with lazy subject loading and typed access via `data/pyq/repository.ts`.

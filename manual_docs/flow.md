@@ -16,6 +16,6 @@
 
 ## 3. Quiz Game Flow
 1. User selects a module in the app (e.g. Medical-Surgical).
-2. App reads `pyqData.json` and loads specific arrays matching the module.
+2. App loads PYQs via `data/pyq/repository.ts` from subject chunks (`data/pyq/chunks/*.json`).
 3. Displays questions. When chosen, records local correct/incorrect state.
 4. On finish, triggers `react-native-confetti-cannon` over the screen and updates Async Storage.
