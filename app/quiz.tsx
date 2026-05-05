@@ -10,7 +10,7 @@ import ConfettiCannon from "react-native-confetti-cannon";
 
 import QuizView, { QuizQuestion } from "../components/Shared/QuizView";
 import { db } from "../firebase";
-import { useIntelligence } from "../hooks/useIntelligence";
+import { useIntelligenceContext } from "../context/IntelligenceContext";
 import { getManifest, isQuizReadyPyq, loadAllPyq, mapRecordToCategory } from "../data/pyq/repository";
 import type { PyqRecord } from "../data/pyq/types";
 
@@ -66,7 +66,8 @@ export default function QuizScreen() {
   const [pyqRecords, setPyqRecords] = useState<PyqRecord[]>([]);
   const [pyqTotal, setPyqTotal] = useState(0);
 
-  const { weakestTopic } = useIntelligence(getAuth().currentUser?.uid);
+  const { data: intelligenceData } = useIntelligenceContext();
+  const weakestTopic = intelligenceData.weakestTopic;
 
   useEffect(() => {
     const loadPyq = async () => {

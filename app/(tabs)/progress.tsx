@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getAuth } from "firebase/auth";
 
 import ProgressCard from "../../components/Home/ProgressCard";
-import { useIntelligence } from "../../hooks/useIntelligence";
+import { useIntelligenceContext } from "../../context/IntelligenceContext";
 import { useRetention } from "../../hooks/useRetention";
 
 type TopicEntry = [string, number];
@@ -19,7 +19,8 @@ export default function ProgressScreen() {
   const streak = retentionData.streak || 0;
 
 
-  const { loading, globalAccuracy: accuracy, totalAttempts, topicStats, strongestTopics } = useIntelligence(getAuth().currentUser?.uid);
+  const { data: intelligenceData, loading } = useIntelligenceContext();
+  const { globalAccuracy: accuracy, totalAttempts, topicStats, strongestTopics } = intelligenceData;
 
 
 

@@ -4,6 +4,7 @@ import * as SplashScreen from "expo-splash-screen";
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { auth } from "../firebase";
+import { IntelligenceProvider } from "../context/IntelligenceContext";
 import { useFonts } from "expo-font";
 import {
   Inter_400Regular,
@@ -60,13 +61,15 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="login" />
-      <Stack.Screen name="(tabs)" />
-      <Stack.Screen name="dailytopics" />
-      <Stack.Screen name="topics" />
-      <Stack.Screen name="topicDetail" />
-      <Stack.Screen name="quiz" />
-    </Stack>
+    <IntelligenceProvider>
+      <Stack screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="login" />
+        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="dailytopics" />
+        <Stack.Screen name="topics" />
+        <Stack.Screen name="topicDetail" />
+        <Stack.Screen name="quiz" />
+      </Stack>
+    </IntelligenceProvider>
   );
 }

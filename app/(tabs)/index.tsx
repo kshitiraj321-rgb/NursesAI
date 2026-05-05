@@ -13,7 +13,7 @@ import ProgressCard from "../../components/Home/ProgressCard";
 import HomeHeader from "../../components/Home/HomeHeader";
 import { auth, db } from "../../firebase";
 import { useRetention } from "../../hooks/useRetention";
-import { useIntelligence } from "../../hooks/useIntelligence";
+import { useIntelligenceContext } from "../../context/IntelligenceContext";
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -28,7 +28,7 @@ export default function HomeScreen() {
     return onAuthStateChanged(auth, setUser);
   }, []);
 
-  const intelligenceData = useIntelligence(user?.uid);
+  const { data: intelligenceData } = useIntelligenceContext();
   const retentionData = useRetention(user?.uid);
   
   useEffect(() => {
