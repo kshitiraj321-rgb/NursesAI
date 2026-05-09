@@ -117,3 +117,27 @@ export const isQuizReadyPyq = (record: PyqRecord): boolean =>
   record.options.every((opt) => opt.trim().length > 0) &&
   record.answer.trim().length > 0 &&
   record.options.some((opt) => opt.trim().toLowerCase() === record.answer.trim().toLowerCase());
+
+export const cleanString = (str: string) => str.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+
+export const scoreMatch = (q: PyqRecord, token: string) => {
+  const fields = [q.subject, q.subCategory, q.topic, q.question, mapRecordToCategory(q)].filter(Boolean).map(cleanString);
+  if (fields.some((f) => f === token)) return 5;
+  if (fields.some((f) => f.includes(token) || token.includes(f))) return 2;
+  return 0;
+};
+
+export const getQuestionsForTopic = (source: PyqRecord[], topicName: string): PyqRecord[] => {
+  if (!topicName) return [];
+  const token = cleanString(topicName);
+  const categoryMatched = source.filter((r) => cleanString(mapRecordToCategory(r)) === token);
+  if (categoryMatched.length > 0) return categoryMatched;
+
+  const scored = source
+    .map((q) => ({ q, score: scoreMatch(q, token) }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map((x) => x.q);
+
+  return scored;
+};

@@ -1,10 +1,10 @@
 
-import { useRouter } from "expo-router";
+import { useRouter, useFocusEffect } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
+import { collection, getDocs, limit, orderBy, query, where, getCountFromServer } from "firebase/firestore";
 import React, { useCallback, useEffect, useState } from "react";
-import { ScrollView, Text, TouchableOpacity, Modal, View } from "react-native";
+import { ScrollView, Text, TouchableOpacity, Modal, View, Alert } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import DailyFocusCard from "../../components/Home/DailyFocusCard";
@@ -23,6 +23,25 @@ export default function HomeScreen() {
   const [user, setUser] = useState<any>(null);
   const [showComeback, setShowComeback] = useState(false);
   const [comebackTopic, setComebackTopic] = useState("");
+  const [mistakeCount, setMistakeCount] = useState<number | null>(null);
+
+  useFocusEffect(
+    useCallback(() => {
+      let isMounted = true;
+      const fetchMistakes = async () => {
+        if (!user) return;
+        try {
+          const q = query(collection(db, "users", user.uid, "mistakeBank"), where("mastered", "==", false));
+          const snap = await getCountFromServer(q);
+          if (isMounted) setMistakeCount(snap.data().count);
+        } catch (err) {
+          console.log(err);
+        }
+      };
+      fetchMistakes();
+      return () => { isMounted = false; };
+    }, [user])
+  );
 
   useEffect(() => {
     return onAuthStateChanged(auth, setUser);
@@ -95,10 +114,29 @@ export default function HomeScreen() {
         <TouchableOpacity
           onPress={handleSmartRevision}
           activeOpacity={0.85}
-          className="bg-white/10 border border-white/15 py-4 px-5 rounded-[20px] items-center shadow-xl mb-6"
+          className="bg-white/10 border border-white/15 py-4 px-5 rounded-[20px] items-center shadow-xl mb-4"
         >
           <Text className="text-white text-[15px] font-bold tracking-wide">Improve Weak Areas</Text>
         </TouchableOpacity>
+
+        {mistakeCount !== null && mistakeCount > 0 ? (
+          <TouchableOpacity
+            onPress={() => router.push({ pathname: "/quiz" as any, params: { type: "mistake", mode: "revision", topic: "Mistake Bank" } })}
+            activeOpacity={0.85}
+            className="bg-red-500/20 border border-red-500/40 py-4 px-5 rounded-[20px] flex-row justify-center items-center shadow-xl mb-6"
+          >
+            <Text className="text-red-400 text-[15px] font-bold tracking-wide mr-2">Conquer Mistakes</Text>
+            <View className="bg-red-500 px-2 py-0.5 rounded-full"><Text className="text-white text-xs font-bold">{mistakeCount}</Text></View>
+          </TouchableOpacity>
+        ) : mistakeCount === 0 ? (
+          <TouchableOpacity 
+            onPress={() => Alert.alert("All Clear! 🎉", "You have successfully conquered all your mistakes. Keep studying to build up your knowledge!")}
+            activeOpacity={0.8}
+            className="bg-green-500/10 border border-green-500/20 py-4 px-5 rounded-[20px] flex-row justify-center items-center shadow-xl mb-6"
+          >
+            <Text className="text-green-400 text-[15px] font-bold tracking-wide">Mistake Bank Clear 🎉</Text>
+          </TouchableOpacity>
+        ) : null}
         <QuickActions delay={200} />
         <ProgressCard todayProgress={retentionData.todayProgress} dailyGoal={retentionData.dailyGoal} streak={retentionData.streak} delay={300} />
       </ScrollView>

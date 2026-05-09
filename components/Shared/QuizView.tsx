@@ -15,7 +15,7 @@ interface QuizProps {
   questions: QuizQuestion[];
   loading: boolean;
   onExit: () => void;
-  onComplete: (score: number, weakTopics?: Record<string, number>, strongTopics?: Record<string, number>) => void;
+  onComplete: (score: number, weakTopics?: Record<string, number>, strongTopics?: Record<string, number>, mistakes?: QuizQuestion[], clearedMistakes?: QuizQuestion[]) => void;
   type?: string | string[];
 }
 
@@ -26,6 +26,8 @@ export default function QuizView({ questions, loading, onExit, onComplete, type 
   const [score, setScore] = useState(0);
   const [weakTopics, setWeakTopics] = useState<Record<string, number>>({});
   const [strongTopics, setStrongTopics] = useState<Record<string, number>>({});
+  const [mistakes, setMistakes] = useState<QuizQuestion[]>([]);
+  const [clearedMistakes, setClearedMistakes] = useState<QuizQuestion[]>([]);
 
   if (loading) return <ActivityIndicator size="large" color="#4FC3F7" style={styles.loader} />;
   if (!questions || questions.length === 0) return <Text style={styles.failedText}>Failed to load quiz</Text>;
@@ -57,16 +59,23 @@ export default function QuizView({ questions, loading, onExit, onComplete, type 
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
     }
 
+    const newMistakes = !isCorrect ? [...mistakes, questions[current]] : mistakes;
+    const newClearedMistakes = isCorrect && type === "mistake" ? [...clearedMistakes, questions[current]] : clearedMistakes;
+    setMistakes(newMistakes);
+    setClearedMistakes(newClearedMistakes);
+
     setSelected("");
     setConfirmed(false);
 
     if (current + 1 < questions.length) setCurrent(current + 1);
     else {
-      onComplete(newScore, newWeakTopics, newStrongTopics);
+      onComplete(newScore, newWeakTopics, newStrongTopics, newMistakes, newClearedMistakes);
       setCurrent(0);
       setScore(0);
       setWeakTopics({});
       setStrongTopics({});
+      setMistakes([]);
+      setClearedMistakes([]);
     }
   };
 
@@ -83,10 +92,9 @@ export default function QuizView({ questions, loading, onExit, onComplete, type 
           const isCorrectOption = opt === questions[current].answer;
 
           let optionStyle = styles.optionButtonDefault;
-          if (isPyq && selected) {
-            if (isCorrect) optionStyle = isSelected ? styles.optionButtonSelectedCorrect : styles.optionButtonDefault;
+          if (confirmed) {
+            if (isCorrectOption) optionStyle = styles.optionButtonRevealCorrect;
             else if (isSelected) optionStyle = styles.optionButtonSelectedWrong;
-            else if (isCorrectOption) optionStyle = styles.optionButtonRevealCorrect;
           } else if (isSelected) {
             optionStyle = styles.optionButtonSelected;
           }

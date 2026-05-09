@@ -20,6 +20,7 @@ import QuizView from "../components/Shared/QuizView";
 
 const logDebug = (label: string, data?: unknown) => { console.log(`🧠 [${label}]`, data || ""); };
 const logError = (label: string, error: unknown) => { console.log(`❌ [${label}]`, error); };
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://nursesai.onrender.com";
 
 export default function DailyTopics() {
   const { topic: passedTopic } = useLocalSearchParams();
@@ -53,7 +54,7 @@ export default function DailyTopics() {
       const token = await auth.currentUser?.getIdToken();
       if (!token) throw new Error("Auth token missing");
 
-      const res = await axios.post("https://nursesai.onrender.com/ask", {
+      const res = await axios.post(`${API_URL}/ask`, {
         messages: [{ role: "user", content: topic }],
       }, { headers: { Authorization: `Bearer ${token}` } });
 
@@ -76,7 +77,7 @@ export default function DailyTopics() {
       const token = await auth.currentUser?.getIdToken();
       if (!token) throw new Error("Auth token missing");
 
-      const res = await axios.post("https://nursesai.onrender.com/ask", {
+      const res = await axios.post(`${API_URL}/ask`, {
         messages: [{
           role: "user",
           content: `Generate exactly 5 MCQ questions. Return ONLY valid JSON array. No text.\n[\n  {\n    "question": "",\n    "options": ["", "", "", ""],\n    "answer": ""\n  }\n]\nTopic: ${topic}`,
@@ -157,7 +158,7 @@ export default function DailyTopics() {
         const token = await auth.currentUser?.getIdToken();
         if (!token) throw new Error("Auth token missing");
 
-        const res = await axios.post("https://nursesai.onrender.com/ask", {
+        const res = await axios.post(`${API_URL}/ask`, {
           messages: [{ role: "user", content: selectedTopic }],
         }, { headers: { Authorization: `Bearer ${token}` } });
 

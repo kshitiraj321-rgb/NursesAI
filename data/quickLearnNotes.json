@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generatedFrom": "PYQ chunks + PDF-derived explanations",
-  "subjectCount": 7,
+  "subjectCount": 8,
   "noteCount": 227,
   "subjects": [
     {
@@ -2242,6 +2242,140 @@
                 "OT",
                 "GK"
               ]
+            }
+          ]
+        },
+        {
+          "topic": "ABG Analysis",
+          "notes": [
+            {
+              "id": "curated-fon-abg-1",
+              "subject": "Fundamentals of Nursing",
+              "topic": "ABG Analysis",
+              "definition": "Arterial Blood Gas analysis measures blood pH, oxygenation, and carbon dioxide levels to evaluate acid-base balance.",
+              "keyPoints": [
+                "pH Normal: 7.35 - 7.45",
+                "PaCO2 Normal (Respiratory): 35 - 45 mmHg",
+                "HCO3 Normal (Metabolic): 22 - 26 mEq/L"
+              ],
+              "clinicalFeatures": [
+                "Respiratory Acidosis: COPD, hypoventilation, CNS depression.",
+                "Respiratory Alkalosis: Hyperventilation, panic attack.",
+                "Metabolic Acidosis: DKA, severe diarrhea, renal failure.",
+                "Metabolic Alkalosis: Severe vomiting, prolonged NG suctioning."
+              ],
+              "diagnosis": [
+                "Use ROME acronym: Respiratory Opposite, Metabolic Equal.",
+                "If pH and PaCO2 go in opposite directions = Respiratory.",
+                "If pH and HCO3 go in the same direction = Metabolic."
+              ],
+              "management": [
+                "Treat the underlying cause.",
+                "Resp Acidosis: Improve ventilation (BiPAP, intubation).",
+                "Metabolic Acidosis: Administer sodium bicarbonate IV, treat DKA with insulin."
+              ],
+              "nursingPoints": [
+                "Perform Allen's Test before drawing ABG from the radial artery to confirm ulnar collateral circulation.",
+                "Place ABG specimen on ice immediately and transport to lab.",
+                "Apply firm pressure to the puncture site for at least 5 minutes (longer if on anticoagulants)."
+              ],
+              "examTricks": [
+                "Vomiting loses acid = Alkalosis.",
+                "Diarrhea loses base = Acidosis.",
+                "Normal PaO2 = 80-100 mmHg."
+              ],
+              "rapidRevision": [
+                "ROME = Respiratory Opposite, Metabolic Equal.",
+                "Allen's test MUST be positive before radial puncture.",
+                "Pressure on site x 5 mins."
+              ],
+              "verifiedLevel": "curated"
+            }
+          ]
+        },
+        {
+          "topic": "Blood Transfusion",
+          "notes": [
+            {
+              "id": "curated-fon-blood-1",
+              "subject": "Fundamentals of Nursing",
+              "topic": "Blood Transfusion",
+              "definition": "The IV administration of whole blood or its components for severe anemia, hemorrhage, or coagulation factor deficiencies.",
+              "keyPoints": [
+                "Universal Donor: O Negative.",
+                "Universal Recipient: AB Positive.",
+                "Blood must be infused within 4 hours to prevent bacterial growth."
+              ],
+              "clinicalFeatures": [
+                "Hemolytic Reaction: Back pain, hematuria, hypotension, tachycardia.",
+                "Febrile Reaction: Chills, fever (most common).",
+                "Allergic Reaction: Urticaria, pruritus, wheezing."
+              ],
+              "diagnosis": [
+                "Strict cross-matching and ABO/Rh typing.",
+                "Two RNs must verify the patient and blood product at the bedside."
+              ],
+              "management": [
+                "If ANY reaction occurs: 1) STOP the transfusion. 2) Maintain IV line with NORMAL SALINE using new tubing. 3) Notify MD. 4) Send blood bag and tubing to blood bank."
+              ],
+              "nursingPoints": [
+                "Use ONLY 0.9% Normal Saline (NS) to flush or hang with blood.",
+                "Stay with the patient for the first 15 minutes of the transfusion.",
+                "Use an 18-gauge or 20-gauge IV catheter."
+              ],
+              "examTricks": [
+                "Dextrose causes RBC hemolysis; Lactated Ringer's causes clotting (calcium). ALWAYS use NS.",
+                "First action for any reaction is to STOP the infusion."
+              ],
+              "rapidRevision": [
+                "Start within 30 mins from lab, finish within 4 hours.",
+                "Stay for first 15 mins.",
+                "Only compatible with Normal Saline."
+              ],
+              "verifiedLevel": "curated"
+            }
+          ]
+        },
+        {
+          "topic": "CPR and BLS",
+          "notes": [
+            {
+              "id": "curated-fon-cpr-1",
+              "subject": "Fundamentals of Nursing",
+              "topic": "CPR and BLS",
+              "definition": "Basic Life Support guidelines by the American Heart Association (AHA) focusing on high-quality chest compressions and early defibrillation.",
+              "keyPoints": [
+                "Compression to Ventilation ratio: 30:2 for adults.",
+                "Rate: 100-120 compressions per minute.",
+                "Depth: At least 2 inches (5 cm) but no more than 2.4 inches (6 cm) for adults."
+              ],
+              "clinicalFeatures": [
+                "Unresponsiveness, absence of normal breathing, and no palpable pulse within 10 seconds."
+              ],
+              "diagnosis": [
+                "Assess carotid pulse in adults/children.",
+                "Assess brachial pulse in infants."
+              ],
+              "management": [
+                "C-A-B Sequence: Compressions, Airway, Breathing.",
+                "Allow complete chest recoil after each compression.",
+                "Minimize interruptions to chest compressions to < 10 seconds."
+              ],
+              "nursingPoints": [
+                "If an advanced airway (Intubation) is in place, give 1 breath every 6 seconds (10 breaths/min) without pausing compressions.",
+                "Switch compressors every 2 minutes or 5 cycles to prevent fatigue."
+              ],
+              "examTricks": [
+                "Pulse check should take no more than 10 seconds.",
+                "For 2-rescuer Infant CPR, the ratio changes to 15:2."
+              ],
+              "rapidRevision": [
+                "Ratio: 30:2.",
+                "Rate: 100-120/min.",
+                "Sequence: C-A-B.",
+                "Depth: 2 inches."
+              ],
+              "verifiedLevel": "curated"
             }
           ]
         }
@@ -6157,6 +6291,139 @@
               ]
             }
           ]
+        },
+        {
+          "topic": "Myocardial Infarction",
+          "notes": [
+            {
+              "id": "curated-msn-mi-1",
+              "subject": "Medical-Surgical Nursing",
+              "topic": "Myocardial Infarction",
+              "definition": "Irreversible necrosis of heart muscle secondary to prolonged ischemia (blockage of coronary arteries).",
+              "keyPoints": [
+                "Chest pain is crushing, radiates to left arm/jaw, and is NOT relieved by rest or nitroglycerin.",
+                "Troponin I and T are the most specific biomarkers."
+              ],
+              "clinicalFeatures": [
+                "Crushing substernal chest pain.",
+                "Diaphoresis, shortness of breath, nausea.",
+                "Women/diabetics may present with atypical symptoms (fatigue, epigastric pain)."
+              ],
+              "diagnosis": [
+                "12-Lead ECG: Look for ST elevation (STEMI), T-wave inversion.",
+                "Cardiac markers: Troponin rises within 3-4 hours, peaks at 24 hours."
+              ],
+              "management": [
+                "MONA protocol: Morphine, Oxygen, Nitroglycerin, Aspirin.",
+                "Percutaneous Coronary Intervention (PCI) is gold standard (Door-to-balloon < 90 mins).",
+                "Thrombolytics (Alteplase) if PCI unavailable (Door-to-needle < 30 mins)."
+              ],
+              "nursingPoints": [
+                "Ensure oxygen is applied FIRST if O2 sat < 90%.",
+                "Morphine decreases pain AND reduces preload/afterload.",
+                "Monitor continuously for ventricular arrhythmias (V-Fib is most common cause of early death)."
+              ],
+              "examTricks": [
+                "Nitroglycerin can be given every 5 mins x 3 doses. Call EMS if pain persists after 1st dose.",
+                "Myoglobin is the earliest marker but NOT specific. Troponin is highly specific."
+              ],
+              "rapidRevision": [
+                "MONA: Morphine, O2, Nitrates, Aspirin.",
+                "Gold standard marker: Troponin.",
+                "Goal PCI time: < 90 minutes."
+              ],
+              "verifiedLevel": "curated"
+            }
+          ]
+        },
+        {
+          "topic": "Increased ICP",
+          "notes": [
+            {
+              "id": "curated-msn-icp-1",
+              "subject": "Medical-Surgical Nursing",
+              "topic": "Increased ICP",
+              "definition": "A rise in pressure within the skull (Normal ICP: 5 to 15 mmHg). Life-threatening due to brain herniation risk.",
+              "keyPoints": [
+                "Monro-Kellie hypothesis: Brain, blood, and CSF volumes must remain constant.",
+                "Cushing's Triad is a LATE sign indicating impending herniation."
+              ],
+              "clinicalFeatures": [
+                "Earliest sign: Altered Level of Consciousness (ALOC).",
+                "Headache, projectile vomiting without nausea.",
+                "Late (Cushing's Triad): Systolic hypertension (widening pulse pressure), Bradycardia, Irregular respirations."
+              ],
+              "diagnosis": [
+                "CT Scan / MRI of the brain.",
+                "ICP monitoring via ventriculostomy."
+              ],
+              "management": [
+                "Osmotic diuretic: Mannitol IV (monitor serum osmolality).",
+                "Hypertonic saline.",
+                "Hyperventilation (maintain PaCO2 between 30-35 mmHg to cause vasoconstriction)."
+              ],
+              "nursingPoints": [
+                "Elevate Head of Bed (HOB) to 30 degrees to promote venous drainage.",
+                "Keep head and neck strictly in neutral midline position.",
+                "Avoid clustering nursing activities; avoid coughing, straining, or Valsalva."
+              ],
+              "examTricks": [
+                "Earliest sign of ICP = Restlessness/ALOC. Do NOT wait for Cushing's Triad.",
+                "Lumbar Puncture is CONTRAINDICATED in increased ICP (risk of brainstem herniation)."
+              ],
+              "rapidRevision": [
+                "Normal ICP = 5-15 mmHg.",
+                "Cushing's Triad = ↑BP, ↓HR, Irregular breathing.",
+                "Position = HOB 30°, head midline."
+              ],
+              "verifiedLevel": "curated"
+            }
+          ]
+        },
+        {
+          "topic": "Chronic Kidney Disease",
+          "notes": [
+            {
+              "id": "curated-msn-ckd-1",
+              "subject": "Medical-Surgical Nursing",
+              "topic": "Chronic Kidney Disease",
+              "definition": "Progressive, irreversible deterioration of renal function, defined by a GFR < 60 mL/min for > 3 months.",
+              "keyPoints": [
+                "Kidneys fail to excrete waste, regulate fluids, or produce erythropoietin.",
+                "Primary causes: Diabetes Mellitus and Hypertension."
+              ],
+              "clinicalFeatures": [
+                "Oliguria/Anuria.",
+                "Uremia (pruritus, uremic frost, metallic taste).",
+                "Fluid volume overload (edema, crackles, hypertension)."
+              ],
+              "diagnosis": [
+                "Elevated BUN and Serum Creatinine.",
+                "Decreased GFR.",
+                "Hyperkalemia, Hyperphosphatemia, Hypocalcemia."
+              ],
+              "management": [
+                "Hemodialysis or Peritoneal dialysis.",
+                "Administer Erythropoietin (Epogen) for anemia.",
+                "Phosphate binders (Sevelamer) with meals."
+              ],
+              "nursingPoints": [
+                "Diet: Restrict Sodium, Potassium, Phosphorus, and Fluids.",
+                "Assess AV fistula for Thrill (palpate) and Bruit (auscultate).",
+                "Do NOT draw blood or take BP on the arm with an AV fistula."
+              ],
+              "examTricks": [
+                "Kidneys activate Vitamin D -> CKD causes Hypocalcemia.",
+                "Kayexalate (Sodium Polystyrene Sulfonate) is used to treat hyperkalemia by exchanging sodium for potassium in the gut."
+              ],
+              "rapidRevision": [
+                "CKD Diet: Low Na, Low K, Low Phos, Mod Protein.",
+                "Fistula check: Feel the thrill, hear the bruit.",
+                "Anemia treatment: Erythropoietin."
+              ],
+              "verifiedLevel": "curated"
+            }
+          ]
         }
       ]
     },
@@ -7713,6 +7980,147 @@
                 "Emergency",
                 "Toxicology"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Pharmacology",
+      "topics": [
+        {
+          "topic": "Emergency Drugs",
+          "notes": [
+            {
+              "id": "curated-pharm-emerg-1",
+              "subject": "Pharmacology",
+              "topic": "Emergency Drugs",
+              "definition": "Lifesaving medications used in critical care and resuscitation (ACLS/BLS).",
+              "keyPoints": [
+                "Adrenaline (Epinephrine): 1mg IV every 3-5 mins in cardiac arrest.",
+                "Atropine: 1mg IV for symptomatic bradycardia (Max dose 3mg).",
+                "Amiodarone: 300mg IV push for VF/pVT, followed by 150mg.",
+                "Adenosine: 6mg rapid IV push for SVT, flush with 20mL NS."
+              ],
+              "clinicalFeatures": [
+                "Cardiac Arrest: VF, pVT, Asystole, PEA.",
+                "Bradycardia: HR < 50/min with hypotension or altered mental status.",
+                "Tachycardia: HR > 150/min with symptoms."
+              ],
+              "diagnosis": [
+                "Continuous ECG monitoring.",
+                "Identify rhythm before drug administration."
+              ],
+              "management": [
+                "Always follow ACLS guidelines.",
+                "Flush line immediately after IV push (especially Adenosine).",
+                "Elevate extremity to facilitate central drug delivery."
+              ],
+              "nursingPoints": [
+                "Adrenaline can cause severe tissue necrosis if extravasated.",
+                "Atropine is ineffective for complete heart block.",
+                "Adenosine half-life is < 10 seconds; requires rapid push."
+              ],
+              "examTricks": [
+                "Drug of choice for anaphylaxis: IM Adrenaline (1:1000).",
+                "Drug of choice for cardiac arrest: IV Adrenaline (1:10000)."
+              ],
+              "rapidRevision": [
+                "Bradycardia → Atropine.",
+                "SVT → Adenosine.",
+                "VFib → Amiodarone."
+              ],
+              "verifiedLevel": "curated"
+            }
+          ]
+        },
+        {
+          "topic": "High-Alert Medications",
+          "notes": [
+            {
+              "id": "curated-pharm-highalert-1",
+              "subject": "Pharmacology",
+              "topic": "High-Alert Medications",
+              "definition": "Drugs bearing a heightened risk of causing significant patient harm when used in error (e.g., Insulin, Heparin).",
+              "keyPoints": [
+                "Insulin: Only regular insulin can be given IV.",
+                "Heparin: Monitor aPTT (Normal: 30-40s, Therapeutic: 1.5-2.5x normal).",
+                "Warfarin: Monitor PT/INR (Normal INR: 1, Therapeutic: 2-3)."
+              ],
+              "clinicalFeatures": [
+                "Heparin Overdose: Bleeding, hematuria, melena.",
+                "Insulin Overdose: Hypoglycemia (sweating, tremors, confusion)."
+              ],
+              "diagnosis": [
+                "Routine coagulation profiles (aPTT, PT/INR).",
+                "Frequent capillary blood glucose (CBG)."
+              ],
+              "management": [
+                "Heparin Antidote: Protamine Sulfate.",
+                "Warfarin Antidote: Vitamin K (Phytonadione).",
+                "Insulin Hypoglycemia: 50% Dextrose IV or oral fast-acting carbs."
+              ],
+              "nursingPoints": [
+                "Two RNs must independently verify Insulin and Heparin doses.",
+                "Never mix long-acting insulin (Glargine) with any other insulin.",
+                "Inject subcutaneous heparin in the abdomen, 2 inches away from umbilicus."
+              ],
+              "examTricks": [
+                "Heparin = aPTT (10 letters), Warfarin = PT (10 letters).",
+                "Draw CLEAR (Regular) insulin before CLOUDY (NPH)."
+              ],
+              "rapidRevision": [
+                "Heparin Antidote = Protamine.",
+                "Warfarin Antidote = Vitamin K.",
+                "IV Insulin = Regular ONLY."
+              ],
+              "verifiedLevel": "curated"
+            }
+          ]
+        },
+        {
+          "topic": "Digoxin Toxicity",
+          "notes": [
+            {
+              "id": "curated-pharm-digoxin-1",
+              "subject": "Pharmacology",
+              "topic": "Digoxin Toxicity",
+              "definition": "A potentially fatal condition resulting from toxic levels of the cardiac glycoside Digoxin (Therapeutic range: 0.5 - 2.0 ng/mL).",
+              "keyPoints": [
+                "Digoxin acts by increasing myocardial contractility (+ inotrope) and decreasing heart rate (- chronotrope).",
+                "Hypokalemia drastically increases the risk of Digoxin toxicity.",
+                "Toxicity occurs when levels > 2.0 ng/mL."
+              ],
+              "clinicalFeatures": [
+                "Early: Anorexia, Nausea, Vomiting.",
+                "Late: Yellow-green halos around lights, blurred vision.",
+                "Cardiac: Bradycardia, PVCs, arrhythmias."
+              ],
+              "diagnosis": [
+                "Serum Digoxin levels.",
+                "Serum Potassium levels (Hypokalemia is a trigger).",
+                "ECG (shows 'scooped' ST segments)."
+              ],
+              "management": [
+                "Hold the dose if apical pulse < 60 bpm in adults (< 90 in infants).",
+                "Correct hypokalemia.",
+                "Antidote: Digoxin Immune Fab (Digibind)."
+              ],
+              "nursingPoints": [
+                "Assess apical pulse for 1 full minute before administration.",
+                "Educate patient to consume potassium-rich foods if on loop diuretics.",
+                "Toxicity is NOT caused by hyperkalemia, it is CAUSED by hypokalemia."
+              ],
+              "examTricks": [
+                "Earliest sign of toxicity = GI symptoms (Nausea/Vomiting).",
+                "Most specific visual sign = Yellow-green halos."
+              ],
+              "rapidRevision": [
+                "Normal Level: 0.5 - 2 ng/mL.",
+                "Hold if HR < 60.",
+                "Antidote: Digibind."
+              ],
+              "verifiedLevel": "curated"
             }
           ]
         }

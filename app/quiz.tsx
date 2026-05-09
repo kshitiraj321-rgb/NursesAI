@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { getAuth } from "firebase/auth";
-import { collection, doc, increment, serverTimestamp, setDoc, getDoc, writeBatch } from "firebase/firestore";
-import { useEffect, useMemo, useState } from "react";
+import { collection, doc, increment, serverTimestamp, setDoc, getDoc, writeBatch, query, where, getDocs, limit } from "firebase/firestore";
+import { generateMistakeId } from "../utils/hash";
+import { useEffect, useState, useRef, useMemo } from "react";
 import { ActivityIndicator, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
@@ -11,19 +12,11 @@ import ConfettiCannon from "react-native-confetti-cannon";
 import QuizView, { QuizQuestion } from "../components/Shared/QuizView";
 import { db } from "../firebase";
 import { useIntelligenceContext } from "../context/IntelligenceContext";
-import { getManifest, isQuizReadyPyq, loadAllPyq, mapRecordToCategory } from "../data/pyq/repository";
+import { getManifest, isQuizReadyPyq, loadAllPyq, getQuestionsForTopic } from "../data/pyq/repository";
 import type { PyqRecord } from "../data/pyq/types";
 
 type TopicParam = { id?: string; name: string };
-
-const clean = (str: string) => str.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
-
-const scoreMatch = (q: PyqRecord, token: string) => {
-  const fields = [q.subject, q.subCategory, q.topic, q.question, mapRecordToCategory(q)].map(clean);
-  if (fields.some((f) => f === token)) return 5;
-  if (fields.some((f) => f.includes(token) || token.includes(f))) return 2;
-  return 0;
-};
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://nursesai.onrender.com";
 
 const toQuizQuestion = (q: PyqRecord): QuizQuestion => ({
   question: q.question,
@@ -58,13 +51,14 @@ export default function QuizScreen() {
   const router = useRouter();
 
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(typeParam === "pyq");
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
-  const [hasStarted, setHasStarted] = useState(false);
+  const [hasStarted, setHasStarted] = useState(typeParam === "pyq");
   const [quizError, setQuizError] = useState(false);
   const [pyqRecords, setPyqRecords] = useState<PyqRecord[]>([]);
   const [pyqTotal, setPyqTotal] = useState(0);
+  const [pyqLoaded, setPyqLoaded] = useState(false);
 
   const { data: intelligenceData } = useIntelligenceContext();
   const weakestTopic = intelligenceData.weakestTopic;
@@ -72,14 +66,35 @@ export default function QuizScreen() {
   useEffect(() => {
     const loadPyq = async () => {
       if (typeParam !== "pyq") return;
-      const [manifest, data] = await Promise.all([getManifest(), loadAllPyq()]);
-      setPyqTotal(manifest.total);
-      setPyqRecords(data);
+      try {
+        const [manifest, data] = await Promise.all([getManifest(), loadAllPyq()]);
+        setPyqTotal(manifest.total);
+        setPyqRecords(data);
+      } catch (err) {
+        console.log("PYQ load error:", err);
+      } finally {
+        setPyqLoaded(true);
+      }
     };
-    loadPyq().catch((err) => console.log("PYQ load error:", err));
+    loadPyq();
   }, [typeParam]);
 
+  const pyqProcessed = useRef(false);
+  useEffect(() => {
+    if (typeParam === "pyq" && pyqLoaded && !pyqProcessed.current) {
+      pyqProcessed.current = true;
+      handleStartQuiz();
+    }
+  }, [pyqLoaded]);
+
   const fallbackTopic = useMemo(() => parsedTopic.name || topicParam, [parsedTopic.name, topicParam]);
+
+  const topicPyqCount = useMemo(() => {
+    if (typeParam !== "pyq" || pyqRecords.length === 0) return 0;
+    const source = pyqRecords.filter(isQuizReadyPyq);
+    const tokenRaw = modeParam === "revision" && weakestTopic ? weakestTopic : topicParam;
+    return getQuestionsForTopic(source, tokenRaw).length;
+  }, [typeParam, pyqRecords, modeParam, weakestTopic, topicParam]);
 
   const handleStartQuiz = async () => {
     setHasStarted(true);
@@ -111,25 +126,39 @@ export default function QuizScreen() {
       console.log("Progress error:", err);
     }
 
+    if (typeParam === "mistake") {
+      try {
+        const user = getAuth().currentUser;
+        if (!user) throw new Error("Auth missing");
+        
+        const q = query(collection(db, "users", user.uid, "mistakeBank"), where("mastered", "==", false), limit(15));
+        const snap = await getDocs(q);
+        const mistakeQs: QuizQuestion[] = [];
+        snap.forEach(doc => {
+          mistakeQs.push(doc.data() as QuizQuestion);
+        });
+        setQuestions(mistakeQs);
+      } catch (err) {
+        console.log("Mistake fetch error:", err);
+        setQuestions([]);
+        setQuizError(true);
+      } finally {
+        finishLoading();
+      }
+      return;
+    }
+
     if (typeParam === "pyq") {
       const source = pyqRecords.filter(isQuizReadyPyq);
-      if (source.length === 0) {
+      const tokenRaw = modeParam === "revision" && weakestTopic ? weakestTopic : topicParam;
+      const pool = getQuestionsForTopic(source, tokenRaw);
+
+      if (pool.length === 0) {
         setQuestions([]);
         finishLoading();
         return;
       }
 
-      const tokenRaw = modeParam === "revision" && weakestTopic ? weakestTopic : topicParam;
-      const token = clean(tokenRaw);
-      const categoryMatched = source.filter((r) => clean(mapRecordToCategory(r)) === token);
-
-      const scored = (categoryMatched.length > 0 ? categoryMatched : source)
-        .map((q) => ({ q, score: scoreMatch(q, token) }))
-        .filter((x) => x.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .map((x) => x.q);
-
-      const pool = scored.length > 0 ? scored : (categoryMatched.length > 0 ? categoryMatched : source);
       setQuestions(shuffleArray(pool).slice(0, 10).map(toQuizQuestion));
       finishLoading();
       return;
@@ -142,7 +171,7 @@ export default function QuizScreen() {
       if (!token) throw new Error("Auth token missing");
 
       const prompt = `Generate 5 MCQ questions for ${parsedTopic.name} for nursing exam. Return ONLY JSON array.\n[\n  {\n    "question": "",\n    "options": ["", "", "", ""],\n    "answer": ""\n  }\n]\nTopic: ${parsedTopic.name}`;
-      const response = await axios.post("https://nursesai.onrender.com/ask", { messages: [{ role: "user", content: prompt }] }, { headers: { Authorization: `Bearer ${token}` } });
+      const response = await axios.post(`${API_URL}/ask`, { messages: [{ role: "user", content: prompt }] }, { headers: { Authorization: `Bearer ${token}` } });
       let cleaned = String(response.data.answer || "").trim();
       if (!cleaned.endsWith("]")) cleaned = cleaned.substring(0, cleaned.lastIndexOf("}") + 1) + "]";
       setQuestions(JSON.parse(cleaned) as QuizQuestion[]);
@@ -155,7 +184,7 @@ export default function QuizScreen() {
     }
   };
 
-  const saveResult = async (finalScore: number, weakTopics: Record<string, number> = {}, strongTopics: Record<string, number> = {}) => {
+  const saveResult = async (finalScore: number, weakTopics: Record<string, number> = {}, strongTopics: Record<string, number> = {}, mistakes: QuizQuestion[] = [], clearedMistakes: QuizQuestion[] = []) => {
     try {
       const auth = getAuth();
       const user = auth.currentUser;
@@ -207,16 +236,49 @@ export default function QuizScreen() {
       }
 
       batch.set(metaRef, metaData, { merge: true });
+
+      if (mistakes && mistakes.length > 0) {
+        mistakes.forEach((m) => {
+          const mId = generateMistakeId(m.topic || fallbackTopic, m.question);
+          const mRef = doc(db, "users", user.uid, "mistakeBank", mId);
+          const mData = { ...m };
+          if (mData.year === undefined) delete mData.year;
+          if (mData.explanation === undefined) delete mData.explanation;
+
+          batch.set(mRef, {
+            ...mData,
+            sourceType: typeParam,
+            subject: parsedTopic.name || "General",
+            topic: m.topic || fallbackTopic,
+            mastered: false,
+            mistakeCount: increment(1),
+            lastFailedAt: serverTimestamp(),
+            createdAt: serverTimestamp() // merge:true will not overwrite existing createdAt
+          }, { merge: true });
+        });
+      }
+
+      if (clearedMistakes && clearedMistakes.length > 0 && typeParam === "mistake") {
+        clearedMistakes.forEach((m) => {
+          const mId = generateMistakeId(m.topic || fallbackTopic, m.question);
+          const mRef = doc(db, "users", user.uid, "mistakeBank", mId);
+          batch.set(mRef, {
+            mastered: true,
+            lastCorrectedAt: serverTimestamp()
+          }, { merge: true });
+        });
+      }
+
       await batch.commit();
     } catch (err) {
       console.log("Save error:", err);
     }
   };
 
-  const onQuizComplete = (finalScore: number, weakTopics?: Record<string, number>, strongTopics?: Record<string, number>) => {
+  const onQuizComplete = (finalScore: number, weakTopics?: Record<string, number>, strongTopics?: Record<string, number>, mistakes?: QuizQuestion[], clearedMistakes?: QuizQuestion[]) => {
     setScore(finalScore);
     setShowResult(true);
-    saveResult(finalScore, weakTopics || {}, strongTopics || {});
+    saveResult(finalScore, weakTopics || {}, strongTopics || {}, mistakes || [], clearedMistakes || []);
   };
 
   return (
@@ -233,7 +295,15 @@ export default function QuizScreen() {
               <Text className="text-white text-lg font-bold mb-4">{parsedTopic.name}</Text>
               <Text className="text-white/60 text-sm font-medium mb-1">Details</Text>
               <Text className="text-white text-[15px] font-medium mb-6">10 questions • {modeParam === "revision" ? "Based on weak areas" : "Real Exam Questions"}</Text>
-              {typeParam === "pyq" ? <Text className="text-neutral-400 text-xs mb-4">Dataset size: {pyqTotal} imported PYQs</Text> : null}
+              {typeParam === "pyq" ? (
+                pyqTotal === 0 ? (
+                  <Text className="text-neutral-400 text-xs mb-4">Loading PYQs...</Text>
+                ) : topicPyqCount > 0 ? (
+                  <Text className="text-neutral-400 text-xs mb-4">Available for this topic: {topicPyqCount} PYQs</Text>
+                ) : (
+                  <Text className="text-red-400 text-xs mb-4">No verified PYQs available for this topic yet</Text>
+                )
+              ) : null}
               <TouchableOpacity onPress={handleStartQuiz} className="bg-green-600 p-4 rounded-xl items-center"><Text className="text-white font-bold tracking-wide text-[16px]">Start Assessment</Text></TouchableOpacity>
             </View>
           ) : loading ? (
@@ -255,8 +325,15 @@ export default function QuizScreen() {
             </View>
           ) : questions.length === 0 && typeParam === "pyq" ? (
             <View className="flex-1 justify-center items-center mt-10">
-              <Text style={{ color: "white", textAlign: "center", marginTop: 20 }}>No PYQs available for this topic yet</Text>
+              <Text style={{ color: "white", textAlign: "center", marginTop: 20 }}>No verified PYQs available for this topic yet</Text>
               <TouchableOpacity onPress={() => router.back()} className="mt-6 p-3"><Text className="text-blue-500 font-semibold">← Go Back</Text></TouchableOpacity>
+            </View>
+          ) : questions.length === 0 && typeParam === "mistake" ? (
+            <View className="flex-1 justify-center items-center mt-10">
+              <Text className="text-[50px] mb-4">🎉</Text>
+              <Text className="text-white text-2xl font-bold mb-2">Your mistake bank is clear!</Text>
+              <Text className="text-neutral-400 text-center px-4">Start a new quiz to continue improving and conquering your weak areas.</Text>
+              <TouchableOpacity onPress={() => router.back()} className="mt-8 p-4 bg-blue-600 rounded-xl"><Text className="text-white font-bold tracking-wide">Return to Dashboard</Text></TouchableOpacity>
             </View>
           ) : (
             <QuizView questions={questions} loading={loading} onExit={() => router.back()} onComplete={onQuizComplete} type={typeParam} />

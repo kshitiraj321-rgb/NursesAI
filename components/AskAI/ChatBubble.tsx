@@ -44,10 +44,45 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
     overflow: 'hidden' as const,
   };
 
+  const renderFormattedText = (text: string) => {
+    return text.split('\n').map((line, index) => {
+      if (line.startsWith('## ')) {
+        return <Text key={index} className="text-white text-[18px] font-bold mt-4 mb-2">{line.replace('## ', '')}</Text>;
+      } else if (line.startsWith('### ')) {
+        return <Text key={index} className="text-blue-300/90 text-[16px] font-semibold mt-3 mb-1">{line.replace('### ', '')}</Text>;
+      } else if (line.trim() === '---') {
+        return <View key={index} className="h-[1px] bg-white/10 my-3" />;
+      } else if (line.startsWith('- ')) {
+        return (
+          <View key={index} className="flex-row pl-1 mb-1 pr-2">
+            <Text className="text-neutral-400 mr-2 mt-0.5">•</Text>
+            <Text className="text-neutral-200 text-[15px] leading-[22px] flex-1">
+               {line.substring(2)}
+            </Text>
+          </View>
+        );
+      } else if (line.trim() === '') {
+        return <View key={index} className="h-1.5" />;
+      } else {
+        const parts = line.split(/(\*\*.*?\*\*)/g);
+        return (
+          <Text key={index} className="text-neutral-100 text-[15px] leading-[24px] tracking-tight mb-0.5">
+            {parts.map((part, i) => {
+              if (part.startsWith('**') && part.endsWith('**')) {
+                return <Text key={i} className="font-bold text-white">{part.slice(2, -2)}</Text>;
+              }
+              return part;
+            })}
+          </Text>
+        );
+      }
+    });
+  };
+
   return (
     <Animated.View
       entering={FadeInUp.duration(400).springify()}
-      className={`mb-1 max-w-[82%] ${isUser ? 'self-end' : 'self-start'} ${isSameSender ? 'mt-0.5' : 'mt-3'}`}
+      className={`mb-1 max-w-[85%] ${isUser ? 'self-end' : 'self-start'} ${isSameSender ? 'mt-0.5' : 'mt-3'}`}
     >
       {isUser ? (
         <View style={userStyle} className="px-5 py-3.5 border border-teal-400/20 shadow-sm shadow-teal-900/30">
@@ -57,8 +92,8 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
           </Text>
         </View>
       ) : (
-        <View style={aiStyle} className="p-3.5 border border-white/5 shadow-sm shadow-black/20">
-          <Text className="text-neutral-100 text-[15px] leading-[24px] tracking-tight">{item.content}</Text>
+        <View style={aiStyle} className="p-4 border border-white/5 shadow-sm shadow-black/20">
+          <View>{renderFormattedText(item.content)}</View>
           <Text className="text-[10px] mt-1.5 self-end text-neutral-500 font-medium tracking-wider">
             {formatTime(item.createdAt)}
           </Text>

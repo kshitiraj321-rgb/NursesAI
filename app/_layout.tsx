@@ -65,6 +65,7 @@ export default function RootLayout() {
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="login" />
         <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="notes" />
         <Stack.Screen name="dailytopics" />
         <Stack.Screen name="topics" />
         <Stack.Screen name="topicDetail" />

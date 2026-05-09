@@ -31,15 +31,19 @@ export default function AskAIHeader({ selectedMode, setSelectedMode }: AskAIHead
       </View>
 
       <View className="flex-row mt-4 gap-2">
-        {["explain", "quiz", "summary"].map((mode) => (
+        {[
+          { id: "summary", label: "Summary" },
+          { id: "fullAnswer", label: "Full Answer" },
+          { id: "quiz", label: "Quiz" }
+        ].map((mode) => (
           <TouchableOpacity
-            key={mode}
-            onPress={() => setSelectedMode(mode)}
+            key={mode.id}
+            onPress={() => setSelectedMode(mode.id)}
             className={`px-4 py-2 rounded-full ${
-              selectedMode === mode ? "bg-blue-600/80 border border-blue-400/30" : "bg-white/10 border border-transparent"
+              selectedMode === mode.id ? "bg-blue-600/80 border border-blue-400/30" : "bg-white/10 border border-transparent"
             }`}
           >
-            <Text className={`text-[13px] font-semibold capitalize ${selectedMode === mode ? "text-white" : "text-neutral-300"}`}>{mode}</Text>
+            <Text className={`text-[13px] font-semibold ${selectedMode === mode.id ? "text-white" : "text-neutral-300"}`}>{mode.label}</Text>
           </TouchableOpacity>
         ))}
       </View>

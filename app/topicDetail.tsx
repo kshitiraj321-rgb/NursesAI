@@ -2,7 +2,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useEffect, useMemo, useState } from "react";
-import { loadAllPyq, isQuizReadyPyq, mapRecordToCategory, normalizeSubjectAlias } from "../data/pyq/repository";
+import { loadAllPyq, isQuizReadyPyq, getQuestionsForTopic } from "../data/pyq/repository";
 import type { PyqRecord } from "../data/pyq/types";
 
 type CategoryPayload = {
@@ -29,16 +29,12 @@ export default function TopicDetailScreen() {
   }, [parsedTopic.name, parsedTopic.subjectName]);
 
   const pyqCount = useMemo(() => {
-    const subject = normalizeSubjectAlias(parsedTopic.subjectName || "");
-    const category = (parsedTopic.name || "").toLowerCase();
-    return pyq.filter((r) => normalizeSubjectAlias(r.subject) === subject && mapRecordToCategory(r).toLowerCase() === category).length;
-  }, [pyq, parsedTopic.name, parsedTopic.subjectName]);
+    return getQuestionsForTopic(pyq, parsedTopic.name).length;
+  }, [pyq, parsedTopic.name]);
 
   const quizReadyCount = useMemo(() => {
-    const subject = normalizeSubjectAlias(parsedTopic.subjectName || "");
-    const category = (parsedTopic.name || "").toLowerCase();
-    return pyq.filter((r) => normalizeSubjectAlias(r.subject) === subject && mapRecordToCategory(r).toLowerCase() === category && isQuizReadyPyq(r)).length;
-  }, [pyq, parsedTopic.name, parsedTopic.subjectName]);
+    return getQuestionsForTopic(pyq.filter(isQuizReadyPyq), parsedTopic.name).length;
+  }, [pyq, parsedTopic.name]);
 
   return (
     <SafeAreaView className="flex-1 bg-black">
@@ -88,8 +84,24 @@ export default function TopicDetailScreen() {
           onPress={() => router.push({ pathname: "/quiz" as never, params: { topic: JSON.stringify(parsedTopic) } as never })}
           className="bg-green-600 p-4 rounded-xl mb-6 items-center shadow-lg shadow-green-500/20"
         >
-          <Text className="text-white font-bold tracking-wide">Practice Quiz</Text>
+          <Text className="text-white font-bold tracking-wide">Generate AI Quiz</Text>
+          <Text className="text-green-200 text-xs mt-1">AI-generated practice questions</Text>
         </TouchableOpacity>
+
+        {noteCount > 0 && (
+          <TouchableOpacity
+            activeOpacity={0.8}
+            onPress={() =>
+              router.push({
+                pathname: "/notes" as never,
+                params: { topic: parsedTopic.name, subject: parsedTopic.subjectName || "" } as never,
+              })
+            }
+            className="bg-indigo-600 p-4 rounded-xl mb-6 items-center shadow-lg shadow-indigo-500/20"
+          >
+            <Text className="text-white font-bold tracking-wide">{`📘 Read Notes (${noteCount})`}</Text>
+          </TouchableOpacity>
+        )}
 
         <View className="bg-white/5 border border-white/10 rounded-xl p-4">
           <Text className="text-neutral-400 text-xs">Quiz-ready PYQs in this category: {quizReadyCount}</Text>

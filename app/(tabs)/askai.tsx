@@ -22,7 +22,7 @@ import { searchPyq } from "../../data/pyq/repository";
 export default function AskAI() {
   const [question, setQuestion] = useState("");
   const [messages, setMessages] = useState<any[]>([]);
-  const [selectedMode, setSelectedMode] = useState("explain");
+  const [selectedMode, setSelectedMode] = useState("summary");
   const [isTyping, setIsTyping] = useState(false);
   const [loading, setLoading] = useState(false);
   const [feedbackMap, setFeedbackMap] = useState<{ [key: string]: string }>({});
@@ -75,6 +75,7 @@ export default function AskAI() {
       id: Date.now().toString(),
       role: "user",
       content: question,
+      mode: selectedMode,
     };
 
     setMessages((prev) => [...prev, userMessage]);
@@ -150,6 +151,7 @@ export default function AskAI() {
       id: Date.now().toString(),
       role: "user",
       content: customPrompt,
+      mode: selectedMode,
     };
 
     setMessages((prev) => [...prev, userMessage]);
@@ -179,6 +181,7 @@ export default function AskAI() {
         id: Date.now().toString() + "-ai",
         role: "assistant",
         content: "",
+        mode: selectedMode,
       };
 
       setMessages((prev) => [...prev, aiMessage]);
@@ -206,6 +209,7 @@ export default function AskAI() {
         id: Date.now().toString() + "-error",
         role: "assistant",
         content: "Our AI service is currently taking a quick nap or experiencing high demand. Please try asking again in a moment!",
+        mode: selectedMode,
       };
       setMessages((prev) => [...prev, errorMsg]);
     } finally {
@@ -256,18 +260,26 @@ export default function AskAI() {
     return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
   };
 
+  const filteredMessages = messages.filter(m => !m.mode || m.mode === selectedMode);
+
   const renderMessage = useCallback(
     ({ item, index }: any) => (
       <ChatBubble
         item={item}
-        isSameSender={messages[index - 1]?.role === item.role}
+        isSameSender={filteredMessages[index - 1]?.role === item.role}
         feedbackMap={feedbackMap}
         handleFeedback={handleFeedback}
         formatTime={formatTime}
       />
     ),
-    [messages, feedbackMap]
+    [filteredMessages, feedbackMap]
   );
+
+  const loadingText = selectedMode === "summary" 
+    ? "Generating quick revision summary..." 
+    : selectedMode === "fullAnswer" 
+    ? "Generating detailed exam answer..." 
+    : "Generating nursing quiz...";
 
   return (
     <KeyboardAvoidingView
@@ -280,7 +292,7 @@ export default function AskAI() {
 
         <FlatList
           ref={flatListRef}
-          data={messages}
+          data={filteredMessages}
           keyExtractor={(item, index) => item.id || index.toString()}
           contentContainerStyle={{ padding: 12, paddingTop: 140, paddingBottom: 40 }}
           renderItem={renderMessage}
@@ -291,7 +303,7 @@ export default function AskAI() {
           keyboardShouldPersistTaps="handled"
         />
 
-        <TypingIndicator isTyping={isTyping} />
+        <TypingIndicator isTyping={isTyping} text={loadingText} />
 
         {showThanks && (
           <View className="absolute bottom-24 self-center bg-[#1c1c1e] py-2 px-4 rounded-full border border-[#2a2a2a] z-50">
