@@ -4,10 +4,11 @@ import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-na
 
 interface Props {
   greeting: string;
+  userName: string;
   onLogout: () => void;
 }
 
-export default function HomeHeader({ greeting, onLogout }: Props) {
+export default function HomeHeader({ greeting, userName, onLogout }: Props) {
   const opacity = useSharedValue(0);
   
   useEffect(() => { 
@@ -28,7 +29,7 @@ export default function HomeHeader({ greeting, onLogout }: Props) {
       
       <View className="self-start bg-blue-400/10 px-3 py-1 rounded-xl mb-6">
         <View className="flex-row items-center gap-2">
-          <Text className="text-[30px] font-bold text-blue-500">Nurse</Text>
+          <Text className="text-[30px] font-bold text-blue-500">{userName}</Text>
           <Image
             source={require("../../assets/images/nurse-avatar.png")}
             className="w-[34px] h-[34px] rounded-full border-2 border-blue-400"

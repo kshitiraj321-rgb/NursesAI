@@ -2,7 +2,7 @@
   {
     "id": "04-pediatric-pdf-1",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Pediatric Nursing",
     "subCategory": "GI",
     "topic": "Diarrhea Management",
@@ -35,7 +35,7 @@
   {
     "id": "04-pediatric-pdf-2",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Pediatric Nursing",
     "subCategory": "Neonatal",
     "topic": "Hyperbilirubinemia",
@@ -68,7 +68,7 @@
   {
     "id": "04-pediatric-pdf-3",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Pediatric Nursing",
     "subCategory": "Neuro",
     "topic": "Meningitis",
@@ -101,7 +101,7 @@
   {
     "id": "04-pediatric-pdf-4",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Pediatric Nursing",
     "subCategory": "Growth",
     "topic": "Anthropometry",
@@ -133,7 +133,7 @@
   {
     "id": "04-pediatric-pdf-5",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Pediatric Nursing",
     "subCategory": "Growth",
     "topic": "Milestones",
@@ -164,7 +164,7 @@
   {
     "id": "04-pediatric-pdf-6",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Pediatric Nursing",
     "subCategory": "Neonatal",
     "topic": "KMC",
@@ -198,7 +198,7 @@
   {
     "id": "04-pediatric-pdf-7",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Pediatric Nursing",
     "subCategory": "Procedures",
     "topic": "Suctioning",
@@ -229,7 +229,7 @@
   {
     "id": "04-pediatric-pdf-9",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Pediatric Nursing",
     "subCategory": "Neonatal",
     "topic": "Infection",
@@ -262,7 +262,7 @@
   {
     "id": "04-pediatric-pdf-12",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Pediatric Nursing",
     "subCategory": "Immunization",
     "topic": "Vaccine Types",
@@ -294,7 +294,7 @@
   {
     "id": "04-pediatric-pdf-13",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Pediatric Nursing",
     "subCategory": "GI",
     "topic": "Diarrhea",
@@ -326,7 +326,7 @@
   {
     "id": "04-pediatric-pdf-14",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Pediatric Nursing",
     "subCategory": "Respiratory",
     "topic": "Pneumonia",
@@ -357,7 +357,7 @@
   {
     "id": "04-pediatric-pdf-15",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Pediatric Nursing",
     "subCategory": "Neonatal",
     "topic": "Meningitis",
@@ -389,7 +389,7 @@
   {
     "id": "04-pediatric-pdf-17",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Pediatric Nursing",
     "subCategory": "Infectious",
     "topic": "Pertussis",
@@ -421,7 +421,7 @@
   {
     "id": "04-pediatric-pdf-26",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Pediatric Nursing",
     "subCategory": "Infectious",
     "topic": "Meningitis",

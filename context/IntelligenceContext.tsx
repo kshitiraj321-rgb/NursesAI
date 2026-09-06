@@ -86,7 +86,7 @@ export function IntelligenceProvider({ children }: { children: React.ReactNode }
 
       snapshot.forEach((docSnap) => {
         const result = docSnap.data();
-        const topic = result.topic;
+        const topic = typeof result.topic === 'string' ? result.topic.trim() : result.topic;
 
         const correct = result.correctAnswers ?? result.score ?? 0;
         const total = result.totalQuestions ?? result.total ?? 10;

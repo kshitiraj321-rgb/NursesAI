@@ -2,7 +2,7 @@
   {
     "id": "07-gk-pdf-1",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "General Aptitude",
     "subCategory": "International",
     "topic": "G20",
@@ -33,7 +33,7 @@
   {
     "id": "07-gk-pdf-3",
     "exam": "NORCET",
-    "year": null,
+    "year": 2022,
     "subject": "General Aptitude",
     "subCategory": "Sociology",
     "topic": "Founders",
@@ -63,7 +63,7 @@
   {
     "id": "07-gk-pdf-4",
     "exam": "NORCET",
-    "year": null,
+    "year": 2022,
     "subject": "General Aptitude",
     "subCategory": "Current Affairs",
     "topic": "Infrastructure",

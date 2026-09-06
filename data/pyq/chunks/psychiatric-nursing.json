@@ -2,7 +2,7 @@
   {
     "id": "06-psychiatry-pdf-1",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Psychiatric Nursing",
     "subCategory": "Grief",
     "topic": "Kubler-Ross",
@@ -36,7 +36,7 @@
   {
     "id": "06-psychiatry-pdf-2",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Psychiatric Nursing",
     "subCategory": "Substance Abuse",
     "topic": "Stimulants",
@@ -69,7 +69,7 @@
   {
     "id": "06-psychiatry-pdf-3",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Psychiatric Nursing",
     "subCategory": "Dementia",
     "topic": "Behavioral",
@@ -101,7 +101,7 @@
   {
     "id": "06-psychiatry-pdf-4",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Psychiatric Nursing",
     "subCategory": "Thought Process",
     "topic": "Abnormalities",
@@ -134,7 +134,7 @@
   {
     "id": "06-psychiatry-pdf-5",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Psychiatric Nursing",
     "subCategory": "Cognitive",
     "topic": "MMSE",

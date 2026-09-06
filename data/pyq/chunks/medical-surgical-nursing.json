@@ -2,7 +2,7 @@
   {
     "id": "01-medicalsurgical-pdf-1",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Musculoskeletal",
     "topic": "Rheumatic Fever",
@@ -35,7 +35,7 @@
   {
     "id": "01-medicalsurgical-pdf-2",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "Heart Failure",
@@ -66,7 +66,7 @@
   {
     "id": "01-medicalsurgical-pdf-3",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Shock",
@@ -97,7 +97,7 @@
   {
     "id": "01-medicalsurgical-pdf-4",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Neuro",
     "topic": "Spinal Cord Injury",
@@ -129,7 +129,7 @@
   {
     "id": "01-medicalsurgical-pdf-5",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Dermatology",
     "topic": "Infections",
@@ -160,7 +160,7 @@
   {
     "id": "01-medicalsurgical-pdf-6",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Renal",
     "topic": "ARF",
@@ -193,7 +193,7 @@
   {
     "id": "01-medicalsurgical-pdf-8",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Dermatology",
     "topic": "Fungal Infections",
@@ -225,7 +225,7 @@
   {
     "id": "01-medicalsurgical-pdf-9",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Typhoid",
@@ -259,7 +259,7 @@
   {
     "id": "01-medicalsurgical-pdf-10",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Cardiac Drugs",
@@ -293,7 +293,7 @@
   {
     "id": "01-medicalsurgical-pdf-11",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Neuro",
     "topic": "Hydrocephalus",
@@ -326,7 +326,7 @@
   {
     "id": "01-medicalsurgical-pdf-12",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Burns",
     "topic": "Fluid Resuscitation",
@@ -359,7 +359,7 @@
   {
     "id": "01-medicalsurgical-pdf-13",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Renal",
     "topic": "Dialysis",
@@ -391,7 +391,7 @@
   {
     "id": "01-medicalsurgical-pdf-14",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Electrolytes",
@@ -424,7 +424,7 @@
   {
     "id": "01-medicalsurgical-pdf-15",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "ECG",
@@ -456,7 +456,7 @@
   {
     "id": "01-medicalsurgical-pdf-16",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Trauma",
     "topic": "ATLS",
@@ -489,7 +489,7 @@
   {
     "id": "01-medicalsurgical-pdf-17",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Meningitis",
@@ -524,7 +524,7 @@
   {
     "id": "01-medicalsurgical-pdf-18",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Trauma",
     "topic": "Hemorrhage Control",
@@ -557,7 +557,7 @@
   {
     "id": "01-medicalsurgical-pdf-19",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Cardiac Drugs",
@@ -590,7 +590,7 @@
   {
     "id": "01-medicalsurgical-pdf-20",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Shock",
@@ -622,7 +622,7 @@
   {
     "id": "01-medicalsurgical-pdf-21",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Diabetes",
@@ -654,7 +654,7 @@
   {
     "id": "01-medicalsurgical-pdf-22",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Anticoagulants",
@@ -687,7 +687,7 @@
   {
     "id": "01-medicalsurgical-pdf-23",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Burns",
     "topic": "Emergency",
@@ -721,7 +721,7 @@
   {
     "id": "01-medicalsurgical-pdf-24",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "ECG",
@@ -753,7 +753,7 @@
   {
     "id": "01-medicalsurgical-pdf-25",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Immunization",
     "topic": "COVID",
@@ -787,7 +787,7 @@
   {
     "id": "01-medicalsurgical-pdf-26",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "IV Access",
@@ -820,7 +820,7 @@
   {
     "id": "01-medicalsurgical-pdf-27",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "ATT",
@@ -853,7 +853,7 @@
   {
     "id": "01-medicalsurgical-pdf-28",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Tetanus",
@@ -884,7 +884,7 @@
   {
     "id": "01-medicalsurgical-pdf-29",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Shock",
@@ -916,7 +916,7 @@
   {
     "id": "01-medicalsurgical-pdf-30",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Neuro",
     "topic": "Spinal Cord Injury",
@@ -949,7 +949,7 @@
   {
     "id": "01-medicalsurgical-pdf-31",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Neuro",
     "topic": "Stroke",
@@ -984,7 +984,7 @@
   {
     "id": "01-medicalsurgical-pdf-38",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -1017,7 +1017,7 @@
   {
     "id": "01-medicalsurgical-pdf-39",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Ophthalmology",
     "topic": "Instruments",
@@ -1048,7 +1048,7 @@
   {
     "id": "01-medicalsurgical-pdf-40",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -1081,7 +1081,7 @@
   {
     "id": "01-medicalsurgical-pdf-41",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Procedures",
     "topic": "Bone Marrow",
@@ -1113,7 +1113,7 @@
   {
     "id": "01-medicalsurgical-pdf-42",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "GI",
     "topic": "Peptic Ulcer",
@@ -1146,7 +1146,7 @@
   {
     "id": "01-medicalsurgical-pdf-43",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "MI",
@@ -1178,7 +1178,7 @@
   {
     "id": "01-medicalsurgical-pdf-44",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Burns",
     "topic": "Complications",
@@ -1211,7 +1211,7 @@
   {
     "id": "01-medicalsurgical-pdf-45",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "DM Complications",
@@ -1244,7 +1244,7 @@
   {
     "id": "01-medicalsurgical-pdf-46",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "Hypertension",
@@ -1277,7 +1277,7 @@
   {
     "id": "01-medicalsurgical-pdf-47",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Oncology",
     "topic": "Mortality",
@@ -1310,7 +1310,7 @@
   {
     "id": "01-medicalsurgical-pdf-48",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Renal",
     "topic": "ARF/CKD",
@@ -1344,7 +1344,7 @@
   {
     "id": "01-medicalsurgical-pdf-49",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "GI",
     "topic": "Cirrhosis",
@@ -1376,7 +1376,7 @@
   {
     "id": "01-medicalsurgical-pdf-50",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Respiratory",
     "topic": "COPD",
@@ -1407,7 +1407,7 @@
   {
     "id": "01-medicalsurgical-pdf-51",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Respiratory",
     "topic": "Asthma",
@@ -1439,7 +1439,7 @@
   {
     "id": "01-medicalsurgical-pdf-52",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "HIV",
@@ -1471,7 +1471,7 @@
   {
     "id": "01-medicalsurgical-pdf-53",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "TB",
@@ -1503,7 +1503,7 @@
   {
     "id": "01-medicalsurgical-pdf-54",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Malaria",
@@ -1535,7 +1535,7 @@
   {
     "id": "01-medicalsurgical-pdf-55",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Dengue",
@@ -1568,7 +1568,7 @@
   {
     "id": "01-medicalsurgical-pdf-56",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Typhoid",
@@ -1600,7 +1600,7 @@
   {
     "id": "01-medicalsurgical-pdf-57",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Diphtheria",
@@ -1634,7 +1634,7 @@
   {
     "id": "01-medicalsurgical-pdf-58",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Tetanus",
@@ -1666,7 +1666,7 @@
   {
     "id": "01-medicalsurgical-pdf-59",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Rabies",
@@ -1698,7 +1698,7 @@
   {
     "id": "01-medicalsurgical-pdf-60",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Snake Bite",
@@ -1731,7 +1731,7 @@
   {
     "id": "01-medicalsurgical-pdf-61",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Scorpion Sting",
@@ -1764,7 +1764,7 @@
   {
     "id": "01-medicalsurgical-pdf-62",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Bee Sting",
@@ -1797,7 +1797,7 @@
   {
     "id": "01-medicalsurgical-pdf-63",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Overdose",
@@ -1829,7 +1829,7 @@
   {
     "id": "01-medicalsurgical-pdf-64",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Surgical",
     "topic": "Complications",
@@ -1862,7 +1862,7 @@
   {
     "id": "01-medicalsurgical-pdf-65",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Trauma",
     "topic": "Mortality",
@@ -1894,7 +1894,7 @@
   {
     "id": "01-medicalsurgical-pdf-66",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "RTA",
@@ -1926,7 +1926,7 @@
   {
     "id": "01-medicalsurgical-pdf-67",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Drowning",
@@ -1958,7 +1958,7 @@
   {
     "id": "01-medicalsurgical-pdf-68",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Emergency",
     "topic": "Electrocution",
@@ -1990,7 +1990,7 @@
   {
     "id": "01-medicalsurgical-pdf-69",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Oncology",
     "topic": "Radiation",
@@ -2022,7 +2022,7 @@
   {
     "id": "01-medicalsurgical-pdf-70",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Anticoagulants",
@@ -2058,7 +2058,7 @@
   {
     "id": "01-medicalsurgical-pdf-71",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Steroids",
@@ -2090,7 +2090,7 @@
   {
     "id": "01-medicalsurgical-pdf-72",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "HTN",
@@ -2122,7 +2122,7 @@
   {
     "id": "01-medicalsurgical-pdf-74",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Neuro",
     "topic": "Stroke",
@@ -2154,7 +2154,7 @@
   {
     "id": "01-medicalsurgical-pdf-75",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Respiratory",
     "topic": "Asthma",
@@ -2186,7 +2186,7 @@
   {
     "id": "01-medicalsurgical-pdf-76",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Respiratory",
     "topic": "PE",
@@ -2220,7 +2220,7 @@
   {
     "id": "01-medicalsurgical-pdf-77",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Surgical",
     "topic": "Mastectomy",
@@ -2253,7 +2253,7 @@
   {
     "id": "01-medicalsurgical-pdf-78",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Respiratory",
     "topic": "COPD",
@@ -2286,7 +2286,7 @@
   {
     "id": "01-medicalsurgical-pdf-79",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "DM",
@@ -2320,7 +2320,7 @@
   {
     "id": "01-medicalsurgical-pdf-80",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Renal",
     "topic": "Anemia",
@@ -2354,7 +2354,7 @@
   {
     "id": "01-medicalsurgical-pdf-81",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "GI",
     "topic": "Cirrhosis",
@@ -2386,7 +2386,7 @@
   {
     "id": "01-medicalsurgical-pdf-82",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "MI",
@@ -2419,7 +2419,7 @@
   {
     "id": "01-medicalsurgical-pdf-83",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "Adrenal",
@@ -2453,7 +2453,7 @@
   {
     "id": "01-medicalsurgical-pdf-85",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "GI",
     "topic": "Pancreatitis",
@@ -2486,7 +2486,7 @@
   {
     "id": "01-medicalsurgical-pdf-87",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "Hyperthyroidism",
@@ -2519,7 +2519,7 @@
   {
     "id": "01-medicalsurgical-pdf-90",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "Diabetes Insipidus",
@@ -2552,7 +2552,7 @@
   {
     "id": "01-medicalsurgical-pdf-92",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Respiratory",
     "topic": "COPD",
@@ -2587,7 +2587,7 @@
   {
     "id": "01-medicalsurgical-pdf-94",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "DM",
@@ -2622,7 +2622,7 @@
   {
     "id": "01-medicalsurgical-pdf-96",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Hematology",
     "topic": "Anemia",
@@ -2655,7 +2655,7 @@
   {
     "id": "01-medicalsurgical-pdf-99",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "Hypothyroid",
@@ -2687,7 +2687,7 @@
   {
     "id": "01-medicalsurgical-pdf-101",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Fluids",
     "topic": "Hypovolemia",
@@ -2721,7 +2721,7 @@
   {
     "id": "01-medicalsurgical-pdf-103",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Renal",
     "topic": "ARF",
@@ -2754,7 +2754,7 @@
   {
     "id": "01-medicalsurgical-pdf-105",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "GI",
     "topic": "Cirrhosis",
@@ -2787,7 +2787,7 @@
   {
     "id": "01-medicalsurgical-pdf-106",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "DKA",
@@ -2821,7 +2821,7 @@
   {
     "id": "01-medicalsurgical-pdf-107",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "HTN",
@@ -2854,7 +2854,7 @@
   {
     "id": "01-medicalsurgical-pdf-109",
     "exam": "NORCET",
-    "year": null,
+    "year": 2022,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "TB",
@@ -2886,7 +2886,7 @@
   {
     "id": "01-medicalsurgical-pdf-110",
     "exam": "NORCET",
-    "year": null,
+    "year": 2022,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Surgical",
     "topic": "Burns",
@@ -2920,7 +2920,7 @@
   {
     "id": "01-medicalsurgical-pdf-132",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "Measles",
@@ -2952,7 +2952,7 @@
   {
     "id": "01-medicalsurgical-pdf-140",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Anesthesia",
     "topic": "Complications",
@@ -2984,7 +2984,7 @@
   {
     "id": "01-medicalsurgical-pdf-147",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Nutrition",
     "topic": "Starvation",
@@ -3016,7 +3016,7 @@
   {
     "id": "01-medicalsurgical-pdf-148",
     "exam": "NORCET",
-    "year": null,
+    "year": 2024,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "MI",
@@ -3048,7 +3048,7 @@
   {
     "id": "01-medicalsurgical-pdf-149",
     "exam": "NORCET",
-    "year": null,
+    "year": 2024,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Respiratory",
     "topic": "TB",
@@ -3080,7 +3080,7 @@
   {
     "id": "01-medicalsurgical-pdf-152",
     "exam": "NORCET",
-    "year": null,
+    "year": 2024,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "Steroids",
@@ -3112,7 +3112,7 @@
   {
     "id": "01-medicalsurgical-pdf-154",
     "exam": "NORCET",
-    "year": null,
+    "year": 2024,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Neuro",
     "topic": "Procedures",
@@ -3144,7 +3144,7 @@
   {
     "id": "01-medicalsurgical-pdf-160",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Pharma",
     "topic": "TB",
@@ -3177,7 +3177,7 @@
   {
     "id": "01-medicalsurgical-pdf-163",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3210,7 +3210,7 @@
   {
     "id": "01-medicalsurgical-pdf-164",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "Pituitary",
@@ -3242,7 +3242,7 @@
   {
     "id": "01-medicalsurgical-pdf-165",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "HAP",
@@ -3274,7 +3274,7 @@
   {
     "id": "01-medicalsurgical-pdf-166",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Endocrine",
     "topic": "Adrenal",
@@ -3306,7 +3306,7 @@
   {
     "id": "01-medicalsurgical-pdf-167",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Cardiology",
     "topic": "Electrolytes",
@@ -3341,7 +3341,7 @@
   {
     "id": "01-medicalsurgical-pdf-168",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3374,7 +3374,7 @@
   {
     "id": "01-medicalsurgical-pdf-169",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3407,7 +3407,7 @@
   {
     "id": "01-medicalsurgical-pdf-170",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Infectious",
     "topic": "GI",
@@ -3440,7 +3440,7 @@
   {
     "id": "01-medicalsurgical-pdf-171",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3473,7 +3473,7 @@
   {
     "id": "01-medicalsurgical-pdf-172",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3506,7 +3506,7 @@
   {
     "id": "01-medicalsurgical-pdf-173",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3539,7 +3539,7 @@
   {
     "id": "01-medicalsurgical-pdf-174",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3574,7 +3574,7 @@
   {
     "id": "01-medicalsurgical-pdf-175",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3607,7 +3607,7 @@
   {
     "id": "01-medicalsurgical-pdf-177",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3640,7 +3640,7 @@
   {
     "id": "01-medicalsurgical-pdf-178",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",
@@ -3672,7 +3672,7 @@
   {
     "id": "01-medicalsurgical-pdf-179",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Medical-Surgical Nursing",
     "subCategory": "Toxicology",
     "topic": "Antidotes",

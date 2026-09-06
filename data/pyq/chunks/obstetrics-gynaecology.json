@@ -2,7 +2,7 @@
   {
     "id": "03-obg-pdf-1",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "GTPAL",
@@ -34,7 +34,7 @@
   {
     "id": "03-obg-pdf-2",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Labour",
     "topic": "Preterm Labour",
@@ -67,7 +67,7 @@
   {
     "id": "03-obg-pdf-3",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Fetal Assessment",
@@ -101,7 +101,7 @@
   {
     "id": "03-obg-pdf-4",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Neonatal",
     "topic": "TEF",
@@ -135,7 +135,7 @@
   {
     "id": "03-obg-pdf-5",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Postnatal",
     "topic": "Breastfeeding",
@@ -168,7 +168,7 @@
   {
     "id": "03-obg-pdf-6",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Anemia",
@@ -200,7 +200,7 @@
   {
     "id": "03-obg-pdf-7",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Emergency",
     "topic": "Preeclampsia",
@@ -232,7 +232,7 @@
   {
     "id": "03-obg-pdf-8",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Amniotic Fluid",
@@ -264,7 +264,7 @@
   {
     "id": "03-obg-pdf-9",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Family Planning",
     "topic": "IUCD",
@@ -297,7 +297,7 @@
   {
     "id": "03-obg-pdf-10",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Family Planning",
     "topic": "Injectables",
@@ -331,7 +331,7 @@
   {
     "id": "03-obg-pdf-11",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Family Planning",
     "topic": "Injectables",
@@ -364,7 +364,7 @@
   {
     "id": "03-obg-pdf-12",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Postpartum",
     "topic": "PPH",
@@ -395,7 +395,7 @@
   {
     "id": "03-obg-pdf-13",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Labour",
     "topic": "Stages",
@@ -428,7 +428,7 @@
   {
     "id": "03-obg-pdf-14",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Amniotic Fluid",
@@ -460,7 +460,7 @@
   {
     "id": "03-obg-pdf-15",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Umbilical Cord",
@@ -493,7 +493,7 @@
   {
     "id": "03-obg-pdf-16",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Family Planning",
     "topic": "Contraception",
@@ -526,7 +526,7 @@
   {
     "id": "03-obg-pdf-17",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Fetal Assessment",
@@ -559,7 +559,7 @@
   {
     "id": "03-obg-pdf-23",
     "exam": "NORCET",
-    "year": null,
+    "year": 2022,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Physiology",
     "topic": "Hormones",
@@ -593,7 +593,7 @@
   {
     "id": "03-obg-pdf-24",
     "exam": "NORCET",
-    "year": null,
+    "year": 2022,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Labor",
     "topic": "Fetal Position",
@@ -625,7 +625,7 @@
   {
     "id": "03-obg-pdf-25",
     "exam": "NORCET",
-    "year": null,
+    "year": 2022,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Nutrition",
@@ -658,7 +658,7 @@
   {
     "id": "03-obg-pdf-29",
     "exam": "NORCET",
-    "year": null,
+    "year": 2024,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Disorders",
     "topic": "DSD",
@@ -689,7 +689,7 @@
   {
     "id": "03-obg-pdf-30",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Family Planning",
     "topic": "IUCD",
@@ -722,7 +722,7 @@
   {
     "id": "03-obg-pdf-31",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Assessment",
     "topic": "GTPAL",
@@ -753,7 +753,7 @@
   {
     "id": "03-obg-pdf-32",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Nutrition",
@@ -786,7 +786,7 @@
   {
     "id": "03-obg-pdf-33",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Antenatal",
     "topic": "Nutrition",
@@ -820,7 +820,7 @@
   {
     "id": "03-obg-pdf-34",
     "exam": "NORCET",
-    "year": null,
+    "year": 2026,
     "subject": "Obstetrics & Gynaecology",
     "subCategory": "Postpartum",
     "topic": "Breastfeeding",

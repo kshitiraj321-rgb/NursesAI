@@ -60,7 +60,7 @@ export default function QuizScreen() {
   const [pyqTotal, setPyqTotal] = useState(0);
   const [pyqLoaded, setPyqLoaded] = useState(false);
 
-  const { data: intelligenceData } = useIntelligenceContext();
+  const { data: intelligenceData, refresh: refreshIntelligence } = useIntelligenceContext();
   const weakestTopic = intelligenceData.weakestTopic;
 
   useEffect(() => {
@@ -87,7 +87,7 @@ export default function QuizScreen() {
     }
   }, [pyqLoaded]);
 
-  const fallbackTopic = useMemo(() => parsedTopic.name || topicParam, [parsedTopic.name, topicParam]);
+  const fallbackTopic = useMemo(() => (parsedTopic.name || topicParam).trim(), [parsedTopic.name, topicParam]);
 
   const topicPyqCount = useMemo(() => {
     if (typeParam !== "pyq" || pyqRecords.length === 0) return 0;
@@ -153,15 +153,11 @@ export default function QuizScreen() {
       const tokenRaw = modeParam === "revision" && weakestTopic ? weakestTopic : topicParam;
       const pool = getQuestionsForTopic(source, tokenRaw);
 
-      if (pool.length === 0) {
-        setQuestions([]);
+      if (pool.length > 0) {
+        setQuestions(shuffleArray(pool).slice(0, 10).map(toQuizQuestion));
         finishLoading();
         return;
       }
-
-      setQuestions(shuffleArray(pool).slice(0, 10).map(toQuizQuestion));
-      finishLoading();
-      return;
     }
 
     try {
@@ -171,7 +167,7 @@ export default function QuizScreen() {
       if (!token) throw new Error("Auth token missing");
 
       const prompt = `Generate 5 MCQ questions for ${parsedTopic.name} for nursing exam. Return ONLY JSON array.\n[\n  {\n    "question": "",\n    "options": ["", "", "", ""],\n    "answer": ""\n  }\n]\nTopic: ${parsedTopic.name}`;
-      const response = await axios.post(`${API_URL}/ask`, { messages: [{ role: "user", content: prompt }] }, { headers: { Authorization: `Bearer ${token}` } });
+      const response = await axios.post(`${API_URL}/ask`, { messages: [{ role: "user", content: prompt }], mode: "quiz" }, { headers: { Authorization: `Bearer ${token}` } });
       let cleaned = String(response.data.answer || "").trim();
       if (!cleaned.endsWith("]")) cleaned = cleaned.substring(0, cleaned.lastIndexOf("}") + 1) + "]";
       setQuestions(JSON.parse(cleaned) as QuizQuestion[]);
@@ -270,6 +266,7 @@ export default function QuizScreen() {
       }
 
       await batch.commit();
+      refreshIntelligence(); // Immediately trigger intelligence recalculation
     } catch (err) {
       console.log("Save error:", err);
     }
@@ -301,7 +298,7 @@ export default function QuizScreen() {
                 ) : topicPyqCount > 0 ? (
                   <Text className="text-neutral-400 text-xs mb-4">Available for this topic: {topicPyqCount} PYQs</Text>
                 ) : (
-                  <Text className="text-red-400 text-xs mb-4">No verified PYQs available for this topic yet</Text>
+                  <Text className="text-amber-400 text-xs mb-4">No verified PYQs available. AI will generate a custom quiz.</Text>
                 )
               ) : null}
               <TouchableOpacity onPress={handleStartQuiz} className="bg-green-600 p-4 rounded-xl items-center"><Text className="text-white font-bold tracking-wide text-[16px]">Start Assessment</Text></TouchableOpacity>

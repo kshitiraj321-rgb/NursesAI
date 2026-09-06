@@ -34,7 +34,7 @@ export default function ProgressCard({ todayProgress, dailyGoal, streak, delay }
         <View className="absolute -top-10 -left-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl block" />
         
         <View className="flex-row justify-between items-end mb-1">
-          <Text className="text-white text-lg font-bold">Today's Goal</Text>
+          <Text className="text-white text-lg font-bold">Today&apos;s Goal</Text>
           <Text className="text-neutral-400 text-[14px] font-medium">{todayProgress} / {dailyGoal} questions</Text>
         </View>
         

@@ -2,7 +2,7 @@
   {
     "id": "02-fundamentals-pdf-1",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Procedures",
     "topic": "Liver Biopsy",
@@ -34,7 +34,7 @@
   {
     "id": "02-fundamentals-pdf-2",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "IM Injection",
     "topic": "Pediatric",
@@ -66,7 +66,7 @@
   {
     "id": "02-fundamentals-pdf-3",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Drug Administration",
     "topic": "Transdermal",
@@ -99,7 +99,7 @@
   {
     "id": "02-fundamentals-pdf-4",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Anatomy",
     "topic": "Cardiovascular",
@@ -131,7 +131,7 @@
   {
     "id": "02-fundamentals-pdf-5",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "CPR",
     "topic": "Infant BLS",
@@ -163,7 +163,7 @@
   {
     "id": "02-fundamentals-pdf-6",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Patient Safety",
     "topic": "WHO Checklist",
@@ -196,7 +196,7 @@
   {
     "id": "02-fundamentals-pdf-7",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Hygiene",
     "topic": "Perineal Care",
@@ -230,7 +230,7 @@
   {
     "id": "02-fundamentals-pdf-8",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Infection Control",
     "topic": "Biohazard",
@@ -262,7 +262,7 @@
   {
     "id": "02-fundamentals-pdf-9",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Assessment",
     "topic": "Hearing Test",
@@ -294,7 +294,7 @@
   {
     "id": "02-fundamentals-pdf-10",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Infection Control",
     "topic": "Hand Hygiene",
@@ -327,7 +327,7 @@
   {
     "id": "02-fundamentals-pdf-11",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Poisoning",
     "topic": "Hydrocarbon",
@@ -360,7 +360,7 @@
   {
     "id": "02-fundamentals-pdf-12",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "IV Fluids",
     "topic": "Osmolarity",
@@ -394,7 +394,7 @@
   {
     "id": "02-fundamentals-pdf-13",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Procedures",
     "topic": "Lumbar Puncture",
@@ -427,7 +427,7 @@
   {
     "id": "02-fundamentals-pdf-14",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "CPR",
     "topic": "Two Rescuer",
@@ -459,7 +459,7 @@
   {
     "id": "02-fundamentals-pdf-15",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Hemodynamic",
     "topic": "CVP",
@@ -492,7 +492,7 @@
   {
     "id": "02-fundamentals-pdf-17",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Bandaging",
     "topic": "Techniques",
@@ -523,7 +523,7 @@
   {
     "id": "02-fundamentals-pdf-18",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "IM Injection",
     "topic": "Sites",
@@ -557,7 +557,7 @@
   {
     "id": "02-fundamentals-pdf-19",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Catheterization",
     "topic": "Foley",
@@ -589,7 +589,7 @@
   {
     "id": "02-fundamentals-pdf-20",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Lab Values",
     "topic": "Electrolytes",
@@ -621,7 +621,7 @@
   {
     "id": "02-fundamentals-pdf-21",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Oxygen Therapy",
     "topic": "Devices",
@@ -653,7 +653,7 @@
   {
     "id": "02-fundamentals-pdf-22",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Wound Care",
     "topic": "Asepsis",
@@ -685,7 +685,7 @@
   {
     "id": "02-fundamentals-pdf-23",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "BMW",
     "topic": "Segregation",
@@ -719,7 +719,7 @@
   {
     "id": "02-fundamentals-pdf-24",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "IV Fluids",
     "topic": "Osmolarity",
@@ -752,7 +752,7 @@
   {
     "id": "02-fundamentals-pdf-25",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Mobility",
     "topic": "Crutches",
@@ -783,7 +783,7 @@
   {
     "id": "02-fundamentals-pdf-26",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Catheterization",
     "topic": "Foley",
@@ -816,7 +816,7 @@
   {
     "id": "02-fundamentals-pdf-27",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "OT",
     "topic": "Roles",
@@ -847,7 +847,7 @@
   {
     "id": "02-fundamentals-pdf-28",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Computers",
     "topic": "Hardware",
@@ -877,7 +877,7 @@
   {
     "id": "02-fundamentals-pdf-29",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Hygiene",
     "topic": "Bathing",
@@ -909,7 +909,7 @@
   {
     "id": "02-fundamentals-pdf-31",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Administration",
     "topic": "Records",
@@ -939,7 +939,7 @@
   {
     "id": "02-fundamentals-pdf-32",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Assessment",
     "topic": "Vital Signs",
@@ -972,7 +972,7 @@
   {
     "id": "02-fundamentals-pdf-35",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Preop",
     "topic": "Preparation",
@@ -1004,7 +1004,7 @@
   {
     "id": "02-fundamentals-pdf-39",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Statistics",
     "topic": "Measures",
@@ -1034,7 +1034,7 @@
   {
     "id": "02-fundamentals-pdf-40",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Preop",
     "topic": "Safety",
@@ -1065,7 +1065,7 @@
   {
     "id": "02-fundamentals-pdf-43",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Pharma",
     "topic": "Local Anesthesia",
@@ -1100,7 +1100,7 @@
   {
     "id": "02-fundamentals-pdf-58",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1131,7 +1131,7 @@
   {
     "id": "02-fundamentals-pdf-60",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Lab Values",
     "topic": "Electrolytes",
@@ -1163,7 +1163,7 @@
   {
     "id": "02-fundamentals-pdf-61",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Assessment",
     "topic": "Cranial Nerves",
@@ -1195,7 +1195,7 @@
   {
     "id": "02-fundamentals-pdf-62",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Sutures",
     "topic": "Types",
@@ -1229,7 +1229,7 @@
   {
     "id": "02-fundamentals-pdf-63",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "IM Injection",
     "topic": "Pediatric",
@@ -1261,7 +1261,7 @@
   {
     "id": "02-fundamentals-pdf-64",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Infection Control",
     "topic": "HAI",
@@ -1294,7 +1294,7 @@
   {
     "id": "02-fundamentals-pdf-65",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "IM Injection",
     "topic": "Adult Sites",
@@ -1328,7 +1328,7 @@
   {
     "id": "02-fundamentals-pdf-66",
     "exam": "NORCET",
-    "year": null,
+    "year": 2020,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Pharma",
     "topic": "Antitoxin",
@@ -1360,7 +1360,7 @@
   {
     "id": "02-fundamentals-pdf-69",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "IV Therapy",
     "topic": "Complications",
@@ -1394,7 +1394,7 @@
   {
     "id": "02-fundamentals-pdf-70",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Medication Admin",
     "topic": "IV Push",
@@ -1428,7 +1428,7 @@
   {
     "id": "02-fundamentals-pdf-71",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Lab Values",
     "topic": "Electrolytes",
@@ -1462,7 +1462,7 @@
   {
     "id": "02-fundamentals-pdf-72",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Lab Values",
     "topic": "Electrolytes",
@@ -1497,7 +1497,7 @@
   {
     "id": "02-fundamentals-pdf-73",
     "exam": "NORCET",
-    "year": null,
+    "year": 2021,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Lab Values",
     "topic": "Electrolytes",
@@ -1532,7 +1532,7 @@
   {
     "id": "02-fundamentals-pdf-76",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Assessment",
     "topic": "Cranial Nerves",
@@ -1566,7 +1566,7 @@
   {
     "id": "02-fundamentals-pdf-81",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1599,7 +1599,7 @@
   {
     "id": "02-fundamentals-pdf-82",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1632,7 +1632,7 @@
   {
     "id": "02-fundamentals-pdf-83",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1665,7 +1665,7 @@
   {
     "id": "02-fundamentals-pdf-85",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1700,7 +1700,7 @@
   {
     "id": "02-fundamentals-pdf-86",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1733,7 +1733,7 @@
   {
     "id": "02-fundamentals-pdf-87",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1766,7 +1766,7 @@
   {
     "id": "02-fundamentals-pdf-88",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1799,7 +1799,7 @@
   {
     "id": "02-fundamentals-pdf-89",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Pregnancy",
@@ -1832,7 +1832,7 @@
   {
     "id": "02-fundamentals-pdf-90",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1866,7 +1866,7 @@
   {
     "id": "02-fundamentals-pdf-91",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1899,7 +1899,7 @@
   {
     "id": "02-fundamentals-pdf-92",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1933,7 +1933,7 @@
   {
     "id": "02-fundamentals-pdf-93",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1966,7 +1966,7 @@
   {
     "id": "02-fundamentals-pdf-94",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -1999,7 +1999,7 @@
   {
     "id": "02-fundamentals-pdf-95",
     "exam": "NORCET",
-    "year": null,
+    "year": 2025,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Nutrition",
     "topic": "Vitamins",
@@ -2032,7 +2032,7 @@
   {
     "id": "08-mixedpyq-pdf-1",
     "exam": "NORCET",
-    "year": null,
+    "year": 2023,
     "subject": "Fundamentals of Nursing",
     "subCategory": "Fluid and Electrolytes",
     "topic": "Acid-Base Balance",

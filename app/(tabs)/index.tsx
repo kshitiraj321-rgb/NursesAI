@@ -83,7 +83,9 @@ export default function HomeScreen() {
   };
 
   const hour = new Date().getHours();
-  const greeting = hour < 12 ? "Good Morning," : hour < 17 ? "Good Afternoon," : "Good Evening,";
+  const baseGreeting = hour < 12 ? "Good Morning" : hour < 17 ? "Good Afternoon" : "Good Evening";
+  const userName = user?.displayName ? user.displayName.split(" ")[0] : "Nurse";
+  const greeting = `${baseGreeting}, ${userName} 👋`;
 
   const handleSmartRevision = () => {
     if (!recommendedTopic) {
@@ -109,7 +111,7 @@ export default function HomeScreen() {
         contentContainerStyle={{ paddingTop: insets.top + 10, paddingBottom: 40 }}
         showsVerticalScrollIndicator={false}
       >
-        <HomeHeader greeting={greeting} onLogout={handleLogout} />
+        <HomeHeader greeting={greeting} userName={userName} onLogout={handleLogout} />
         <DailyFocusCard dailyTopic={recommendedTopic} topicStat={topicStat} progress={Math.min((retentionData.todayProgress || 0) / (retentionData.dailyGoal || 10), 1)} delay={100} />
         <TouchableOpacity
           onPress={handleSmartRevision}
