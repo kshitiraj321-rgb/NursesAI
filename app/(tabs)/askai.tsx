@@ -15,9 +15,16 @@ import { auth, db } from "../../firebase";
 
 import AskAIHeader from "../../components/AskAI/AskAIHeader";
 import ChatBubble from "../../components/AskAI/ChatBubble";
+import ChatBubbleV2 from "../../components/AskAI/ChatBubbleV2";
 import ChatInput from "../../components/AskAI/ChatInput";
 import TypingIndicator from "../../components/AskAI/TypingIndicator";
 import { searchPyq } from "../../data/pyq/repository";
+import { fetchAskAIV2 } from "../../utils/api/askaiV2";
+
+// CONTROLLED INTEGRATION FLAG: 
+// Set to true to test V2 locally. If V2 fails, it falls back to legacy /ask.
+const ENABLE_V2_ROUTING = true;
+
 
 export default function AskAI() {
   const [question, setQuestion] = useState("");
@@ -94,39 +101,81 @@ export default function AskAI() {
       const token = await user.getIdToken();
       if (!token) throw new Error("Auth token missing");
 
-      const response = await axios.post("https://nursesai.onrender.com/ask", {
-        messages: [...messages, enrichedMessage],
-        mode: selectedMode,
-      }, { headers: { Authorization: `Bearer ${token}` } });
+      let v2Success = false;
 
-      const fullText = response.data.answer;
-      let index = 0;
+      if (ENABLE_V2_ROUTING) {
+        try {
+          const structuredResult = await fetchAskAIV2([...messages, enrichedMessage], selectedMode);
+          const fullText = structuredResult.content;
+          let index = 0;
 
-      const aiMessage = {
-        id: Date.now().toString() + "-ai",
-        role: "assistant",
-        content: "",
-      };
+          const aiMessage = {
+            ...structuredResult,
+            content: "", // reset for typewriter
+          };
 
-      setMessages((prev) => [...prev, aiMessage]);
+          setMessages((prev) => [...prev, aiMessage]);
 
-      const interval = setInterval(() => {
-        if (index < fullText.length) {
-          index++;
-          setMessages((prev) =>
-            prev.map((msg) =>
-              msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
-            )
-          );
-        } else {
-          clearInterval(interval);
+          const interval = setInterval(() => {
+            if (index < fullText.length) {
+              index++;
+              setMessages((prev) =>
+                prev.map((msg) =>
+                  msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
+                )
+              );
+            } else {
+              clearInterval(interval);
+            }
+          }, 15);
+
+          await addDoc(collection(db, "users", user.uid, "messages"), {
+            ...structuredResult,
+            createdAt: serverTimestamp(),
+          });
+          
+          v2Success = true;
+        } catch (v2Error) {
+          console.log("AskAI V2 failed, falling back to legacy /ask:", v2Error);
         }
-      }, 15);
+      }
 
-      await addDoc(collection(db, "users", user.uid, "messages"), {
-        ...aiMessage,
-        createdAt: serverTimestamp(),
-      });
+      if (!v2Success) {
+        // LEGACY PATH (Fallback or default)
+        const response = await axios.post("https://nursesai.onrender.com/ask", {
+          messages: [...messages, enrichedMessage],
+          mode: selectedMode,
+        }, { headers: { Authorization: `Bearer ${token}` } });
+
+        const fullText = response.data.answer;
+        let index = 0;
+
+        const aiMessage = {
+          id: Date.now().toString() + "-ai",
+          role: "assistant",
+          content: "",
+        };
+
+        setMessages((prev) => [...prev, aiMessage]);
+
+        const interval = setInterval(() => {
+          if (index < fullText.length) {
+            index++;
+            setMessages((prev) =>
+              prev.map((msg) =>
+                msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
+              )
+            );
+          } else {
+            clearInterval(interval);
+          }
+        }, 15);
+
+        await addDoc(collection(db, "users", user.uid, "messages"), {
+          ...aiMessage,
+          createdAt: serverTimestamp(),
+        });
+      }
     } catch (error) {
       console.log("AskAI error:", error);
       const errorMsg = {
@@ -169,40 +218,82 @@ export default function AskAI() {
       const token = await user.getIdToken();
       if (!token) throw new Error("Auth token missing");
 
-      const response = await axios.post("https://nursesai.onrender.com/ask", {
-        messages: [...messages, enrichedMessage],
-        mode: selectedMode,
-      }, { headers: { Authorization: `Bearer ${token}` } });
+      let v2Success = false;
 
-      const fullText = response.data.answer;
-      let index = 0;
+      if (ENABLE_V2_ROUTING) {
+        try {
+          const structuredResult = await fetchAskAIV2([...messages, enrichedMessage], selectedMode);
+          const fullText = structuredResult.content;
+          let index = 0;
 
-      const aiMessage = {
-        id: Date.now().toString() + "-ai",
-        role: "assistant",
-        content: "",
-        mode: selectedMode,
-      };
+          const aiMessage = {
+            ...structuredResult,
+            content: "", // reset for typewriter
+          };
 
-      setMessages((prev) => [...prev, aiMessage]);
+          setMessages((prev) => [...prev, aiMessage]);
 
-      const interval = setInterval(() => {
-        if (index < fullText.length) {
-          index++;
-          setMessages((prev) =>
-            prev.map((msg) =>
-              msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
-            )
-          );
-        } else {
-          clearInterval(interval);
+          const interval = setInterval(() => {
+            if (index < fullText.length) {
+              index++;
+              setMessages((prev) =>
+                prev.map((msg) =>
+                  msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
+                )
+              );
+            } else {
+              clearInterval(interval);
+            }
+          }, 15);
+
+          await addDoc(collection(db, "users", user.uid, "messages"), {
+            ...structuredResult,
+            createdAt: serverTimestamp(),
+          });
+          
+          v2Success = true;
+        } catch (v2Error) {
+          console.log("AskAI V2 prompt failed, falling back to legacy /ask:", v2Error);
         }
-      }, 15);
+      }
 
-      await addDoc(collection(db, "users", user.uid, "messages"), {
-        ...aiMessage,
-        createdAt: serverTimestamp(),
-      });
+      if (!v2Success) {
+        // LEGACY PATH (Fallback or default)
+        const response = await axios.post("https://nursesai.onrender.com/ask", {
+          messages: [...messages, enrichedMessage],
+          mode: selectedMode,
+        }, { headers: { Authorization: `Bearer ${token}` } });
+
+        const fullText = response.data.answer;
+        let index = 0;
+
+        const aiMessage = {
+          id: Date.now().toString() + "-ai",
+          role: "assistant",
+          content: "",
+          mode: selectedMode,
+        };
+
+        setMessages((prev) => [...prev, aiMessage]);
+
+        const interval = setInterval(() => {
+          if (index < fullText.length) {
+            index++;
+            setMessages((prev) =>
+              prev.map((msg) =>
+                msg.id === aiMessage.id ? { ...msg, content: fullText.slice(0, index) } : msg
+              )
+            );
+          } else {
+            clearInterval(interval);
+          }
+        }, 15);
+
+        await addDoc(collection(db, "users", user.uid, "messages"), {
+          ...aiMessage,
+          createdAt: serverTimestamp(),
+        });
+      }
     } catch (error) {
       console.log("AskAI error:", error);
       const errorMsg = {
@@ -263,15 +354,31 @@ export default function AskAI() {
   const filteredMessages = messages.filter(m => !m.mode || m.mode === selectedMode);
 
   const renderMessage = useCallback(
-    ({ item, index }: any) => (
-      <ChatBubble
-        item={item}
-        isSameSender={filteredMessages[index - 1]?.role === item.role}
-        feedbackMap={feedbackMap}
-        handleFeedback={handleFeedback}
-        formatTime={formatTime}
-      />
-    ),
+    ({ item, index }: any) => {
+      const isSameSender = filteredMessages[index - 1]?.role === item.role;
+      
+      if (item.apiVersion === "v2") {
+        return (
+          <ChatBubbleV2
+            item={item}
+            isSameSender={isSameSender}
+            feedbackMap={feedbackMap}
+            handleFeedback={handleFeedback}
+            formatTime={formatTime}
+          />
+        );
+      }
+
+      return (
+        <ChatBubble
+          item={item}
+          isSameSender={isSameSender}
+          feedbackMap={feedbackMap}
+          handleFeedback={handleFeedback}
+          formatTime={formatTime}
+        />
+      );
+    },
     [filteredMessages, feedbackMap]
   );
 
