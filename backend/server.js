@@ -15,11 +15,11 @@ if (process.env.FIREBASE_SERVICE_ACCOUNT) {
     console.log("Firebase Admin initialized with FIREBASE_SERVICE_ACCOUNT");
   } catch (err) {
     console.error("Failed to parse FIREBASE_SERVICE_ACCOUNT:", err);
-    admin.initializeApp();
+    admin.initializeApp({ projectId: process.env.FIREBASE_PROJECT_ID || "nurseai-54b3b" });
   }
 } else {
-  admin.initializeApp();
-  console.log("Firebase Admin initialized with default credentials");
+  admin.initializeApp({ projectId: process.env.FIREBASE_PROJECT_ID || "nurseai-54b3b" });
+  console.log("Firebase Admin initialized with default credentials and explicit projectId");
 }
 
 const verifyToken = async (req, res, next) => {
