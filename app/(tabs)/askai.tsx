@@ -105,7 +105,8 @@ export default function AskAI() {
 
       if (ENABLE_V2_ROUTING) {
         try {
-          const structuredResult = await fetchAskAIV2([...messages, enrichedMessage], selectedMode);
+          const apiMessages = messages.filter((m) => m.mode === selectedMode);
+          const structuredResult = await fetchAskAIV2([...apiMessages, userMessage], selectedMode);
           const fullText = structuredResult.content;
           let index = 0;
 
@@ -222,7 +223,8 @@ export default function AskAI() {
 
       if (ENABLE_V2_ROUTING) {
         try {
-          const structuredResult = await fetchAskAIV2([...messages, enrichedMessage], selectedMode);
+          const apiMessages = messages.filter((m) => m.mode === selectedMode);
+          const structuredResult = await fetchAskAIV2([...apiMessages, userMessage], selectedMode);
           const fullText = structuredResult.content;
           let index = 0;
 

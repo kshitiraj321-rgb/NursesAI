@@ -47,15 +47,37 @@ export const createAskV2Route = (
       }
     }
 
+    if (mode === "quiz") {
+      if (!hasAuthorizedClinicalEvidence(currentContext)) {
+        return res.json({
+          answer: "I cannot generate a quiz because sufficient authorized evidence was unavailable.",
+          citations: [],
+          isComplete: false,
+          completionStatus: "SAFETY_REFUSAL",
+          evidenceState: { isAiGenerated: false, missingEvidence: true, safetyState: "UNSAFE" }
+        });
+      }
+    }
+
     let systemPrompt = "";
     if (mode === "quiz") {
-      systemPrompt = `You are NurseAI, generating a Quiz. Generate exactly 5 MCQs. Each MCQ must have exactly 4 options, a correct answer, and an explanation. Do not fabricate facts. Base answers on verified nursing principles.`;
+      systemPrompt = `You are NurseAI, generating a Quiz. If verified evidence is available, generate exactly 5 MCQs based strictly on the evidence. Each MCQ must have exactly 4 options, a correct answer, and an explanation. Do not fabricate facts. If sufficient verified evidence is NOT available, do not generate unsupported MCQs (return an empty quiz array) and clearly provide a refusal message in the 'answer' field.`;
     } else if (mode === "fullAnswer") {
-      systemPrompt = `You are NurseAI, an expert clinical nursing tutor. You are generating a Detailed Exam-Oriented Answer. Include only sections supported by the retrieval context. Do not invent missing sections. Use structured format.`;
+      systemPrompt = `You are NurseAI, an expert clinical nursing tutor. You are generating a Detailed Exam-Oriented Answer. 
+Use this exact structure ONLY if supported by evidence:
+### Definition
+### Etiology & Pathophysiology
+### Clinical Manifestations
+### Nursing Management
+### Complications
+
+Rule: Include only sections supported by the retrieval context. Do not invent missing sections. If verified retrieval evidence is unavailable, you must clearly state that evidence is unavailable rather than fabricate clinical/nursing facts. Your response must be genuinely detailed compared to a simple summary.`;
     } else if (mode === "clinicalReference") {
       systemPrompt = `You are NurseAI, generating a Clinical/Reference response. Provide an exact factual answer based strictly on the provided evidence context. Do not fabricate clinical facts (doses, vitals, scales). If evidence is missing, refuse. Include source attribution. Include safety context.`;
     } else {
-      systemPrompt = `You are NurseAI, generating a Quick Revision Summary. Provide a concise summary structured for rapid recall. Include sections like Causes, Signs & Symptoms, Nursing Management, and Red Flags ONLY if supported by evidence.`;
+      systemPrompt = `You are NurseAI, generating a Quick Revision Summary. Provide a concise rapid-revision response. 
+Use structured sections (e.g., ### Causes, ### Signs & Symptoms, ### Nursing Management) ONLY when supported by evidence.
+Rule: Do not invent missing sections. No unsupported facts. If verified retrieval evidence is unavailable, you must clearly state that evidence is unavailable rather than fabricate clinical/nursing facts.`;
     }
 
     // Append retrieval context seam
@@ -68,6 +90,44 @@ export const createAskV2Route = (
 
     const maxTokens = calculateTokenBudget(mode, contextSizeTokens);
 
+    const baseProperties: any = {
+      answer: { type: "string" },
+      citations: {
+        type: "array",
+        items: {
+          type: "object",
+          properties: {
+            chunkId: { type: "string" }
+          },
+          required: ["chunkId"],
+          additionalProperties: false
+        }
+      }
+    };
+    
+    const requiredFields = ["answer", "citations"];
+
+    if (mode === "quiz") {
+      baseProperties.quiz = {
+        type: "array",
+        description: "Array of exactly 5 MCQs if evidence is available, or empty if evidence is unavailable.",
+        minItems: 5,
+        maxItems: 5,
+        items: {
+          type: "object",
+          properties: {
+            question: { type: "string" },
+            options: { type: "array", items: { type: "string" }, minItems: 4, maxItems: 4 },
+            correctAnswer: { type: "string" },
+            explanation: { type: "string" }
+          },
+          required: ["question", "options", "correctAnswer", "explanation"],
+          additionalProperties: false
+        }
+      };
+      requiredFields.push("quiz");
+    }
+
     const responseFormatSchema = {
       type: "json_schema" as const,
       json_schema: {
@@ -75,21 +135,8 @@ export const createAskV2Route = (
         strict: true,
         schema: {
           type: "object",
-          properties: {
-            answer: { type: "string" },
-            citations: {
-              type: "array",
-              items: {
-                type: "object",
-                properties: {
-                  chunkId: { type: "string" }
-                },
-                required: ["chunkId"],
-                additionalProperties: false
-              }
-            }
-          },
-          required: ["answer", "citations"],
+          properties: baseProperties,
+          required: requiredFields,
           additionalProperties: false
         }
       }
@@ -109,7 +156,7 @@ export const createAskV2Route = (
     const finishReason = response.choices[0].finish_reason;
     const aiText = response.choices[0].message.content || "";
 
-    let parsed: { answer: string, citations: CitationProposal[] };
+    let parsed: any;
     let completionStatus: CompletionState = "COMPLETE";
     
     try {
@@ -127,6 +174,38 @@ export const createAskV2Route = (
         completionStatus,
         evidenceState: { isAiGenerated: true, missingEvidence: false, safetyState: "SAFE" }
       });
+    }
+
+    // Backend Quiz Serialization and Validation
+    if (mode === "quiz") {
+      if (parsed.quiz && parsed.quiz.length === 5) {
+        // Validate exactly 4 options per MCQ
+        const isValidStructure = parsed.quiz.every((q: any) => q.options && q.options.length === 4);
+        if (isValidStructure) {
+          let quizMarkdown = "";
+          parsed.quiz.forEach((q: any, i: number) => {
+            quizMarkdown += `**Q${i + 1}. ${q.question}**\n`;
+            q.options.forEach((opt: string, j: number) => {
+              const letter = String.fromCharCode(65 + j);
+              quizMarkdown += `- ${letter}) ${opt}\n`;
+            });
+            quizMarkdown += `\n*Correct Answer:* ${q.correctAnswer}\n*Explanation:* ${q.explanation}\n\n`;
+          });
+          parsed.answer = quizMarkdown.trim();
+        } else {
+          parsed.answer = "I cannot generate a quiz because the generated structure was invalid (must have exactly 4 options per question).";
+          parsed.citations = [];
+        }
+      } else if (parsed.quiz && parsed.quiz.length > 0) {
+        parsed.answer = "I cannot generate a quiz because the generated structure did not contain exactly 5 questions.";
+        parsed.citations = [];
+      } else {
+        // Evidence was unavailable
+        if (!parsed.answer || parsed.answer.trim() === "") {
+           parsed.answer = "I cannot generate a quiz because sufficient authorized evidence was unavailable.";
+        }
+        parsed.citations = [];
+      }
     }
 
     if (finishReason === "length") {

@@ -58,32 +58,134 @@ describe("Slice B - Comprehensive Security and Governance Tests", () => {
       expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({ completionStatus: "TRUNCATED_TOKENS" }));
     });
 
-    it("[x] Quiz contains fewer than 5 questions", async () => {
+    it("1. Quiz + empty retrieval context -> refusal", async () => {
       mockReq.body.mode = "quiz";
-      mockOpenAI.chat.completions.create.mockResolvedValue({
-        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ answer: "1. Q\\n2. Q", citations: [] }) } }]
-      });
+      MOCK_FIXTURE_META.productionEligible = true; // Invalidate evidence
       await runRoute();
-      // Since backend doesn't strictly regex-validate the number of MCQs yet (left to frontend), we assert it completes normally for now
-      expect(mockRes.json).toHaveBeenCalled();
+      expect(mockOpenAI.chat.completions.create).not.toHaveBeenCalled();
+      expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({ 
+          answer: "I cannot generate a quiz because sufficient authorized evidence was unavailable.",
+          citations: []
+      }));
+      MOCK_FIXTURE_META.productionEligible = false;
     });
 
-    it("[x] Quiz contains more than 5 questions", async () => {
+    it("2. Quiz + authorized evidence + valid 5x4 structure -> accepted", async () => {
       mockReq.body.mode = "quiz";
       mockOpenAI.chat.completions.create.mockResolvedValue({
-        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ answer: "1. Q\\n...\\n6. Q", citations: [] }) } }]
+        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ 
+          answer: "",
+          quiz: [
+            { question: "1", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "2", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "3", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "4", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "5", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" }
+          ], citations: [] 
+        }) } }]
       });
       await runRoute();
-      expect(mockRes.json).toHaveBeenCalled();
+      expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({
+        answer: expect.stringContaining("**Q1.")
+      }));
     });
 
-    it("[x] Quiz question has incorrect option count", async () => {
+    it("3. Quiz + 4 questions -> rejected", async () => {
       mockReq.body.mode = "quiz";
       mockOpenAI.chat.completions.create.mockResolvedValue({
-        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ answer: "1. Q A B C", citations: [] }) } }]
+        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ 
+          answer: "",
+          quiz: [
+            { question: "1", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "2", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "3", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "4", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" }
+          ], citations: [] 
+        }) } }]
       });
       await runRoute();
-      expect(mockRes.json).toHaveBeenCalled();
+      expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({
+        answer: "I cannot generate a quiz because the generated structure did not contain exactly 5 questions."
+      }));
+    });
+
+    it("4. Quiz + 6 questions -> rejected", async () => {
+      mockReq.body.mode = "quiz";
+      mockOpenAI.chat.completions.create.mockResolvedValue({
+        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ 
+          answer: "",
+          quiz: [
+            { question: "1", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "2", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "3", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "4", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "5", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "6", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" }
+          ], citations: [] 
+        }) } }]
+      });
+      await runRoute();
+      expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({
+        answer: "I cannot generate a quiz because the generated structure did not contain exactly 5 questions."
+      }));
+    });
+
+    it("5. Quiz + question with 3 options -> rejected", async () => {
+      mockReq.body.mode = "quiz";
+      mockOpenAI.chat.completions.create.mockResolvedValue({
+        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ answer: "", quiz: [
+          { question: "1", options: ["A", "B", "C"] }, // 3 options
+          { question: "2", options: ["A", "B", "C", "D"] },
+          { question: "3", options: ["A", "B", "C", "D"] },
+          { question: "4", options: ["A", "B", "C", "D"] },
+          { question: "5", options: ["A", "B", "C", "D"] }
+        ], citations: [] }) } }]
+      });
+      await runRoute();
+      expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({
+        answer: "I cannot generate a quiz because the generated structure was invalid (must have exactly 4 options per question)."
+      }));
+    });
+
+    it("6. Quiz + question with 5 options -> rejected", async () => {
+      mockReq.body.mode = "quiz";
+      mockOpenAI.chat.completions.create.mockResolvedValue({
+        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ answer: "", quiz: [
+          { question: "1", options: ["A", "B", "C", "D", "E"] }, // 5 options
+          { question: "2", options: ["A", "B", "C", "D"] },
+          { question: "3", options: ["A", "B", "C", "D"] },
+          { question: "4", options: ["A", "B", "C", "D"] },
+          { question: "5", options: ["A", "B", "C", "D"] }
+        ], citations: [] }) } }]
+      });
+      await runRoute();
+      expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({
+        answer: "I cannot generate a quiz because the generated structure was invalid (must have exactly 4 options per question)."
+      }));
+    });
+
+    it("7. Quiz + valid structure but no authorized evidence -> rejected", async () => {
+      mockReq.body.mode = "quiz";
+      MOCK_FIXTURE_META.productionEligible = true; // invalidate evidence
+      mockOpenAI.chat.completions.create.mockResolvedValue({
+        choices: [{ finish_reason: "stop", message: { content: JSON.stringify({ 
+          answer: "",
+          quiz: [
+            { question: "1", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "2", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "3", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "4", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" },
+            { question: "5", options: ["A", "B", "C", "D"], correctAnswer: "A", explanation: "Expl" }
+          ], citations: [] 
+        }) } }]
+      });
+      await runRoute();
+      expect(mockOpenAI.chat.completions.create).not.toHaveBeenCalled();
+      expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({
+        answer: "I cannot generate a quiz because sufficient authorized evidence was unavailable.",
+        completionStatus: "SAFETY_REFUSAL"
+      }));
+      MOCK_FIXTURE_META.productionEligible = false;
     });
   });
 
