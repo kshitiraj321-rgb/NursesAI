@@ -1,0 +1,2370 @@
+[
+  {
+    "id": "concept_topic_medical_surgical_nursing_cardiovascular_definition",
+    "topicId": "topic_medical_surgical_nursing_cardiovascular",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Cardiovascular is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_cardiovascular_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_cardiovascular",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Cardiovascular.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_respiratory_definition",
+    "topicId": "topic_medical_surgical_nursing_respiratory",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Respiratory is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_respiratory_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_respiratory",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Respiratory.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_renal_definition",
+    "topicId": "topic_medical_surgical_nursing_renal",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Renal is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_renal_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_renal",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Renal.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_neurology_definition",
+    "topicId": "topic_medical_surgical_nursing_neurology",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Neurology is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_neurology_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_neurology",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Neurology.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_endocrine_definition",
+    "topicId": "topic_medical_surgical_nursing_endocrine",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Endocrine is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_endocrine_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_endocrine",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Endocrine.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_gi_definition",
+    "topicId": "topic_medical_surgical_nursing_gi",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "GI is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_gi_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_gi",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for GI.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_emergency_definition",
+    "topicId": "topic_medical_surgical_nursing_emergency",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Emergency is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_emergency_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_emergency",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Emergency.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_oncology_definition",
+    "topicId": "topic_medical_surgical_nursing_oncology",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Oncology is a key clinical topic within Medical-Surgical Nursing.",
+    "keyTakeaways": [
+      "Core concept in Medical-Surgical Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_medical_surgical_nursing_oncology_nursing_management",
+    "topicId": "topic_medical_surgical_nursing_oncology",
+    "subjectId": "subj_medical_surgical_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Oncology.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_infection_control_definition",
+    "topicId": "topic_fundamentals_of_nursing_infection_control",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Infection Control is a key clinical topic within Fundamentals of Nursing.",
+    "keyTakeaways": [
+      "Core concept in Fundamentals of Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_infection_control_nursing_management",
+    "topicId": "topic_fundamentals_of_nursing_infection_control",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Infection Control.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_nursing_procedures_definition",
+    "topicId": "topic_fundamentals_of_nursing_nursing_procedures",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Nursing Procedures is a key clinical topic within Fundamentals of Nursing.",
+    "keyTakeaways": [
+      "Core concept in Fundamentals of Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_nursing_procedures_nursing_management",
+    "topicId": "topic_fundamentals_of_nursing_nursing_procedures",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Nursing Procedures.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_patient_safety_definition",
+    "topicId": "topic_fundamentals_of_nursing_patient_safety",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Patient Safety is a key clinical topic within Fundamentals of Nursing.",
+    "keyTakeaways": [
+      "Core concept in Fundamentals of Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_patient_safety_nursing_management",
+    "topicId": "topic_fundamentals_of_nursing_patient_safety",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Patient Safety.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_vital_signs_definition",
+    "topicId": "topic_fundamentals_of_nursing_vital_signs",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Vital Signs is a key clinical topic within Fundamentals of Nursing.",
+    "keyTakeaways": [
+      "Core concept in Fundamentals of Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_vital_signs_nursing_management",
+    "topicId": "topic_fundamentals_of_nursing_vital_signs",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Vital Signs.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_cpr_bls_definition",
+    "topicId": "topic_fundamentals_of_nursing_cpr_bls",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "CPR/BLS is a key clinical topic within Fundamentals of Nursing.",
+    "keyTakeaways": [
+      "Core concept in Fundamentals of Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_cpr_bls_nursing_management",
+    "topicId": "topic_fundamentals_of_nursing_cpr_bls",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for CPR/BLS.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_communication_definition",
+    "topicId": "topic_fundamentals_of_nursing_communication",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Communication is a key clinical topic within Fundamentals of Nursing.",
+    "keyTakeaways": [
+      "Core concept in Fundamentals of Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_fundamentals_of_nursing_communication_nursing_management",
+    "topicId": "topic_fundamentals_of_nursing_communication",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Communication.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_antenatal_definition",
+    "topicId": "topic_obstetrics_gynaecology_antenatal",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Antenatal is a key clinical topic within Obstetrics & Gynaecology.",
+    "keyTakeaways": [
+      "Core concept in Obstetrics & Gynaecology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_antenatal_nursing_management",
+    "topicId": "topic_obstetrics_gynaecology_antenatal",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Antenatal.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_labour_definition",
+    "topicId": "topic_obstetrics_gynaecology_labour",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Labour is a key clinical topic within Obstetrics & Gynaecology.",
+    "keyTakeaways": [
+      "Core concept in Obstetrics & Gynaecology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_labour_nursing_management",
+    "topicId": "topic_obstetrics_gynaecology_labour",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Labour.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_complications_definition",
+    "topicId": "topic_obstetrics_gynaecology_complications",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Complications is a key clinical topic within Obstetrics & Gynaecology.",
+    "keyTakeaways": [
+      "Core concept in Obstetrics & Gynaecology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_complications_nursing_management",
+    "topicId": "topic_obstetrics_gynaecology_complications",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Complications.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_newborn_care_definition",
+    "topicId": "topic_obstetrics_gynaecology_newborn_care",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Newborn Care is a key clinical topic within Obstetrics & Gynaecology.",
+    "keyTakeaways": [
+      "Core concept in Obstetrics & Gynaecology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_newborn_care_nursing_management",
+    "topicId": "topic_obstetrics_gynaecology_newborn_care",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Newborn Care.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_family_planning_definition",
+    "topicId": "topic_obstetrics_gynaecology_family_planning",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Family Planning is a key clinical topic within Obstetrics & Gynaecology.",
+    "keyTakeaways": [
+      "Core concept in Obstetrics & Gynaecology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_obstetrics_gynaecology_family_planning_nursing_management",
+    "topicId": "topic_obstetrics_gynaecology_family_planning",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Family Planning.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_growth_development_definition",
+    "topicId": "topic_pediatric_nursing_growth_development",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Growth Development is a key clinical topic within Pediatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Pediatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_growth_development_nursing_management",
+    "topicId": "topic_pediatric_nursing_growth_development",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Growth Development.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_neonatal_definition",
+    "topicId": "topic_pediatric_nursing_neonatal",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Neonatal is a key clinical topic within Pediatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Pediatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_neonatal_nursing_management",
+    "topicId": "topic_pediatric_nursing_neonatal",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Neonatal.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_diseases_definition",
+    "topicId": "topic_pediatric_nursing_diseases",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Diseases is a key clinical topic within Pediatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Pediatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_diseases_nursing_management",
+    "topicId": "topic_pediatric_nursing_diseases",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Diseases.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_immunization_definition",
+    "topicId": "topic_pediatric_nursing_immunization",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Immunization is a key clinical topic within Pediatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Pediatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pediatric_nursing_immunization_nursing_management",
+    "topicId": "topic_pediatric_nursing_immunization",
+    "subjectId": "subj_pediatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Immunization.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_epidemiology_definition",
+    "topicId": "topic_community_health_nursing_epidemiology",
+    "subjectId": "subj_community_health_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Epidemiology is a key clinical topic within Community Health Nursing.",
+    "keyTakeaways": [
+      "Core concept in Community Health Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_epidemiology_nursing_management",
+    "topicId": "topic_community_health_nursing_epidemiology",
+    "subjectId": "subj_community_health_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Epidemiology.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_national_programs_definition",
+    "topicId": "topic_community_health_nursing_national_programs",
+    "subjectId": "subj_community_health_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "National Programs is a key clinical topic within Community Health Nursing.",
+    "keyTakeaways": [
+      "Core concept in Community Health Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_national_programs_nursing_management",
+    "topicId": "topic_community_health_nursing_national_programs",
+    "subjectId": "subj_community_health_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for National Programs.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_prevention_definition",
+    "topicId": "topic_community_health_nursing_prevention",
+    "subjectId": "subj_community_health_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Prevention is a key clinical topic within Community Health Nursing.",
+    "keyTakeaways": [
+      "Core concept in Community Health Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_prevention_nursing_management",
+    "topicId": "topic_community_health_nursing_prevention",
+    "subjectId": "subj_community_health_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Prevention.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_demography_definition",
+    "topicId": "topic_community_health_nursing_demography",
+    "subjectId": "subj_community_health_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Demography is a key clinical topic within Community Health Nursing.",
+    "keyTakeaways": [
+      "Core concept in Community Health Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_community_health_nursing_demography_nursing_management",
+    "topicId": "topic_community_health_nursing_demography",
+    "subjectId": "subj_community_health_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Demography.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_emergency_drugs_definition",
+    "topicId": "topic_pharmacology_emergency_drugs",
+    "subjectId": "subj_pharmacology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Emergency Drugs is a key clinical topic within Pharmacology.",
+    "keyTakeaways": [
+      "Core concept in Pharmacology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_emergency_drugs_nursing_management",
+    "topicId": "topic_pharmacology_emergency_drugs",
+    "subjectId": "subj_pharmacology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Emergency Drugs.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_antibiotics_definition",
+    "topicId": "topic_pharmacology_antibiotics",
+    "subjectId": "subj_pharmacology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Antibiotics is a key clinical topic within Pharmacology.",
+    "keyTakeaways": [
+      "Core concept in Pharmacology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_antibiotics_nursing_management",
+    "topicId": "topic_pharmacology_antibiotics",
+    "subjectId": "subj_pharmacology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Antibiotics.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_endocrine_drugs_definition",
+    "topicId": "topic_pharmacology_endocrine_drugs",
+    "subjectId": "subj_pharmacology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Endocrine Drugs is a key clinical topic within Pharmacology.",
+    "keyTakeaways": [
+      "Core concept in Pharmacology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_endocrine_drugs_nursing_management",
+    "topicId": "topic_pharmacology_endocrine_drugs",
+    "subjectId": "subj_pharmacology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Endocrine Drugs.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_cvs_drugs_definition",
+    "topicId": "topic_pharmacology_cvs_drugs",
+    "subjectId": "subj_pharmacology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "CVS Drugs is a key clinical topic within Pharmacology.",
+    "keyTakeaways": [
+      "Core concept in Pharmacology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_cvs_drugs_nursing_management",
+    "topicId": "topic_pharmacology_cvs_drugs",
+    "subjectId": "subj_pharmacology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for CVS Drugs.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_calculations_definition",
+    "topicId": "topic_pharmacology_calculations",
+    "subjectId": "subj_pharmacology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Calculations is a key clinical topic within Pharmacology.",
+    "keyTakeaways": [
+      "Core concept in Pharmacology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_calculations_nursing_management",
+    "topicId": "topic_pharmacology_calculations",
+    "subjectId": "subj_pharmacology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Calculations.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_antidotes_definition",
+    "topicId": "topic_pharmacology_antidotes",
+    "subjectId": "subj_pharmacology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Antidotes is a key clinical topic within Pharmacology.",
+    "keyTakeaways": [
+      "Core concept in Pharmacology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_pharmacology_antidotes_nursing_management",
+    "topicId": "topic_pharmacology_antidotes",
+    "subjectId": "subj_pharmacology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Antidotes.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_disorders_definition",
+    "topicId": "topic_psychiatric_nursing_disorders",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Disorders is a key clinical topic within Psychiatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Psychiatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_disorders_nursing_management",
+    "topicId": "topic_psychiatric_nursing_disorders",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Disorders.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_communication_definition",
+    "topicId": "topic_psychiatric_nursing_communication",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Communication is a key clinical topic within Psychiatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Psychiatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_communication_nursing_management",
+    "topicId": "topic_psychiatric_nursing_communication",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Communication.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_therapies_definition",
+    "topicId": "topic_psychiatric_nursing_therapies",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Therapies is a key clinical topic within Psychiatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Psychiatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_therapies_nursing_management",
+    "topicId": "topic_psychiatric_nursing_therapies",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Therapies.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_mental_health_acts_definition",
+    "topicId": "topic_psychiatric_nursing_mental_health_acts",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Mental Health Acts is a key clinical topic within Psychiatric Nursing.",
+    "keyTakeaways": [
+      "Core concept in Psychiatric Nursing",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_psychiatric_nursing_mental_health_acts_nursing_management",
+    "topicId": "topic_psychiatric_nursing_mental_health_acts",
+    "subjectId": "subj_psychiatric_nursing",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Mental Health Acts.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_leadership_definition",
+    "topicId": "topic_nursing_management_leadership",
+    "subjectId": "subj_nursing_management",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Leadership is a key clinical topic within Nursing Management.",
+    "keyTakeaways": [
+      "Core concept in Nursing Management",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_leadership_nursing_management",
+    "topicId": "topic_nursing_management_leadership",
+    "subjectId": "subj_nursing_management",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Leadership.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_administration_definition",
+    "topicId": "topic_nursing_management_administration",
+    "subjectId": "subj_nursing_management",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Administration is a key clinical topic within Nursing Management.",
+    "keyTakeaways": [
+      "Core concept in Nursing Management",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_administration_nursing_management",
+    "topicId": "topic_nursing_management_administration",
+    "subjectId": "subj_nursing_management",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Administration.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_budgeting_definition",
+    "topicId": "topic_nursing_management_budgeting",
+    "subjectId": "subj_nursing_management",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Budgeting is a key clinical topic within Nursing Management.",
+    "keyTakeaways": [
+      "Core concept in Nursing Management",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_budgeting_nursing_management",
+    "topicId": "topic_nursing_management_budgeting",
+    "subjectId": "subj_nursing_management",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Budgeting.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_research_definition",
+    "topicId": "topic_nursing_management_research",
+    "subjectId": "subj_nursing_management",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Research is a key clinical topic within Nursing Management.",
+    "keyTakeaways": [
+      "Core concept in Nursing Management",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_research_nursing_management",
+    "topicId": "topic_nursing_management_research",
+    "subjectId": "subj_nursing_management",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Research.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_statistics_definition",
+    "topicId": "topic_nursing_management_statistics",
+    "subjectId": "subj_nursing_management",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Statistics is a key clinical topic within Nursing Management.",
+    "keyTakeaways": [
+      "Core concept in Nursing Management",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nursing_management_statistics_nursing_management",
+    "topicId": "topic_nursing_management_statistics",
+    "subjectId": "subj_nursing_management",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Statistics.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_bones_definition",
+    "topicId": "topic_anatomy_bones",
+    "subjectId": "subj_anatomy",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Bones is a key clinical topic within Anatomy.",
+    "keyTakeaways": [
+      "Core concept in Anatomy",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_bones_nursing_management",
+    "topicId": "topic_anatomy_bones",
+    "subjectId": "subj_anatomy",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Bones.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_cns_definition",
+    "topicId": "topic_anatomy_cns",
+    "subjectId": "subj_anatomy",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "CNS is a key clinical topic within Anatomy.",
+    "keyTakeaways": [
+      "Core concept in Anatomy",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_cns_nursing_management",
+    "topicId": "topic_anatomy_cns",
+    "subjectId": "subj_anatomy",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for CNS.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_cvs_definition",
+    "topicId": "topic_anatomy_cvs",
+    "subjectId": "subj_anatomy",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "CVS is a key clinical topic within Anatomy.",
+    "keyTakeaways": [
+      "Core concept in Anatomy",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_cvs_nursing_management",
+    "topicId": "topic_anatomy_cvs",
+    "subjectId": "subj_anatomy",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for CVS.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_respiratory_definition",
+    "topicId": "topic_anatomy_respiratory",
+    "subjectId": "subj_anatomy",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Respiratory is a key clinical topic within Anatomy.",
+    "keyTakeaways": [
+      "Core concept in Anatomy",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_respiratory_nursing_management",
+    "topicId": "topic_anatomy_respiratory",
+    "subjectId": "subj_anatomy",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Respiratory.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_abdomen_definition",
+    "topicId": "topic_anatomy_abdomen",
+    "subjectId": "subj_anatomy",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Abdomen is a key clinical topic within Anatomy.",
+    "keyTakeaways": [
+      "Core concept in Anatomy",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_anatomy_abdomen_nursing_management",
+    "topicId": "topic_anatomy_abdomen",
+    "subjectId": "subj_anatomy",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Abdomen.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_blood_definition",
+    "topicId": "topic_physiology_blood",
+    "subjectId": "subj_physiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Blood is a key clinical topic within Physiology.",
+    "keyTakeaways": [
+      "Core concept in Physiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_blood_nursing_management",
+    "topicId": "topic_physiology_blood",
+    "subjectId": "subj_physiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Blood.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_renal_definition",
+    "topicId": "topic_physiology_renal",
+    "subjectId": "subj_physiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Renal is a key clinical topic within Physiology.",
+    "keyTakeaways": [
+      "Core concept in Physiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_renal_nursing_management",
+    "topicId": "topic_physiology_renal",
+    "subjectId": "subj_physiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Renal.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_endocrine_definition",
+    "topicId": "topic_physiology_endocrine",
+    "subjectId": "subj_physiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Endocrine is a key clinical topic within Physiology.",
+    "keyTakeaways": [
+      "Core concept in Physiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_endocrine_nursing_management",
+    "topicId": "topic_physiology_endocrine",
+    "subjectId": "subj_physiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Endocrine.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_neuro_definition",
+    "topicId": "topic_physiology_neuro",
+    "subjectId": "subj_physiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Neuro is a key clinical topic within Physiology.",
+    "keyTakeaways": [
+      "Core concept in Physiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_neuro_nursing_management",
+    "topicId": "topic_physiology_neuro",
+    "subjectId": "subj_physiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Neuro.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_reproductive_definition",
+    "topicId": "topic_physiology_reproductive",
+    "subjectId": "subj_physiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Reproductive is a key clinical topic within Physiology.",
+    "keyTakeaways": [
+      "Core concept in Physiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_physiology_reproductive_nursing_management",
+    "topicId": "topic_physiology_reproductive",
+    "subjectId": "subj_physiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Reproductive.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_vitamins_definition",
+    "topicId": "topic_nutrition_vitamins",
+    "subjectId": "subj_nutrition",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Vitamins is a key clinical topic within Nutrition.",
+    "keyTakeaways": [
+      "Core concept in Nutrition",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_vitamins_nursing_management",
+    "topicId": "topic_nutrition_vitamins",
+    "subjectId": "subj_nutrition",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Vitamins.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_deficiency_definition",
+    "topicId": "topic_nutrition_deficiency",
+    "subjectId": "subj_nutrition",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Deficiency is a key clinical topic within Nutrition.",
+    "keyTakeaways": [
+      "Core concept in Nutrition",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_deficiency_nursing_management",
+    "topicId": "topic_nutrition_deficiency",
+    "subjectId": "subj_nutrition",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Deficiency.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_therapeutic_diet_definition",
+    "topicId": "topic_nutrition_therapeutic_diet",
+    "subjectId": "subj_nutrition",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Therapeutic Diet is a key clinical topic within Nutrition.",
+    "keyTakeaways": [
+      "Core concept in Nutrition",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_therapeutic_diet_nursing_management",
+    "topicId": "topic_nutrition_therapeutic_diet",
+    "subjectId": "subj_nutrition",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Therapeutic Diet.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_macronutrients_definition",
+    "topicId": "topic_nutrition_macronutrients",
+    "subjectId": "subj_nutrition",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Macronutrients is a key clinical topic within Nutrition.",
+    "keyTakeaways": [
+      "Core concept in Nutrition",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_nutrition_macronutrients_nursing_management",
+    "topicId": "topic_nutrition_macronutrients",
+    "subjectId": "subj_nutrition",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Macronutrients.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_organisms_definition",
+    "topicId": "topic_microbiology_organisms",
+    "subjectId": "subj_microbiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Organisms is a key clinical topic within Microbiology.",
+    "keyTakeaways": [
+      "Core concept in Microbiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_organisms_nursing_management",
+    "topicId": "topic_microbiology_organisms",
+    "subjectId": "subj_microbiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Organisms.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_sterilization_definition",
+    "topicId": "topic_microbiology_sterilization",
+    "subjectId": "subj_microbiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Sterilization is a key clinical topic within Microbiology.",
+    "keyTakeaways": [
+      "Core concept in Microbiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_sterilization_nursing_management",
+    "topicId": "topic_microbiology_sterilization",
+    "subjectId": "subj_microbiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Sterilization.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_immunology_definition",
+    "topicId": "topic_microbiology_immunology",
+    "subjectId": "subj_microbiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Immunology is a key clinical topic within Microbiology.",
+    "keyTakeaways": [
+      "Core concept in Microbiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_immunology_nursing_management",
+    "topicId": "topic_microbiology_immunology",
+    "subjectId": "subj_microbiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Immunology.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_infections_definition",
+    "topicId": "topic_microbiology_infections",
+    "subjectId": "subj_microbiology",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Infections is a key clinical topic within Microbiology.",
+    "keyTakeaways": [
+      "Core concept in Microbiology",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_microbiology_infections_nursing_management",
+    "topicId": "topic_microbiology_infections",
+    "subjectId": "subj_microbiology",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Infections.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_reasoning_definition",
+    "topicId": "topic_general_aptitude_reasoning",
+    "subjectId": "subj_general_aptitude",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Reasoning is a key clinical topic within General Aptitude.",
+    "keyTakeaways": [
+      "Core concept in General Aptitude",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_reasoning_nursing_management",
+    "topicId": "topic_general_aptitude_reasoning",
+    "subjectId": "subj_general_aptitude",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Reasoning.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_quant_definition",
+    "topicId": "topic_general_aptitude_quant",
+    "subjectId": "subj_general_aptitude",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Quant is a key clinical topic within General Aptitude.",
+    "keyTakeaways": [
+      "Core concept in General Aptitude",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_quant_nursing_management",
+    "topicId": "topic_general_aptitude_quant",
+    "subjectId": "subj_general_aptitude",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Quant.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_gk_definition",
+    "topicId": "topic_general_aptitude_gk",
+    "subjectId": "subj_general_aptitude",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "GK is a key clinical topic within General Aptitude.",
+    "keyTakeaways": [
+      "Core concept in General Aptitude",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_gk_nursing_management",
+    "topicId": "topic_general_aptitude_gk",
+    "subjectId": "subj_general_aptitude",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for GK.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_current_affairs_definition",
+    "topicId": "topic_general_aptitude_current_affairs",
+    "subjectId": "subj_general_aptitude",
+    "type": "definition",
+    "title": "Definition & Overview",
+    "content": "Current Affairs is a key clinical topic within General Aptitude.",
+    "keyTakeaways": [
+      "Core concept in General Aptitude",
+      "Essential for NCLEX/NORCET assessment"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "concept_topic_general_aptitude_current_affairs_nursing_management",
+    "topicId": "topic_general_aptitude_current_affairs",
+    "subjectId": "subj_general_aptitude",
+    "type": "nursingManagement",
+    "title": "Nursing Care & Interventions",
+    "content": "Priority nursing assessments, interventions, and monitoring for Current Affairs.",
+    "keyTakeaways": [
+      "Assess vital signs & ABCs",
+      "Monitor for complications",
+      "Document findings per protocol"
+    ],
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Backbone Seed",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  }
+]

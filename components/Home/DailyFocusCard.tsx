@@ -1,15 +1,11 @@
 import * as Haptics from "expo-haptics";
-import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
-import React, { useEffect } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
-import { BlurView } from "expo-blur";
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-  withDelay,
-} from "react-native-reanimated";
+import React from "react";
+import { Text, View } from "react-native";
+import { GlassCard } from "../ui/GlassCard";
+import { Pill } from "../ui/Pill";
+import { ProgressBar } from "../ui/ProgressBar";
+import { PrimaryButton } from "../ui/PrimaryButton";
 
 interface Props {
   dailyTopic: string;
@@ -18,43 +14,14 @@ interface Props {
   topicStat?: { accuracy: number; mistakes: number } | null;
 }
 
-export default function DailyFocusCard({ dailyTopic, progress, delay, topicStat }: Props) {
+export default function DailyFocusCard({ dailyTopic, progress, topicStat }: Props) {
   const router = useRouter();
 
-  const opacity = useSharedValue(0);
-  const ty = useSharedValue(20);
-
-  useEffect(() => {
-    opacity.value = withDelay(delay, withTiming(1, { duration: 400 }));
-    ty.value = withDelay(delay, withTiming(0, { duration: 400 }));
-  }, [delay, opacity, ty]);
-
-  const animatedCardStyle = useAnimatedStyle(() => ({
-    opacity: opacity.value,
-    transform: [{ translateY: ty.value }],
-  }));
-
-  const progressWidth = useSharedValue(0);
-  useEffect(() => {
-    progressWidth.value = withTiming(progress * 100, { duration: 800 });
-  }, [progress, progressWidth]);
-
-  const progressAnimStyle = useAnimatedStyle(() => ({
-    width: `${progressWidth.value}%`,
-  }));
-
-  const buttonScale = useSharedValue(1);
-  const buttonAnimStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: buttonScale.value }],
-  }));
-
-  const onButtonPressIn = () => {
-    buttonScale.value = withTiming(0.96, { duration: 150 });
-  };
-
   const traverse = () => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-    
+    try {
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    } catch {}
+
     if (!dailyTopic) {
       router.push("/(tabs)/learn" as any);
       return;
@@ -66,54 +33,41 @@ export default function DailyFocusCard({ dailyTopic, progress, delay, topicStat 
     });
   };
 
-  const onButtonPressOut = () => {
-    buttonScale.value = withTiming(1, { duration: 150 });
-  };
-
   return (
-    <Animated.View style={animatedCardStyle} className="mb-6 shadow-xl shadow-black/40">
-      <BlurView intensity={40} tint="dark" className="border border-white/10 rounded-[20px] p-5 min-h-[120px] overflow-hidden bg-white/5">
-        <View className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl" />
-
-        <Text className="text-blue-400 text-lg font-bold mb-1">
-          {dailyTopic ? "Recommended for You" : "Start your first topic"}
+    <GlassCard variant="elevated" className="mb-6 p-5">
+      <View className="flex-row items-center justify-between mb-2">
+        <Text className="text-sky-400 font-bold text-sm">
+          {dailyTopic ? "Recommended Focus" : "Start Your Journey"}
         </Text>
-        
-        {dailyTopic ? (
-          <>
-            <Text className="text-white text-xl font-bold mb-1">{dailyTopic}</Text>
-            <Text className="text-white/60 text-sm mb-3">Based on your weak areas</Text>
-            {topicStat && (
-              <Text className="text-white/80 text-sm font-medium mb-3">
-                Accuracy: {topicStat.accuracy}% • {topicStat.mistakes} mistakes
-              </Text>
-            )}
-          </>
-        ) : null}
+        <Pill label="Daily Anchor" variant="info" size="sm" />
+      </View>
 
-        <View className="h-1.5 bg-white/10 border border-white/20 rounded-full mb-4 overflow-hidden shadow-sm">
-          <Animated.View style={[progressAnimStyle, { height: "100%", borderRadius: 4 }]}>
-            <LinearGradient
-              colors={["#60A5FA", "#3B82F6"]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={{ flex: 1 }}
-            />
-          </Animated.View>
+      {dailyTopic ? (
+        <View className="mb-3">
+          <Text className="text-white text-xl font-bold mb-1 tracking-tight">{dailyTopic}</Text>
+          <Text className="text-slate-400 text-xs mb-2">Based on your weakness profile & active recall history</Text>
+          {topicStat && (
+            <View className="flex-row items-center space-x-2">
+              <Pill label={`Accuracy: ${topicStat.accuracy}%`} variant="success" size="sm" />
+              <Pill label={`${topicStat.mistakes} mistakes`} variant="warning" size="sm" />
+            </View>
+          )}
         </View>
+      ) : (
+        <Text className="text-slate-300 text-xs mb-3">Begin exploring core nursing topics in the Learn workspace.</Text>
+      )}
 
-        <Animated.View style={buttonAnimStyle}>
-          <TouchableOpacity
-            className="bg-blue-500 py-3.5 px-5 rounded-[16px] items-center shadow-lg"
-            onPressIn={onButtonPressIn}
-            onPressOut={onButtonPressOut}
-            onPress={traverse}
-            activeOpacity={1}
-          >
-            <Text className="text-white text-[15px] font-bold tracking-wide">Continue</Text>
-          </TouchableOpacity>
-        </Animated.View>
-      </BlurView>
-    </Animated.View>
+      <View className="mb-4">
+        <ProgressBar progress={progress} height={6} color="#38bdf8" />
+      </View>
+
+      <PrimaryButton
+        label="Continue Learning →"
+        onPress={traverse}
+        variant="primary"
+      />
+    </GlassCard>
   );
 }
+
+

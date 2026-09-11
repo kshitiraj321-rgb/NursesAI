@@ -1,0 +1,261 @@
+[
+  {
+    "id": "subj_medical_surgical_nursing",
+    "name": "Medical-Surgical Nursing",
+    "displayName": "Medical-Surgical Nursing",
+    "description": "Comprehensive Medical-Surgical Nursing study modules and clinical concepts.",
+    "weightage": "30-45%",
+    "topicIds": [
+      "topic_medical_surgical_nursing_cardiovascular",
+      "topic_medical_surgical_nursing_respiratory",
+      "topic_medical_surgical_nursing_renal",
+      "topic_medical_surgical_nursing_neurology",
+      "topic_medical_surgical_nursing_endocrine",
+      "topic_medical_surgical_nursing_gi",
+      "topic_medical_surgical_nursing_emergency",
+      "topic_medical_surgical_nursing_oncology"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_fundamentals_of_nursing",
+    "name": "Fundamentals of Nursing",
+    "displayName": "Fundamentals of Nursing",
+    "description": "Comprehensive Fundamentals of Nursing study modules and clinical concepts.",
+    "weightage": "15-25%",
+    "topicIds": [
+      "topic_fundamentals_of_nursing_infection_control",
+      "topic_fundamentals_of_nursing_nursing_procedures",
+      "topic_fundamentals_of_nursing_patient_safety",
+      "topic_fundamentals_of_nursing_vital_signs",
+      "topic_fundamentals_of_nursing_cpr_bls",
+      "topic_fundamentals_of_nursing_communication"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_obstetrics_gynaecology",
+    "name": "Obstetrics & Gynaecology",
+    "displayName": "Obstetrics & Gynaecology",
+    "description": "Comprehensive Obstetrics & Gynaecology study modules and clinical concepts.",
+    "weightage": "12-20%",
+    "topicIds": [
+      "topic_obstetrics_gynaecology_antenatal",
+      "topic_obstetrics_gynaecology_labour",
+      "topic_obstetrics_gynaecology_complications",
+      "topic_obstetrics_gynaecology_newborn_care",
+      "topic_obstetrics_gynaecology_family_planning"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_pediatric_nursing",
+    "name": "Pediatric Nursing",
+    "displayName": "Pediatric Nursing",
+    "description": "Comprehensive Pediatric Nursing study modules and clinical concepts.",
+    "weightage": "8-12%",
+    "topicIds": [
+      "topic_pediatric_nursing_growth_development",
+      "topic_pediatric_nursing_neonatal",
+      "topic_pediatric_nursing_diseases",
+      "topic_pediatric_nursing_immunization"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_community_health_nursing",
+    "name": "Community Health Nursing",
+    "displayName": "Community Health Nursing",
+    "description": "Comprehensive Community Health Nursing study modules and clinical concepts.",
+    "weightage": "10-12%",
+    "topicIds": [
+      "topic_community_health_nursing_epidemiology",
+      "topic_community_health_nursing_national_programs",
+      "topic_community_health_nursing_prevention",
+      "topic_community_health_nursing_demography"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_pharmacology",
+    "name": "Pharmacology",
+    "displayName": "Pharmacology",
+    "description": "Comprehensive Pharmacology study modules and clinical concepts.",
+    "weightage": "6-10%",
+    "topicIds": [
+      "topic_pharmacology_emergency_drugs",
+      "topic_pharmacology_antibiotics",
+      "topic_pharmacology_endocrine_drugs",
+      "topic_pharmacology_cvs_drugs",
+      "topic_pharmacology_calculations",
+      "topic_pharmacology_antidotes"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_psychiatric_nursing",
+    "name": "Psychiatric Nursing",
+    "displayName": "Psychiatric Nursing",
+    "description": "Comprehensive Psychiatric Nursing study modules and clinical concepts.",
+    "weightage": "4-6%",
+    "topicIds": [
+      "topic_psychiatric_nursing_disorders",
+      "topic_psychiatric_nursing_communication",
+      "topic_psychiatric_nursing_therapies",
+      "topic_psychiatric_nursing_mental_health_acts"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_nursing_management",
+    "name": "Nursing Management",
+    "displayName": "Nursing Management",
+    "description": "Comprehensive Nursing Management study modules and clinical concepts.",
+    "weightage": "3-5%",
+    "topicIds": [
+      "topic_nursing_management_leadership",
+      "topic_nursing_management_administration",
+      "topic_nursing_management_budgeting",
+      "topic_nursing_management_research",
+      "topic_nursing_management_statistics"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_anatomy",
+    "name": "Anatomy",
+    "displayName": "Anatomy",
+    "description": "Comprehensive Anatomy study modules and clinical concepts.",
+    "weightage": "2-4%",
+    "topicIds": [
+      "topic_anatomy_bones",
+      "topic_anatomy_cns",
+      "topic_anatomy_cvs",
+      "topic_anatomy_respiratory",
+      "topic_anatomy_abdomen"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_physiology",
+    "name": "Physiology",
+    "displayName": "Physiology",
+    "description": "Comprehensive Physiology study modules and clinical concepts.",
+    "weightage": "2-4%",
+    "topicIds": [
+      "topic_physiology_blood",
+      "topic_physiology_renal",
+      "topic_physiology_endocrine",
+      "topic_physiology_neuro",
+      "topic_physiology_reproductive"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_nutrition",
+    "name": "Nutrition",
+    "displayName": "Nutrition",
+    "description": "Comprehensive Nutrition study modules and clinical concepts.",
+    "weightage": "2-4%",
+    "topicIds": [
+      "topic_nutrition_vitamins",
+      "topic_nutrition_deficiency",
+      "topic_nutrition_therapeutic_diet",
+      "topic_nutrition_macronutrients"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_microbiology",
+    "name": "Microbiology",
+    "displayName": "Microbiology",
+    "description": "Comprehensive Microbiology study modules and clinical concepts.",
+    "weightage": "2-4%",
+    "topicIds": [
+      "topic_microbiology_organisms",
+      "topic_microbiology_sterilization",
+      "topic_microbiology_immunology",
+      "topic_microbiology_infections"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "subj_general_aptitude",
+    "name": "General Aptitude",
+    "displayName": "General Aptitude",
+    "description": "Comprehensive General Aptitude study modules and clinical concepts.",
+    "weightage": "Varies",
+    "topicIds": [
+      "topic_general_aptitude_reasoning",
+      "topic_general_aptitude_quant",
+      "topic_general_aptitude_gk",
+      "topic_general_aptitude_current_affairs"
+    ],
+    "meta": {
+      "verificationStatus": "PUBLISHED",
+      "source": "NurseAI Subject Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  }
+]

@@ -6,7 +6,7 @@ import { ComponentProps } from 'react';
 import { OpaqueColorValue, type StyleProp, type TextStyle } from 'react-native';
 
 type IconMapping = Record<string, React.ComponentProps<typeof MaterialIcons>['name']>;
-type IconSymbolName = 'house.fill' | 'paperplane.fill' | 'chevron.left.forwardslash.chevron.right' | 'chevron.right' | 'chevron.left' | 'book.fill' | 'sparkles' | 'chart.bar.fill';
+type IconSymbolName = 'house.fill' | 'paperplane.fill' | 'chevron.left.forwardslash.chevron.right' | 'chevron.right' | 'chevron.left' | 'book.fill' | 'sparkles' | 'chart.bar.fill' | 'target' | 'stethoscope';
 
 /**
  * Add your SF Symbols to Material Icons mappings here.
@@ -22,6 +22,8 @@ const MAPPING: IconMapping = {
   'book.fill': 'menu-book',
   'sparkles': 'auto-awesome',
   'chart.bar.fill': 'bar-chart',
+  'target': 'gps-fixed',          // Practice tab — active retrieval
+  'stethoscope': 'medical-services', // Toolbox tab — clinical utility
 };
 
 /**

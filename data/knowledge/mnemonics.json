@@ -1,0 +1,3542 @@
+[
+  {
+    "id": "mnem_topic_community_health_nursing_cold_chain_05-community-pdf-1",
+    "conceptId": "concept_topic_community_health_nursing_cold_chain_definition",
+    "topicId": "topic_community_health_nursing_cold_chain",
+    "title": "Cold Chain — 05-community-pdf-1",
+    "mnemonic": "05-COMMUNITY-PDF-1",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "05_Community.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_community_health_nursing_nsi_05-community-pdf-2",
+    "conceptId": "concept_topic_community_health_nursing_nsi_definition",
+    "topicId": "topic_community_health_nursing_nsi",
+    "title": "NSI — 05-community-pdf-2",
+    "mnemonic": "05-COMMUNITY-PDF-2",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "05_Community.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_community_health_nursing_uip_05-community-pdf-3",
+    "conceptId": "concept_topic_community_health_nursing_uip_definition",
+    "topicId": "topic_community_health_nursing_uip",
+    "title": "UIP — 05-community-pdf-3",
+    "mnemonic": "05-COMMUNITY-PDF-3",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "05_Community.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_acid_base_balance_08-mixedpyq-pdf-1",
+    "conceptId": "concept_topic_fundamentals_of_nursing_acid_base_balance_definition",
+    "topicId": "topic_fundamentals_of_nursing_acid_base_balance",
+    "title": "Acid-Base Balance — 08-mixedpyq-pdf-1",
+    "mnemonic": "08-MIXEDPYQ-PDF-1",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "08_MixedPYQ.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_adult_sites_02-fundamentals-pdf-65",
+    "conceptId": "concept_topic_fundamentals_of_nursing_adult_sites_definition",
+    "topicId": "topic_fundamentals_of_nursing_adult_sites",
+    "title": "Adult Sites — 02-fundamentals-pdf-65",
+    "mnemonic": "02-FUNDAMENTALS-PDF-65",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_antitoxin_02-fundamentals-pdf-66",
+    "conceptId": "concept_topic_fundamentals_of_nursing_antitoxin_definition",
+    "topicId": "topic_fundamentals_of_nursing_antitoxin",
+    "title": "Antitoxin — 02-fundamentals-pdf-66",
+    "mnemonic": "02-FUNDAMENTALS-PDF-66",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_asepsis_02-fundamentals-pdf-22",
+    "conceptId": "concept_topic_fundamentals_of_nursing_asepsis_definition",
+    "topicId": "topic_fundamentals_of_nursing_asepsis",
+    "title": "Asepsis — 02-fundamentals-pdf-22",
+    "mnemonic": "02-FUNDAMENTALS-PDF-22",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_bathing_02-fundamentals-pdf-29",
+    "conceptId": "concept_topic_fundamentals_of_nursing_bathing_definition",
+    "topicId": "topic_fundamentals_of_nursing_bathing",
+    "title": "Bathing — 02-fundamentals-pdf-29",
+    "mnemonic": "02-FUNDAMENTALS-PDF-29",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_biohazard_02-fundamentals-pdf-8",
+    "conceptId": "concept_topic_fundamentals_of_nursing_biohazard_definition",
+    "topicId": "topic_fundamentals_of_nursing_biohazard",
+    "title": "Biohazard — 02-fundamentals-pdf-8",
+    "mnemonic": "02-FUNDAMENTALS-PDF-8",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_cvp_02-fundamentals-pdf-15",
+    "conceptId": "concept_topic_fundamentals_of_nursing_cvp_definition",
+    "topicId": "topic_fundamentals_of_nursing_cvp",
+    "title": "CVP — 02-fundamentals-pdf-15",
+    "mnemonic": "02-FUNDAMENTALS-PDF-15",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around assess: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_cardiovascular_02-fundamentals-pdf-4",
+    "conceptId": "concept_topic_fundamentals_of_nursing_cardiovascular_definition",
+    "topicId": "topic_fundamentals_of_nursing_cardiovascular",
+    "title": "Cardiovascular — 02-fundamentals-pdf-4",
+    "mnemonic": "02-FUNDAMENTALS-PDF-4",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_complications_02-fundamentals-pdf-69",
+    "conceptId": "concept_topic_fundamentals_of_nursing_complications_definition",
+    "topicId": "topic_fundamentals_of_nursing_complications",
+    "title": "Complications — 02-fundamentals-pdf-69",
+    "mnemonic": "02-FUNDAMENTALS-PDF-69",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_cranial_nerves_02-fundamentals-pdf-61",
+    "conceptId": "concept_topic_fundamentals_of_nursing_cranial_nerves_definition",
+    "topicId": "topic_fundamentals_of_nursing_cranial_nerves",
+    "title": "Cranial Nerves — 02-fundamentals-pdf-61",
+    "mnemonic": "02-FUNDAMENTALS-PDF-61",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_cranial_nerves_02-fundamentals-pdf-76",
+    "conceptId": "concept_topic_fundamentals_of_nursing_cranial_nerves_definition",
+    "topicId": "topic_fundamentals_of_nursing_cranial_nerves",
+    "title": "Cranial Nerves — 02-fundamentals-pdf-76",
+    "mnemonic": "02-FUNDAMENTALS-PDF-76",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_crutches_02-fundamentals-pdf-25",
+    "conceptId": "concept_topic_fundamentals_of_nursing_crutches_definition",
+    "topicId": "topic_fundamentals_of_nursing_crutches",
+    "title": "Crutches — 02-fundamentals-pdf-25",
+    "mnemonic": "02-FUNDAMENTALS-PDF-25",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_devices_02-fundamentals-pdf-21",
+    "conceptId": "concept_topic_fundamentals_of_nursing_devices_definition",
+    "topicId": "topic_fundamentals_of_nursing_devices",
+    "title": "Devices — 02-fundamentals-pdf-21",
+    "mnemonic": "02-FUNDAMENTALS-PDF-21",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_electrolytes_02-fundamentals-pdf-20",
+    "conceptId": "concept_topic_fundamentals_of_nursing_electrolytes_definition",
+    "topicId": "topic_fundamentals_of_nursing_electrolytes",
+    "title": "Electrolytes — 02-fundamentals-pdf-20",
+    "mnemonic": "02-FUNDAMENTALS-PDF-20",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_electrolytes_02-fundamentals-pdf-60",
+    "conceptId": "concept_topic_fundamentals_of_nursing_electrolytes_definition",
+    "topicId": "topic_fundamentals_of_nursing_electrolytes",
+    "title": "Electrolytes — 02-fundamentals-pdf-60",
+    "mnemonic": "02-FUNDAMENTALS-PDF-60",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_electrolytes_02-fundamentals-pdf-71",
+    "conceptId": "concept_topic_fundamentals_of_nursing_electrolytes_definition",
+    "topicId": "topic_fundamentals_of_nursing_electrolytes",
+    "title": "Electrolytes — 02-fundamentals-pdf-71",
+    "mnemonic": "02-FUNDAMENTALS-PDF-71",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_electrolytes_02-fundamentals-pdf-72",
+    "conceptId": "concept_topic_fundamentals_of_nursing_electrolytes_definition",
+    "topicId": "topic_fundamentals_of_nursing_electrolytes",
+    "title": "Electrolytes — 02-fundamentals-pdf-72",
+    "mnemonic": "02-FUNDAMENTALS-PDF-72",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_electrolytes_02-fundamentals-pdf-73",
+    "conceptId": "concept_topic_fundamentals_of_nursing_electrolytes_definition",
+    "topicId": "topic_fundamentals_of_nursing_electrolytes",
+    "title": "Electrolytes — 02-fundamentals-pdf-73",
+    "mnemonic": "02-FUNDAMENTALS-PDF-73",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_foley_02-fundamentals-pdf-19",
+    "conceptId": "concept_topic_fundamentals_of_nursing_foley_definition",
+    "topicId": "topic_fundamentals_of_nursing_foley",
+    "title": "Foley — 02-fundamentals-pdf-19",
+    "mnemonic": "02-FUNDAMENTALS-PDF-19",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_foley_02-fundamentals-pdf-26",
+    "conceptId": "concept_topic_fundamentals_of_nursing_foley_definition",
+    "topicId": "topic_fundamentals_of_nursing_foley",
+    "title": "Foley — 02-fundamentals-pdf-26",
+    "mnemonic": "02-FUNDAMENTALS-PDF-26",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_hai_02-fundamentals-pdf-64",
+    "conceptId": "concept_topic_fundamentals_of_nursing_hai_definition",
+    "topicId": "topic_fundamentals_of_nursing_hai",
+    "title": "HAI — 02-fundamentals-pdf-64",
+    "mnemonic": "02-FUNDAMENTALS-PDF-64",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_hand_hygiene_02-fundamentals-pdf-10",
+    "conceptId": "concept_topic_fundamentals_of_nursing_hand_hygiene_definition",
+    "topicId": "topic_fundamentals_of_nursing_hand_hygiene",
+    "title": "Hand Hygiene — 02-fundamentals-pdf-10",
+    "mnemonic": "02-FUNDAMENTALS-PDF-10",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_hardware_02-fundamentals-pdf-28",
+    "conceptId": "concept_topic_fundamentals_of_nursing_hardware_definition",
+    "topicId": "topic_fundamentals_of_nursing_hardware",
+    "title": "Hardware — 02-fundamentals-pdf-28",
+    "mnemonic": "02-FUNDAMENTALS-PDF-28",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_hearing_test_02-fundamentals-pdf-9",
+    "conceptId": "concept_topic_fundamentals_of_nursing_hearing_test_definition",
+    "topicId": "topic_fundamentals_of_nursing_hearing_test",
+    "title": "Hearing Test — 02-fundamentals-pdf-9",
+    "mnemonic": "02-FUNDAMENTALS-PDF-9",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_hydrocarbon_02-fundamentals-pdf-11",
+    "conceptId": "concept_topic_fundamentals_of_nursing_hydrocarbon_definition",
+    "topicId": "topic_fundamentals_of_nursing_hydrocarbon",
+    "title": "Hydrocarbon — 02-fundamentals-pdf-11",
+    "mnemonic": "02-FUNDAMENTALS-PDF-11",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_iv_push_02-fundamentals-pdf-70",
+    "conceptId": "concept_topic_fundamentals_of_nursing_iv_push_definition",
+    "topicId": "topic_fundamentals_of_nursing_iv_push",
+    "title": "IV Push — 02-fundamentals-pdf-70",
+    "mnemonic": "02-FUNDAMENTALS-PDF-70",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around administer: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_infant_bls_02-fundamentals-pdf-5",
+    "conceptId": "concept_topic_fundamentals_of_nursing_infant_bls_definition",
+    "topicId": "topic_fundamentals_of_nursing_infant_bls",
+    "title": "Infant BLS — 02-fundamentals-pdf-5",
+    "mnemonic": "02-FUNDAMENTALS-PDF-5",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_liver_biopsy_02-fundamentals-pdf-1",
+    "conceptId": "concept_topic_fundamentals_of_nursing_liver_biopsy_definition",
+    "topicId": "topic_fundamentals_of_nursing_liver_biopsy",
+    "title": "Liver Biopsy — 02-fundamentals-pdf-1",
+    "mnemonic": "02-FUNDAMENTALS-PDF-1",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_local_anesthesia_02-fundamentals-pdf-43",
+    "conceptId": "concept_topic_fundamentals_of_nursing_local_anesthesia_definition",
+    "topicId": "topic_fundamentals_of_nursing_local_anesthesia",
+    "title": "Local Anesthesia — 02-fundamentals-pdf-43",
+    "mnemonic": "02-FUNDAMENTALS-PDF-43",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_lumbar_puncture_02-fundamentals-pdf-13",
+    "conceptId": "concept_topic_fundamentals_of_nursing_lumbar_puncture_definition",
+    "topicId": "topic_fundamentals_of_nursing_lumbar_puncture",
+    "title": "Lumbar Puncture — 02-fundamentals-pdf-13",
+    "mnemonic": "02-FUNDAMENTALS-PDF-13",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_measures_02-fundamentals-pdf-39",
+    "conceptId": "concept_topic_fundamentals_of_nursing_measures_definition",
+    "topicId": "topic_fundamentals_of_nursing_measures",
+    "title": "Measures — 02-fundamentals-pdf-39",
+    "mnemonic": "02-FUNDAMENTALS-PDF-39",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_osmolarity_02-fundamentals-pdf-12",
+    "conceptId": "concept_topic_fundamentals_of_nursing_osmolarity_definition",
+    "topicId": "topic_fundamentals_of_nursing_osmolarity",
+    "title": "Osmolarity — 02-fundamentals-pdf-12",
+    "mnemonic": "02-FUNDAMENTALS-PDF-12",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_osmolarity_02-fundamentals-pdf-24",
+    "conceptId": "concept_topic_fundamentals_of_nursing_osmolarity_definition",
+    "topicId": "topic_fundamentals_of_nursing_osmolarity",
+    "title": "Osmolarity — 02-fundamentals-pdf-24",
+    "mnemonic": "02-FUNDAMENTALS-PDF-24",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_pediatric_02-fundamentals-pdf-2",
+    "conceptId": "concept_topic_fundamentals_of_nursing_pediatric_definition",
+    "topicId": "topic_fundamentals_of_nursing_pediatric",
+    "title": "Pediatric — 02-fundamentals-pdf-2",
+    "mnemonic": "02-FUNDAMENTALS-PDF-2",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around administer: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_pediatric_02-fundamentals-pdf-63",
+    "conceptId": "concept_topic_fundamentals_of_nursing_pediatric_definition",
+    "topicId": "topic_fundamentals_of_nursing_pediatric",
+    "title": "Pediatric — 02-fundamentals-pdf-63",
+    "mnemonic": "02-FUNDAMENTALS-PDF-63",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_perineal_care_02-fundamentals-pdf-7",
+    "conceptId": "concept_topic_fundamentals_of_nursing_perineal_care_definition",
+    "topicId": "topic_fundamentals_of_nursing_perineal_care",
+    "title": "Perineal Care — 02-fundamentals-pdf-7",
+    "mnemonic": "02-FUNDAMENTALS-PDF-7",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_pregnancy_02-fundamentals-pdf-89",
+    "conceptId": "concept_topic_fundamentals_of_nursing_pregnancy_definition",
+    "topicId": "topic_fundamentals_of_nursing_pregnancy",
+    "title": "Pregnancy — 02-fundamentals-pdf-89",
+    "mnemonic": "02-FUNDAMENTALS-PDF-89",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_preparation_02-fundamentals-pdf-35",
+    "conceptId": "concept_topic_fundamentals_of_nursing_preparation_definition",
+    "topicId": "topic_fundamentals_of_nursing_preparation",
+    "title": "Preparation — 02-fundamentals-pdf-35",
+    "mnemonic": "02-FUNDAMENTALS-PDF-35",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_records_02-fundamentals-pdf-31",
+    "conceptId": "concept_topic_fundamentals_of_nursing_records_definition",
+    "topicId": "topic_fundamentals_of_nursing_records",
+    "title": "Records — 02-fundamentals-pdf-31",
+    "mnemonic": "02-FUNDAMENTALS-PDF-31",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_roles_02-fundamentals-pdf-27",
+    "conceptId": "concept_topic_fundamentals_of_nursing_roles_definition",
+    "topicId": "topic_fundamentals_of_nursing_roles",
+    "title": "Roles — 02-fundamentals-pdf-27",
+    "mnemonic": "02-FUNDAMENTALS-PDF-27",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_safety_02-fundamentals-pdf-40",
+    "conceptId": "concept_topic_fundamentals_of_nursing_safety_definition",
+    "topicId": "topic_fundamentals_of_nursing_safety",
+    "title": "Safety — 02-fundamentals-pdf-40",
+    "mnemonic": "02-FUNDAMENTALS-PDF-40",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_segregation_02-fundamentals-pdf-23",
+    "conceptId": "concept_topic_fundamentals_of_nursing_segregation_definition",
+    "topicId": "topic_fundamentals_of_nursing_segregation",
+    "title": "Segregation — 02-fundamentals-pdf-23",
+    "mnemonic": "02-FUNDAMENTALS-PDF-23",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_sites_02-fundamentals-pdf-18",
+    "conceptId": "concept_topic_fundamentals_of_nursing_sites_definition",
+    "topicId": "topic_fundamentals_of_nursing_sites",
+    "title": "Sites — 02-fundamentals-pdf-18",
+    "mnemonic": "02-FUNDAMENTALS-PDF-18",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_techniques_02-fundamentals-pdf-17",
+    "conceptId": "concept_topic_fundamentals_of_nursing_techniques_definition",
+    "topicId": "topic_fundamentals_of_nursing_techniques",
+    "title": "Techniques — 02-fundamentals-pdf-17",
+    "mnemonic": "02-FUNDAMENTALS-PDF-17",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_transdermal_02-fundamentals-pdf-3",
+    "conceptId": "concept_topic_fundamentals_of_nursing_transdermal_definition",
+    "topicId": "topic_fundamentals_of_nursing_transdermal",
+    "title": "Transdermal — 02-fundamentals-pdf-3",
+    "mnemonic": "02-FUNDAMENTALS-PDF-3",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_two_rescuer_02-fundamentals-pdf-14",
+    "conceptId": "concept_topic_fundamentals_of_nursing_two_rescuer_definition",
+    "topicId": "topic_fundamentals_of_nursing_two_rescuer",
+    "title": "Two Rescuer — 02-fundamentals-pdf-14",
+    "mnemonic": "02-FUNDAMENTALS-PDF-14",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_types_02-fundamentals-pdf-62",
+    "conceptId": "concept_topic_fundamentals_of_nursing_types_definition",
+    "topicId": "topic_fundamentals_of_nursing_types",
+    "title": "Types — 02-fundamentals-pdf-62",
+    "mnemonic": "02-FUNDAMENTALS-PDF-62",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vital_signs_02-fundamentals-pdf-32",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vital_signs_definition",
+    "topicId": "topic_fundamentals_of_nursing_vital_signs",
+    "title": "Vital Signs — 02-fundamentals-pdf-32",
+    "mnemonic": "02-FUNDAMENTALS-PDF-32",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around assess: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-58",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-58",
+    "mnemonic": "02-FUNDAMENTALS-PDF-58",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-81",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-81",
+    "mnemonic": "02-FUNDAMENTALS-PDF-81",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-82",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-82",
+    "mnemonic": "02-FUNDAMENTALS-PDF-82",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-83",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-83",
+    "mnemonic": "02-FUNDAMENTALS-PDF-83",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-85",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-85",
+    "mnemonic": "02-FUNDAMENTALS-PDF-85",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-86",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-86",
+    "mnemonic": "02-FUNDAMENTALS-PDF-86",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-87",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-87",
+    "mnemonic": "02-FUNDAMENTALS-PDF-87",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-88",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-88",
+    "mnemonic": "02-FUNDAMENTALS-PDF-88",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-90",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-90",
+    "mnemonic": "02-FUNDAMENTALS-PDF-90",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-91",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-91",
+    "mnemonic": "02-FUNDAMENTALS-PDF-91",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-92",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-92",
+    "mnemonic": "02-FUNDAMENTALS-PDF-92",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-93",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-93",
+    "mnemonic": "02-FUNDAMENTALS-PDF-93",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-94",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-94",
+    "mnemonic": "02-FUNDAMENTALS-PDF-94",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_vitamins_02-fundamentals-pdf-95",
+    "conceptId": "concept_topic_fundamentals_of_nursing_vitamins_definition",
+    "topicId": "topic_fundamentals_of_nursing_vitamins",
+    "title": "Vitamins — 02-fundamentals-pdf-95",
+    "mnemonic": "02-FUNDAMENTALS-PDF-95",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_who_checklist_02-fundamentals-pdf-6",
+    "conceptId": "concept_topic_fundamentals_of_nursing_who_checklist_definition",
+    "topicId": "topic_fundamentals_of_nursing_who_checklist",
+    "title": "WHO Checklist — 02-fundamentals-pdf-6",
+    "mnemonic": "02-FUNDAMENTALS-PDF-6",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Nursing priority around safety: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "02_Fundamentals.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_abg_analysis_curated-fon-abg-1",
+    "conceptId": "concept_topic_fundamentals_of_nursing_abg_analysis_definition",
+    "topicId": "topic_fundamentals_of_nursing_abg_analysis",
+    "title": "ABG Analysis — curated-fon-abg-1",
+    "mnemonic": "CURATED-FON-ABG-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Perform Allen's Test before drawing ABG from the radial artery to confirm ulnar collateral circulation.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_blood_transfusion_curated-fon-blood-1",
+    "conceptId": "concept_topic_fundamentals_of_nursing_blood_transfusion_definition",
+    "topicId": "topic_fundamentals_of_nursing_blood_transfusion",
+    "title": "Blood Transfusion — curated-fon-blood-1",
+    "mnemonic": "CURATED-FON-BLOOD-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Use ONLY 0.9% Normal Saline (NS) to flush or hang with blood.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_fundamentals_of_nursing_cpr_and_bls_curated-fon-cpr-1",
+    "conceptId": "concept_topic_fundamentals_of_nursing_cpr_and_bls_definition",
+    "topicId": "topic_fundamentals_of_nursing_cpr_and_bls",
+    "title": "CPR and BLS — curated-fon-cpr-1",
+    "mnemonic": "CURATED-FON-CPR-1",
+    "expansion": "Key Recall Hook",
+    "hint": "If an advanced airway (Intubation) is in place, give 1 breath every 6 seconds (10 breaths/min) without pausing compressions.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_general_aptitude_founders_07-gk-pdf-3",
+    "conceptId": "concept_topic_general_aptitude_founders_definition",
+    "topicId": "topic_general_aptitude_founders",
+    "title": "Founders — 07-gk-pdf-3",
+    "mnemonic": "07-GK-PDF-3",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "07_GK.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_general_aptitude_g20_07-gk-pdf-1",
+    "conceptId": "concept_topic_general_aptitude_g20_definition",
+    "topicId": "topic_general_aptitude_g20",
+    "title": "G20 — 07-gk-pdf-1",
+    "mnemonic": "07-GK-PDF-1",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "07_GK.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_general_aptitude_infrastructure_07-gk-pdf-4",
+    "conceptId": "concept_topic_general_aptitude_infrastructure_definition",
+    "topicId": "topic_general_aptitude_infrastructure",
+    "title": "Infrastructure — 07-gk-pdf-4",
+    "mnemonic": "07-GK-PDF-4",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "07_GK.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_arf_01-medicalsurgical-pdf-6",
+    "conceptId": "concept_topic_medical_surgical_nursing_arf_definition",
+    "topicId": "topic_medical_surgical_nursing_arf",
+    "title": "ARF — 01-medicalsurgical-pdf-6",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-6",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_arf_01-medicalsurgical-pdf-103",
+    "conceptId": "concept_topic_medical_surgical_nursing_arf_definition",
+    "topicId": "topic_medical_surgical_nursing_arf",
+    "title": "ARF — 01-medicalsurgical-pdf-103",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-103",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_arf_ckd_01-medicalsurgical-pdf-48",
+    "conceptId": "concept_topic_medical_surgical_nursing_arf_ckd_definition",
+    "topicId": "topic_medical_surgical_nursing_arf_ckd",
+    "title": "ARF/CKD — 01-medicalsurgical-pdf-48",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-48",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_atls_01-medicalsurgical-pdf-16",
+    "conceptId": "concept_topic_medical_surgical_nursing_atls_definition",
+    "topicId": "topic_medical_surgical_nursing_atls",
+    "title": "ATLS — 01-medicalsurgical-pdf-16",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-16",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around priority: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_att_01-medicalsurgical-pdf-27",
+    "conceptId": "concept_topic_medical_surgical_nursing_att_definition",
+    "topicId": "topic_medical_surgical_nursing_att",
+    "title": "ATT — 01-medicalsurgical-pdf-27",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-27",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_adrenal_01-medicalsurgical-pdf-83",
+    "conceptId": "concept_topic_medical_surgical_nursing_adrenal_definition",
+    "topicId": "topic_medical_surgical_nursing_adrenal",
+    "title": "Adrenal — 01-medicalsurgical-pdf-83",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-83",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_adrenal_01-medicalsurgical-pdf-166",
+    "conceptId": "concept_topic_medical_surgical_nursing_adrenal_definition",
+    "topicId": "topic_medical_surgical_nursing_adrenal",
+    "title": "Adrenal — 01-medicalsurgical-pdf-166",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-166",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_anemia_01-medicalsurgical-pdf-80",
+    "conceptId": "concept_topic_medical_surgical_nursing_anemia_definition",
+    "topicId": "topic_medical_surgical_nursing_anemia",
+    "title": "Anemia — 01-medicalsurgical-pdf-80",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-80",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_anemia_01-medicalsurgical-pdf-96",
+    "conceptId": "concept_topic_medical_surgical_nursing_anemia_definition",
+    "topicId": "topic_medical_surgical_nursing_anemia",
+    "title": "Anemia — 01-medicalsurgical-pdf-96",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-96",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_anticoagulants_01-medicalsurgical-pdf-22",
+    "conceptId": "concept_topic_medical_surgical_nursing_anticoagulants_definition",
+    "topicId": "topic_medical_surgical_nursing_anticoagulants",
+    "title": "Anticoagulants — 01-medicalsurgical-pdf-22",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-22",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_anticoagulants_01-medicalsurgical-pdf-70",
+    "conceptId": "concept_topic_medical_surgical_nursing_anticoagulants_definition",
+    "topicId": "topic_medical_surgical_nursing_anticoagulants",
+    "title": "Anticoagulants — 01-medicalsurgical-pdf-70",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-70",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-38",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-38",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-38",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-40",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-40",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-40",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-163",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-163",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-163",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-168",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-168",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-168",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-169",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-169",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-169",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-171",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-171",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-171",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-172",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-172",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-172",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-173",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-173",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-173",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-174",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-174",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-174",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-175",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-175",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-175",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-177",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-177",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-177",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-178",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-178",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-178",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_antidotes_01-medicalsurgical-pdf-179",
+    "conceptId": "concept_topic_medical_surgical_nursing_antidotes_definition",
+    "topicId": "topic_medical_surgical_nursing_antidotes",
+    "title": "Antidotes — 01-medicalsurgical-pdf-179",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-179",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_asthma_01-medicalsurgical-pdf-51",
+    "conceptId": "concept_topic_medical_surgical_nursing_asthma_definition",
+    "topicId": "topic_medical_surgical_nursing_asthma",
+    "title": "Asthma — 01-medicalsurgical-pdf-51",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-51",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_asthma_01-medicalsurgical-pdf-75",
+    "conceptId": "concept_topic_medical_surgical_nursing_asthma_definition",
+    "topicId": "topic_medical_surgical_nursing_asthma",
+    "title": "Asthma — 01-medicalsurgical-pdf-75",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-75",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_bee_sting_01-medicalsurgical-pdf-62",
+    "conceptId": "concept_topic_medical_surgical_nursing_bee_sting_definition",
+    "topicId": "topic_medical_surgical_nursing_bee_sting",
+    "title": "Bee Sting — 01-medicalsurgical-pdf-62",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-62",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_bone_marrow_01-medicalsurgical-pdf-41",
+    "conceptId": "concept_topic_medical_surgical_nursing_bone_marrow_definition",
+    "topicId": "topic_medical_surgical_nursing_bone_marrow",
+    "title": "Bone Marrow — 01-medicalsurgical-pdf-41",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-41",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_burns_01-medicalsurgical-pdf-110",
+    "conceptId": "concept_topic_medical_surgical_nursing_burns_definition",
+    "topicId": "topic_medical_surgical_nursing_burns",
+    "title": "Burns — 01-medicalsurgical-pdf-110",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-110",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_copd_01-medicalsurgical-pdf-50",
+    "conceptId": "concept_topic_medical_surgical_nursing_copd_definition",
+    "topicId": "topic_medical_surgical_nursing_copd",
+    "title": "COPD — 01-medicalsurgical-pdf-50",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-50",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_copd_01-medicalsurgical-pdf-78",
+    "conceptId": "concept_topic_medical_surgical_nursing_copd_definition",
+    "topicId": "topic_medical_surgical_nursing_copd",
+    "title": "COPD — 01-medicalsurgical-pdf-78",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-78",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_copd_01-medicalsurgical-pdf-92",
+    "conceptId": "concept_topic_medical_surgical_nursing_copd_definition",
+    "topicId": "topic_medical_surgical_nursing_copd",
+    "title": "COPD — 01-medicalsurgical-pdf-92",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-92",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_covid_01-medicalsurgical-pdf-25",
+    "conceptId": "concept_topic_medical_surgical_nursing_covid_definition",
+    "topicId": "topic_medical_surgical_nursing_covid",
+    "title": "COVID — 01-medicalsurgical-pdf-25",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-25",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_cardiac_drugs_01-medicalsurgical-pdf-10",
+    "conceptId": "concept_topic_medical_surgical_nursing_cardiac_drugs_definition",
+    "topicId": "topic_medical_surgical_nursing_cardiac_drugs",
+    "title": "Cardiac Drugs — 01-medicalsurgical-pdf-10",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-10",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_cardiac_drugs_01-medicalsurgical-pdf-19",
+    "conceptId": "concept_topic_medical_surgical_nursing_cardiac_drugs_definition",
+    "topicId": "topic_medical_surgical_nursing_cardiac_drugs",
+    "title": "Cardiac Drugs — 01-medicalsurgical-pdf-19",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-19",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around administer: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_cirrhosis_01-medicalsurgical-pdf-49",
+    "conceptId": "concept_topic_medical_surgical_nursing_cirrhosis_definition",
+    "topicId": "topic_medical_surgical_nursing_cirrhosis",
+    "title": "Cirrhosis — 01-medicalsurgical-pdf-49",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-49",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_cirrhosis_01-medicalsurgical-pdf-81",
+    "conceptId": "concept_topic_medical_surgical_nursing_cirrhosis_definition",
+    "topicId": "topic_medical_surgical_nursing_cirrhosis",
+    "title": "Cirrhosis — 01-medicalsurgical-pdf-81",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-81",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_cirrhosis_01-medicalsurgical-pdf-105",
+    "conceptId": "concept_topic_medical_surgical_nursing_cirrhosis_definition",
+    "topicId": "topic_medical_surgical_nursing_cirrhosis",
+    "title": "Cirrhosis — 01-medicalsurgical-pdf-105",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-105",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_complications_01-medicalsurgical-pdf-44",
+    "conceptId": "concept_topic_medical_surgical_nursing_complications_definition",
+    "topicId": "topic_medical_surgical_nursing_complications",
+    "title": "Complications — 01-medicalsurgical-pdf-44",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-44",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_complications_01-medicalsurgical-pdf-64",
+    "conceptId": "concept_topic_medical_surgical_nursing_complications_definition",
+    "topicId": "topic_medical_surgical_nursing_complications",
+    "title": "Complications — 01-medicalsurgical-pdf-64",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-64",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_complications_01-medicalsurgical-pdf-140",
+    "conceptId": "concept_topic_medical_surgical_nursing_complications_definition",
+    "topicId": "topic_medical_surgical_nursing_complications",
+    "title": "Complications — 01-medicalsurgical-pdf-140",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-140",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_dka_01-medicalsurgical-pdf-106",
+    "conceptId": "concept_topic_medical_surgical_nursing_dka_definition",
+    "topicId": "topic_medical_surgical_nursing_dka",
+    "title": "DKA — 01-medicalsurgical-pdf-106",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-106",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_dm_01-medicalsurgical-pdf-79",
+    "conceptId": "concept_topic_medical_surgical_nursing_dm_definition",
+    "topicId": "topic_medical_surgical_nursing_dm",
+    "title": "DM — 01-medicalsurgical-pdf-79",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-79",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_dm_01-medicalsurgical-pdf-94",
+    "conceptId": "concept_topic_medical_surgical_nursing_dm_definition",
+    "topicId": "topic_medical_surgical_nursing_dm",
+    "title": "DM — 01-medicalsurgical-pdf-94",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-94",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_dm_complications_01-medicalsurgical-pdf-45",
+    "conceptId": "concept_topic_medical_surgical_nursing_dm_complications_definition",
+    "topicId": "topic_medical_surgical_nursing_dm_complications",
+    "title": "DM Complications — 01-medicalsurgical-pdf-45",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-45",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_dengue_01-medicalsurgical-pdf-55",
+    "conceptId": "concept_topic_medical_surgical_nursing_dengue_definition",
+    "topicId": "topic_medical_surgical_nursing_dengue",
+    "title": "Dengue — 01-medicalsurgical-pdf-55",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-55",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_diabetes_01-medicalsurgical-pdf-21",
+    "conceptId": "concept_topic_medical_surgical_nursing_diabetes_definition",
+    "topicId": "topic_medical_surgical_nursing_diabetes",
+    "title": "Diabetes — 01-medicalsurgical-pdf-21",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-21",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_diabetes_insipidus_01-medicalsurgical-pdf-90",
+    "conceptId": "concept_topic_medical_surgical_nursing_diabetes_insipidus_definition",
+    "topicId": "topic_medical_surgical_nursing_diabetes_insipidus",
+    "title": "Diabetes Insipidus — 01-medicalsurgical-pdf-90",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-90",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_dialysis_01-medicalsurgical-pdf-13",
+    "conceptId": "concept_topic_medical_surgical_nursing_dialysis_definition",
+    "topicId": "topic_medical_surgical_nursing_dialysis",
+    "title": "Dialysis — 01-medicalsurgical-pdf-13",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-13",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_diphtheria_01-medicalsurgical-pdf-57",
+    "conceptId": "concept_topic_medical_surgical_nursing_diphtheria_definition",
+    "topicId": "topic_medical_surgical_nursing_diphtheria",
+    "title": "Diphtheria — 01-medicalsurgical-pdf-57",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-57",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_drowning_01-medicalsurgical-pdf-67",
+    "conceptId": "concept_topic_medical_surgical_nursing_drowning_definition",
+    "topicId": "topic_medical_surgical_nursing_drowning",
+    "title": "Drowning — 01-medicalsurgical-pdf-67",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-67",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_ecg_01-medicalsurgical-pdf-15",
+    "conceptId": "concept_topic_medical_surgical_nursing_ecg_definition",
+    "topicId": "topic_medical_surgical_nursing_ecg",
+    "title": "ECG — 01-medicalsurgical-pdf-15",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-15",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_ecg_01-medicalsurgical-pdf-24",
+    "conceptId": "concept_topic_medical_surgical_nursing_ecg_definition",
+    "topicId": "topic_medical_surgical_nursing_ecg",
+    "title": "ECG — 01-medicalsurgical-pdf-24",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-24",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_electrocution_01-medicalsurgical-pdf-68",
+    "conceptId": "concept_topic_medical_surgical_nursing_electrocution_definition",
+    "topicId": "topic_medical_surgical_nursing_electrocution",
+    "title": "Electrocution — 01-medicalsurgical-pdf-68",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-68",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_electrolytes_01-medicalsurgical-pdf-14",
+    "conceptId": "concept_topic_medical_surgical_nursing_electrolytes_definition",
+    "topicId": "topic_medical_surgical_nursing_electrolytes",
+    "title": "Electrolytes — 01-medicalsurgical-pdf-14",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-14",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_electrolytes_01-medicalsurgical-pdf-167",
+    "conceptId": "concept_topic_medical_surgical_nursing_electrolytes_definition",
+    "topicId": "topic_medical_surgical_nursing_electrolytes",
+    "title": "Electrolytes — 01-medicalsurgical-pdf-167",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-167",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_emergency_01-medicalsurgical-pdf-23",
+    "conceptId": "concept_topic_medical_surgical_nursing_emergency_definition",
+    "topicId": "topic_medical_surgical_nursing_emergency",
+    "title": "Emergency — 01-medicalsurgical-pdf-23",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-23",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around assess: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_fluid_resuscitation_01-medicalsurgical-pdf-12",
+    "conceptId": "concept_topic_medical_surgical_nursing_fluid_resuscitation_definition",
+    "topicId": "topic_medical_surgical_nursing_fluid_resuscitation",
+    "title": "Fluid Resuscitation — 01-medicalsurgical-pdf-12",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-12",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_fungal_infections_01-medicalsurgical-pdf-8",
+    "conceptId": "concept_topic_medical_surgical_nursing_fungal_infections_definition",
+    "topicId": "topic_medical_surgical_nursing_fungal_infections",
+    "title": "Fungal Infections — 01-medicalsurgical-pdf-8",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-8",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_gi_01-medicalsurgical-pdf-170",
+    "conceptId": "concept_topic_medical_surgical_nursing_gi_definition",
+    "topicId": "topic_medical_surgical_nursing_gi",
+    "title": "GI — 01-medicalsurgical-pdf-170",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-170",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hap_01-medicalsurgical-pdf-165",
+    "conceptId": "concept_topic_medical_surgical_nursing_hap_definition",
+    "topicId": "topic_medical_surgical_nursing_hap",
+    "title": "HAP — 01-medicalsurgical-pdf-165",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-165",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hiv_01-medicalsurgical-pdf-52",
+    "conceptId": "concept_topic_medical_surgical_nursing_hiv_definition",
+    "topicId": "topic_medical_surgical_nursing_hiv",
+    "title": "HIV — 01-medicalsurgical-pdf-52",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-52",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_htn_01-medicalsurgical-pdf-72",
+    "conceptId": "concept_topic_medical_surgical_nursing_htn_definition",
+    "topicId": "topic_medical_surgical_nursing_htn",
+    "title": "HTN — 01-medicalsurgical-pdf-72",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-72",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_htn_01-medicalsurgical-pdf-107",
+    "conceptId": "concept_topic_medical_surgical_nursing_htn_definition",
+    "topicId": "topic_medical_surgical_nursing_htn",
+    "title": "HTN — 01-medicalsurgical-pdf-107",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-107",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_heart_failure_01-medicalsurgical-pdf-2",
+    "conceptId": "concept_topic_medical_surgical_nursing_heart_failure_definition",
+    "topicId": "topic_medical_surgical_nursing_heart_failure",
+    "title": "Heart Failure — 01-medicalsurgical-pdf-2",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-2",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hemorrhage_control_01-medicalsurgical-pdf-18",
+    "conceptId": "concept_topic_medical_surgical_nursing_hemorrhage_control_definition",
+    "topicId": "topic_medical_surgical_nursing_hemorrhage_control",
+    "title": "Hemorrhage Control — 01-medicalsurgical-pdf-18",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-18",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around priority: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hydrocephalus_01-medicalsurgical-pdf-11",
+    "conceptId": "concept_topic_medical_surgical_nursing_hydrocephalus_definition",
+    "topicId": "topic_medical_surgical_nursing_hydrocephalus",
+    "title": "Hydrocephalus — 01-medicalsurgical-pdf-11",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-11",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hypertension_01-medicalsurgical-pdf-46",
+    "conceptId": "concept_topic_medical_surgical_nursing_hypertension_definition",
+    "topicId": "topic_medical_surgical_nursing_hypertension",
+    "title": "Hypertension — 01-medicalsurgical-pdf-46",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-46",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hyperthyroidism_01-medicalsurgical-pdf-87",
+    "conceptId": "concept_topic_medical_surgical_nursing_hyperthyroidism_definition",
+    "topicId": "topic_medical_surgical_nursing_hyperthyroidism",
+    "title": "Hyperthyroidism — 01-medicalsurgical-pdf-87",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-87",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hypothyroid_01-medicalsurgical-pdf-99",
+    "conceptId": "concept_topic_medical_surgical_nursing_hypothyroid_definition",
+    "topicId": "topic_medical_surgical_nursing_hypothyroid",
+    "title": "Hypothyroid — 01-medicalsurgical-pdf-99",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-99",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_hypovolemia_01-medicalsurgical-pdf-101",
+    "conceptId": "concept_topic_medical_surgical_nursing_hypovolemia_definition",
+    "topicId": "topic_medical_surgical_nursing_hypovolemia",
+    "title": "Hypovolemia — 01-medicalsurgical-pdf-101",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-101",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_iv_access_01-medicalsurgical-pdf-26",
+    "conceptId": "concept_topic_medical_surgical_nursing_iv_access_definition",
+    "topicId": "topic_medical_surgical_nursing_iv_access",
+    "title": "IV Access — 01-medicalsurgical-pdf-26",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-26",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_infections_01-medicalsurgical-pdf-5",
+    "conceptId": "concept_topic_medical_surgical_nursing_infections_definition",
+    "topicId": "topic_medical_surgical_nursing_infections",
+    "title": "Infections — 01-medicalsurgical-pdf-5",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-5",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_instruments_01-medicalsurgical-pdf-39",
+    "conceptId": "concept_topic_medical_surgical_nursing_instruments_definition",
+    "topicId": "topic_medical_surgical_nursing_instruments",
+    "title": "Instruments — 01-medicalsurgical-pdf-39",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-39",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_mi_01-medicalsurgical-pdf-43",
+    "conceptId": "concept_topic_medical_surgical_nursing_mi_definition",
+    "topicId": "topic_medical_surgical_nursing_mi",
+    "title": "MI — 01-medicalsurgical-pdf-43",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-43",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_mi_01-medicalsurgical-pdf-82",
+    "conceptId": "concept_topic_medical_surgical_nursing_mi_definition",
+    "topicId": "topic_medical_surgical_nursing_mi",
+    "title": "MI — 01-medicalsurgical-pdf-82",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-82",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_mi_01-medicalsurgical-pdf-148",
+    "conceptId": "concept_topic_medical_surgical_nursing_mi_definition",
+    "topicId": "topic_medical_surgical_nursing_mi",
+    "title": "MI — 01-medicalsurgical-pdf-148",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-148",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_malaria_01-medicalsurgical-pdf-54",
+    "conceptId": "concept_topic_medical_surgical_nursing_malaria_definition",
+    "topicId": "topic_medical_surgical_nursing_malaria",
+    "title": "Malaria — 01-medicalsurgical-pdf-54",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-54",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_mastectomy_01-medicalsurgical-pdf-77",
+    "conceptId": "concept_topic_medical_surgical_nursing_mastectomy_definition",
+    "topicId": "topic_medical_surgical_nursing_mastectomy",
+    "title": "Mastectomy — 01-medicalsurgical-pdf-77",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-77",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around assess: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_measles_01-medicalsurgical-pdf-132",
+    "conceptId": "concept_topic_medical_surgical_nursing_measles_definition",
+    "topicId": "topic_medical_surgical_nursing_measles",
+    "title": "Measles — 01-medicalsurgical-pdf-132",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-132",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_meningitis_01-medicalsurgical-pdf-17",
+    "conceptId": "concept_topic_medical_surgical_nursing_meningitis_definition",
+    "topicId": "topic_medical_surgical_nursing_meningitis",
+    "title": "Meningitis — 01-medicalsurgical-pdf-17",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-17",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_mortality_01-medicalsurgical-pdf-47",
+    "conceptId": "concept_topic_medical_surgical_nursing_mortality_definition",
+    "topicId": "topic_medical_surgical_nursing_mortality",
+    "title": "Mortality — 01-medicalsurgical-pdf-47",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-47",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_mortality_01-medicalsurgical-pdf-65",
+    "conceptId": "concept_topic_medical_surgical_nursing_mortality_definition",
+    "topicId": "topic_medical_surgical_nursing_mortality",
+    "title": "Mortality — 01-medicalsurgical-pdf-65",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-65",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_overdose_01-medicalsurgical-pdf-63",
+    "conceptId": "concept_topic_medical_surgical_nursing_overdose_definition",
+    "topicId": "topic_medical_surgical_nursing_overdose",
+    "title": "Overdose — 01-medicalsurgical-pdf-63",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-63",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_pe_01-medicalsurgical-pdf-76",
+    "conceptId": "concept_topic_medical_surgical_nursing_pe_definition",
+    "topicId": "topic_medical_surgical_nursing_pe",
+    "title": "PE — 01-medicalsurgical-pdf-76",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-76",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around assess: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_pancreatitis_01-medicalsurgical-pdf-85",
+    "conceptId": "concept_topic_medical_surgical_nursing_pancreatitis_definition",
+    "topicId": "topic_medical_surgical_nursing_pancreatitis",
+    "title": "Pancreatitis — 01-medicalsurgical-pdf-85",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-85",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_peptic_ulcer_01-medicalsurgical-pdf-42",
+    "conceptId": "concept_topic_medical_surgical_nursing_peptic_ulcer_definition",
+    "topicId": "topic_medical_surgical_nursing_peptic_ulcer",
+    "title": "Peptic Ulcer — 01-medicalsurgical-pdf-42",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-42",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_pituitary_01-medicalsurgical-pdf-164",
+    "conceptId": "concept_topic_medical_surgical_nursing_pituitary_definition",
+    "topicId": "topic_medical_surgical_nursing_pituitary",
+    "title": "Pituitary — 01-medicalsurgical-pdf-164",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-164",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_procedures_01-medicalsurgical-pdf-154",
+    "conceptId": "concept_topic_medical_surgical_nursing_procedures_definition",
+    "topicId": "topic_medical_surgical_nursing_procedures",
+    "title": "Procedures — 01-medicalsurgical-pdf-154",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-154",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_rta_01-medicalsurgical-pdf-66",
+    "conceptId": "concept_topic_medical_surgical_nursing_rta_definition",
+    "topicId": "topic_medical_surgical_nursing_rta",
+    "title": "RTA — 01-medicalsurgical-pdf-66",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-66",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_rabies_01-medicalsurgical-pdf-59",
+    "conceptId": "concept_topic_medical_surgical_nursing_rabies_definition",
+    "topicId": "topic_medical_surgical_nursing_rabies",
+    "title": "Rabies — 01-medicalsurgical-pdf-59",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-59",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_radiation_01-medicalsurgical-pdf-69",
+    "conceptId": "concept_topic_medical_surgical_nursing_radiation_definition",
+    "topicId": "topic_medical_surgical_nursing_radiation",
+    "title": "Radiation — 01-medicalsurgical-pdf-69",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-69",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_rheumatic_fever_01-medicalsurgical-pdf-1",
+    "conceptId": "concept_topic_medical_surgical_nursing_rheumatic_fever_definition",
+    "topicId": "topic_medical_surgical_nursing_rheumatic_fever",
+    "title": "Rheumatic Fever — 01-medicalsurgical-pdf-1",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-1",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_scorpion_sting_01-medicalsurgical-pdf-61",
+    "conceptId": "concept_topic_medical_surgical_nursing_scorpion_sting_definition",
+    "topicId": "topic_medical_surgical_nursing_scorpion_sting",
+    "title": "Scorpion Sting — 01-medicalsurgical-pdf-61",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-61",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_shock_01-medicalsurgical-pdf-3",
+    "conceptId": "concept_topic_medical_surgical_nursing_shock_definition",
+    "topicId": "topic_medical_surgical_nursing_shock",
+    "title": "Shock — 01-medicalsurgical-pdf-3",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-3",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_shock_01-medicalsurgical-pdf-20",
+    "conceptId": "concept_topic_medical_surgical_nursing_shock_definition",
+    "topicId": "topic_medical_surgical_nursing_shock",
+    "title": "Shock — 01-medicalsurgical-pdf-20",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-20",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_shock_01-medicalsurgical-pdf-29",
+    "conceptId": "concept_topic_medical_surgical_nursing_shock_definition",
+    "topicId": "topic_medical_surgical_nursing_shock",
+    "title": "Shock — 01-medicalsurgical-pdf-29",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-29",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_snake_bite_01-medicalsurgical-pdf-60",
+    "conceptId": "concept_topic_medical_surgical_nursing_snake_bite_definition",
+    "topicId": "topic_medical_surgical_nursing_snake_bite",
+    "title": "Snake Bite — 01-medicalsurgical-pdf-60",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-60",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_spinal_cord_injury_01-medicalsurgical-pdf-4",
+    "conceptId": "concept_topic_medical_surgical_nursing_spinal_cord_injury_definition",
+    "topicId": "topic_medical_surgical_nursing_spinal_cord_injury",
+    "title": "Spinal Cord Injury — 01-medicalsurgical-pdf-4",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-4",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_spinal_cord_injury_01-medicalsurgical-pdf-30",
+    "conceptId": "concept_topic_medical_surgical_nursing_spinal_cord_injury_definition",
+    "topicId": "topic_medical_surgical_nursing_spinal_cord_injury",
+    "title": "Spinal Cord Injury — 01-medicalsurgical-pdf-30",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-30",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_starvation_01-medicalsurgical-pdf-147",
+    "conceptId": "concept_topic_medical_surgical_nursing_starvation_definition",
+    "topicId": "topic_medical_surgical_nursing_starvation",
+    "title": "Starvation — 01-medicalsurgical-pdf-147",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-147",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_steroids_01-medicalsurgical-pdf-71",
+    "conceptId": "concept_topic_medical_surgical_nursing_steroids_definition",
+    "topicId": "topic_medical_surgical_nursing_steroids",
+    "title": "Steroids — 01-medicalsurgical-pdf-71",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-71",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_steroids_01-medicalsurgical-pdf-152",
+    "conceptId": "concept_topic_medical_surgical_nursing_steroids_definition",
+    "topicId": "topic_medical_surgical_nursing_steroids",
+    "title": "Steroids — 01-medicalsurgical-pdf-152",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-152",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_stroke_01-medicalsurgical-pdf-31",
+    "conceptId": "concept_topic_medical_surgical_nursing_stroke_definition",
+    "topicId": "topic_medical_surgical_nursing_stroke",
+    "title": "Stroke — 01-medicalsurgical-pdf-31",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-31",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around assess: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_stroke_01-medicalsurgical-pdf-74",
+    "conceptId": "concept_topic_medical_surgical_nursing_stroke_definition",
+    "topicId": "topic_medical_surgical_nursing_stroke",
+    "title": "Stroke — 01-medicalsurgical-pdf-74",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-74",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_tb_01-medicalsurgical-pdf-53",
+    "conceptId": "concept_topic_medical_surgical_nursing_tb_definition",
+    "topicId": "topic_medical_surgical_nursing_tb",
+    "title": "TB — 01-medicalsurgical-pdf-53",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-53",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_tb_01-medicalsurgical-pdf-109",
+    "conceptId": "concept_topic_medical_surgical_nursing_tb_definition",
+    "topicId": "topic_medical_surgical_nursing_tb",
+    "title": "TB — 01-medicalsurgical-pdf-109",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-109",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_tb_01-medicalsurgical-pdf-149",
+    "conceptId": "concept_topic_medical_surgical_nursing_tb_definition",
+    "topicId": "topic_medical_surgical_nursing_tb",
+    "title": "TB — 01-medicalsurgical-pdf-149",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-149",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_tb_01-medicalsurgical-pdf-160",
+    "conceptId": "concept_topic_medical_surgical_nursing_tb_definition",
+    "topicId": "topic_medical_surgical_nursing_tb",
+    "title": "TB — 01-medicalsurgical-pdf-160",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-160",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_tetanus_01-medicalsurgical-pdf-28",
+    "conceptId": "concept_topic_medical_surgical_nursing_tetanus_definition",
+    "topicId": "topic_medical_surgical_nursing_tetanus",
+    "title": "Tetanus — 01-medicalsurgical-pdf-28",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-28",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_tetanus_01-medicalsurgical-pdf-58",
+    "conceptId": "concept_topic_medical_surgical_nursing_tetanus_definition",
+    "topicId": "topic_medical_surgical_nursing_tetanus",
+    "title": "Tetanus — 01-medicalsurgical-pdf-58",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-58",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_typhoid_01-medicalsurgical-pdf-9",
+    "conceptId": "concept_topic_medical_surgical_nursing_typhoid_definition",
+    "topicId": "topic_medical_surgical_nursing_typhoid",
+    "title": "Typhoid — 01-medicalsurgical-pdf-9",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-9",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_typhoid_01-medicalsurgical-pdf-56",
+    "conceptId": "concept_topic_medical_surgical_nursing_typhoid_definition",
+    "topicId": "topic_medical_surgical_nursing_typhoid",
+    "title": "Typhoid — 01-medicalsurgical-pdf-56",
+    "mnemonic": "01-MEDICALSURGICAL-PDF-56",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "01_MedicalSurgical.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_myocardial_infarction_curated-msn-mi-1",
+    "conceptId": "concept_topic_medical_surgical_nursing_myocardial_infarction_definition",
+    "topicId": "topic_medical_surgical_nursing_myocardial_infarction",
+    "title": "Myocardial Infarction — curated-msn-mi-1",
+    "mnemonic": "CURATED-MSN-MI-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Ensure oxygen is applied FIRST if O2 sat < 90%.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_increased_icp_curated-msn-icp-1",
+    "conceptId": "concept_topic_medical_surgical_nursing_increased_icp_definition",
+    "topicId": "topic_medical_surgical_nursing_increased_icp",
+    "title": "Increased ICP — curated-msn-icp-1",
+    "mnemonic": "CURATED-MSN-ICP-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Elevate Head of Bed (HOB) to 30 degrees to promote venous drainage.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_medical_surgical_nursing_chronic_kidney_disease_curated-msn-ckd-1",
+    "conceptId": "concept_topic_medical_surgical_nursing_chronic_kidney_disease_definition",
+    "topicId": "topic_medical_surgical_nursing_chronic_kidney_disease",
+    "title": "Chronic Kidney Disease — curated-msn-ckd-1",
+    "mnemonic": "CURATED-MSN-CKD-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Diet: Restrict Sodium, Potassium, Phosphorus, and Fluids.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_amniotic_fluid_03-obg-pdf-8",
+    "conceptId": "concept_topic_obstetrics_gynaecology_amniotic_fluid_definition",
+    "topicId": "topic_obstetrics_gynaecology_amniotic_fluid",
+    "title": "Amniotic Fluid — 03-obg-pdf-8",
+    "mnemonic": "03-OBG-PDF-8",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_amniotic_fluid_03-obg-pdf-14",
+    "conceptId": "concept_topic_obstetrics_gynaecology_amniotic_fluid_definition",
+    "topicId": "topic_obstetrics_gynaecology_amniotic_fluid",
+    "title": "Amniotic Fluid — 03-obg-pdf-14",
+    "mnemonic": "03-OBG-PDF-14",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_anemia_03-obg-pdf-6",
+    "conceptId": "concept_topic_obstetrics_gynaecology_anemia_definition",
+    "topicId": "topic_obstetrics_gynaecology_anemia",
+    "title": "Anemia — 03-obg-pdf-6",
+    "mnemonic": "03-OBG-PDF-6",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_breastfeeding_03-obg-pdf-5",
+    "conceptId": "concept_topic_obstetrics_gynaecology_breastfeeding_definition",
+    "topicId": "topic_obstetrics_gynaecology_breastfeeding",
+    "title": "Breastfeeding — 03-obg-pdf-5",
+    "mnemonic": "03-OBG-PDF-5",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_breastfeeding_03-obg-pdf-34",
+    "conceptId": "concept_topic_obstetrics_gynaecology_breastfeeding_definition",
+    "topicId": "topic_obstetrics_gynaecology_breastfeeding",
+    "title": "Breastfeeding — 03-obg-pdf-34",
+    "mnemonic": "03-OBG-PDF-34",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_contraception_03-obg-pdf-16",
+    "conceptId": "concept_topic_obstetrics_gynaecology_contraception_definition",
+    "topicId": "topic_obstetrics_gynaecology_contraception",
+    "title": "Contraception — 03-obg-pdf-16",
+    "mnemonic": "03-OBG-PDF-16",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_dsd_03-obg-pdf-29",
+    "conceptId": "concept_topic_obstetrics_gynaecology_dsd_definition",
+    "topicId": "topic_obstetrics_gynaecology_dsd",
+    "title": "DSD — 03-obg-pdf-29",
+    "mnemonic": "03-OBG-PDF-29",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_fetal_assessment_03-obg-pdf-3",
+    "conceptId": "concept_topic_obstetrics_gynaecology_fetal_assessment_definition",
+    "topicId": "topic_obstetrics_gynaecology_fetal_assessment",
+    "title": "Fetal Assessment — 03-obg-pdf-3",
+    "mnemonic": "03-OBG-PDF-3",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_fetal_assessment_03-obg-pdf-17",
+    "conceptId": "concept_topic_obstetrics_gynaecology_fetal_assessment_definition",
+    "topicId": "topic_obstetrics_gynaecology_fetal_assessment",
+    "title": "Fetal Assessment — 03-obg-pdf-17",
+    "mnemonic": "03-OBG-PDF-17",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_fetal_position_03-obg-pdf-24",
+    "conceptId": "concept_topic_obstetrics_gynaecology_fetal_position_definition",
+    "topicId": "topic_obstetrics_gynaecology_fetal_position",
+    "title": "Fetal Position — 03-obg-pdf-24",
+    "mnemonic": "03-OBG-PDF-24",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_gtpal_03-obg-pdf-1",
+    "conceptId": "concept_topic_obstetrics_gynaecology_gtpal_definition",
+    "topicId": "topic_obstetrics_gynaecology_gtpal",
+    "title": "GTPAL — 03-obg-pdf-1",
+    "mnemonic": "03-OBG-PDF-1",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_gtpal_03-obg-pdf-31",
+    "conceptId": "concept_topic_obstetrics_gynaecology_gtpal_definition",
+    "topicId": "topic_obstetrics_gynaecology_gtpal",
+    "title": "GTPAL — 03-obg-pdf-31",
+    "mnemonic": "03-OBG-PDF-31",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around assess: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_hormones_03-obg-pdf-23",
+    "conceptId": "concept_topic_obstetrics_gynaecology_hormones_definition",
+    "topicId": "topic_obstetrics_gynaecology_hormones",
+    "title": "Hormones — 03-obg-pdf-23",
+    "mnemonic": "03-OBG-PDF-23",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_iucd_03-obg-pdf-9",
+    "conceptId": "concept_topic_obstetrics_gynaecology_iucd_definition",
+    "topicId": "topic_obstetrics_gynaecology_iucd",
+    "title": "IUCD — 03-obg-pdf-9",
+    "mnemonic": "03-OBG-PDF-9",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_iucd_03-obg-pdf-30",
+    "conceptId": "concept_topic_obstetrics_gynaecology_iucd_definition",
+    "topicId": "topic_obstetrics_gynaecology_iucd",
+    "title": "IUCD — 03-obg-pdf-30",
+    "mnemonic": "03-OBG-PDF-30",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_injectables_03-obg-pdf-10",
+    "conceptId": "concept_topic_obstetrics_gynaecology_injectables_definition",
+    "topicId": "topic_obstetrics_gynaecology_injectables",
+    "title": "Injectables — 03-obg-pdf-10",
+    "mnemonic": "03-OBG-PDF-10",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_injectables_03-obg-pdf-11",
+    "conceptId": "concept_topic_obstetrics_gynaecology_injectables_definition",
+    "topicId": "topic_obstetrics_gynaecology_injectables",
+    "title": "Injectables — 03-obg-pdf-11",
+    "mnemonic": "03-OBG-PDF-11",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_nutrition_03-obg-pdf-25",
+    "conceptId": "concept_topic_obstetrics_gynaecology_nutrition_definition",
+    "topicId": "topic_obstetrics_gynaecology_nutrition",
+    "title": "Nutrition — 03-obg-pdf-25",
+    "mnemonic": "03-OBG-PDF-25",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_nutrition_03-obg-pdf-32",
+    "conceptId": "concept_topic_obstetrics_gynaecology_nutrition_definition",
+    "topicId": "topic_obstetrics_gynaecology_nutrition",
+    "title": "Nutrition — 03-obg-pdf-32",
+    "mnemonic": "03-OBG-PDF-32",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_nutrition_03-obg-pdf-33",
+    "conceptId": "concept_topic_obstetrics_gynaecology_nutrition_definition",
+    "topicId": "topic_obstetrics_gynaecology_nutrition",
+    "title": "Nutrition — 03-obg-pdf-33",
+    "mnemonic": "03-OBG-PDF-33",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_pph_03-obg-pdf-12",
+    "conceptId": "concept_topic_obstetrics_gynaecology_pph_definition",
+    "topicId": "topic_obstetrics_gynaecology_pph",
+    "title": "PPH — 03-obg-pdf-12",
+    "mnemonic": "03-OBG-PDF-12",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_preeclampsia_03-obg-pdf-7",
+    "conceptId": "concept_topic_obstetrics_gynaecology_preeclampsia_definition",
+    "topicId": "topic_obstetrics_gynaecology_preeclampsia",
+    "title": "Preeclampsia — 03-obg-pdf-7",
+    "mnemonic": "03-OBG-PDF-7",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around monitor: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_preterm_labour_03-obg-pdf-2",
+    "conceptId": "concept_topic_obstetrics_gynaecology_preterm_labour_definition",
+    "topicId": "topic_obstetrics_gynaecology_preterm_labour",
+    "title": "Preterm Labour — 03-obg-pdf-2",
+    "mnemonic": "03-OBG-PDF-2",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around administer: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_stages_03-obg-pdf-13",
+    "conceptId": "concept_topic_obstetrics_gynaecology_stages_definition",
+    "topicId": "topic_obstetrics_gynaecology_stages",
+    "title": "Stages — 03-obg-pdf-13",
+    "mnemonic": "03-OBG-PDF-13",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_tef_03-obg-pdf-4",
+    "conceptId": "concept_topic_obstetrics_gynaecology_tef_definition",
+    "topicId": "topic_obstetrics_gynaecology_tef",
+    "title": "TEF — 03-obg-pdf-4",
+    "mnemonic": "03-OBG-PDF-4",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_obstetrics_gynaecology_umbilical_cord_03-obg-pdf-15",
+    "conceptId": "concept_topic_obstetrics_gynaecology_umbilical_cord_definition",
+    "topicId": "topic_obstetrics_gynaecology_umbilical_cord",
+    "title": "Umbilical Cord — 03-obg-pdf-15",
+    "mnemonic": "03-OBG-PDF-15",
+    "expansion": "This is a negative stem question; identify the outlier option after validating the true statements first.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "03_OBG.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_anthropometry_04-pediatric-pdf-4",
+    "conceptId": "concept_topic_pediatric_nursing_anthropometry_definition",
+    "topicId": "topic_pediatric_nursing_anthropometry",
+    "title": "Anthropometry — 04-pediatric-pdf-4",
+    "mnemonic": "04-PEDIATRIC-PDF-4",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_diarrhea_04-pediatric-pdf-13",
+    "conceptId": "concept_topic_pediatric_nursing_diarrhea_definition",
+    "topicId": "topic_pediatric_nursing_diarrhea",
+    "title": "Diarrhea — 04-pediatric-pdf-13",
+    "mnemonic": "04-PEDIATRIC-PDF-13",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_diarrhea_management_04-pediatric-pdf-1",
+    "conceptId": "concept_topic_pediatric_nursing_diarrhea_management_definition",
+    "topicId": "topic_pediatric_nursing_diarrhea_management",
+    "title": "Diarrhea Management — 04-pediatric-pdf-1",
+    "mnemonic": "04-PEDIATRIC-PDF-1",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_hyperbilirubinemia_04-pediatric-pdf-2",
+    "conceptId": "concept_topic_pediatric_nursing_hyperbilirubinemia_definition",
+    "topicId": "topic_pediatric_nursing_hyperbilirubinemia",
+    "title": "Hyperbilirubinemia — 04-pediatric-pdf-2",
+    "mnemonic": "04-PEDIATRIC-PDF-2",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around position: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_infection_04-pediatric-pdf-9",
+    "conceptId": "concept_topic_pediatric_nursing_infection_definition",
+    "topicId": "topic_pediatric_nursing_infection",
+    "title": "Infection — 04-pediatric-pdf-9",
+    "mnemonic": "04-PEDIATRIC-PDF-9",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_kmc_04-pediatric-pdf-6",
+    "conceptId": "concept_topic_pediatric_nursing_kmc_definition",
+    "topicId": "topic_pediatric_nursing_kmc",
+    "title": "KMC — 04-pediatric-pdf-6",
+    "mnemonic": "04-PEDIATRIC-PDF-6",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_meningitis_04-pediatric-pdf-3",
+    "conceptId": "concept_topic_pediatric_nursing_meningitis_definition",
+    "topicId": "topic_pediatric_nursing_meningitis",
+    "title": "Meningitis — 04-pediatric-pdf-3",
+    "mnemonic": "04-PEDIATRIC-PDF-3",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_meningitis_04-pediatric-pdf-15",
+    "conceptId": "concept_topic_pediatric_nursing_meningitis_definition",
+    "topicId": "topic_pediatric_nursing_meningitis",
+    "title": "Meningitis — 04-pediatric-pdf-15",
+    "mnemonic": "04-PEDIATRIC-PDF-15",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_meningitis_04-pediatric-pdf-26",
+    "conceptId": "concept_topic_pediatric_nursing_meningitis_definition",
+    "topicId": "topic_pediatric_nursing_meningitis",
+    "title": "Meningitis — 04-pediatric-pdf-26",
+    "mnemonic": "04-PEDIATRIC-PDF-26",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_milestones_04-pediatric-pdf-5",
+    "conceptId": "concept_topic_pediatric_nursing_milestones_definition",
+    "topicId": "topic_pediatric_nursing_milestones",
+    "title": "Milestones — 04-pediatric-pdf-5",
+    "mnemonic": "04-PEDIATRIC-PDF-5",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_pertussis_04-pediatric-pdf-17",
+    "conceptId": "concept_topic_pediatric_nursing_pertussis_definition",
+    "topicId": "topic_pediatric_nursing_pertussis",
+    "title": "Pertussis — 04-pediatric-pdf-17",
+    "mnemonic": "04-PEDIATRIC-PDF-17",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_pneumonia_04-pediatric-pdf-14",
+    "conceptId": "concept_topic_pediatric_nursing_pneumonia_definition",
+    "topicId": "topic_pediatric_nursing_pneumonia",
+    "title": "Pneumonia — 04-pediatric-pdf-14",
+    "mnemonic": "04-PEDIATRIC-PDF-14",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_suctioning_04-pediatric-pdf-7",
+    "conceptId": "concept_topic_pediatric_nursing_suctioning_definition",
+    "topicId": "topic_pediatric_nursing_suctioning",
+    "title": "Suctioning — 04-pediatric-pdf-7",
+    "mnemonic": "04-PEDIATRIC-PDF-7",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pediatric_nursing_vaccine_types_04-pediatric-pdf-12",
+    "conceptId": "concept_topic_pediatric_nursing_vaccine_types_definition",
+    "topicId": "topic_pediatric_nursing_vaccine_types",
+    "title": "Vaccine Types — 04-pediatric-pdf-12",
+    "mnemonic": "04-PEDIATRIC-PDF-12",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "04_Pediatric.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_psychiatric_nursing_abnormalities_06-psychiatry-pdf-4",
+    "conceptId": "concept_topic_psychiatric_nursing_abnormalities_definition",
+    "topicId": "topic_psychiatric_nursing_abnormalities",
+    "title": "Abnormalities — 06-psychiatry-pdf-4",
+    "mnemonic": "06-PSYCHIATRY-PDF-4",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around nurse: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "06_Psychiatry.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_psychiatric_nursing_behavioral_06-psychiatry-pdf-3",
+    "conceptId": "concept_topic_psychiatric_nursing_behavioral_definition",
+    "topicId": "topic_psychiatric_nursing_behavioral",
+    "title": "Behavioral — 06-psychiatry-pdf-3",
+    "mnemonic": "06-PSYCHIATRY-PDF-3",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Nursing priority around priority: apply standard protocol and patient safety checks.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "06_Psychiatry.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_psychiatric_nursing_kubler_ross_06-psychiatry-pdf-1",
+    "conceptId": "concept_topic_psychiatric_nursing_kubler_ross_definition",
+    "topicId": "topic_psychiatric_nursing_kubler_ross",
+    "title": "Kubler-Ross — 06-psychiatry-pdf-1",
+    "mnemonic": "06-PSYCHIATRY-PDF-1",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "06_Psychiatry.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_psychiatric_nursing_mmse_06-psychiatry-pdf-5",
+    "conceptId": "concept_topic_psychiatric_nursing_mmse_definition",
+    "topicId": "topic_psychiatric_nursing_mmse",
+    "title": "MMSE — 06-psychiatry-pdf-5",
+    "mnemonic": "06-PSYCHIATRY-PDF-5",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "06_Psychiatry.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_psychiatric_nursing_stimulants_06-psychiatry-pdf-2",
+    "conceptId": "concept_topic_psychiatric_nursing_stimulants_definition",
+    "topicId": "topic_psychiatric_nursing_stimulants",
+    "title": "Stimulants — 06-psychiatry-pdf-2",
+    "mnemonic": "06-PSYCHIATRY-PDF-2",
+    "expansion": "Eliminate distractors by matching the stem keyword to the most specific clinical cue.",
+    "hint": "Apply ABCs, reassess vitals, and document response to intervention.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "06_Psychiatry.pdf.pdf",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pharmacology_emergency_drugs_curated-pharm-emerg-1",
+    "conceptId": "concept_topic_pharmacology_emergency_drugs_definition",
+    "topicId": "topic_pharmacology_emergency_drugs",
+    "title": "Emergency Drugs — curated-pharm-emerg-1",
+    "mnemonic": "CURATED-PHARM-EMERG-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Adrenaline can cause severe tissue necrosis if extravasated.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pharmacology_high_alert_medications_curated-pharm-highalert-1",
+    "conceptId": "concept_topic_pharmacology_high_alert_medications_definition",
+    "topicId": "topic_pharmacology_high_alert_medications",
+    "title": "High-Alert Medications — curated-pharm-highalert-1",
+    "mnemonic": "CURATED-PHARM-HIGHALERT-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Two RNs must independently verify Insulin and Heparin doses.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "mnem_topic_pharmacology_digoxin_toxicity_curated-pharm-digoxin-1",
+    "conceptId": "concept_topic_pharmacology_digoxin_toxicity_definition",
+    "topicId": "topic_pharmacology_digoxin_toxicity",
+    "title": "Digoxin Toxicity — curated-pharm-digoxin-1",
+    "mnemonic": "CURATED-PHARM-DIGOXIN-1",
+    "expansion": "Key Recall Hook",
+    "hint": "Assess apical pulse for 1 full minute before administration.",
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "quickLearnNotes.json",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  }
+]

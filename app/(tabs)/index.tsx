@@ -1,12 +1,14 @@
-
 import { useRouter, useFocusEffect } from "expo-router";
-import { LinearGradient } from "expo-linear-gradient";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { collection, getDocs, limit, orderBy, query, where, getCountFromServer } from "firebase/firestore";
+import { collection, query, where, getCountFromServer } from "firebase/firestore";
 import React, { useCallback, useEffect, useState } from "react";
-import { ScrollView, Text, TouchableOpacity, Modal, View, Alert } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-
+import { Text, Modal, View, Alert, ScrollView } from "react-native";
+import { AppScreen } from "../../components/ui/AppScreen";
+import { GlassCard } from "../../components/ui/GlassCard";
+import { Pill } from "../../components/ui/Pill";
+import { PrimaryButton } from "../../components/ui/PrimaryButton";
+import { SecondaryButton } from "../../components/ui/SecondaryButton";
+import { AnimatedPressable } from "../../components/ui/AnimatedPressable";
 import DailyFocusCard from "../../components/Home/DailyFocusCard";
 import QuickActions from "../../components/Home/QuickActions";
 import ProgressCard from "../../components/Home/ProgressCard";
@@ -17,8 +19,6 @@ import { useIntelligenceContext } from "../../context/IntelligenceContext";
 
 export default function HomeScreen() {
   const router = useRouter();
-  const insets = useSafeAreaInsets();
-  
 
   const [user, setUser] = useState<any>(null);
   const [showComeback, setShowComeback] = useState(false);
@@ -49,15 +49,15 @@ export default function HomeScreen() {
 
   const { data: intelligenceData } = useIntelligenceContext();
   const retentionData = useRetention(user?.uid);
-  
+
   useEffect(() => {
     if (!retentionData.lastActiveDate || Object.keys(intelligenceData.topicStats).length === 0) return;
-    
+
     const todayString = new Date().toISOString().split('T')[0];
     const lastActive = new Date(retentionData.lastActiveDate);
     const today = new Date(todayString);
     const diffDays = Math.floor((today.getTime() - lastActive.getTime()) / (1000 * 3600 * 24));
-    
+
     if (diffDays > 2) {
       const mostRecent = Object.entries(intelligenceData.topicStats).reduce(
         (latest, current) => current[1].lastAttempt > latest[1].lastAttempt ? current : latest,
@@ -72,8 +72,6 @@ export default function HomeScreen() {
 
   const recommendedTopic = intelligenceData.recommendedTopic || "";
   const topicStat = recommendedTopic ? intelligenceData.topicStats[recommendedTopic] : null;
-
-
 
   const handleLogout = async () => {
     try {
@@ -99,46 +97,58 @@ export default function HomeScreen() {
         type: "pyq",
         mode: "revision",
         topic: recommendedTopic,
-        topics: JSON.stringify([recommendedTopic]), // We still pass topics array if needed by quiz.tsx
+        topics: JSON.stringify([recommendedTopic]),
       },
     });
   };
 
   return (
-    <LinearGradient colors={["#0B0F1A", "#0E1A2B"]} style={{ flex: 1 }}>
-      <ScrollView 
-        className="flex-1 px-4" 
-        contentContainerStyle={{ paddingTop: insets.top + 10, paddingBottom: 40 }}
-        showsVerticalScrollIndicator={false}
-      >
+    <AppScreen scrollable edges={["top"]}>
+      <ScrollView className="flex-1 px-4" showsVerticalScrollIndicator={false}>
         <HomeHeader greeting={greeting} userName={userName} onLogout={handleLogout} />
-        <DailyFocusCard dailyTopic={recommendedTopic} topicStat={topicStat} progress={Math.min((retentionData.todayProgress || 0) / (retentionData.dailyGoal || 10), 1)} delay={100} />
-        <TouchableOpacity
-          onPress={handleSmartRevision}
-          activeOpacity={0.85}
-          className="bg-white/10 border border-white/15 py-4 px-5 rounded-[20px] items-center shadow-xl mb-4"
-        >
-          <Text className="text-white text-[15px] font-bold tracking-wide">Improve Weak Areas</Text>
-        </TouchableOpacity>
+
+        <DailyFocusCard
+          dailyTopic={recommendedTopic}
+          topicStat={topicStat}
+          progress={Math.min((retentionData.todayProgress || 0) / (retentionData.dailyGoal || 10), 1)}
+          delay={100}
+        />
+
+        <AnimatedPressable onPress={handleSmartRevision} className="mb-4">
+          <GlassCard className="p-4 border-l-4 border-l-sky-500 flex-row items-center justify-between">
+            <View>
+              <Text className="text-white font-bold text-base mb-0.5">Improve Weak Areas</Text>
+              <Text className="text-slate-400 text-xs">Targeted revision based on performance analytics</Text>
+            </View>
+            <Pill label="Smart Review" variant="info" size="sm" />
+          </GlassCard>
+        </AnimatedPressable>
 
         {mistakeCount !== null && mistakeCount > 0 ? (
-          <TouchableOpacity
+          <AnimatedPressable
             onPress={() => router.push({ pathname: "/quiz" as any, params: { type: "mistake", mode: "revision", topic: "Mistake Bank" } })}
-            activeOpacity={0.85}
-            className="bg-red-500/20 border border-red-500/40 py-4 px-5 rounded-[20px] flex-row justify-center items-center shadow-xl mb-6"
+            className="mb-6"
           >
-            <Text className="text-red-400 text-[15px] font-bold tracking-wide mr-2">Conquer Mistakes</Text>
-            <View className="bg-red-500 px-2 py-0.5 rounded-full"><Text className="text-white text-xs font-bold">{mistakeCount}</Text></View>
-          </TouchableOpacity>
+            <GlassCard className="p-4 border-l-4 border-l-rose-500 flex-row items-center justify-between bg-rose-950/20">
+              <View>
+                <Text className="text-rose-400 font-bold text-base mb-0.5">Conquer Active Mistakes</Text>
+                <Text className="text-slate-300 text-xs">{mistakeCount} active items requiring 2-attempt resolution</Text>
+              </View>
+              <Pill label={`${mistakeCount} Due`} variant="error" size="sm" />
+            </GlassCard>
+          </AnimatedPressable>
         ) : mistakeCount === 0 ? (
-          <TouchableOpacity 
+          <AnimatedPressable
             onPress={() => Alert.alert("All Clear! 🎉", "You have successfully conquered all your mistakes. Keep studying to build up your knowledge!")}
-            activeOpacity={0.8}
-            className="bg-green-500/10 border border-green-500/20 py-4 px-5 rounded-[20px] flex-row justify-center items-center shadow-xl mb-6"
+            className="mb-6"
           >
-            <Text className="text-green-400 text-[15px] font-bold tracking-wide">Mistake Bank Clear 🎉</Text>
-          </TouchableOpacity>
+            <GlassCard className="p-4 border-l-4 border-l-emerald-500 flex-row items-center justify-between bg-emerald-950/20">
+              <Text className="text-emerald-400 font-bold text-sm">Mistake Bank Clear 🎉</Text>
+              <Pill label="100% Mastered" variant="success" size="sm" />
+            </GlassCard>
+          </AnimatedPressable>
         ) : null}
+
         <QuickActions delay={200} />
         <ProgressCard todayProgress={retentionData.todayProgress} dailyGoal={retentionData.dailyGoal} streak={retentionData.streak} delay={300} />
       </ScrollView>
@@ -146,40 +156,41 @@ export default function HomeScreen() {
       {/* Comeback Modal */}
       <Modal visible={showComeback} transparent animationType="fade">
         <View className="flex-1 bg-black/80 justify-center items-center px-5">
-          <View className="bg-[#1c1c1e] w-full p-6 rounded-3xl border border-white/10">
+          <GlassCard variant="elevated" className="w-full p-6">
             <Text className="text-white text-2xl font-bold mb-2">Welcome Back!</Text>
-            <Text className="text-neutral-400 text-base mb-6">
+            <Text className="text-slate-300 text-sm mb-6">
               You left off at <Text className="text-white font-semibold">{comebackTopic}</Text> — continue?
             </Text>
-            
-            <View className="flex-row gap-3">
-              <TouchableOpacity 
-                onPress={() => setShowComeback(false)}
-                className="flex-1 py-3.5 rounded-xl border border-white/10 items-center justify-center"
-              >
-                <Text className="text-white font-semibold">Not Now</Text>
-              </TouchableOpacity>
-              <TouchableOpacity 
-                onPress={() => {
-                  setShowComeback(false);
-                  router.push({
-                    pathname: "/quiz" as any,
-                    params: {
-                      type: "pyq",
-                      mode: "revision",
-                      topic: comebackTopic,
-                      topics: JSON.stringify([comebackTopic]),
-                    },
-                  });
-                }}
-                className="flex-1 py-3.5 rounded-xl bg-blue-600 items-center justify-center"
-              >
-                <Text className="text-white font-semibold">Continue</Text>
-              </TouchableOpacity>
+
+            <View className="flex-row space-x-3">
+              <View className="flex-1">
+                <SecondaryButton
+                  label="Not Now"
+                  onPress={() => setShowComeback(false)}
+                />
+              </View>
+              <View className="flex-1">
+                <PrimaryButton
+                  label="Continue"
+                  onPress={() => {
+                    setShowComeback(false);
+                    router.push({
+                      pathname: "/quiz" as any,
+                      params: {
+                        type: "pyq",
+                        mode: "revision",
+                        topic: comebackTopic,
+                        topics: JSON.stringify([comebackTopic]),
+                      },
+                    });
+                  }}
+                />
+              </View>
             </View>
-          </View>
+          </GlassCard>
         </View>
       </Modal>
-    </LinearGradient>
+    </AppScreen>
   );
 }
+

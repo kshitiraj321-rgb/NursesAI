@@ -1,0 +1,4107 @@
+[
+  {
+    "id": "topic_medical_surgical_nursing_cardiovascular",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "Cardiovascular",
+    "displayName": "Cardiovascular",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_cardiovascular_definition",
+      "concept_topic_medical_surgical_nursing_cardiovascular_etiology",
+      "concept_topic_medical_surgical_nursing_cardiovascular_pathophysiology",
+      "concept_topic_medical_surgical_nursing_cardiovascular_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_cardiovascular_assessment",
+      "concept_topic_medical_surgical_nursing_cardiovascular_diagnostics",
+      "concept_topic_medical_surgical_nursing_cardiovascular_management",
+      "concept_topic_medical_surgical_nursing_cardiovascular_nursing_management",
+      "concept_topic_medical_surgical_nursing_cardiovascular_complications",
+      "concept_topic_medical_surgical_nursing_cardiovascular_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Cardiovascular summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Cardiovascular?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Cardiovascular.",
+      "definition": "Cardiovascular is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_medical_surgical_nursing_respiratory",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "Respiratory",
+    "displayName": "Respiratory",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_respiratory_definition",
+      "concept_topic_medical_surgical_nursing_respiratory_etiology",
+      "concept_topic_medical_surgical_nursing_respiratory_pathophysiology",
+      "concept_topic_medical_surgical_nursing_respiratory_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_respiratory_assessment",
+      "concept_topic_medical_surgical_nursing_respiratory_diagnostics",
+      "concept_topic_medical_surgical_nursing_respiratory_management",
+      "concept_topic_medical_surgical_nursing_respiratory_nursing_management",
+      "concept_topic_medical_surgical_nursing_respiratory_complications",
+      "concept_topic_medical_surgical_nursing_respiratory_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Respiratory summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Respiratory?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Respiratory.",
+      "definition": "Respiratory is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_medical_surgical_nursing_renal",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "Renal",
+    "displayName": "Renal",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_renal_definition",
+      "concept_topic_medical_surgical_nursing_renal_etiology",
+      "concept_topic_medical_surgical_nursing_renal_pathophysiology",
+      "concept_topic_medical_surgical_nursing_renal_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_renal_assessment",
+      "concept_topic_medical_surgical_nursing_renal_diagnostics",
+      "concept_topic_medical_surgical_nursing_renal_management",
+      "concept_topic_medical_surgical_nursing_renal_nursing_management",
+      "concept_topic_medical_surgical_nursing_renal_complications",
+      "concept_topic_medical_surgical_nursing_renal_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Renal summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Renal?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Renal.",
+      "definition": "Renal is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_medical_surgical_nursing_neurology",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "Neurology",
+    "displayName": "Neurology",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_neurology_definition",
+      "concept_topic_medical_surgical_nursing_neurology_etiology",
+      "concept_topic_medical_surgical_nursing_neurology_pathophysiology",
+      "concept_topic_medical_surgical_nursing_neurology_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_neurology_assessment",
+      "concept_topic_medical_surgical_nursing_neurology_diagnostics",
+      "concept_topic_medical_surgical_nursing_neurology_management",
+      "concept_topic_medical_surgical_nursing_neurology_nursing_management",
+      "concept_topic_medical_surgical_nursing_neurology_complications",
+      "concept_topic_medical_surgical_nursing_neurology_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Neurology summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Neurology?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Neurology.",
+      "definition": "Neurology is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_medical_surgical_nursing_endocrine",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "Endocrine",
+    "displayName": "Endocrine",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_endocrine_definition",
+      "concept_topic_medical_surgical_nursing_endocrine_etiology",
+      "concept_topic_medical_surgical_nursing_endocrine_pathophysiology",
+      "concept_topic_medical_surgical_nursing_endocrine_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_endocrine_assessment",
+      "concept_topic_medical_surgical_nursing_endocrine_diagnostics",
+      "concept_topic_medical_surgical_nursing_endocrine_management",
+      "concept_topic_medical_surgical_nursing_endocrine_nursing_management",
+      "concept_topic_medical_surgical_nursing_endocrine_complications",
+      "concept_topic_medical_surgical_nursing_endocrine_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Endocrine summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Endocrine?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Endocrine.",
+      "definition": "Endocrine is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_medical_surgical_nursing_gi",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "GI",
+    "displayName": "GI",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_gi_definition",
+      "concept_topic_medical_surgical_nursing_gi_etiology",
+      "concept_topic_medical_surgical_nursing_gi_pathophysiology",
+      "concept_topic_medical_surgical_nursing_gi_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_gi_assessment",
+      "concept_topic_medical_surgical_nursing_gi_diagnostics",
+      "concept_topic_medical_surgical_nursing_gi_management",
+      "concept_topic_medical_surgical_nursing_gi_nursing_management",
+      "concept_topic_medical_surgical_nursing_gi_complications",
+      "concept_topic_medical_surgical_nursing_gi_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Correct - A: ETEC E.coli = #1 adult diarrhea.",
+      "keyCauses": [
+        "Correct focus: E. coli",
+        "Common options tested: E. coli, Salmonella, Shigella",
+        "Correct - A: ETEC E.coli = #1 adult diarrhea."
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Apply ABCs, reassess vitals, and document response to intervention."
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in GI?",
+      "mnemonicId": "mnem_topic_medical_surgical_nursing_gi_01-medicalsurgical-pdf-170"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of GI.",
+      "definition": "GI is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_medical_surgical_nursing_emergency",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "Emergency",
+    "displayName": "Emergency",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_emergency_definition",
+      "concept_topic_medical_surgical_nursing_emergency_etiology",
+      "concept_topic_medical_surgical_nursing_emergency_pathophysiology",
+      "concept_topic_medical_surgical_nursing_emergency_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_emergency_assessment",
+      "concept_topic_medical_surgical_nursing_emergency_diagnostics",
+      "concept_topic_medical_surgical_nursing_emergency_management",
+      "concept_topic_medical_surgical_nursing_emergency_nursing_management",
+      "concept_topic_medical_surgical_nursing_emergency_complications",
+      "concept_topic_medical_surgical_nursing_emergency_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Correct - D: >20% TBSA = massive capillary leak → hypovolemic shock in 24-48hrs.",
+      "keyCauses": [
+        "Correct focus: Administer IV fluid",
+        "Common options tested: burns. What is the absolute priority nursing action?, Prevent from edema, Assess for shock",
+        "Correct - D: >20% TBSA = massive capillary leak → hypovolemic shock in 24-48hrs."
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Nursing priority around assess: apply standard protocol and patient safety checks."
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Emergency?",
+      "mnemonicId": "mnem_topic_medical_surgical_nursing_emergency_01-medicalsurgical-pdf-23"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Emergency.",
+      "definition": "Emergency is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_medical_surgical_nursing_oncology",
+    "subjectId": "subj_medical_surgical_nursing",
+    "name": "Oncology",
+    "displayName": "Oncology",
+    "conceptIds": [
+      "concept_topic_medical_surgical_nursing_oncology_definition",
+      "concept_topic_medical_surgical_nursing_oncology_etiology",
+      "concept_topic_medical_surgical_nursing_oncology_pathophysiology",
+      "concept_topic_medical_surgical_nursing_oncology_clinical_manifestations",
+      "concept_topic_medical_surgical_nursing_oncology_assessment",
+      "concept_topic_medical_surgical_nursing_oncology_diagnostics",
+      "concept_topic_medical_surgical_nursing_oncology_management",
+      "concept_topic_medical_surgical_nursing_oncology_nursing_management",
+      "concept_topic_medical_surgical_nursing_oncology_complications",
+      "concept_topic_medical_surgical_nursing_oncology_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Oncology summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Oncology?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Oncology.",
+      "definition": "Oncology is defined as a significant clinical entity in Medical-Surgical Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_fundamentals_of_nursing_infection_control",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "name": "Infection Control",
+    "displayName": "Infection Control",
+    "conceptIds": [
+      "concept_topic_fundamentals_of_nursing_infection_control_definition",
+      "concept_topic_fundamentals_of_nursing_infection_control_etiology",
+      "concept_topic_fundamentals_of_nursing_infection_control_pathophysiology",
+      "concept_topic_fundamentals_of_nursing_infection_control_clinical_manifestations",
+      "concept_topic_fundamentals_of_nursing_infection_control_assessment",
+      "concept_topic_fundamentals_of_nursing_infection_control_diagnostics",
+      "concept_topic_fundamentals_of_nursing_infection_control_management",
+      "concept_topic_fundamentals_of_nursing_infection_control_nursing_management",
+      "concept_topic_fundamentals_of_nursing_infection_control_complications",
+      "concept_topic_fundamentals_of_nursing_infection_control_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Infection Control summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Infection Control?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Infection Control.",
+      "definition": "Infection Control is defined as a significant clinical entity in Fundamentals of Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_fundamentals_of_nursing_nursing_procedures",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "name": "Nursing Procedures",
+    "displayName": "Nursing Procedures",
+    "conceptIds": [
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_definition",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_etiology",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_pathophysiology",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_clinical_manifestations",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_assessment",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_diagnostics",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_management",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_nursing_management",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_complications",
+      "concept_topic_fundamentals_of_nursing_nursing_procedures_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Nursing Procedures summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Nursing Procedures?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Nursing Procedures.",
+      "definition": "Nursing Procedures is defined as a significant clinical entity in Fundamentals of Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_fundamentals_of_nursing_patient_safety",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "name": "Patient Safety",
+    "displayName": "Patient Safety",
+    "conceptIds": [
+      "concept_topic_fundamentals_of_nursing_patient_safety_definition",
+      "concept_topic_fundamentals_of_nursing_patient_safety_etiology",
+      "concept_topic_fundamentals_of_nursing_patient_safety_pathophysiology",
+      "concept_topic_fundamentals_of_nursing_patient_safety_clinical_manifestations",
+      "concept_topic_fundamentals_of_nursing_patient_safety_assessment",
+      "concept_topic_fundamentals_of_nursing_patient_safety_diagnostics",
+      "concept_topic_fundamentals_of_nursing_patient_safety_management",
+      "concept_topic_fundamentals_of_nursing_patient_safety_nursing_management",
+      "concept_topic_fundamentals_of_nursing_patient_safety_complications",
+      "concept_topic_fundamentals_of_nursing_patient_safety_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Patient Safety summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Patient Safety?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Patient Safety.",
+      "definition": "Patient Safety is defined as a significant clinical entity in Fundamentals of Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_fundamentals_of_nursing_vital_signs",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "name": "Vital Signs",
+    "displayName": "Vital Signs",
+    "conceptIds": [
+      "concept_topic_fundamentals_of_nursing_vital_signs_definition",
+      "concept_topic_fundamentals_of_nursing_vital_signs_etiology",
+      "concept_topic_fundamentals_of_nursing_vital_signs_pathophysiology",
+      "concept_topic_fundamentals_of_nursing_vital_signs_clinical_manifestations",
+      "concept_topic_fundamentals_of_nursing_vital_signs_assessment",
+      "concept_topic_fundamentals_of_nursing_vital_signs_diagnostics",
+      "concept_topic_fundamentals_of_nursing_vital_signs_management",
+      "concept_topic_fundamentals_of_nursing_vital_signs_nursing_management",
+      "concept_topic_fundamentals_of_nursing_vital_signs_complications",
+      "concept_topic_fundamentals_of_nursing_vital_signs_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Correct - B: Shock = peripheral vasoconstriction → central pulse present but distal weak/absent.",
+      "keyCauses": [
+        "Correct focus: Shock",
+        "Common options tested: Hypertension, Shock, Fever",
+        "Correct - B: Shock = peripheral vasoconstriction → central pulse present but distal weak/absent."
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Nursing priority around assess: apply standard protocol and patient safety checks."
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Vital Signs?",
+      "mnemonicId": "mnem_topic_fundamentals_of_nursing_vital_signs_02-fundamentals-pdf-32"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Vital Signs.",
+      "definition": "Vital Signs is defined as a significant clinical entity in Fundamentals of Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_fundamentals_of_nursing_cpr_bls",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "name": "CPR/BLS",
+    "displayName": "CPR/BLS",
+    "conceptIds": [
+      "concept_topic_fundamentals_of_nursing_cpr_bls_definition",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_etiology",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_pathophysiology",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_clinical_manifestations",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_assessment",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_diagnostics",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_management",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_nursing_management",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_complications",
+      "concept_topic_fundamentals_of_nursing_cpr_bls_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "CPR/BLS summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in CPR/BLS?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of CPR/BLS.",
+      "definition": "CPR/BLS is defined as a significant clinical entity in Fundamentals of Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_fundamentals_of_nursing_communication",
+    "subjectId": "subj_fundamentals_of_nursing",
+    "name": "Communication",
+    "displayName": "Communication",
+    "conceptIds": [
+      "concept_topic_fundamentals_of_nursing_communication_definition",
+      "concept_topic_fundamentals_of_nursing_communication_etiology",
+      "concept_topic_fundamentals_of_nursing_communication_pathophysiology",
+      "concept_topic_fundamentals_of_nursing_communication_clinical_manifestations",
+      "concept_topic_fundamentals_of_nursing_communication_assessment",
+      "concept_topic_fundamentals_of_nursing_communication_diagnostics",
+      "concept_topic_fundamentals_of_nursing_communication_management",
+      "concept_topic_fundamentals_of_nursing_communication_nursing_management",
+      "concept_topic_fundamentals_of_nursing_communication_complications",
+      "concept_topic_fundamentals_of_nursing_communication_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Communication summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Communication?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Communication.",
+      "definition": "Communication is defined as a significant clinical entity in Fundamentals of Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_obstetrics_gynaecology_antenatal",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "name": "Antenatal",
+    "displayName": "Antenatal",
+    "conceptIds": [
+      "concept_topic_obstetrics_gynaecology_antenatal_definition",
+      "concept_topic_obstetrics_gynaecology_antenatal_etiology",
+      "concept_topic_obstetrics_gynaecology_antenatal_pathophysiology",
+      "concept_topic_obstetrics_gynaecology_antenatal_clinical_manifestations",
+      "concept_topic_obstetrics_gynaecology_antenatal_assessment",
+      "concept_topic_obstetrics_gynaecology_antenatal_diagnostics",
+      "concept_topic_obstetrics_gynaecology_antenatal_management",
+      "concept_topic_obstetrics_gynaecology_antenatal_nursing_management",
+      "concept_topic_obstetrics_gynaecology_antenatal_complications",
+      "concept_topic_obstetrics_gynaecology_antenatal_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Antenatal summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Antenatal?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Antenatal.",
+      "definition": "Antenatal is defined as a significant clinical entity in Obstetrics & Gynaecology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_obstetrics_gynaecology_labour",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "name": "Labour",
+    "displayName": "Labour",
+    "conceptIds": [
+      "concept_topic_obstetrics_gynaecology_labour_definition",
+      "concept_topic_obstetrics_gynaecology_labour_etiology",
+      "concept_topic_obstetrics_gynaecology_labour_pathophysiology",
+      "concept_topic_obstetrics_gynaecology_labour_clinical_manifestations",
+      "concept_topic_obstetrics_gynaecology_labour_assessment",
+      "concept_topic_obstetrics_gynaecology_labour_diagnostics",
+      "concept_topic_obstetrics_gynaecology_labour_management",
+      "concept_topic_obstetrics_gynaecology_labour_nursing_management",
+      "concept_topic_obstetrics_gynaecology_labour_complications",
+      "concept_topic_obstetrics_gynaecology_labour_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Labour summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Labour?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Labour.",
+      "definition": "Labour is defined as a significant clinical entity in Obstetrics & Gynaecology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_obstetrics_gynaecology_complications",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "name": "Complications",
+    "displayName": "Complications",
+    "conceptIds": [
+      "concept_topic_obstetrics_gynaecology_complications_definition",
+      "concept_topic_obstetrics_gynaecology_complications_etiology",
+      "concept_topic_obstetrics_gynaecology_complications_pathophysiology",
+      "concept_topic_obstetrics_gynaecology_complications_clinical_manifestations",
+      "concept_topic_obstetrics_gynaecology_complications_assessment",
+      "concept_topic_obstetrics_gynaecology_complications_diagnostics",
+      "concept_topic_obstetrics_gynaecology_complications_management",
+      "concept_topic_obstetrics_gynaecology_complications_nursing_management",
+      "concept_topic_obstetrics_gynaecology_complications_complications",
+      "concept_topic_obstetrics_gynaecology_complications_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Complications summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Complications?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Complications.",
+      "definition": "Complications is defined as a significant clinical entity in Obstetrics & Gynaecology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_obstetrics_gynaecology_newborn_care",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "name": "Newborn Care",
+    "displayName": "Newborn Care",
+    "conceptIds": [
+      "concept_topic_obstetrics_gynaecology_newborn_care_definition",
+      "concept_topic_obstetrics_gynaecology_newborn_care_etiology",
+      "concept_topic_obstetrics_gynaecology_newborn_care_pathophysiology",
+      "concept_topic_obstetrics_gynaecology_newborn_care_clinical_manifestations",
+      "concept_topic_obstetrics_gynaecology_newborn_care_assessment",
+      "concept_topic_obstetrics_gynaecology_newborn_care_diagnostics",
+      "concept_topic_obstetrics_gynaecology_newborn_care_management",
+      "concept_topic_obstetrics_gynaecology_newborn_care_nursing_management",
+      "concept_topic_obstetrics_gynaecology_newborn_care_complications",
+      "concept_topic_obstetrics_gynaecology_newborn_care_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Newborn Care summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Newborn Care?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Newborn Care.",
+      "definition": "Newborn Care is defined as a significant clinical entity in Obstetrics & Gynaecology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_obstetrics_gynaecology_family_planning",
+    "subjectId": "subj_obstetrics_gynaecology",
+    "name": "Family Planning",
+    "displayName": "Family Planning",
+    "conceptIds": [
+      "concept_topic_obstetrics_gynaecology_family_planning_definition",
+      "concept_topic_obstetrics_gynaecology_family_planning_etiology",
+      "concept_topic_obstetrics_gynaecology_family_planning_pathophysiology",
+      "concept_topic_obstetrics_gynaecology_family_planning_clinical_manifestations",
+      "concept_topic_obstetrics_gynaecology_family_planning_assessment",
+      "concept_topic_obstetrics_gynaecology_family_planning_diagnostics",
+      "concept_topic_obstetrics_gynaecology_family_planning_management",
+      "concept_topic_obstetrics_gynaecology_family_planning_nursing_management",
+      "concept_topic_obstetrics_gynaecology_family_planning_complications",
+      "concept_topic_obstetrics_gynaecology_family_planning_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Family Planning summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Family Planning?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Family Planning.",
+      "definition": "Family Planning is defined as a significant clinical entity in Obstetrics & Gynaecology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pediatric_nursing_growth_development",
+    "subjectId": "subj_pediatric_nursing",
+    "name": "Growth Development",
+    "displayName": "Growth Development",
+    "conceptIds": [
+      "concept_topic_pediatric_nursing_growth_development_definition",
+      "concept_topic_pediatric_nursing_growth_development_etiology",
+      "concept_topic_pediatric_nursing_growth_development_pathophysiology",
+      "concept_topic_pediatric_nursing_growth_development_clinical_manifestations",
+      "concept_topic_pediatric_nursing_growth_development_assessment",
+      "concept_topic_pediatric_nursing_growth_development_diagnostics",
+      "concept_topic_pediatric_nursing_growth_development_management",
+      "concept_topic_pediatric_nursing_growth_development_nursing_management",
+      "concept_topic_pediatric_nursing_growth_development_complications",
+      "concept_topic_pediatric_nursing_growth_development_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Growth Development summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Growth Development?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Growth Development.",
+      "definition": "Growth Development is defined as a significant clinical entity in Pediatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pediatric_nursing_neonatal",
+    "subjectId": "subj_pediatric_nursing",
+    "name": "Neonatal",
+    "displayName": "Neonatal",
+    "conceptIds": [
+      "concept_topic_pediatric_nursing_neonatal_definition",
+      "concept_topic_pediatric_nursing_neonatal_etiology",
+      "concept_topic_pediatric_nursing_neonatal_pathophysiology",
+      "concept_topic_pediatric_nursing_neonatal_clinical_manifestations",
+      "concept_topic_pediatric_nursing_neonatal_assessment",
+      "concept_topic_pediatric_nursing_neonatal_diagnostics",
+      "concept_topic_pediatric_nursing_neonatal_management",
+      "concept_topic_pediatric_nursing_neonatal_nursing_management",
+      "concept_topic_pediatric_nursing_neonatal_complications",
+      "concept_topic_pediatric_nursing_neonatal_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Neonatal summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Neonatal?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Neonatal.",
+      "definition": "Neonatal is defined as a significant clinical entity in Pediatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pediatric_nursing_diseases",
+    "subjectId": "subj_pediatric_nursing",
+    "name": "Diseases",
+    "displayName": "Diseases",
+    "conceptIds": [
+      "concept_topic_pediatric_nursing_diseases_definition",
+      "concept_topic_pediatric_nursing_diseases_etiology",
+      "concept_topic_pediatric_nursing_diseases_pathophysiology",
+      "concept_topic_pediatric_nursing_diseases_clinical_manifestations",
+      "concept_topic_pediatric_nursing_diseases_assessment",
+      "concept_topic_pediatric_nursing_diseases_diagnostics",
+      "concept_topic_pediatric_nursing_diseases_management",
+      "concept_topic_pediatric_nursing_diseases_nursing_management",
+      "concept_topic_pediatric_nursing_diseases_complications",
+      "concept_topic_pediatric_nursing_diseases_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Diseases summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Diseases?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Diseases.",
+      "definition": "Diseases is defined as a significant clinical entity in Pediatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pediatric_nursing_immunization",
+    "subjectId": "subj_pediatric_nursing",
+    "name": "Immunization",
+    "displayName": "Immunization",
+    "conceptIds": [
+      "concept_topic_pediatric_nursing_immunization_definition",
+      "concept_topic_pediatric_nursing_immunization_etiology",
+      "concept_topic_pediatric_nursing_immunization_pathophysiology",
+      "concept_topic_pediatric_nursing_immunization_clinical_manifestations",
+      "concept_topic_pediatric_nursing_immunization_assessment",
+      "concept_topic_pediatric_nursing_immunization_diagnostics",
+      "concept_topic_pediatric_nursing_immunization_management",
+      "concept_topic_pediatric_nursing_immunization_nursing_management",
+      "concept_topic_pediatric_nursing_immunization_complications",
+      "concept_topic_pediatric_nursing_immunization_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Immunization summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Immunization?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Immunization.",
+      "definition": "Immunization is defined as a significant clinical entity in Pediatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_community_health_nursing_epidemiology",
+    "subjectId": "subj_community_health_nursing",
+    "name": "Epidemiology",
+    "displayName": "Epidemiology",
+    "conceptIds": [
+      "concept_topic_community_health_nursing_epidemiology_definition",
+      "concept_topic_community_health_nursing_epidemiology_etiology",
+      "concept_topic_community_health_nursing_epidemiology_pathophysiology",
+      "concept_topic_community_health_nursing_epidemiology_clinical_manifestations",
+      "concept_topic_community_health_nursing_epidemiology_assessment",
+      "concept_topic_community_health_nursing_epidemiology_diagnostics",
+      "concept_topic_community_health_nursing_epidemiology_management",
+      "concept_topic_community_health_nursing_epidemiology_nursing_management",
+      "concept_topic_community_health_nursing_epidemiology_complications",
+      "concept_topic_community_health_nursing_epidemiology_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Epidemiology summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Epidemiology?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Epidemiology.",
+      "definition": "Epidemiology is defined as a significant clinical entity in Community Health Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_community_health_nursing_national_programs",
+    "subjectId": "subj_community_health_nursing",
+    "name": "National Programs",
+    "displayName": "National Programs",
+    "conceptIds": [
+      "concept_topic_community_health_nursing_national_programs_definition",
+      "concept_topic_community_health_nursing_national_programs_etiology",
+      "concept_topic_community_health_nursing_national_programs_pathophysiology",
+      "concept_topic_community_health_nursing_national_programs_clinical_manifestations",
+      "concept_topic_community_health_nursing_national_programs_assessment",
+      "concept_topic_community_health_nursing_national_programs_diagnostics",
+      "concept_topic_community_health_nursing_national_programs_management",
+      "concept_topic_community_health_nursing_national_programs_nursing_management",
+      "concept_topic_community_health_nursing_national_programs_complications",
+      "concept_topic_community_health_nursing_national_programs_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "National Programs summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in National Programs?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of National Programs.",
+      "definition": "National Programs is defined as a significant clinical entity in Community Health Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_community_health_nursing_prevention",
+    "subjectId": "subj_community_health_nursing",
+    "name": "Prevention",
+    "displayName": "Prevention",
+    "conceptIds": [
+      "concept_topic_community_health_nursing_prevention_definition",
+      "concept_topic_community_health_nursing_prevention_etiology",
+      "concept_topic_community_health_nursing_prevention_pathophysiology",
+      "concept_topic_community_health_nursing_prevention_clinical_manifestations",
+      "concept_topic_community_health_nursing_prevention_assessment",
+      "concept_topic_community_health_nursing_prevention_diagnostics",
+      "concept_topic_community_health_nursing_prevention_management",
+      "concept_topic_community_health_nursing_prevention_nursing_management",
+      "concept_topic_community_health_nursing_prevention_complications",
+      "concept_topic_community_health_nursing_prevention_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Prevention summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Prevention?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Prevention.",
+      "definition": "Prevention is defined as a significant clinical entity in Community Health Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_community_health_nursing_demography",
+    "subjectId": "subj_community_health_nursing",
+    "name": "Demography",
+    "displayName": "Demography",
+    "conceptIds": [
+      "concept_topic_community_health_nursing_demography_definition",
+      "concept_topic_community_health_nursing_demography_etiology",
+      "concept_topic_community_health_nursing_demography_pathophysiology",
+      "concept_topic_community_health_nursing_demography_clinical_manifestations",
+      "concept_topic_community_health_nursing_demography_assessment",
+      "concept_topic_community_health_nursing_demography_diagnostics",
+      "concept_topic_community_health_nursing_demography_management",
+      "concept_topic_community_health_nursing_demography_nursing_management",
+      "concept_topic_community_health_nursing_demography_complications",
+      "concept_topic_community_health_nursing_demography_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Demography summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Demography?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Demography.",
+      "definition": "Demography is defined as a significant clinical entity in Community Health Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pharmacology_emergency_drugs",
+    "subjectId": "subj_pharmacology",
+    "name": "Emergency Drugs",
+    "displayName": "Emergency Drugs",
+    "conceptIds": [
+      "concept_topic_pharmacology_emergency_drugs_definition",
+      "concept_topic_pharmacology_emergency_drugs_etiology",
+      "concept_topic_pharmacology_emergency_drugs_pathophysiology",
+      "concept_topic_pharmacology_emergency_drugs_clinical_manifestations",
+      "concept_topic_pharmacology_emergency_drugs_assessment",
+      "concept_topic_pharmacology_emergency_drugs_diagnostics",
+      "concept_topic_pharmacology_emergency_drugs_management",
+      "concept_topic_pharmacology_emergency_drugs_nursing_management",
+      "concept_topic_pharmacology_emergency_drugs_complications",
+      "concept_topic_pharmacology_emergency_drugs_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Lifesaving medications used in critical care and resuscitation (ACLS/BLS).",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Adrenaline can cause severe tissue necrosis if extravasated.",
+        "Atropine is ineffective for complete heart block.",
+        "Adenosine half-life is < 10 seconds; requires rapid push."
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Emergency Drugs?",
+      "mnemonicId": "mnem_topic_pharmacology_emergency_drugs_curated-pharm-emerg-1"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Emergency Drugs.",
+      "definition": "Emergency Drugs is defined as a significant clinical entity in Pharmacology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pharmacology_antibiotics",
+    "subjectId": "subj_pharmacology",
+    "name": "Antibiotics",
+    "displayName": "Antibiotics",
+    "conceptIds": [
+      "concept_topic_pharmacology_antibiotics_definition",
+      "concept_topic_pharmacology_antibiotics_etiology",
+      "concept_topic_pharmacology_antibiotics_pathophysiology",
+      "concept_topic_pharmacology_antibiotics_clinical_manifestations",
+      "concept_topic_pharmacology_antibiotics_assessment",
+      "concept_topic_pharmacology_antibiotics_diagnostics",
+      "concept_topic_pharmacology_antibiotics_management",
+      "concept_topic_pharmacology_antibiotics_nursing_management",
+      "concept_topic_pharmacology_antibiotics_complications",
+      "concept_topic_pharmacology_antibiotics_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Antibiotics summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Antibiotics?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Antibiotics.",
+      "definition": "Antibiotics is defined as a significant clinical entity in Pharmacology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pharmacology_endocrine_drugs",
+    "subjectId": "subj_pharmacology",
+    "name": "Endocrine Drugs",
+    "displayName": "Endocrine Drugs",
+    "conceptIds": [
+      "concept_topic_pharmacology_endocrine_drugs_definition",
+      "concept_topic_pharmacology_endocrine_drugs_etiology",
+      "concept_topic_pharmacology_endocrine_drugs_pathophysiology",
+      "concept_topic_pharmacology_endocrine_drugs_clinical_manifestations",
+      "concept_topic_pharmacology_endocrine_drugs_assessment",
+      "concept_topic_pharmacology_endocrine_drugs_diagnostics",
+      "concept_topic_pharmacology_endocrine_drugs_management",
+      "concept_topic_pharmacology_endocrine_drugs_nursing_management",
+      "concept_topic_pharmacology_endocrine_drugs_complications",
+      "concept_topic_pharmacology_endocrine_drugs_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Endocrine Drugs summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Endocrine Drugs?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Endocrine Drugs.",
+      "definition": "Endocrine Drugs is defined as a significant clinical entity in Pharmacology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pharmacology_cvs_drugs",
+    "subjectId": "subj_pharmacology",
+    "name": "CVS Drugs",
+    "displayName": "CVS Drugs",
+    "conceptIds": [
+      "concept_topic_pharmacology_cvs_drugs_definition",
+      "concept_topic_pharmacology_cvs_drugs_etiology",
+      "concept_topic_pharmacology_cvs_drugs_pathophysiology",
+      "concept_topic_pharmacology_cvs_drugs_clinical_manifestations",
+      "concept_topic_pharmacology_cvs_drugs_assessment",
+      "concept_topic_pharmacology_cvs_drugs_diagnostics",
+      "concept_topic_pharmacology_cvs_drugs_management",
+      "concept_topic_pharmacology_cvs_drugs_nursing_management",
+      "concept_topic_pharmacology_cvs_drugs_complications",
+      "concept_topic_pharmacology_cvs_drugs_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "CVS Drugs summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in CVS Drugs?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of CVS Drugs.",
+      "definition": "CVS Drugs is defined as a significant clinical entity in Pharmacology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pharmacology_calculations",
+    "subjectId": "subj_pharmacology",
+    "name": "Calculations",
+    "displayName": "Calculations",
+    "conceptIds": [
+      "concept_topic_pharmacology_calculations_definition",
+      "concept_topic_pharmacology_calculations_etiology",
+      "concept_topic_pharmacology_calculations_pathophysiology",
+      "concept_topic_pharmacology_calculations_clinical_manifestations",
+      "concept_topic_pharmacology_calculations_assessment",
+      "concept_topic_pharmacology_calculations_diagnostics",
+      "concept_topic_pharmacology_calculations_management",
+      "concept_topic_pharmacology_calculations_nursing_management",
+      "concept_topic_pharmacology_calculations_complications",
+      "concept_topic_pharmacology_calculations_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Calculations summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Calculations?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Calculations.",
+      "definition": "Calculations is defined as a significant clinical entity in Pharmacology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_pharmacology_antidotes",
+    "subjectId": "subj_pharmacology",
+    "name": "Antidotes",
+    "displayName": "Antidotes",
+    "conceptIds": [
+      "concept_topic_pharmacology_antidotes_definition",
+      "concept_topic_pharmacology_antidotes_etiology",
+      "concept_topic_pharmacology_antidotes_pathophysiology",
+      "concept_topic_pharmacology_antidotes_clinical_manifestations",
+      "concept_topic_pharmacology_antidotes_assessment",
+      "concept_topic_pharmacology_antidotes_diagnostics",
+      "concept_topic_pharmacology_antidotes_management",
+      "concept_topic_pharmacology_antidotes_nursing_management",
+      "concept_topic_pharmacology_antidotes_complications",
+      "concept_topic_pharmacology_antidotes_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Antidotes summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Antidotes?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Antidotes.",
+      "definition": "Antidotes is defined as a significant clinical entity in Pharmacology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_psychiatric_nursing_disorders",
+    "subjectId": "subj_psychiatric_nursing",
+    "name": "Disorders",
+    "displayName": "Disorders",
+    "conceptIds": [
+      "concept_topic_psychiatric_nursing_disorders_definition",
+      "concept_topic_psychiatric_nursing_disorders_etiology",
+      "concept_topic_psychiatric_nursing_disorders_pathophysiology",
+      "concept_topic_psychiatric_nursing_disorders_clinical_manifestations",
+      "concept_topic_psychiatric_nursing_disorders_assessment",
+      "concept_topic_psychiatric_nursing_disorders_diagnostics",
+      "concept_topic_psychiatric_nursing_disorders_management",
+      "concept_topic_psychiatric_nursing_disorders_nursing_management",
+      "concept_topic_psychiatric_nursing_disorders_complications",
+      "concept_topic_psychiatric_nursing_disorders_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Disorders summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Disorders?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Disorders.",
+      "definition": "Disorders is defined as a significant clinical entity in Psychiatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_psychiatric_nursing_communication",
+    "subjectId": "subj_psychiatric_nursing",
+    "name": "Communication",
+    "displayName": "Communication",
+    "conceptIds": [
+      "concept_topic_psychiatric_nursing_communication_definition",
+      "concept_topic_psychiatric_nursing_communication_etiology",
+      "concept_topic_psychiatric_nursing_communication_pathophysiology",
+      "concept_topic_psychiatric_nursing_communication_clinical_manifestations",
+      "concept_topic_psychiatric_nursing_communication_assessment",
+      "concept_topic_psychiatric_nursing_communication_diagnostics",
+      "concept_topic_psychiatric_nursing_communication_management",
+      "concept_topic_psychiatric_nursing_communication_nursing_management",
+      "concept_topic_psychiatric_nursing_communication_complications",
+      "concept_topic_psychiatric_nursing_communication_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Communication summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Communication?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Communication.",
+      "definition": "Communication is defined as a significant clinical entity in Psychiatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_psychiatric_nursing_therapies",
+    "subjectId": "subj_psychiatric_nursing",
+    "name": "Therapies",
+    "displayName": "Therapies",
+    "conceptIds": [
+      "concept_topic_psychiatric_nursing_therapies_definition",
+      "concept_topic_psychiatric_nursing_therapies_etiology",
+      "concept_topic_psychiatric_nursing_therapies_pathophysiology",
+      "concept_topic_psychiatric_nursing_therapies_clinical_manifestations",
+      "concept_topic_psychiatric_nursing_therapies_assessment",
+      "concept_topic_psychiatric_nursing_therapies_diagnostics",
+      "concept_topic_psychiatric_nursing_therapies_management",
+      "concept_topic_psychiatric_nursing_therapies_nursing_management",
+      "concept_topic_psychiatric_nursing_therapies_complications",
+      "concept_topic_psychiatric_nursing_therapies_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Therapies summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Therapies?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Therapies.",
+      "definition": "Therapies is defined as a significant clinical entity in Psychiatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_psychiatric_nursing_mental_health_acts",
+    "subjectId": "subj_psychiatric_nursing",
+    "name": "Mental Health Acts",
+    "displayName": "Mental Health Acts",
+    "conceptIds": [
+      "concept_topic_psychiatric_nursing_mental_health_acts_definition",
+      "concept_topic_psychiatric_nursing_mental_health_acts_etiology",
+      "concept_topic_psychiatric_nursing_mental_health_acts_pathophysiology",
+      "concept_topic_psychiatric_nursing_mental_health_acts_clinical_manifestations",
+      "concept_topic_psychiatric_nursing_mental_health_acts_assessment",
+      "concept_topic_psychiatric_nursing_mental_health_acts_diagnostics",
+      "concept_topic_psychiatric_nursing_mental_health_acts_management",
+      "concept_topic_psychiatric_nursing_mental_health_acts_nursing_management",
+      "concept_topic_psychiatric_nursing_mental_health_acts_complications",
+      "concept_topic_psychiatric_nursing_mental_health_acts_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Mental Health Acts summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Mental Health Acts?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Mental Health Acts.",
+      "definition": "Mental Health Acts is defined as a significant clinical entity in Psychiatric Nursing.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nursing_management_leadership",
+    "subjectId": "subj_nursing_management",
+    "name": "Leadership",
+    "displayName": "Leadership",
+    "conceptIds": [
+      "concept_topic_nursing_management_leadership_definition",
+      "concept_topic_nursing_management_leadership_etiology",
+      "concept_topic_nursing_management_leadership_pathophysiology",
+      "concept_topic_nursing_management_leadership_clinical_manifestations",
+      "concept_topic_nursing_management_leadership_assessment",
+      "concept_topic_nursing_management_leadership_diagnostics",
+      "concept_topic_nursing_management_leadership_management",
+      "concept_topic_nursing_management_leadership_nursing_management",
+      "concept_topic_nursing_management_leadership_complications",
+      "concept_topic_nursing_management_leadership_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Leadership summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Leadership?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Leadership.",
+      "definition": "Leadership is defined as a significant clinical entity in Nursing Management.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nursing_management_administration",
+    "subjectId": "subj_nursing_management",
+    "name": "Administration",
+    "displayName": "Administration",
+    "conceptIds": [
+      "concept_topic_nursing_management_administration_definition",
+      "concept_topic_nursing_management_administration_etiology",
+      "concept_topic_nursing_management_administration_pathophysiology",
+      "concept_topic_nursing_management_administration_clinical_manifestations",
+      "concept_topic_nursing_management_administration_assessment",
+      "concept_topic_nursing_management_administration_diagnostics",
+      "concept_topic_nursing_management_administration_management",
+      "concept_topic_nursing_management_administration_nursing_management",
+      "concept_topic_nursing_management_administration_complications",
+      "concept_topic_nursing_management_administration_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Administration summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Administration?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Administration.",
+      "definition": "Administration is defined as a significant clinical entity in Nursing Management.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nursing_management_budgeting",
+    "subjectId": "subj_nursing_management",
+    "name": "Budgeting",
+    "displayName": "Budgeting",
+    "conceptIds": [
+      "concept_topic_nursing_management_budgeting_definition",
+      "concept_topic_nursing_management_budgeting_etiology",
+      "concept_topic_nursing_management_budgeting_pathophysiology",
+      "concept_topic_nursing_management_budgeting_clinical_manifestations",
+      "concept_topic_nursing_management_budgeting_assessment",
+      "concept_topic_nursing_management_budgeting_diagnostics",
+      "concept_topic_nursing_management_budgeting_management",
+      "concept_topic_nursing_management_budgeting_nursing_management",
+      "concept_topic_nursing_management_budgeting_complications",
+      "concept_topic_nursing_management_budgeting_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Budgeting summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Budgeting?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Budgeting.",
+      "definition": "Budgeting is defined as a significant clinical entity in Nursing Management.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nursing_management_research",
+    "subjectId": "subj_nursing_management",
+    "name": "Research",
+    "displayName": "Research",
+    "conceptIds": [
+      "concept_topic_nursing_management_research_definition",
+      "concept_topic_nursing_management_research_etiology",
+      "concept_topic_nursing_management_research_pathophysiology",
+      "concept_topic_nursing_management_research_clinical_manifestations",
+      "concept_topic_nursing_management_research_assessment",
+      "concept_topic_nursing_management_research_diagnostics",
+      "concept_topic_nursing_management_research_management",
+      "concept_topic_nursing_management_research_nursing_management",
+      "concept_topic_nursing_management_research_complications",
+      "concept_topic_nursing_management_research_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Research summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Research?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Research.",
+      "definition": "Research is defined as a significant clinical entity in Nursing Management.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nursing_management_statistics",
+    "subjectId": "subj_nursing_management",
+    "name": "Statistics",
+    "displayName": "Statistics",
+    "conceptIds": [
+      "concept_topic_nursing_management_statistics_definition",
+      "concept_topic_nursing_management_statistics_etiology",
+      "concept_topic_nursing_management_statistics_pathophysiology",
+      "concept_topic_nursing_management_statistics_clinical_manifestations",
+      "concept_topic_nursing_management_statistics_assessment",
+      "concept_topic_nursing_management_statistics_diagnostics",
+      "concept_topic_nursing_management_statistics_management",
+      "concept_topic_nursing_management_statistics_nursing_management",
+      "concept_topic_nursing_management_statistics_complications",
+      "concept_topic_nursing_management_statistics_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Statistics summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Statistics?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Statistics.",
+      "definition": "Statistics is defined as a significant clinical entity in Nursing Management.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_anatomy_bones",
+    "subjectId": "subj_anatomy",
+    "name": "Bones",
+    "displayName": "Bones",
+    "conceptIds": [
+      "concept_topic_anatomy_bones_definition",
+      "concept_topic_anatomy_bones_etiology",
+      "concept_topic_anatomy_bones_pathophysiology",
+      "concept_topic_anatomy_bones_clinical_manifestations",
+      "concept_topic_anatomy_bones_assessment",
+      "concept_topic_anatomy_bones_diagnostics",
+      "concept_topic_anatomy_bones_management",
+      "concept_topic_anatomy_bones_nursing_management",
+      "concept_topic_anatomy_bones_complications",
+      "concept_topic_anatomy_bones_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Bones summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Bones?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Bones.",
+      "definition": "Bones is defined as a significant clinical entity in Anatomy.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_anatomy_cns",
+    "subjectId": "subj_anatomy",
+    "name": "CNS",
+    "displayName": "CNS",
+    "conceptIds": [
+      "concept_topic_anatomy_cns_definition",
+      "concept_topic_anatomy_cns_etiology",
+      "concept_topic_anatomy_cns_pathophysiology",
+      "concept_topic_anatomy_cns_clinical_manifestations",
+      "concept_topic_anatomy_cns_assessment",
+      "concept_topic_anatomy_cns_diagnostics",
+      "concept_topic_anatomy_cns_management",
+      "concept_topic_anatomy_cns_nursing_management",
+      "concept_topic_anatomy_cns_complications",
+      "concept_topic_anatomy_cns_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "CNS summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in CNS?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of CNS.",
+      "definition": "CNS is defined as a significant clinical entity in Anatomy.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_anatomy_cvs",
+    "subjectId": "subj_anatomy",
+    "name": "CVS",
+    "displayName": "CVS",
+    "conceptIds": [
+      "concept_topic_anatomy_cvs_definition",
+      "concept_topic_anatomy_cvs_etiology",
+      "concept_topic_anatomy_cvs_pathophysiology",
+      "concept_topic_anatomy_cvs_clinical_manifestations",
+      "concept_topic_anatomy_cvs_assessment",
+      "concept_topic_anatomy_cvs_diagnostics",
+      "concept_topic_anatomy_cvs_management",
+      "concept_topic_anatomy_cvs_nursing_management",
+      "concept_topic_anatomy_cvs_complications",
+      "concept_topic_anatomy_cvs_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "CVS summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in CVS?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of CVS.",
+      "definition": "CVS is defined as a significant clinical entity in Anatomy.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_anatomy_respiratory",
+    "subjectId": "subj_anatomy",
+    "name": "Respiratory",
+    "displayName": "Respiratory",
+    "conceptIds": [
+      "concept_topic_anatomy_respiratory_definition",
+      "concept_topic_anatomy_respiratory_etiology",
+      "concept_topic_anatomy_respiratory_pathophysiology",
+      "concept_topic_anatomy_respiratory_clinical_manifestations",
+      "concept_topic_anatomy_respiratory_assessment",
+      "concept_topic_anatomy_respiratory_diagnostics",
+      "concept_topic_anatomy_respiratory_management",
+      "concept_topic_anatomy_respiratory_nursing_management",
+      "concept_topic_anatomy_respiratory_complications",
+      "concept_topic_anatomy_respiratory_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Respiratory summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Respiratory?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Respiratory.",
+      "definition": "Respiratory is defined as a significant clinical entity in Anatomy.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_anatomy_abdomen",
+    "subjectId": "subj_anatomy",
+    "name": "Abdomen",
+    "displayName": "Abdomen",
+    "conceptIds": [
+      "concept_topic_anatomy_abdomen_definition",
+      "concept_topic_anatomy_abdomen_etiology",
+      "concept_topic_anatomy_abdomen_pathophysiology",
+      "concept_topic_anatomy_abdomen_clinical_manifestations",
+      "concept_topic_anatomy_abdomen_assessment",
+      "concept_topic_anatomy_abdomen_diagnostics",
+      "concept_topic_anatomy_abdomen_management",
+      "concept_topic_anatomy_abdomen_nursing_management",
+      "concept_topic_anatomy_abdomen_complications",
+      "concept_topic_anatomy_abdomen_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Abdomen summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Abdomen?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Abdomen.",
+      "definition": "Abdomen is defined as a significant clinical entity in Anatomy.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_physiology_blood",
+    "subjectId": "subj_physiology",
+    "name": "Blood",
+    "displayName": "Blood",
+    "conceptIds": [
+      "concept_topic_physiology_blood_definition",
+      "concept_topic_physiology_blood_etiology",
+      "concept_topic_physiology_blood_pathophysiology",
+      "concept_topic_physiology_blood_clinical_manifestations",
+      "concept_topic_physiology_blood_assessment",
+      "concept_topic_physiology_blood_diagnostics",
+      "concept_topic_physiology_blood_management",
+      "concept_topic_physiology_blood_nursing_management",
+      "concept_topic_physiology_blood_complications",
+      "concept_topic_physiology_blood_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Blood summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Blood?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Blood.",
+      "definition": "Blood is defined as a significant clinical entity in Physiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_physiology_renal",
+    "subjectId": "subj_physiology",
+    "name": "Renal",
+    "displayName": "Renal",
+    "conceptIds": [
+      "concept_topic_physiology_renal_definition",
+      "concept_topic_physiology_renal_etiology",
+      "concept_topic_physiology_renal_pathophysiology",
+      "concept_topic_physiology_renal_clinical_manifestations",
+      "concept_topic_physiology_renal_assessment",
+      "concept_topic_physiology_renal_diagnostics",
+      "concept_topic_physiology_renal_management",
+      "concept_topic_physiology_renal_nursing_management",
+      "concept_topic_physiology_renal_complications",
+      "concept_topic_physiology_renal_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Renal summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Renal?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Renal.",
+      "definition": "Renal is defined as a significant clinical entity in Physiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_physiology_endocrine",
+    "subjectId": "subj_physiology",
+    "name": "Endocrine",
+    "displayName": "Endocrine",
+    "conceptIds": [
+      "concept_topic_physiology_endocrine_definition",
+      "concept_topic_physiology_endocrine_etiology",
+      "concept_topic_physiology_endocrine_pathophysiology",
+      "concept_topic_physiology_endocrine_clinical_manifestations",
+      "concept_topic_physiology_endocrine_assessment",
+      "concept_topic_physiology_endocrine_diagnostics",
+      "concept_topic_physiology_endocrine_management",
+      "concept_topic_physiology_endocrine_nursing_management",
+      "concept_topic_physiology_endocrine_complications",
+      "concept_topic_physiology_endocrine_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Endocrine summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Endocrine?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Endocrine.",
+      "definition": "Endocrine is defined as a significant clinical entity in Physiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_physiology_neuro",
+    "subjectId": "subj_physiology",
+    "name": "Neuro",
+    "displayName": "Neuro",
+    "conceptIds": [
+      "concept_topic_physiology_neuro_definition",
+      "concept_topic_physiology_neuro_etiology",
+      "concept_topic_physiology_neuro_pathophysiology",
+      "concept_topic_physiology_neuro_clinical_manifestations",
+      "concept_topic_physiology_neuro_assessment",
+      "concept_topic_physiology_neuro_diagnostics",
+      "concept_topic_physiology_neuro_management",
+      "concept_topic_physiology_neuro_nursing_management",
+      "concept_topic_physiology_neuro_complications",
+      "concept_topic_physiology_neuro_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Neuro summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Neuro?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Neuro.",
+      "definition": "Neuro is defined as a significant clinical entity in Physiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_physiology_reproductive",
+    "subjectId": "subj_physiology",
+    "name": "Reproductive",
+    "displayName": "Reproductive",
+    "conceptIds": [
+      "concept_topic_physiology_reproductive_definition",
+      "concept_topic_physiology_reproductive_etiology",
+      "concept_topic_physiology_reproductive_pathophysiology",
+      "concept_topic_physiology_reproductive_clinical_manifestations",
+      "concept_topic_physiology_reproductive_assessment",
+      "concept_topic_physiology_reproductive_diagnostics",
+      "concept_topic_physiology_reproductive_management",
+      "concept_topic_physiology_reproductive_nursing_management",
+      "concept_topic_physiology_reproductive_complications",
+      "concept_topic_physiology_reproductive_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Reproductive summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Reproductive?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Reproductive.",
+      "definition": "Reproductive is defined as a significant clinical entity in Physiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nutrition_vitamins",
+    "subjectId": "subj_nutrition",
+    "name": "Vitamins",
+    "displayName": "Vitamins",
+    "conceptIds": [
+      "concept_topic_nutrition_vitamins_definition",
+      "concept_topic_nutrition_vitamins_etiology",
+      "concept_topic_nutrition_vitamins_pathophysiology",
+      "concept_topic_nutrition_vitamins_clinical_manifestations",
+      "concept_topic_nutrition_vitamins_assessment",
+      "concept_topic_nutrition_vitamins_diagnostics",
+      "concept_topic_nutrition_vitamins_management",
+      "concept_topic_nutrition_vitamins_nursing_management",
+      "concept_topic_nutrition_vitamins_complications",
+      "concept_topic_nutrition_vitamins_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Vitamins summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Vitamins?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Vitamins.",
+      "definition": "Vitamins is defined as a significant clinical entity in Nutrition.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nutrition_deficiency",
+    "subjectId": "subj_nutrition",
+    "name": "Deficiency",
+    "displayName": "Deficiency",
+    "conceptIds": [
+      "concept_topic_nutrition_deficiency_definition",
+      "concept_topic_nutrition_deficiency_etiology",
+      "concept_topic_nutrition_deficiency_pathophysiology",
+      "concept_topic_nutrition_deficiency_clinical_manifestations",
+      "concept_topic_nutrition_deficiency_assessment",
+      "concept_topic_nutrition_deficiency_diagnostics",
+      "concept_topic_nutrition_deficiency_management",
+      "concept_topic_nutrition_deficiency_nursing_management",
+      "concept_topic_nutrition_deficiency_complications",
+      "concept_topic_nutrition_deficiency_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Deficiency summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Deficiency?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Deficiency.",
+      "definition": "Deficiency is defined as a significant clinical entity in Nutrition.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nutrition_therapeutic_diet",
+    "subjectId": "subj_nutrition",
+    "name": "Therapeutic Diet",
+    "displayName": "Therapeutic Diet",
+    "conceptIds": [
+      "concept_topic_nutrition_therapeutic_diet_definition",
+      "concept_topic_nutrition_therapeutic_diet_etiology",
+      "concept_topic_nutrition_therapeutic_diet_pathophysiology",
+      "concept_topic_nutrition_therapeutic_diet_clinical_manifestations",
+      "concept_topic_nutrition_therapeutic_diet_assessment",
+      "concept_topic_nutrition_therapeutic_diet_diagnostics",
+      "concept_topic_nutrition_therapeutic_diet_management",
+      "concept_topic_nutrition_therapeutic_diet_nursing_management",
+      "concept_topic_nutrition_therapeutic_diet_complications",
+      "concept_topic_nutrition_therapeutic_diet_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Therapeutic Diet summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Therapeutic Diet?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Therapeutic Diet.",
+      "definition": "Therapeutic Diet is defined as a significant clinical entity in Nutrition.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_nutrition_macronutrients",
+    "subjectId": "subj_nutrition",
+    "name": "Macronutrients",
+    "displayName": "Macronutrients",
+    "conceptIds": [
+      "concept_topic_nutrition_macronutrients_definition",
+      "concept_topic_nutrition_macronutrients_etiology",
+      "concept_topic_nutrition_macronutrients_pathophysiology",
+      "concept_topic_nutrition_macronutrients_clinical_manifestations",
+      "concept_topic_nutrition_macronutrients_assessment",
+      "concept_topic_nutrition_macronutrients_diagnostics",
+      "concept_topic_nutrition_macronutrients_management",
+      "concept_topic_nutrition_macronutrients_nursing_management",
+      "concept_topic_nutrition_macronutrients_complications",
+      "concept_topic_nutrition_macronutrients_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Macronutrients summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Macronutrients?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Macronutrients.",
+      "definition": "Macronutrients is defined as a significant clinical entity in Nutrition.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_microbiology_organisms",
+    "subjectId": "subj_microbiology",
+    "name": "Organisms",
+    "displayName": "Organisms",
+    "conceptIds": [
+      "concept_topic_microbiology_organisms_definition",
+      "concept_topic_microbiology_organisms_etiology",
+      "concept_topic_microbiology_organisms_pathophysiology",
+      "concept_topic_microbiology_organisms_clinical_manifestations",
+      "concept_topic_microbiology_organisms_assessment",
+      "concept_topic_microbiology_organisms_diagnostics",
+      "concept_topic_microbiology_organisms_management",
+      "concept_topic_microbiology_organisms_nursing_management",
+      "concept_topic_microbiology_organisms_complications",
+      "concept_topic_microbiology_organisms_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Organisms summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Organisms?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Organisms.",
+      "definition": "Organisms is defined as a significant clinical entity in Microbiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_microbiology_sterilization",
+    "subjectId": "subj_microbiology",
+    "name": "Sterilization",
+    "displayName": "Sterilization",
+    "conceptIds": [
+      "concept_topic_microbiology_sterilization_definition",
+      "concept_topic_microbiology_sterilization_etiology",
+      "concept_topic_microbiology_sterilization_pathophysiology",
+      "concept_topic_microbiology_sterilization_clinical_manifestations",
+      "concept_topic_microbiology_sterilization_assessment",
+      "concept_topic_microbiology_sterilization_diagnostics",
+      "concept_topic_microbiology_sterilization_management",
+      "concept_topic_microbiology_sterilization_nursing_management",
+      "concept_topic_microbiology_sterilization_complications",
+      "concept_topic_microbiology_sterilization_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Sterilization summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Sterilization?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Sterilization.",
+      "definition": "Sterilization is defined as a significant clinical entity in Microbiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_microbiology_immunology",
+    "subjectId": "subj_microbiology",
+    "name": "Immunology",
+    "displayName": "Immunology",
+    "conceptIds": [
+      "concept_topic_microbiology_immunology_definition",
+      "concept_topic_microbiology_immunology_etiology",
+      "concept_topic_microbiology_immunology_pathophysiology",
+      "concept_topic_microbiology_immunology_clinical_manifestations",
+      "concept_topic_microbiology_immunology_assessment",
+      "concept_topic_microbiology_immunology_diagnostics",
+      "concept_topic_microbiology_immunology_management",
+      "concept_topic_microbiology_immunology_nursing_management",
+      "concept_topic_microbiology_immunology_complications",
+      "concept_topic_microbiology_immunology_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Immunology summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Immunology?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Immunology.",
+      "definition": "Immunology is defined as a significant clinical entity in Microbiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_microbiology_infections",
+    "subjectId": "subj_microbiology",
+    "name": "Infections",
+    "displayName": "Infections",
+    "conceptIds": [
+      "concept_topic_microbiology_infections_definition",
+      "concept_topic_microbiology_infections_etiology",
+      "concept_topic_microbiology_infections_pathophysiology",
+      "concept_topic_microbiology_infections_clinical_manifestations",
+      "concept_topic_microbiology_infections_assessment",
+      "concept_topic_microbiology_infections_diagnostics",
+      "concept_topic_microbiology_infections_management",
+      "concept_topic_microbiology_infections_nursing_management",
+      "concept_topic_microbiology_infections_complications",
+      "concept_topic_microbiology_infections_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Infections summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Infections?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Infections.",
+      "definition": "Infections is defined as a significant clinical entity in Microbiology.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_general_aptitude_reasoning",
+    "subjectId": "subj_general_aptitude",
+    "name": "Reasoning",
+    "displayName": "Reasoning",
+    "conceptIds": [
+      "concept_topic_general_aptitude_reasoning_definition",
+      "concept_topic_general_aptitude_reasoning_etiology",
+      "concept_topic_general_aptitude_reasoning_pathophysiology",
+      "concept_topic_general_aptitude_reasoning_clinical_manifestations",
+      "concept_topic_general_aptitude_reasoning_assessment",
+      "concept_topic_general_aptitude_reasoning_diagnostics",
+      "concept_topic_general_aptitude_reasoning_management",
+      "concept_topic_general_aptitude_reasoning_nursing_management",
+      "concept_topic_general_aptitude_reasoning_complications",
+      "concept_topic_general_aptitude_reasoning_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Reasoning summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Reasoning?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Reasoning.",
+      "definition": "Reasoning is defined as a significant clinical entity in General Aptitude.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_general_aptitude_quant",
+    "subjectId": "subj_general_aptitude",
+    "name": "Quant",
+    "displayName": "Quant",
+    "conceptIds": [
+      "concept_topic_general_aptitude_quant_definition",
+      "concept_topic_general_aptitude_quant_etiology",
+      "concept_topic_general_aptitude_quant_pathophysiology",
+      "concept_topic_general_aptitude_quant_clinical_manifestations",
+      "concept_topic_general_aptitude_quant_assessment",
+      "concept_topic_general_aptitude_quant_diagnostics",
+      "concept_topic_general_aptitude_quant_management",
+      "concept_topic_general_aptitude_quant_nursing_management",
+      "concept_topic_general_aptitude_quant_complications",
+      "concept_topic_general_aptitude_quant_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Quant summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Quant?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Quant.",
+      "definition": "Quant is defined as a significant clinical entity in General Aptitude.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_general_aptitude_gk",
+    "subjectId": "subj_general_aptitude",
+    "name": "GK",
+    "displayName": "GK",
+    "conceptIds": [
+      "concept_topic_general_aptitude_gk_definition",
+      "concept_topic_general_aptitude_gk_etiology",
+      "concept_topic_general_aptitude_gk_pathophysiology",
+      "concept_topic_general_aptitude_gk_clinical_manifestations",
+      "concept_topic_general_aptitude_gk_assessment",
+      "concept_topic_general_aptitude_gk_diagnostics",
+      "concept_topic_general_aptitude_gk_management",
+      "concept_topic_general_aptitude_gk_nursing_management",
+      "concept_topic_general_aptitude_gk_complications",
+      "concept_topic_general_aptitude_gk_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "GK summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in GK?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of GK.",
+      "definition": "GK is defined as a significant clinical entity in General Aptitude.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  },
+  {
+    "id": "topic_general_aptitude_current_affairs",
+    "subjectId": "subj_general_aptitude",
+    "name": "Current Affairs",
+    "displayName": "Current Affairs",
+    "conceptIds": [
+      "concept_topic_general_aptitude_current_affairs_definition",
+      "concept_topic_general_aptitude_current_affairs_etiology",
+      "concept_topic_general_aptitude_current_affairs_pathophysiology",
+      "concept_topic_general_aptitude_current_affairs_clinical_manifestations",
+      "concept_topic_general_aptitude_current_affairs_assessment",
+      "concept_topic_general_aptitude_current_affairs_diagnostics",
+      "concept_topic_general_aptitude_current_affairs_management",
+      "concept_topic_general_aptitude_current_affairs_nursing_management",
+      "concept_topic_general_aptitude_current_affairs_complications",
+      "concept_topic_general_aptitude_current_affairs_red_flags"
+    ],
+    "quickRevision": {
+      "definition": "Current Affairs summary and core clinical cues.",
+      "keyCauses": [
+        "Primary physiological etiology",
+        "Risk factor triggers"
+      ],
+      "keySymptoms": [
+        "Cardinal clinical manifestations"
+      ],
+      "assessment": [
+        "Primary nursing assessment cues"
+      ],
+      "importantDiagnostics": [
+        "Key diagnostic tests"
+      ],
+      "nursingManagement": [
+        "Priority nursing intervention"
+      ],
+      "redFlags": [
+        "Critical deterioration signs requiring immediate escalation"
+      ],
+      "thirtySecondRecall": "What is the primary nursing priority in Current Affairs?"
+    },
+    "fullAnswer": {
+      "introduction": "Comprehensive overview of Current Affairs.",
+      "definition": "Current Affairs is defined as a significant clinical entity in General Aptitude.",
+      "etiology": "Underlying causes and predisposing factors.",
+      "pathophysiology": "Disease progression and physiological mechanism.",
+      "clinicalManifestations": "Signs and symptoms observed in clinical practice.",
+      "investigations": "Diagnostic evaluation including lab tests and imaging.",
+      "management": "Medical, surgical, and pharmacological management.",
+      "nursingManagement": "Comprehensive nursing care plan and interventions.",
+      "complications": "Potential adverse outcomes and emergency escalation.",
+      "conclusion": "Key summary for clinical practice.",
+      "rapidRevision": [
+        "High-yield exam takeaway 1",
+        "High-yield exam takeaway 2"
+      ],
+      "examTip": "Watch out for priority assessment questions in board exams."
+    },
+    "meta": {
+      "verificationStatus": "REVIEW_REQUIRED",
+      "source": "NurseAI Knowledge Taxonomy",
+      "version": 1,
+      "lastReviewedAt": "2026-09-08"
+    }
+  }
+]

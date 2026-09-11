@@ -1,79 +1,95 @@
+import React from "react";
+import { View, Text } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { useEffect, useMemo, useState } from "react";
-import { FlatList, Text, TouchableOpacity, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { getAuth } from "firebase/auth";
-import { collection, onSnapshot } from "firebase/firestore";
-import { db } from "../firebase";
-import { IconSymbol } from "../components/ui/icon-symbol";
-import { norcetSubjectGroups, SubCategory } from "../data/norcetSubjects";
-
-type CategoryItem = SubCategory & { subjectName: string };
+import { knowledgeRepository } from "../data/knowledge/repository";
+import {
+  AppScreen,
+  AppHeader,
+  GlassCard,
+  SectionHeader,
+  Pill,
+} from "../components/ui";
 
 export default function TopicsScreen() {
-  const { subjectName } = useLocalSearchParams();
+  const { subjectId, subjectName } = useLocalSearchParams<{
+    subjectId?: string;
+    subjectName?: string;
+  }>();
   const router = useRouter();
-  const [progressMap, setProgressMap] = useState<Record<string, string>>({});
 
-  useEffect(() => {
-    const user = getAuth().currentUser;
-    if (!user) return;
-    const progressRef = collection(db, "users", user.uid, "topicProgress");
-    const unsubscribe = onSnapshot(progressRef, (snapshot) => {
-      const pm: Record<string, string> = {};
-      snapshot.forEach((docSnap) => {
-        pm[docSnap.id] = String(docSnap.data().status || "not_started");
-      });
-      setProgressMap(pm);
+  let subject = subjectId ? knowledgeRepository.getSubjectById(subjectId) : undefined;
+  if (!subject && subjectName) {
+    const found = knowledgeRepository.getAllSubjects().find(
+      (s) => s.name === subjectName || s.displayName === subjectName
+    );
+    if (found) subject = found;
+  }
+
+  const topics = subject ? knowledgeRepository.getTopicsForSubject(subject.id) : [];
+
+  const handleSelectTopic = (topicId: string) => {
+    router.push({
+      pathname: "/concepts",
+      params: { topicId },
     });
-    return () => unsubscribe();
-  }, []);
-
-  const selectedSubject = typeof subjectName === "string" ? subjectName : Array.isArray(subjectName) ? subjectName[0] || "" : "";
-
-  const categories = useMemo<CategoryItem[]>(() => {
-    if (!selectedSubject) return [];
-    const subject = norcetSubjectGroups.flatMap((g) => g.subjects).find((s) => s.name === selectedSubject);
-    if (!subject) return [];
-    return subject.subCategories.map((sc) => ({ ...sc, subjectName: subject.name }));
-  }, [selectedSubject]);
-
-  const getStatusIcon = (status?: string) => {
-    if (status === "completed") return <Text className="text-green-500 font-bold text-lg">✔</Text>;
-    if (status === "attempted") return <Text className="text-orange-500 font-bold text-2xl leading-5 mt-1">•</Text>;
-    return <Text className="text-neutral-500 font-bold text-lg">○</Text>;
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-black">
-      <View className="flex-1 p-5 pt-3">
-        <TouchableOpacity onPress={() => router.back()} className="mb-4"><Text className="text-blue-500 font-semibold text-[15px]">← Back to {selectedSubject || "Subjects"}</Text></TouchableOpacity>
-        <Text className="text-white text-3xl font-bold tracking-tight mb-2">{selectedSubject || "Categories"}</Text>
-        <Text className="text-neutral-400 text-sm mb-6">Available Categories</Text>
+    <AppScreen scrollable edges={["top"]}>
+      {/* Header with Back Button */}
+      <AppHeader
+        title={subject ? subject.displayName : subjectName || "Topics"}
+        subtitle={subject ? subject.description : "Clinical topic index"}
+        showBack
+        backText="Subjects"
+      />
 
-        <FlatList
-          data={categories}
-          keyExtractor={(item) => item.id}
-          showsVerticalScrollIndicator={false}
-          renderItem={({ item, index }) => {
-            const status = progressMap[item.id] || "not_started";
-            const categoryPayload = { id: item.id, name: item.name, subjectName: item.subjectName };
-            return (
-              <TouchableOpacity
-                onPress={() => router.push({ pathname: "/topicDetail" as never, params: { topic: JSON.stringify(categoryPayload) } as never })}
-                activeOpacity={0.8}
-                className="bg-[#1c1c1e] p-5 rounded-2xl mb-3 border border-[#2c2c2e] shadow-sm flex-row justify-between items-center"
-              >
-                <Text className="text-white text-base font-bold tracking-wide flex-1 mr-4">{index + 1}. {item.name}</Text>
-                <View className="flex-row items-center gap-4">
-                  {getStatusIcon(status)}
-                  <IconSymbol name="chevron.right" size={16} color="#4b4b4d" />
-                </View>
-              </TouchableOpacity>
-            );
-          }}
+      {/* Topics List Section */}
+      <View className="mb-6">
+        <SectionHeader
+          title={`Clinical Topics (${topics.length})`}
+          subtitle="Select a topic to open concepts and learning suite"
         />
+
+        {topics.map((t) => {
+          const conceptCount = knowledgeRepository.getConceptsForTopic(t.id).length;
+          return (
+            <GlassCard
+              key={t.id}
+              variant="default"
+              onPress={() => handleSelectTopic(t.id)}
+            >
+              <View className="flex-row items-center justify-between mb-1.5">
+                <Text className="text-white font-bold text-base flex-1 mr-2">
+                  {t.displayName || t.name}
+                </Text>
+                <Pill label={t.meta.verificationStatus} variant="trust" size="sm" />
+              </View>
+
+              <Text className="text-slate-300 text-xs leading-5 mb-3">
+                {t.quickRevision?.definition || "Explore high-yield clinical concepts."}
+              </Text>
+
+              <View className="flex-row items-center justify-between pt-2 border-t border-slate-800/80">
+                <Text className="text-cyan-400 text-xs font-semibold">
+                  Open {conceptCount} Concept Modules →
+                </Text>
+                <Text className="text-slate-500 text-[11px] font-bold uppercase tracking-wider">
+                  3 Learning Modes
+                </Text>
+              </View>
+            </GlassCard>
+          );
+        })}
+
+        {topics.length === 0 && (
+          <View className="bg-slate-900/60 p-6 rounded-2xl border border-slate-800/80 items-center">
+            <Text className="text-slate-400 text-xs text-center">
+              No clinical topics found for this subject.
+            </Text>
+          </View>
+        )}
       </View>
-    </SafeAreaView>
+    </AppScreen>
   );
 }
