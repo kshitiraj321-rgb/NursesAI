@@ -1,4 +1,4 @@
-import { RetrievalResult } from "./contracts.ts";
+import type { RetrievalResult } from "./contracts.ts";
 
 export const MOCK_FIXTURE_META = { productionEligible: false };
 

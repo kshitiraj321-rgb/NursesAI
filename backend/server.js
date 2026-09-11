@@ -184,5 +184,8 @@ Rules:
     res.status(500).json({ error: err.message });
   }
 });
+import { createAskV2Route } from "./askai/askV2Handler.ts";
+
+app.post("/ask-v2", verifyToken, createAskV2Route(openai));
 
 app.listen(3000, () => console.log("Server running on port 3000"));

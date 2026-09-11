@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import { processCitations } from "./validation.ts";
 import { hasAuthorizedClinicalEvidence } from "./mockRetrieval.ts";
-import { ResponseEnvelope, CompletionState, CitationProposal, RetrievalResult } from "./contracts.ts";
+import type { ResponseEnvelope, CompletionState, CitationProposal, RetrievalResult } from "./contracts.ts";
 
 function calculateTokenBudget(mode: string, contextSizeTokens: number): number {
   const safetyBuffer = 150;
