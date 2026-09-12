@@ -5,6 +5,8 @@
     "jsx": "react-native",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "types": ["jest", "node"],
     "paths": {
       "@/*": [
         "./*"

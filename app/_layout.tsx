@@ -5,6 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { auth } from "../firebase";
 import { IntelligenceProvider } from "../context/IntelligenceContext";
+import { AuthProvider } from "../context/AuthContext";
 import { useFonts } from "expo-font";
 import {
   Inter_400Regular,
@@ -61,16 +62,14 @@ export default function RootLayout() {
   }
 
   return (
-    <IntelligenceProvider>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="login" />
-        <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="notes" />
-        <Stack.Screen name="dailytopics" />
-        <Stack.Screen name="topics" />
-        <Stack.Screen name="topicDetail" />
-        <Stack.Screen name="quiz" />
-      </Stack>
-    </IntelligenceProvider>
+    <AuthProvider>
+      <IntelligenceProvider>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="login" />
+          <Stack.Screen name="(tabs)" />
+          <Stack.Screen name="topics" />
+        </Stack>
+      </IntelligenceProvider>
+    </AuthProvider>
   );
 }

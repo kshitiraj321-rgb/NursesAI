@@ -15,10 +15,10 @@ import { ProgressBar } from "../ui/ProgressBar";
 
 interface MistakeListItemProps {
   mistake: MistakeRecord;
-  onPressRetry: () => void;
+  onPressViewDetail: () => void;
 }
 
-export function MistakeListItem({ mistake, onPressRetry }: MistakeListItemProps) {
+export function MistakeListItem({ mistake, onPressViewDetail }: MistakeListItemProps) {
   const concept = knowledgeRepository.getConceptById(mistake.conceptId);
   const topic = knowledgeRepository.getTopicById(mistake.topicId);
 
@@ -54,16 +54,16 @@ export function MistakeListItem({ mistake, onPressRetry }: MistakeListItemProps)
         <ProgressBar progress={progressFraction} color="#F59E0B" height={6} />
       </View>
 
-      {/* Retry Action Button */}
+      {/* View Detail Action Button */}
       <AnimatedPressable
-        onPress={onPressRetry}
+        onPress={onPressViewDetail}
         activeScale={0.98}
         className="bg-amber-500 active:bg-amber-600 p-3 rounded-xl items-center flex-row justify-center space-x-2"
         accessibilityRole="button"
-        accessibilityLabel={`Review ${concept ? concept.title : "concept"}`}
+        accessibilityLabel={`View mistake details for ${concept ? concept.title : "concept"}`}
       >
         <Text className="text-slate-950 font-bold text-sm tracking-wide">
-          REVIEW & RETRY →
+          VIEW MISTAKE DETAILS →
         </Text>
       </AnimatedPressable>
     </GlassCard>

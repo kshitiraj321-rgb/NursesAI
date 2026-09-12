@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { practiceRepository } from "../data/practice/repository";
 import { knowledgeRepository } from "../data/knowledge/repository";
+import { useAuth } from "../context/AuthContext";
 import type { PracticeQuestion, PracticeMode } from "../data/types/practice";
 import { ConceptCheckCard } from "../components/practice/ConceptCheckCard";
 import { McqCard } from "../components/practice/McqCard";
@@ -16,19 +17,34 @@ import { PrimaryButton } from "../components/ui/PrimaryButton";
 import { BottomSheet } from "../components/ui/BottomSheet";
 
 export default function PracticeSessionScreen() {
-  const { mode, topicId, conceptId } = useLocalSearchParams<{
+  const { mode, topicId, conceptId, isReviewSession } = useLocalSearchParams<{
     mode?: string;
     topicId?: string;
     conceptId?: string;
+    isReviewSession?: string;
   }>();
   const router = useRouter();
 
-  const userId = "user_default";
+  const { uid: userId } = useAuth();
+  if (!userId) return null;
   const selectedMode = (mode as PracticeMode) || "MCQ";
 
   // Query concept-anchored questions
   let sessionQuestions: PracticeQuestion[] = [];
-  if (conceptId) {
+  if (isReviewSession === "true") {
+    // Spaced Review: query due concepts and resolve one question each
+    const hydration = practiceRepository.getHydrationState(userId);
+    if (hydration.status === "HYDRATED") {
+      const dueConcepts = practiceRepository.getDueForReview(userId);
+      for (const concept of dueConcepts) {
+        const questions = practiceRepository.getQuestionsForConcept(concept.conceptId);
+        if (questions.length > 0) {
+          // Select at most one practice question per due concept for this session
+          sessionQuestions.push(questions[0]);
+        }
+      }
+    }
+  } else if (conceptId) {
     sessionQuestions = practiceRepository.getQuestionsForConcept(conceptId);
   } else if (topicId) {
     sessionQuestions = practiceRepository.getQuestionsForTopic(topicId, selectedMode);
@@ -36,12 +52,30 @@ export default function PracticeSessionScreen() {
     sessionQuestions = practiceRepository.getQuestionsForMode(selectedMode);
   }
 
+  const questionIds = sessionQuestions.map((q) => q.id);
+
+  // Session tracking state
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [answered, setAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
   const [showTutorModal, setShowTutorModal] = useState(false);
+  const [incorrectQuestionIds, setIncorrectQuestionIds] = useState<string[]>([]);
+  const [attemptedQuestions, setAttemptedQuestions] = useState(0);
+  const [hasPersistenceFailure, setHasPersistenceFailure] = useState(false);
+
+  // Immutable session start timestamp — captured once on mount
+  const startedAt = useRef<string>(new Date().toISOString());
+  // Idempotency guard: prevents double-submission on same question
+  const isSubmitting = useRef(false);
+  // Track which questions have already been submitted to prevent duplicate counter increments
+  const submittedQuestionIds = useRef<Set<string>>(new Set());
+
+  // Clear any stale result from a prior session before beginning
+  React.useEffect(() => {
+    practiceRepository.clearLatestSessionResult();
+  }, []);
 
   const currentQ = sessionQuestions[currentIndex];
   const topic = currentQ ? knowledgeRepository.getTopicById(currentQ.topicId) : undefined;
@@ -49,8 +83,10 @@ export default function PracticeSessionScreen() {
     ? knowledgeRepository.getMnemonicById(currentQ.mnemonicId)
     : undefined;
 
-  const handleSelectOption = (index: number) => {
-    if (answered || !currentQ) return;
+  const handleSelectOption = async (index: number) => {
+    if (answered || !currentQ || isSubmitting.current) return;
+
+    isSubmitting.current = true;
 
     setSelectedIndex(index);
     setAnswered(true);
@@ -61,31 +97,78 @@ export default function PracticeSessionScreen() {
       setScore((s) => s + 1);
     }
 
+    // Track per-question submission exactly once
+    if (!submittedQuestionIds.current.has(currentQ.id)) {
+      submittedQuestionIds.current.add(currentQ.id);
+      setAttemptedQuestions((n) => n + 1);
+      if (!correct) {
+        setIncorrectQuestionIds((ids) => [...ids, currentQ.id]);
+      }
+    }
+
     // Record attempt in repository (triggers mastery & mistake updates)
-    practiceRepository.recordAttempt({
-      id: `attempt_${Date.now()}`,
+    const result = await practiceRepository.recordAttempt({
+      id: `attempt_${crypto.randomUUID()}`,
       userId,
       questionId: currentQ.id,
       conceptId: currentQ.conceptId,
       topicId: currentQ.topicId,
       mode: currentQ.mode,
       selectedOptionIndex: index,
+      correctOptionIndex: currentQ.correctOptionIndex,
       isCorrect: correct,
       timeSpentSeconds: 10,
       attemptedAt: new Date().toISOString(),
     });
+
+    if (result.persistenceError) {
+      console.warn("Attempt history persistence failed, recorded locally:", result.persistenceError);
+      setHasPersistenceFailure(true);
+    }
   };
 
   const handleNextQuestion = () => {
     setSelectedIndex(null);
     setAnswered(false);
     setIsCorrect(false);
-    if (currentIndex + 1 < sessionQuestions.length) {
+    isSubmitting.current = false;
+
+    const isLastQuestion = currentIndex + 1 >= sessionQuestions.length;
+
+    if (!isLastQuestion) {
       setCurrentIndex((i) => i + 1);
-    } else {
-      // Session complete -> return deterministically to Practice Hub
-      router.replace("/(tabs)/practice" as any);
+      return;
     }
+
+    // Final question — compute and store ephemeral session result.
+    // Use functional updater snapshots where needed; score/attemptedQuestions may
+    // still be pending their setState batches here, so derive directly.
+    const finalCorrect = score;
+    const finalAttempted = attemptedQuestions;
+    const finalIncorrect = finalAttempted - finalCorrect;
+    const finalPercent =
+      sessionQuestions.length > 0
+        ? Math.round((finalCorrect / sessionQuestions.length) * 100)
+        : 0;
+
+    const sessionResult = {
+      mode: selectedMode,
+      totalQuestions: sessionQuestions.length,
+      attemptedQuestions: finalAttempted,
+      correctAnswers: finalCorrect,
+      incorrectAnswers: finalIncorrect,
+      scorePercent: finalPercent,
+      questionIds,
+      incorrectQuestionIds,
+      startedAt: startedAt.current,
+      completedAt: new Date().toISOString(),
+      persistenceStatus: hasPersistenceFailure
+        ? ("PARTIAL_PERSISTENCE_FAILURE" as const)
+        : ("ALL_ATTEMPTS_PERSISTED" as const),
+    };
+
+    practiceRepository.setLatestSessionResult(sessionResult);
+    router.replace("/practice-results" as any);
   };
 
   if (!currentQ || sessionQuestions.length === 0) {
@@ -233,4 +316,3 @@ export default function PracticeSessionScreen() {
     </AppScreen>
   );
 }
-

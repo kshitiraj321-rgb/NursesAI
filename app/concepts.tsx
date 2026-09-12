@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { knowledgeRepository } from "../data/knowledge/repository";
 import { practiceRepository } from "../data/practice/repository";
+import { useAuth } from "../context/AuthContext";
 import {
   AppScreen,
   AppHeader,
@@ -15,7 +16,9 @@ import {
 export default function ConceptsScreen() {
   const { topicId } = useLocalSearchParams<{ topicId?: string }>();
   const router = useRouter();
-  const userId = "user_default";
+  const { uid: userId } = useAuth();
+
+  if (!userId) return null;
 
   const topic = topicId ? knowledgeRepository.getTopicById(topicId) : undefined;
   const concepts = topicId ? knowledgeRepository.getConceptsForTopic(topicId) : [];

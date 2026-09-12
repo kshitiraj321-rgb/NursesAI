@@ -73,11 +73,17 @@ export default function HomeScreen() {
   const recommendedTopic = intelligenceData.recommendedTopic || "";
   const topicStat = recommendedTopic ? intelligenceData.topicStats[recommendedTopic] : null;
 
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
+
   const handleLogout = async () => {
+    if (isLoggingOut) return;
+    setIsLoggingOut(true);
     try {
       await signOut(auth);
       router.replace("/login" as any);
-    } catch {}
+    } catch {
+      setIsLoggingOut(false);
+    }
   };
 
   const hour = new Date().getHours();
@@ -106,6 +112,22 @@ export default function HomeScreen() {
     <AppScreen scrollable edges={["top"]}>
       <ScrollView className="flex-1 px-4" showsVerticalScrollIndicator={false}>
         <HomeHeader greeting={greeting} userName={userName} onLogout={handleLogout} />
+
+        <View className="bg-amber-500/10 border border-amber-500/40 rounded-xl p-4 mb-6 flex-row items-start">
+          <Text className="text-amber-400 text-base mr-3">⚠️</Text>
+          <View className="flex-1">
+            <Text className="text-amber-300 font-bold text-sm mb-1">
+              Legacy Dashboard
+            </Text>
+            <Text className="text-amber-400/80 text-xs leading-5 mb-3">
+              The statistics on this screen use deprecated data. For an accurate view of your mastery, please use the new Global Progress dashboard.
+            </Text>
+            <PrimaryButton
+              label="Go to Practice →"
+              onPress={() => router.replace("/(tabs)/practice" as any)}
+            />
+          </View>
+        </View>
 
         <DailyFocusCard
           dailyTopic={recommendedTopic}

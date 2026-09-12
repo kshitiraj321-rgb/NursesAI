@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import { useRouter } from "expo-router";
 import { practiceRepository } from "../data/practice/repository";
+import { useAuth } from "../context/AuthContext";
 import { MistakeListItem } from "../components/practice/MistakeListItem";
 import { AppScreen } from "../components/ui/AppScreen";
 import { AppHeader } from "../components/ui/AppHeader";
@@ -10,14 +11,16 @@ import { Pill } from "../components/ui/Pill";
 
 export default function MistakeBankScreen() {
   const router = useRouter();
-  const userId = "user_default";
+  const { uid: userId } = useAuth();
+  
+  if (!userId) return null;
   const activeMistakes = practiceRepository.getActiveMistakes(userId);
   const allMistakes = practiceRepository.getAllMistakes(userId);
   const resolvedCount = allMistakes.filter((m) => m.status === "RESOLVED").length;
 
-  const handleRetryConcept = (conceptId: string) => {
+  const handleViewMistakeDetail = (conceptId: string) => {
     router.push({
-      pathname: "/practice-session",
+      pathname: "/mistake-detail" as any,
       params: { conceptId },
     });
   };
@@ -93,7 +96,7 @@ export default function MistakeBankScreen() {
         <MistakeListItem
           key={m.id}
           mistake={m}
-          onPressRetry={() => handleRetryConcept(m.conceptId)}
+          onPressViewDetail={() => handleViewMistakeDetail(m.conceptId)}
         />
       ))}
 

@@ -73,7 +73,7 @@ const testConceptId = sampleConceptId;
 const testTopicId = sampleConcept?.topicId || "topic_general";
 
 // Simulate incorrect attempt (creates WEAK mistake)
-const attempt1 = practiceRepository.recordAttempt({
+const attempt1 = await practiceRepository.recordAttempt({
   id: "att_1",
   userId,
   questionId: "q_p5_1",
@@ -81,6 +81,7 @@ const attempt1 = practiceRepository.recordAttempt({
   topicId: testTopicId,
   mode: "MCQ",
   selectedOptionIndex: 0,
+  correctOptionIndex: 1,
   isCorrect: false,
   timeSpentSeconds: 10,
   attemptedAt: new Date().toISOString(),
@@ -92,7 +93,7 @@ assert(
 );
 
 // Simulate 1st correct attempt
-const attempt2 = practiceRepository.recordAttempt({
+const attempt2 = await practiceRepository.recordAttempt({
   id: "att_2",
   userId,
   questionId: "q_p5_1",
@@ -100,6 +101,7 @@ const attempt2 = practiceRepository.recordAttempt({
   topicId: testTopicId,
   mode: "MCQ",
   selectedOptionIndex: 1,
+  correctOptionIndex: 1,
   isCorrect: true,
   timeSpentSeconds: 10,
   attemptedAt: new Date().toISOString(),
@@ -111,7 +113,7 @@ assert(
 );
 
 // Simulate 2nd consecutive correct attempt (resolves mistake)
-const attempt3 = practiceRepository.recordAttempt({
+const attempt3 = await practiceRepository.recordAttempt({
   id: "att_3",
   userId,
   questionId: "q_p5_1",
@@ -119,6 +121,7 @@ const attempt3 = practiceRepository.recordAttempt({
   topicId: testTopicId,
   mode: "MCQ",
   selectedOptionIndex: 1,
+  correctOptionIndex: 1,
   isCorrect: true,
   timeSpentSeconds: 10,
   attemptedAt: new Date().toISOString(),
