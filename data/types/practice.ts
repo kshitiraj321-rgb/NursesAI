@@ -42,6 +42,7 @@ export interface PracticeAttempt {
   subjectId?: string;
   mode: PracticeMode;
   selectedOptionIndex: number;
+  correctOptionIndex: number;
   isCorrect: boolean;
   timeSpentSeconds: number;
   attemptedAt: string;        // ISO timestamp
@@ -91,4 +92,31 @@ export interface PracticeSession {
   attempts: PracticeAttempt[];
   startTime: string;
   endTime?: string;
+}
+
+export interface PracticeSessionResult {
+  mode: PracticeMode;
+  totalQuestions: number;
+  attemptedQuestions: number;
+  correctAnswers: number;
+  incorrectAnswers: number;
+  scorePercent: number;
+  questionIds: string[];
+  incorrectQuestionIds: string[];
+  startedAt: string;
+  completedAt: string;
+  persistenceStatus: "ALL_ATTEMPTS_PERSISTED" | "PARTIAL_PERSISTENCE_FAILURE";
+}
+
+export type RecommendedActionType =
+  | "REVIEW_MISTAKES"
+  | "SPACED_REVIEW"
+  | "PRACTICE"
+  | "NONE";
+
+export interface RecommendedNextAction {
+  status: "AVAILABLE" | "UNAVAILABLE" | "ERROR";
+  action: RecommendedActionType;
+  reason: string;
+  count?: number;
 }

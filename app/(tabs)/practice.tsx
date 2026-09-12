@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import { practiceRepository } from "../../data/practice/repository";
+import { useAuth } from "../../context/AuthContext";
 import type { PracticeMode } from "../../data/types/practice";
 import {
   AppScreen,
@@ -52,7 +53,8 @@ const PRACTICE_MODES: ModeDefinition[] = [
 ];
 
 export default function PracticeScreen() {
-  const userId = "user_default";
+  const { uid: userId } = useAuth();
+  if (!userId) return null;
   const activeMistakes = practiceRepository.getActiveMistakes(userId);
 
   const handleLaunchMode = (mode: PracticeMode) => {
@@ -74,6 +76,77 @@ export default function PracticeScreen() {
         subtitle="Train recall. Find weak spots."
         showHome
       />
+      {/* Recommended Next Action */}
+      <View className="mb-6">
+        <SectionHeader title="Intelligence" />
+        <GlassCard variant="default">
+          <View className="flex-row items-center justify-between mb-2">
+            <View className="flex-row items-center flex-1 mr-2" accessibilityRole="header">
+              <Text className="text-xl mr-2">🧭</Text>
+              <Text className="text-white font-extrabold text-base flex-1">
+                Recommended Action
+              </Text>
+            </View>
+            {(() => {
+              const rec = practiceRepository.getRecommendedNextAction(userId);
+              if (rec.status === "UNAVAILABLE" || rec.status === "ERROR") {
+                return <Pill label="Checking..." variant="info" size="sm" />;
+              }
+              if (rec.action === "REVIEW_MISTAKES") {
+                return <Pill label={`${rec.count} Due`} variant="error" size="sm" />;
+              }
+              if (rec.action === "SPACED_REVIEW") {
+                return <Pill label={`${rec.count} Due`} variant="info" size="sm" />;
+              }
+              return <Pill label="Ready" variant="success" size="sm" />;
+            })()}
+          </View>
+          
+          <Text className="text-slate-300 text-xs leading-5 mb-4">
+            {(() => {
+              const rec = practiceRepository.getRecommendedNextAction(userId);
+              if (rec.status === "UNAVAILABLE") return "Loading practice data...";
+              if (rec.status === "ERROR") return "Unable to load recommendation.";
+              return rec.reason;
+            })()}
+          </Text>
+
+          {(() => {
+            const rec = practiceRepository.getRecommendedNextAction(userId);
+            if (rec.status !== "AVAILABLE" || rec.action === "NONE") return null;
+
+            let label = "";
+            let variant: "primary" | "rose" | "purple" | "emerald" = "primary";
+            let onPress = () => {};
+
+            switch (rec.action) {
+              case "REVIEW_MISTAKES":
+                label = "Review Mistakes →";
+                variant = "rose";
+                onPress = handleOpenMistakeBank;
+                break;
+              case "SPACED_REVIEW":
+                label = "Start Spaced Review →";
+                variant = "purple";
+                onPress = () => router.push({ pathname: "/practice-session", params: { isReviewSession: "true" } });
+                break;
+              case "PRACTICE":
+                label = "Start Practice →";
+                variant = "emerald";
+                onPress = () => handleLaunchMode("MCQ"); // default general practice
+                break;
+            }
+
+            return (
+              <PrimaryButton
+                label={label}
+                variant={variant}
+                onPress={onPress}
+              />
+            );
+          })()}
+        </GlassCard>
+      </View>
 
       {/* Active Mistake Review Card */}
       <View className="mb-6">
@@ -104,6 +177,89 @@ export default function PracticeScreen() {
             variant={activeMistakes.length > 0 ? "rose" : "primary"}
             onPress={handleOpenMistakeBank}
           />
+        </GlassCard>
+      </View>
+
+      {/* Spaced Review Card */}
+      <View className="mb-6">
+        <SectionHeader title="Retention" />
+        <GlassCard variant="default">
+          <View className="flex-row items-center justify-between mb-2">
+            <View className="flex-row items-center flex-1 mr-2" accessibilityRole="header">
+              <Text className="text-xl mr-2">🧠</Text>
+              <Text className="text-white font-extrabold text-base flex-1">
+                Spaced Review
+              </Text>
+            </View>
+            {(() => {
+              const hydration = practiceRepository.getHydrationState(userId);
+              if (hydration.status === "LOADING" || hydration.status === "UNHYDRATED") {
+                return (
+                  <View className="flex-row items-center" accessibilityLabel="Loading spaced review status">
+                    <ActivityIndicator size="small" color="#818CF8" />
+                  </View>
+                );
+              }
+              if (hydration.status === "ERROR") {
+                return <Pill label="Data Error" variant="error" size="sm" />;
+              }
+              const dueCount = practiceRepository.getDueForReview(userId).length;
+              if (dueCount === 0) {
+                return <Pill label="All caught up" variant="success" size="sm" />;
+              }
+              return <Pill label={`${dueCount} Due`} variant="info" size="sm" />;
+            })()}
+          </View>
+
+          <Text className="text-slate-300 text-xs leading-5 mb-4" accessibilityLabel="Review concepts due for retention practice">
+            {(() => {
+              const hydration = practiceRepository.getHydrationState(userId);
+              if (hydration.status === "LOADING" || hydration.status === "UNHYDRATED") {
+                return "Checking for concepts due for retention practice...";
+              }
+              if (hydration.status === "ERROR") {
+                return "Unable to load review status. Please try again later.";
+              }
+              const dueCount = practiceRepository.getDueForReview(userId).length;
+              if (dueCount === 0) {
+                return "You have no concepts due for review. Keep practicing to build mastery!";
+              }
+              return `${dueCount} concepts are due for proactive time-based retention practice.`;
+            })()}
+          </Text>
+
+          {(() => {
+            const hydration = practiceRepository.getHydrationState(userId);
+            const dueCount = hydration.status === "HYDRATED" ? practiceRepository.getDueForReview(userId).length : 0;
+            return (
+              <PrimaryButton
+                label={dueCount > 0 ? "Start Review →" : "All Caught Up"}
+                variant={dueCount > 0 ? "purple" : "primary"}
+                onPress={() => router.push({ pathname: "/practice-session", params: { isReviewSession: "true" } })}
+                disabled={dueCount === 0 || hydration.status !== "HYDRATED"}
+              />
+            );
+          })()}
+        </GlassCard>
+      </View>
+
+      {/* Global Progress Dashboard Entry */}
+      <View className="mb-6">
+        <GlassCard variant="default" onPress={() => router.push("/progress")}>
+          <View className="flex-row items-center flex-1">
+            <Text className="text-3xl mr-3.5">📊</Text>
+            <View className="flex-1">
+              <View className="flex-row items-center justify-between mb-1">
+                <Text className="text-white font-bold text-base flex-1 mr-2">
+                  Global Progress
+                </Text>
+                <Pill label="Dashboard" variant="info" size="sm" />
+              </View>
+              <Text className="text-slate-400 text-xs leading-4">
+                View your mastery profile and overall practice performance.
+              </Text>
+            </View>
+          </View>
         </GlassCard>
       </View>
 
