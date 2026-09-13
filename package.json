@@ -55,5 +55,32 @@
     "md-to-pdf": "^5.2.5",
     "typescript": "~6.0.3"
   },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": ["expo-av"]
+      }
+    },
+    "install": {
+      "exclude": [
+        "@types/jest",
+        "jest",
+        "expo",
+        "expo-blur",
+        "expo-constants",
+        "expo-font",
+        "expo-haptics",
+        "expo-image",
+        "expo-linear-gradient",
+        "expo-linking",
+        "expo-router",
+        "expo-speech",
+        "expo-splash-screen",
+        "expo-symbols",
+        "expo-system-ui",
+        "expo-web-browser"
+      ]
+    }
+  },
   "private": true
 }
