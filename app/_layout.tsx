@@ -17,23 +17,6 @@ import {
 } from "@expo-google-fonts/inter";
 
 SplashScreen.preventAutoHideAsync();
-
-class DiagnosticBoundary extends React.Component<{children: React.ReactNode}, {error: Error | null}> {
-  state = { error: null };
-  static getDerivedStateFromError(error: Error) { return { error }; }
-  render() {
-    if (this.state.error) {
-      return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#990000', padding: 20 }}>
-          <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}>DIAGNOSTIC CRASH CAUGHT:</Text>
-          <Text style={{ color: 'white', marginTop: 10 }}>{(this.state.error as any).message}</Text>
-        </View>
-      );
-    }
-    return this.props.children;
-  }
-}
-
 export default function RootLayout() {
   const [initializing, setInitializing] = useState(true);
   const [user, setUser] = useState<any>(null);
@@ -80,16 +63,14 @@ export default function RootLayout() {
   }
 
   return (
-    <DiagnosticBoundary>
-      <AuthProvider>
-        <IntelligenceProvider>
-          <Stack screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="login" />
-            <Stack.Screen name="(tabs)" />
-            <Stack.Screen name="topics" />
-          </Stack>
-        </IntelligenceProvider>
-      </AuthProvider>
-    </DiagnosticBoundary>
+    <AuthProvider>
+      <IntelligenceProvider>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="login" />
+          <Stack.Screen name="(tabs)" />
+          <Stack.Screen name="topics" />
+        </Stack>
+      </IntelligenceProvider>
+    </AuthProvider>
   );
 }
