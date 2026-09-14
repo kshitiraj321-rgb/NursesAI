@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, ScrollView, ActivityIndicator } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useAuth } from "../../context/AuthContext";
 import { practiceRepository } from "../../data/practice/repository";
 import { AppScreen } from "../../components/ui/AppScreen";
@@ -9,7 +8,6 @@ import { GlassCard } from "../../components/ui/GlassCard";
 import { Pill } from "../../components/ui/Pill";
 
 export default function ProgressScreen() {
-  const insets = useSafeAreaInsets();
   const { uid: userId } = useAuth();
 
   if (!userId) {

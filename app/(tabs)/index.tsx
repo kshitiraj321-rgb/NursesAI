@@ -21,8 +21,7 @@ export default function HomeScreen() {
   const router = useRouter();
 
   const [user, setUser] = useState<any>(null);
-  const [showComeback, setShowComeback] = useState(false);
-  const [comebackTopic, setComebackTopic] = useState("");
+  const [dismissedComeback, setDismissedComeback] = useState(false);
   const [mistakeCount, setMistakeCount] = useState<number | null>(null);
 
   useFocusEffect(
@@ -50,9 +49,10 @@ export default function HomeScreen() {
   const { data: intelligenceData } = useIntelligenceContext();
   const retentionData = useRetention(user?.uid);
 
-  useEffect(() => {
-    if (!retentionData.lastActiveDate || Object.keys(intelligenceData.topicStats).length === 0) return;
+  let shouldShowComeback = false;
+  let comebackTopicDerived = "";
 
+  if (!dismissedComeback && retentionData.lastActiveDate && Object.keys(intelligenceData.topicStats).length > 0) {
     const todayString = new Date().toISOString().split('T')[0];
     const lastActive = new Date(retentionData.lastActiveDate);
     const today = new Date(todayString);
@@ -64,11 +64,11 @@ export default function HomeScreen() {
         ["", { lastAttempt: 0 }] as [string, any]
       );
       if (mostRecent[0]) {
-        setComebackTopic(mostRecent[0]);
-        setShowComeback(true);
+        comebackTopicDerived = mostRecent[0];
+        shouldShowComeback = true;
       }
     }
-  }, [retentionData.lastActiveDate, intelligenceData.topicStats]);
+  }
 
   const recommendedTopic = intelligenceData.recommendedTopic || "";
   const topicStat = recommendedTopic ? intelligenceData.topicStats[recommendedTopic] : null;
@@ -176,33 +176,33 @@ export default function HomeScreen() {
       </ScrollView>
 
       {/* Comeback Modal */}
-      <Modal visible={showComeback} transparent animationType="fade">
+      <Modal visible={shouldShowComeback} transparent animationType="fade">
         <View className="flex-1 bg-black/80 justify-center items-center px-5">
           <GlassCard variant="elevated" className="w-full p-6">
             <Text className="text-white text-2xl font-bold mb-2">Welcome Back!</Text>
             <Text className="text-slate-300 text-sm mb-6">
-              You left off at <Text className="text-white font-semibold">{comebackTopic}</Text> — continue?
+              You left off at <Text className="text-white font-semibold">{comebackTopicDerived}</Text> — continue?
             </Text>
 
             <View className="flex-row space-x-3">
               <View className="flex-1">
                 <SecondaryButton
                   label="Not Now"
-                  onPress={() => setShowComeback(false)}
+                  onPress={() => setDismissedComeback(true)}
                 />
               </View>
               <View className="flex-1">
                 <PrimaryButton
                   label="Continue"
                   onPress={() => {
-                    setShowComeback(false);
+                    setDismissedComeback(true);
                     router.push({
                       pathname: "/quiz" as any,
                       params: {
                         type: "pyq",
                         mode: "revision",
-                        topic: comebackTopic,
-                        topics: JSON.stringify([comebackTopic]),
+                        topic: comebackTopicDerived,
+                        topics: JSON.stringify([comebackTopicDerived]),
                       },
                     });
                   }}

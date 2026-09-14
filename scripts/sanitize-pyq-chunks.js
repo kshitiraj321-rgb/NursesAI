@@ -1,8 +1,9 @@
+/* global __dirname */
 const fs = require('fs');
 const path = require('path');
 
 const chunksDir = path.join(__dirname, '../data/pyq/chunks');
-const manifestPath = path.join(__dirname, '../data/pyq/manifest.json');
+
 const reportPath = path.join(__dirname, '../data/pyq/quality-report.json');
 
 const hasCorruptedOptions = (record) => {

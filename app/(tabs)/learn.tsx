@@ -153,7 +153,7 @@ export default function LearnScreen() {
         {filteredSubjects.length === 0 && (
           <View className="bg-slate-900/60 p-6 rounded-2xl border border-slate-800/80 items-center">
             <Text className="text-slate-400 text-sm text-center">
-              No subjects found matching "{searchQuery}".
+              No subjects found matching &quot;{searchQuery}&quot;.
             </Text>
           </View>
         )}

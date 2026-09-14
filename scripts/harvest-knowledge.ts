@@ -191,7 +191,7 @@ for (const group of norcetSubjectGroups) {
 let harvestedNotesCount = 0;
 for (const subjObj of rawNotesData.subjects || []) {
   const subjName = subjObj.subject;
-  const subjId = `subj_${slugify(subjName)}`;
+
 
   for (const topicObj of subjObj.topics || []) {
     const topicName = topicObj.topic;

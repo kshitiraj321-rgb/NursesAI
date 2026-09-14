@@ -1,11 +1,10 @@
+import { practiceRepository } from "../data/practice/repository";
+
 // Mock firebase before importing repository
 jest.mock("../firebase", () => ({
   db: {},
   auth: {},
 }));
-
-import { practiceRepository } from "../data/practice/repository";
-import type { ConceptMasteryRecord, MistakeRecord } from "../data/types/practice";
 
 describe("Practice Intelligence: Recommended Next Action (Task 8.20-B)", () => {
   const userId = "testUserRecs";

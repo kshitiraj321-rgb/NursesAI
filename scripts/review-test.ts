@@ -1,6 +1,5 @@
 
 import { practiceRepository } from "../data/practice/repository";
-import type { ConceptMasteryRecord } from "../data/types/practice";
 
 // A standalone script to test `getDueForReview` against the memory store
 // We can test by injecting a fake record via `recordAttempt` or just mocking the internal map if we can't.

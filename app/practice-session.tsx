@@ -26,12 +26,11 @@ export default function PracticeSessionScreen() {
   const router = useRouter();
 
   const { uid: userId } = useAuth();
-  if (!userId) return null;
   const selectedMode = (mode as PracticeMode) || "MCQ";
 
   // Query concept-anchored questions
   let sessionQuestions: PracticeQuestion[] = [];
-  if (isReviewSession === "true") {
+  if (isReviewSession === "true" && userId) {
     // Spaced Review: query due concepts and resolve one question each
     const hydration = practiceRepository.getHydrationState(userId);
     if (hydration.status === "HYDRATED") {
@@ -76,6 +75,8 @@ export default function PracticeSessionScreen() {
   React.useEffect(() => {
     practiceRepository.clearLatestSessionResult();
   }, []);
+
+  if (!userId) return null;
 
   const currentQ = sessionQuestions[currentIndex];
   const topic = currentQ ? knowledgeRepository.getTopicById(currentQ.topicId) : undefined;

@@ -26,7 +26,7 @@ export default function PainScalesScreen() {
           <Pill label="Adults & Children ≥ 8 yrs" variant="trust" size="sm" />
         </View>
         <Text className="text-slate-300 text-xs mb-3">
-          Self-report scale. Patient rates pain intensity from 0 ("No pain") to 10 ("Worst pain imaginable").
+          Self-report scale. Patient rates pain intensity from 0 (&quot;No pain&quot;) to 10 (&quot;Worst pain imaginable&quot;).
         </Text>
 
         <View className="space-y-2">
@@ -36,7 +36,7 @@ export default function PainScalesScreen() {
           </GlassCard>
           <GlassCard className="p-3 border-l-4 border-l-sky-500 flex-row items-center justify-between mb-2">
             <Text className="text-sky-400 font-bold text-xs">Score 1 – 3: Mild Pain</Text>
-            <Text className="text-slate-300 text-xs">Noticeable but doesn't interfere with activity</Text>
+            <Text className="text-slate-300 text-xs">Noticeable but doesn&apos;t interfere with activity</Text>
           </GlassCard>
           <GlassCard className="p-3 border-l-4 border-l-amber-500 flex-row items-center justify-between mb-2">
             <Text className="text-amber-400 font-bold text-xs">Score 4 – 6: Moderate Pain</Text>

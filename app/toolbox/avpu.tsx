@@ -3,7 +3,6 @@ import { View, Text } from "react-native";
 import { AppScreen } from "../../components/ui/AppScreen";
 import { GlassCard } from "../../components/ui/GlassCard";
 import { Pill } from "../../components/ui/Pill";
-import { SectionHeader } from "../../components/ui/SectionHeader";
 
 export default function AVPUScreen() {
   return (

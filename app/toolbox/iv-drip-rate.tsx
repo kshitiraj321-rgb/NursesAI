@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, ScrollView } from "react-native";
+import { View, Text, TextInput } from "react-native";
 import { calcIVDripRate, DropFactor, CalcResult } from "../../utils/calculators";
 import { AppScreen } from "../../components/ui/AppScreen";
 import { GlassCard } from "../../components/ui/GlassCard";

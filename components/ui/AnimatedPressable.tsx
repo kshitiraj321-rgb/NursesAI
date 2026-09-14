@@ -39,6 +39,8 @@ export function AnimatedPressable({
 
   const handlePressIn = (e: any) => {
     if (!disabled) {
+      // @ts-ignore: Reanimated requires mutating .value
+      // eslint-disable-next-line react-hooks/immutability -- False positive: Reanimated SharedValues require direct .value mutation
       scale.value = withTiming(activeScale, {
         duration: motion.microPress.duration,
       });
@@ -48,6 +50,8 @@ export function AnimatedPressable({
 
   const handlePressOut = (e: any) => {
     if (!disabled) {
+      // @ts-ignore: Reanimated requires mutating .value
+      // eslint-disable-next-line react-hooks/immutability -- False positive: Reanimated SharedValues require direct .value mutation
       scale.value = withSpring(1, {
         damping: 15,
         stiffness: 300,

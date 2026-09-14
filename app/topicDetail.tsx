@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useEffect, useMemo, useState } from "react";
 import { loadAllPyq, isQuizReadyPyq, getQuestionsForTopic } from "../data/pyq/repository";
 import type { PyqRecord } from "../data/pyq/types";
+import notesIndex from "../data/quickLearnIndex.json";
 
 type CategoryPayload = {
   id: string;
@@ -11,7 +12,6 @@ type CategoryPayload = {
   subjectName?: string;
 };
 
-import notesIndex from "../data/quickLearnIndex.json";
 
 export default function TopicDetailScreen() {
   const { topic } = useLocalSearchParams();
@@ -19,14 +19,15 @@ export default function TopicDetailScreen() {
   const router = useRouter();
 
   const [pyq, setPyq] = useState<PyqRecord[]>([]);
-  const [noteCount, setNoteCount] = useState(0);
+
+  const noteCount = useMemo(() => {
+    const key = `${parsedTopic.subjectName || ""}|${(parsedTopic.name || "").toLowerCase()}`;
+    return (notesIndex as Record<string, number>)[key] || 0;
+  }, [parsedTopic.name, parsedTopic.subjectName]);
 
   useEffect(() => {
     loadAllPyq().then(setPyq).catch((err) => console.log("PYQ load error:", err));
-
-    const key = `${parsedTopic.subjectName || ""}|${(parsedTopic.name || "").toLowerCase()}`;
-    setNoteCount((notesIndex as Record<string, number>)[key] || 0);
-  }, [parsedTopic.name, parsedTopic.subjectName]);
+  }, []);
 
   const pyqCount = useMemo(() => {
     return getQuestionsForTopic(pyq, parsedTopic.name).length;

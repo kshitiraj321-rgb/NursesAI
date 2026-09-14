@@ -190,6 +190,7 @@ export function IntelligenceProvider({ children }: { children: React.ReactNode }
   }, [uid]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Genuine requirement: Initial data fetch on mount
     refresh();
   }, [refresh]);
 

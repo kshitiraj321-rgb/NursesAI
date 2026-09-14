@@ -1,10 +1,8 @@
 import "../global.css";
-import React from "react";
-import { View, Text } from "react-native";
+import React, { useEffect, useState } from "react";
 import { Stack, useRouter, useSegments } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
 import { auth } from "../firebase";
 import { IntelligenceProvider } from "../context/IntelligenceContext";
 import { AuthProvider } from "../context/AuthContext";
@@ -56,7 +54,7 @@ export default function RootLayout() {
       // Hide splash screen when init is finished and fonts are loaded
       SplashScreen.hideAsync();
     }
-  }, [user, initializing, segments, fontsLoaded]);
+  }, [user, initializing, segments, fontsLoaded, router]);
 
   if (!fontsLoaded) {
     return null;

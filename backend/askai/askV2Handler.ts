@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import { processCitations } from "./validation.ts";
 import { hasAuthorizedClinicalEvidence } from "./mockRetrieval.ts";
-import type { ResponseEnvelope, CompletionState, CitationProposal, RetrievalResult } from "./contracts.ts";
+import type { ResponseEnvelope, CompletionState, RetrievalResult } from "./contracts.ts";
 
 function calculateTokenBudget(mode: string, contextSizeTokens: number): number {
   const safetyBuffer = 150;
@@ -165,7 +165,7 @@ Rule: Do not invent missing sections. No unsupported facts. If verified retrieva
         parsed.citations = [];
         completionStatus = "MALFORMED_JSON";
       }
-    } catch (e) {
+    } catch {
       completionStatus = "MALFORMED_JSON";
       return res.json({
         answer: "Failed to parse generated JSON.",

@@ -1,0 +1,312 @@
+
+C:\Users\kshit\NursesAI\__tests__\recommendation.test.ts
+  7:1   warning  Import in body of module; reorder to top          import/first
+  8:1   warning  Import in body of module; reorder to top          import/first
+  8:15  warning  'ConceptMasteryRecord' is defined but never used  @typescript-eslint/no-unused-vars
+  8:37  warning  'MistakeRecord' is defined but never used         @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\app\(tabs)\askai.tsx
+   13:10  warning  'SafeAreaView' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  339:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kshit\NursesAI\app\(tabs)\askai.tsx:339:7
+  337 |   useEffect(() => {
+  338 |     if (prompt && typeof prompt === "string") {
+> 339 |       setQuestion(prompt);
+      |       ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  340 |       setTimeout(() => {
+  341 |         askAIWithPrompt(prompt);
+  342 |       }, 300);  react-hooks/set-state-in-effect
+  344:6   warning  React Hook useEffect has a missing dependency: 'askAIWithPrompt'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/exhaustive-deps
+  384:5   warning  React Hook useCallback has a missing dependency: 'handleFeedback'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/exhaustive-deps
+
+C:\Users\kshit\NursesAI\app\(tabs)\index.tsx
+  67:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kshit\NursesAI\app\(tabs)\index.tsx:67:9
+  65 |       );
+  66 |       if (mostRecent[0]) {
+> 67 |         setComebackTopic(mostRecent[0]);
+     |         ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  68 |         setShowComeback(true);
+  69 |       }
+  70 |     }  react-hooks/set-state-in-effect
+
+C:\Users\kshit\NursesAI\app\(tabs)\learn.tsx
+  156:42  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  156:56  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\kshit\NursesAI\app\(tabs)\progress.tsx
+  12:9  warning  'insets' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\app\_layout.tsx
+   2:19  warning  'C:\Users\kshit\NursesAI\node_modules\react\index.js' imported multiple times                              import/no-duplicates
+   3:10  warning  'View' is defined but never used                                                                           @typescript-eslint/no-unused-vars
+   3:16  warning  'Text' is defined but never used                                                                           @typescript-eslint/no-unused-vars
+   7:37  warning  'C:\Users\kshit\NursesAI\node_modules\react\index.js' imported multiple times                              import/no-duplicates
+  59:6   warning  React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\kshit\NursesAI\app\dailytopics.tsx
+    7:3   warning  'ActivityIndicator' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+   21:7   warning  'logDebug' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  173:16  warning  'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+  180:61  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kshit\NursesAI\app\dailytopics.tsx:180:61
+  178 |     };
+  179 |
+> 180 |     if (passedTopic) loadTopic(passedTopic as string); else fetchTopic();
+      |                                                             ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  181 |   }, [passedTopic]);
+  182 |
+  183 |   const onQuizComplete = async (score: number) => {  react-hooks/set-state-in-effect
+  181:6   warning  React Hook useEffect has a missing dependency: 'fetchTopic'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      react-hooks/exhaustive-deps
+
+C:\Users\kshit\NursesAI\app\mistake-detail.tsx
+  2:22  warning  'ScrollView' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\app\notes.tsx
+  46:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kshit\NursesAI\app\notes.tsx:46:9
+  44 |       );
+  45 |       if (topicData) {
+> 46 |         setNotes(topicData.notes as Note[]);
+     |         ^^^^^^^^ Avoid calling setState() directly within an effect
+  47 |       }
+  48 |     }
+  49 |   }, [topic, subject]);  react-hooks/set-state-in-effect
+
+C:\Users\kshit\NursesAI\app\practice-session.tsx
+  58:43  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  59:45  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  60:35  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  61:37  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  62:29  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  63:47  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  64:59  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  65:55  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  66:61  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?         react-hooks/rules-of-hooks
+  69:21  error  React Hook "useRef" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?           react-hooks/rules-of-hooks
+  71:24  error  React Hook "useRef" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?           react-hooks/rules-of-hooks
+  73:32  error  React Hook "useRef" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?           react-hooks/rules-of-hooks
+  76:3   error  React Hook "React.useEffect" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?  react-hooks/rules-of-hooks
+
+C:\Users\kshit\NursesAI\app\quiz.tsx
+  86:7  error    Error: Cannot access variable before it is declared
+
+`handleStartQuiz` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\kshit\NursesAI\app\quiz.tsx:86:7
+  84 |     if (typeParam === "pyq" && pyqLoaded && !pyqProcessed.current) {
+  85 |       pyqProcessed.current = true;
+> 86 |       handleStartQuiz();
+     |       ^^^^^^^^^^^^^^^ `handleStartQuiz` accessed before it is declared
+  87 |     }
+  88 |   }, [pyqLoaded]);
+  89 |
+
+C:\Users\kshit\NursesAI\app\quiz.tsx:99:3
+   97 |   }, [typeParam, pyqRecords, modeParam, weakestTopic, topicParam]);
+   98 |
+>  99 |   const handleStartQuiz = async () => {
+      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 100 |     setHasStarted(true);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 101 |     setQuizError(false);
+      ÔÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 180 |     }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 181 |   };
+      | ^^^^^ `handleStartQuiz` is declared here
+  182 |
+  183 |   const saveResult = async (finalScore: number, weakTopics: Record<string, number> = {}, strongTopics: Record<string, number> = {}, mistakes: QuizQuestion[] = [], clearedMistakes: QuizQuestion[] = []) => {
+  184 |     try {  react-hooks/immutability
+  88:6  warning  React Hook useEffect has missing dependencies: 'handleStartQuiz' and 'typeParam'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/exhaustive-deps
+
+C:\Users\kshit\NursesAI\app\toolbox\avpu.tsx
+  6:10  warning  'SectionHeader' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\app\toolbox\iv-drip-rate.tsx
+  2:33  warning  'ScrollView' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\app\toolbox\pain-scales.tsx
+  29:67   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  29:75   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  29:85   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  29:107  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  39:74   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\kshit\NursesAI\app\topicDetail.tsx
+  14:1  warning  Import in body of module; reorder to top                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          import/first
+  28:5  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kshit\NursesAI\app\topicDetail.tsx:28:5
+  26 |
+  27 |     const key = `${parsedTopic.subjectName || ""}|${(parsedTopic.name || "").toLowerCase()}`;
+> 28 |     setNoteCount((notesIndex as Record<string, number>)[key] || 0);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  29 |   }, [parsedTopic.name, parsedTopic.subjectName]);
+  30 |
+  31 |   const pyqCount = useMemo(() => {  react-hooks/set-state-in-effect
+
+C:\Users\kshit\NursesAI\backend\askai\askV2Handler.ts
+    4:50  warning  'CitationProposal' is defined but never used  @typescript-eslint/no-unused-vars
+  168:14  warning  'e' is defined but never used                 @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\backend\server.js
+  187:1  warning  Import in body of module; reorder to top  import/first
+
+C:\Users\kshit\NursesAI\components\AskAI\ChatInput.tsx
+  2:45  warning  'View' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\components\Home\ProgressCard.tsx
+  20:63  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\kshit\NursesAI\components\Home\QuickActions.tsx
+  14:38  warning  Unexpected empty object pattern  no-empty-pattern
+
+C:\Users\kshit\NursesAI\components\Shared\QuizView.tsx
+  90:17  warning  'isCorrect' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  91:17  warning  'isPyq' is assigned a value but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\components\ui\AnimatedPressable.tsx
+  42:7  error  Error: This value cannot be modified
+
+This modifies a variable that React considers immutable.
+
+C:\Users\kshit\NursesAI\components\ui\AnimatedPressable.tsx:42:7
+  40 |   const handlePressIn = (e: any) => {
+  41 |     if (!disabled) {
+> 42 |       scale.value = withTiming(activeScale, {
+     |       ^^^^^ `scale` cannot be modified
+  43 |         duration: motion.microPress.duration,
+  44 |       });
+  45 |     }  react-hooks/immutability
+  51:7  error  Error: This value cannot be modified
+
+This modifies a variable that React considers immutable.
+
+C:\Users\kshit\NursesAI\components\ui\AnimatedPressable.tsx:51:7
+  49 |   const handlePressOut = (e: any) => {
+  50 |     if (!disabled) {
+> 51 |       scale.value = withSpring(1, {
+     |       ^^^^^ `scale` cannot be modified
+  52 |         damping: 15,
+  53 |         stiffness: 300,
+  54 |       });                  react-hooks/immutability
+
+C:\Users\kshit\NursesAI\components\ui\icon-symbol.tsx
+  4:24  warning  'SymbolViewProps' is defined but never used  @typescript-eslint/no-unused-vars
+  5:10  warning  'ComponentProps' is defined but never used   @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\context\AuthContext.tsx
+  20:1  warning  Import in body of module; reorder to top  import/first
+
+C:\Users\kshit\NursesAI\context\IntelligenceContext.tsx
+  193:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kshit\NursesAI\context\IntelligenceContext.tsx:193:5
+  191 |
+  192 |   useEffect(() => {
+> 193 |     refresh();
+      |     ^^^^^^^ Avoid calling setState() directly within an effect
+  194 |   }, [refresh]);
+  195 |
+  196 |   const value = useMemo(  react-hooks/set-state-in-effect
+
+C:\Users\kshit\NursesAI\data\pyq\repository.ts
+  92:7  warning  'normalizeText' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\firebase.ts
+  2:47  warning  'C:\Users\kshit\NursesAI\node_modules\firebase\auth\dist\esm\index.esm.js' imported multiple times  import/no-duplicates
+  4:43  warning  'C:\Users\kshit\NursesAI\node_modules\firebase\auth\dist\esm\index.esm.js' imported multiple times  import/no-duplicates
+
+C:\Users\kshit\NursesAI\generate_manual.js
+  18:36  error  '__dirname' is not defined  no-undef
+
+C:\Users\kshit\NursesAI\hooks\use-color-scheme.web.ts
+  11:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kshit\NursesAI\hooks\use-color-scheme.web.ts:11:5
+   9 |
+  10 |   useEffect(() => {
+> 11 |     setHasHydrated(true);
+     |     ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  12 |   }, []);
+  13 |
+  14 |   const colorScheme = useRNColorScheme();  react-hooks/set-state-in-effect
+
+C:\Users\kshit\NursesAI\scratch\rebuild_notes.js
+  4:28  error  '__dirname' is not defined  no-undef
+
+C:\Users\kshit\NursesAI\scratch\remove_copyright.js
+  4:28  error  '__dirname' is not defined  no-undef
+
+C:\Users\kshit\NursesAI\scripts\build-notes-index.js
+  4:29  error  '__dirname' is not defined  no-undef
+  5:29  error  '__dirname' is not defined  no-undef
+
+C:\Users\kshit\NursesAI\scripts\harvest-knowledge.ts
+  194:9  warning  'subjId' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\scripts\report-safe-pyqs.js
+  4:29  error  '__dirname' is not defined  no-undef
+  5:34  error  '__dirname' is not defined  no-undef
+  6:32  error  '__dirname' is not defined  no-undef
+
+C:\Users\kshit\NursesAI\scripts\review-test.ts
+  3:15  warning  'ConceptMasteryRecord' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kshit\NursesAI\scripts\sanitize-pyq-chunks.js
+  4:29  error    '__dirname' is not defined                         no-undef
+  5:7   warning  'manifestPath' is assigned a value but never used  no-unused-vars
+  5:32  error    '__dirname' is not defined                         no-undef
+  6:30  error    '__dirname' is not defined                         no-undef
+
+Ô£û 80 problems (42 errors, 38 warnings)
+  0 errors and 6 warnings potentially fixable with the `--fix` option.
+

@@ -1,7 +1,7 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useEffect, useState } from "react";
+import React from "react";
 import quickLearnNotes from "../data/quickLearnNotes.json";
 
 interface Note {
@@ -28,12 +28,10 @@ export default function NotesScreen() {
   const { topic, subject } = useLocalSearchParams();
   const router = useRouter();
 
-  const [notes, setNotes] = useState<Note[]>([]);
+  const passedSubject = (subject as string) || "";
+  const passedTopic = (topic as string) || "";
 
-  useEffect(() => {
-    const passedSubject = (subject as string) || "";
-    const passedTopic = (topic as string) || "";
-
+  const notes = React.useMemo(() => {
     const subjectData = quickLearnNotes.subjects.find(
       (s) => s.subject.toLowerCase() === passedSubject.toLowerCase()
     );
@@ -43,10 +41,11 @@ export default function NotesScreen() {
         (t) => t.topic.toLowerCase() === passedTopic.toLowerCase()
       );
       if (topicData) {
-        setNotes(topicData.notes as Note[]);
+        return topicData.notes as Note[];
       }
     }
-  }, [topic, subject]);
+    return [];
+  }, [passedSubject, passedTopic]);
 
   return (
     <SafeAreaView className="flex-1 bg-black">

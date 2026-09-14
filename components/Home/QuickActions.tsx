@@ -11,7 +11,7 @@ interface Props {
   delay?: number;
 }
 
-export default function QuickActions({}: Props) {
+export default function QuickActions(_props: Props) {
   const router = useRouter();
 
   const handleNavigate = (route: string) => {

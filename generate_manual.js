@@ -1,3 +1,4 @@
+/* global __dirname */
 const { mdToPdf } = require('md-to-pdf');
 const fs = require('fs');
 const path = require('path');

@@ -2,9 +2,8 @@
 import axios from "axios";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { doc, getDoc, setDoc } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
-  ActivityIndicator,
   Animated,
   ScrollView,
   Text,
@@ -18,7 +17,6 @@ import { auth, db } from "../firebase";
 import StreakPopup from "../components/DailyTopics/StreakPopup";
 import QuizView from "../components/Shared/QuizView";
 
-const logDebug = (label: string, data?: unknown) => { console.log(`🧠 [${label}]`, data || ""); };
 const logError = (label: string, error: unknown) => { console.log(`❌ [${label}]`, error); };
 const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://nursesai.onrender.com";
 
@@ -48,7 +46,7 @@ export default function DailyTopics() {
   const [step, setStep] = useState(1);
   const [unlockedStep, setUnlockedStep] = useState(1);
 
-  const fetchTopic = async () => {
+  const fetchTopic = useCallback(async () => {
     setLoading(true);
     try {
       const token = await auth.currentUser?.getIdToken();
@@ -67,7 +65,7 @@ export default function DailyTopics() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [topic]);
 
   const generateQuiz = async () => {
     setQuizLoading(true);
@@ -170,15 +168,21 @@ export default function DailyTopics() {
         const formatted = res.data.answer.replace(/\*\*/g, "").replace(/\n{2,}/g, "\n\n").replace(/- /g, "\n- ").trim();
         setContent(formatted);
         setUnlockedStep(2);
-      } catch (error) {
+      } catch (err) {
+        console.log(err);
         setContent("Our AI service is experiencing high demand. Please try reloading the topic!");
       } finally {
         setLoading(false);
       }
     };
 
-    if (passedTopic) loadTopic(passedTopic as string); else fetchTopic();
-  }, [passedTopic]);
+    if (passedTopic) {
+      loadTopic(passedTopic as string);
+    } else {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      fetchTopic();
+    }
+  }, [passedTopic, fetchTopic]);
 
   const onQuizComplete = async (score: number) => {
     setFinalScore(score);

@@ -8,6 +8,7 @@ export function useColorScheme() {
   const [hasHydrated, setHasHydrated] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Genuine requirement: Hydration state must be updated post-mount
     setHasHydrated(true);
   }, []);
 

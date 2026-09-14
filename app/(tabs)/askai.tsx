@@ -10,7 +10,6 @@ import {
 } from "firebase/firestore";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { FlatList, KeyboardAvoidingView, Platform, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { auth, db } from "../../firebase";
 
 import AskAIHeader from "../../components/AskAI/AskAIHeader";
@@ -45,7 +44,7 @@ export default function AskAI() {
     return `\nUse these PYQ references if relevant:\n${lines.join("\n")}`;
   };
 
-  const handleFeedback = async (messageId: string, type: string) => {
+  const handleFeedback = useCallback(async (messageId: string, type: string) => {
     try {
       const user = auth.currentUser;
       if (!user) return;
@@ -70,7 +69,7 @@ export default function AskAI() {
     } catch (error) {
       console.log("❌ Feedback error:", error);
     }
-  };
+  }, [feedbackMap]);
 
   const askAI = async () => {
     if (!question.trim()) return;
@@ -191,7 +190,7 @@ export default function AskAI() {
     }
   };
 
-  const askAIWithPrompt = async (customPrompt: string) => {
+  const askAIWithPrompt = useCallback(async (customPrompt: string) => {
     if (!customPrompt.trim()) return;
 
     const user = auth.currentUser;
@@ -309,7 +308,7 @@ export default function AskAI() {
       setIsTyping(false);
       setLoading(false);
     }
-  };
+  }, [messages, selectedMode]);
 
   useEffect(() => {
     const user = auth.currentUser;
@@ -334,14 +333,16 @@ export default function AskAI() {
     }, 100);
   }, [messages]);
 
+  const processedPrompt = useRef("");
   useEffect(() => {
-    if (prompt && typeof prompt === "string") {
-      setQuestion(prompt);
+    if (prompt && typeof prompt === "string" && prompt !== processedPrompt.current) {
+      processedPrompt.current = prompt;
       setTimeout(() => {
+        setQuestion(prompt);
         askAIWithPrompt(prompt);
       }, 300);
     }
-  }, [prompt]);
+  }, [prompt, askAIWithPrompt]);
 
   const formatTime = (timestamp: any) => {
     if (!timestamp) return "";
@@ -381,7 +382,7 @@ export default function AskAI() {
         />
       );
     },
-    [filteredMessages, feedbackMap]
+    [filteredMessages, feedbackMap, handleFeedback]
   );
 
   const loadingText = selectedMode === "summary" 

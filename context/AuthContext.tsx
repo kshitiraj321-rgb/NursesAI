@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { User, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase";
 import { View, ActivityIndicator } from "react-native";
+import { practiceRepository } from "../data/practice/repository";
 
 interface AuthContextType {
   user: User | null;
@@ -17,7 +18,6 @@ const AuthContext = createContext<AuthContextType>({
 
 export const useAuth = () => useContext(AuthContext);
 
-import { practiceRepository } from "../data/practice/repository";
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);

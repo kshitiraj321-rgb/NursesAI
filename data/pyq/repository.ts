@@ -89,8 +89,7 @@ export const searchPyq = async (query: string): Promise<PyqRecord[]> => {
 
 export const getManifest = readManifest;
 
-const normalizeText = (value: string): string =>
-  value.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+
 
 export const mapRecordToCategory = (record: PyqRecord): string => {
   const cat = (record.subCategory || "").trim().toLowerCase();

@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import express from "express";
 import OpenAI from "openai";
 import admin from "firebase-admin";
+import { createAskV2Route } from "./askai/askV2Handler.ts";
 
 dotenv.config();
 
@@ -184,7 +185,6 @@ Rules:
     res.status(500).json({ error: err.message });
   }
 });
-import { createAskV2Route } from "./askai/askV2Handler.ts";
 
 app.post("/ask-v2", verifyToken, createAskV2Route(openai));
 

@@ -3,7 +3,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { getAuth } from "firebase/auth";
 import { collection, doc, increment, serverTimestamp, setDoc, getDoc, writeBatch, query, where, getDocs, limit } from "firebase/firestore";
 import { generateMistakeId } from "../utils/hash";
-import { useEffect, useState, useRef, useMemo } from "react";
+import { useCallback, useEffect, useState, useRef, useMemo } from "react";
 import { ActivityIndicator, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
@@ -79,24 +79,7 @@ export default function QuizScreen() {
     loadPyq();
   }, [typeParam]);
 
-  const pyqProcessed = useRef(false);
-  useEffect(() => {
-    if (typeParam === "pyq" && pyqLoaded && !pyqProcessed.current) {
-      pyqProcessed.current = true;
-      handleStartQuiz();
-    }
-  }, [pyqLoaded]);
-
-  const fallbackTopic = useMemo(() => (parsedTopic.name || topicParam).trim(), [parsedTopic.name, topicParam]);
-
-  const topicPyqCount = useMemo(() => {
-    if (typeParam !== "pyq" || pyqRecords.length === 0) return 0;
-    const source = pyqRecords.filter(isQuizReadyPyq);
-    const tokenRaw = modeParam === "revision" && weakestTopic ? weakestTopic : topicParam;
-    return getQuestionsForTopic(source, tokenRaw).length;
-  }, [typeParam, pyqRecords, modeParam, weakestTopic, topicParam]);
-
-  const handleStartQuiz = async () => {
+  const handleStartQuiz = useCallback(async () => {
     setHasStarted(true);
     setQuizError(false);
 
@@ -178,7 +161,26 @@ export default function QuizScreen() {
     } finally {
       finishLoading();
     }
-  };
+  }, [parsedTopic.name, pyqRecords, modeParam, weakestTopic, topicParam, typeParam, safeTopicId]);
+
+  const pyqProcessed = useRef(false);
+  useEffect(() => {
+    if (typeParam === "pyq" && pyqLoaded && !pyqProcessed.current) {
+      pyqProcessed.current = true;
+      handleStartQuiz();
+    }
+  }, [typeParam, pyqLoaded, handleStartQuiz]);
+
+  const fallbackTopic = useMemo(() => (parsedTopic.name || topicParam).trim(), [parsedTopic.name, topicParam]);
+
+  const topicPyqCount = useMemo(() => {
+    if (typeParam !== "pyq" || pyqRecords.length === 0) return 0;
+    const source = pyqRecords.filter(isQuizReadyPyq);
+    const tokenRaw = modeParam === "revision" && weakestTopic ? weakestTopic : topicParam;
+    return getQuestionsForTopic(source, tokenRaw).length;
+  }, [typeParam, pyqRecords, modeParam, weakestTopic, topicParam]);
+
+
 
   const saveResult = async (finalScore: number, weakTopics: Record<string, number> = {}, strongTopics: Record<string, number> = {}, mistakes: QuizQuestion[] = [], clearedMistakes: QuizQuestion[] = []) => {
     try {

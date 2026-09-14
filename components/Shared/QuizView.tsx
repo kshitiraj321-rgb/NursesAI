@@ -87,8 +87,6 @@ export default function QuizView({ questions, loading, onExit, onComplete, type 
 
         {questions[current].options.map((opt, i) => {
           const isSelected = selected === opt;
-          const isCorrect = selected === questions[current].answer;
-          const isPyq = type === "pyq";
           const isCorrectOption = opt === questions[current].answer;
 
           let optionStyle = styles.optionButtonDefault;

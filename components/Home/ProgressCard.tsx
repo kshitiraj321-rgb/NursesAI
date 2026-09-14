@@ -17,7 +17,7 @@ export default function ProgressCard({ todayProgress, dailyGoal, streak }: Props
   return (
     <GlassCard variant="default" className="mb-6 p-5">
       <View className="flex-row items-center justify-between mb-2">
-        <Text className="text-white text-base font-bold">Today's Study Goal</Text>
+        <Text className="text-white text-base font-bold">Today&apos;s Study Goal</Text>
         <Text className="text-slate-400 text-xs font-semibold">
           {todayProgress} / {dailyGoal} questions
         </Text>
