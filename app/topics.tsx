@@ -1,15 +1,20 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { knowledgeRepository } from "../data/knowledge/repository";
 import {
   AppScreen,
   AppHeader,
-  GlassCard,
   SectionHeader,
   Pill,
 } from "../components/ui";
 
+/**
+ * Topics Screen — SLICE 2 Redesign
+ *
+ * Presents clinical topics for a given subject as clean, scannable rows.
+ * Shows genuinely available metadata: topic name, concept count, definition preview.
+ */
 export default function TopicsScreen() {
   const { subjectId, subjectName } = useLocalSearchParams<{
     subjectId?: string;
@@ -28,63 +33,74 @@ export default function TopicsScreen() {
   const topics = subject ? knowledgeRepository.getTopicsForSubject(subject.id) : [];
 
   const handleSelectTopic = (topicId: string) => {
-    router.push({
-      pathname: "/concepts",
-      params: { topicId },
-    });
+    router.push({ pathname: "/concepts", params: { topicId } });
   };
 
   return (
     <AppScreen scrollable edges={["top"]}>
-      {/* Header with Back Button */}
       <AppHeader
         title={subject ? subject.displayName : subjectName || "Topics"}
-        subtitle={subject ? subject.description : "Clinical topic index"}
+        subtitle={subject?.description || "Clinical topic index"}
         showBack
         backText="Subjects"
       />
 
-      {/* Topics List Section */}
       <View className="mb-6">
         <SectionHeader
-          title={`Clinical Topics (${topics.length})`}
-          subtitle="Select a topic to open concepts and learning suite"
+          title={`Topics (${topics.length})`}
+          subtitle="Select a topic to open its concepts"
         />
 
-        {topics.map((t) => {
+        {/* Topic rows — grouped list style */}
+        {topics.map((t, index) => {
           const conceptCount = knowledgeRepository.getConceptsForTopic(t.id).length;
+          const isFirst = index === 0;
+          const isLast = index === topics.length - 1;
+          const definition = t.quickRevision?.definition;
+
           return (
-            <GlassCard
+            <TouchableOpacity
               key={t.id}
-              variant="default"
               onPress={() => handleSelectTopic(t.id)}
+              activeOpacity={0.7}
+              accessibilityRole="button"
+              accessibilityLabel={`Open topic: ${t.displayName || t.name}`}
+              className={`bg-surface dark:bg-slate-800 px-4 py-3.5 min-h-[60px] flex-row items-center
+                border-x border-t border-border-subtle dark:border-slate-700
+                ${isFirst ? "rounded-t-xl" : ""}
+                ${isLast ? "rounded-b-xl border-b" : ""}
+              `}
             >
-              <View className="flex-row items-center justify-between mb-1.5">
-                <Text className="text-white font-bold text-base flex-1 mr-2">
+              {/* Text content */}
+              <View className="flex-1 mr-3">
+                <Text className="text-navy dark:text-white font-semibold text-sm leading-snug">
                   {t.displayName || t.name}
                 </Text>
+                {definition ? (
+                  <Text
+                    className="text-slate-500 dark:text-slate-400 text-xs leading-4 mt-0.5"
+                    numberOfLines={1}
+                  >
+                    {definition}
+                  </Text>
+                ) : null}
+              </View>
+
+              {/* Right side: count + verification + chevron */}
+              <View className="flex-row items-center gap-2">
+                <Text className="text-muted dark:text-slate-500 text-xs">
+                  {conceptCount}
+                </Text>
                 <Pill label={t.meta.verificationStatus} variant="trust" size="sm" />
+                <Text className="text-muted dark:text-slate-500 text-base ml-1">›</Text>
               </View>
-
-              <Text className="text-slate-300 text-xs leading-5 mb-3">
-                {t.quickRevision?.definition || "Explore high-yield clinical concepts."}
-              </Text>
-
-              <View className="flex-row items-center justify-between pt-2 border-t border-slate-800/80">
-                <Text className="text-cyan-400 text-xs font-semibold">
-                  Open {conceptCount} Concept Modules →
-                </Text>
-                <Text className="text-slate-500 text-[11px] font-bold uppercase tracking-wider">
-                  3 Learning Modes
-                </Text>
-              </View>
-            </GlassCard>
+            </TouchableOpacity>
           );
         })}
 
         {topics.length === 0 && (
-          <View className="bg-slate-900/60 p-6 rounded-2xl border border-slate-800/80 items-center">
-            <Text className="text-slate-400 text-xs text-center">
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-xl p-6 items-center">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
               No clinical topics found for this subject.
             </Text>
           </View>

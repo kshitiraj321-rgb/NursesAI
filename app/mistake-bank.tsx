@@ -6,7 +6,6 @@ import { useAuth } from "../context/AuthContext";
 import { MistakeListItem } from "../components/practice/MistakeListItem";
 import { AppScreen } from "../components/ui/AppScreen";
 import { AppHeader } from "../components/ui/AppHeader";
-import { GlassCard } from "../components/ui/GlassCard";
 import { Pill } from "../components/ui/Pill";
 
 export default function MistakeBankScreen() {
@@ -32,24 +31,18 @@ export default function MistakeBankScreen() {
       {/* Back & Title Header */}
       <AppHeader
         title="Mistake Bank"
-        subtitle="Weak concepts that need another retrieval attempt"
+        subtitle="Focus on what you get wrong."
         showBack
         backText="Practice"
         onBack={() => router.replace("/(tabs)/practice" as any)}
       />
 
-      {/* Active Weaknesses Banner Card */}
-      <GlassCard
-        variant={activeMistakes.length > 0 ? "accent" : "default"}
-        className="mb-6 p-4"
-      >
-        <View className="flex-row items-center justify-between mb-3">
-          <View className="flex-row items-center space-x-2">
-            <Text className="text-xl">🚨</Text>
-            <Text className="text-white font-bold text-base">
-              ACTIVE WEAKNESSES
-            </Text>
-          </View>
+      {/* Active Weaknesses Header Card */}
+      <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 mb-6 shadow-sm">
+        <View className="flex-row items-center justify-between mb-2">
+          <Text className="text-navy dark:text-white font-bold text-base">
+            Active Weaknesses
+          </Text>
           <Pill
             label={activeCountStr}
             variant={activeMistakes.length > 0 ? "error" : "success"}
@@ -57,62 +50,58 @@ export default function MistakeBankScreen() {
           />
         </View>
 
-        <Text className="text-slate-300 text-xs leading-5 mb-4">
-          Concepts where retrieval errors occurred. Resolve each concept with{" "}
-          <Text className="font-bold text-amber-300">
-            2 consecutive correct retrieval attempts
-          </Text>
-          .
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 mb-5">
+          Concepts where retrieval errors occurred. Resolve each concept with 2 consecutive correct retrieval attempts.
         </Text>
 
-        <View className="flex-row items-center justify-between bg-slate-950/70 p-3 rounded-xl border border-slate-800">
-          <View className="items-center flex-1 border-r border-slate-800">
-            <Text className="text-rose-400 font-extrabold text-xl">
+        <View className="flex-row items-center justify-between">
+          <View className="items-center flex-1 border-r border-border-subtle dark:border-slate-800">
+            <Text className="text-navy dark:text-white font-bold text-2xl">
               {activeMistakes.length}
             </Text>
-            <Text className="text-slate-400 text-[10px] uppercase font-semibold mt-0.5">
-              Active Weaknesses
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-semibold mt-1">
+              Active
             </Text>
           </View>
 
           <View className="items-center flex-1">
-            <Text className="text-emerald-400 font-extrabold text-xl">
+            <Text className="text-navy dark:text-white font-bold text-2xl">
               {resolvedCount}
             </Text>
-            <Text className="text-slate-400 text-[10px] uppercase font-semibold mt-0.5">
-              Resolved Concepts
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-semibold mt-1">
+              Resolved
             </Text>
           </View>
         </View>
-      </GlassCard>
+      </View>
 
       {/* Section Title */}
-      <Text className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-3 px-1">
-        Your Weak Concepts ({activeMistakes.length})
+      <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+        Your Weak Concepts
       </Text>
 
-      {/* Active Mistakes List */}
-      {activeMistakes.map((m) => (
-        <MistakeListItem
-          key={m.id}
-          mistake={m}
-          onPressViewDetail={() => handleViewMistakeDetail(m.conceptId)}
-        />
-      ))}
+      {/* Active Mistakes Grouped List */}
+      <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden mb-6">
+        {activeMistakes.map((m, index) => (
+          <MistakeListItem
+            key={m.id}
+            mistake={m}
+            onPressViewDetail={() => handleViewMistakeDetail(m.conceptId)}
+          />
+        ))}
 
-      {/* Empty State when zero active mistakes */}
-      {activeMistakes.length === 0 && (
-        <GlassCard variant="default" className="p-6 items-center">
-          <Text className="text-3xl mb-2">🎉</Text>
-          <Text className="text-emerald-400 font-bold text-lg mb-1 text-center">
-            No Active Weaknesses!
-          </Text>
-          <Text className="text-slate-400 text-xs text-center leading-5 max-w-xs">
-            Great job! All weak concepts have been resolved through 2 consecutive correct retrieval sessions.
-          </Text>
-        </GlassCard>
-      )}
+        {/* Empty State when zero active mistakes */}
+        {activeMistakes.length === 0 && (
+          <View className="p-8 items-center">
+            <Text className="text-navy dark:text-white font-bold text-lg mb-2 text-center">
+              No Active Weaknesses
+            </Text>
+            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center leading-5 max-w-xs">
+              Great job! All weak concepts have been resolved through successful retrieval sessions.
+            </Text>
+          </View>
+        )}
+      </View>
     </AppScreen>
   );
 }
-

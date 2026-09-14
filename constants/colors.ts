@@ -1,33 +1,95 @@
 /**
  * NurseAI Design System — Color Palette
  *
- * Light mode default with low-strain dark mode, enforcing semantic roles.
+ * Semantic token source of truth for the entire application.
+ *
+ * USAGE RULES:
+ * - Import from this file for any inline style={} usage.
+ * - Prefer NativeWind semantic utility classes (defined in tailwind.config.js)
+ *   over raw hex values in className strings.
+ * - Light mode is the default (base). Dark mode is supported via dark: modifiers.
+ * - Do NOT scatter raw hex literals throughout application code.
+ *
+ * TOKEN HIERARCHY:
+ *   colors.light.*  — light theme semantic roles
+ *   colors.dark.*   — dark theme semantic roles
+ *   colors.brand.*  — brand accent palette (use sparingly)
+ *   colors.semantic.* — status/feedback colors
+ *
+ * DEPRECATED (kept for legacy consumer compatibility — do not use in new code):
+ *   colors.bg.*
+ *   colors.text.*
+ *   colors.border.*
  */
 
 export const colors = {
+  // ─── Light Theme Semantic Tokens ──────────────────────────────────────────
   light: {
-    bg: "#F8FAFC",
+    /** Page/screen background — warm off-white */
+    bg: "#F7F8FA",
+    /** Card/surface background — pure white */
     surface: "#FFFFFF",
-    textPrimary: "#0F172A",
+    /** Primary text — deep navy, high contrast */
+    textPrimary: "#0E1E3A",
+    /** Secondary text — muted slate, readable */
     textSecondary: "#475569",
-    border: "#E2E8F0",
+    /** Tertiary/muted text — for captions, metadata */
+    textMuted: "#94A3B8",
+    /** Subtle divider and card border */
+    border: "#E5E9F0",
+    /** Interactive element border (focus/hover) */
+    borderInteractive: "#BFDBFE",
   },
+
+  // ─── Dark Theme Semantic Tokens ────────────────────────────────────────────
   dark: {
+    /** Page/screen background */
     bg: "#0F172A",
+    /** Card/surface background */
     surface: "#1E293B",
+    /** Primary text */
     textPrimary: "#F8FAFC",
+    /** Secondary text */
     textSecondary: "#94A3B8",
+    /** Tertiary/muted text */
+    textMuted: "#64748B",
+    /** Subtle divider and card border */
     border: "#334155",
+    /** Interactive element border */
+    borderInteractive: "#1D4ED8",
   },
+
+  // ─── Brand Palette ─────────────────────────────────────────────────────────
   brand: {
-    primary: "#4F46E5",
-    secondary: "#64748B",
-    success: "#10B981",
-    danger: "#F43F5E",
-    warning: "#F59E0B",
-    interactive: "#0EA5E9",
+    /** Primary action — professional blue */
+    primary: "#2563EB",
+    /** Primary action hover/pressed */
+    primaryPressed: "#1D4ED8",
+    /** Secondary accent — muted teal (use more sparingly than primary) */
+    secondary: "#0D9488",
+    /** Secondary accent hover/pressed */
+    secondaryPressed: "#0F766E",
   },
-  // Preserving legacy contract structure to prevent breaking existing consumers not using NativeWind classes
+
+  // ─── Semantic / Status Colors ──────────────────────────────────────────────
+  semantic: {
+    success: "#10B981",
+    successBg: "#ECFDF5",
+    successBorder: "#A7F3D0",
+    warning: "#F59E0B",
+    warningBg: "#FFFBEB",
+    warningBorder: "#FDE68A",
+    error: "#EF4444",
+    errorBg: "#FEF2F2",
+    errorBorder: "#FECACA",
+    info: "#3B82F6",
+    infoBg: "#EFF6FF",
+    infoBorder: "#BFDBFE",
+  },
+
+  // ─── Legacy Namespaces (deprecated — for backward-compat only) ─────────────
+  // These exist solely to prevent breaking existing consumers.
+  // Do NOT use in new code. Use colors.light.* or colors.brand.* instead.
   bg: {
     base: "#0F172A",
     surface: "#1E293B",
@@ -43,9 +105,9 @@ export const colors = {
   },
   border: {
     subtle: "#334155",
-    active: "#4F46E5",
+    active: "#2563EB",
     success: "#10B981",
-    error: "#F43F5E",
+    error: "#EF4444",
     ai: "#0EA5E9",
   },
 };

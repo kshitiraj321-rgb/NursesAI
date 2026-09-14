@@ -7,11 +7,11 @@ import type { PracticeMode } from "../../data/types/practice";
 import {
   AppScreen,
   AppHeader,
-  GlassCard,
   SectionHeader,
   PrimaryButton,
   Pill,
 } from "../../components/ui";
+import { ModeCard } from "../../components/practice/ModeCard";
 
 interface ModeDefinition {
   mode: PracticeMode;
@@ -70,21 +70,22 @@ export default function PracticeScreen() {
 
   return (
     <AppScreen scrollable edges={["top"]}>
-      {/* Quiet Clinical Header */}
+      {/* Header */}
       <AppHeader
         title="Practice"
-        subtitle="Train recall. Find weak spots."
+        subtitle="Strengthen what you know. Fix what you miss."
         showHome
       />
+
       {/* Recommended Next Action */}
       <View className="mb-6">
-        <SectionHeader title="Intelligence" />
-        <GlassCard variant="default">
+        <SectionHeader title="Recommended Next" />
+        <View className="bg-clinical-blue dark:bg-sky-900 rounded-xl p-4 min-h-[44px]">
           <View className="flex-row items-center justify-between mb-2">
             <View className="flex-row items-center flex-1 mr-2" accessibilityRole="header">
               <Text className="text-xl mr-2">🧭</Text>
-              <Text className="text-white font-extrabold text-base flex-1">
-                Recommended Action
+              <Text className="text-white font-bold text-base flex-1">
+                Recommendation
               </Text>
             </View>
             {(() => {
@@ -101,8 +102,8 @@ export default function PracticeScreen() {
               return <Pill label="Ready" variant="success" size="sm" />;
             })()}
           </View>
-          
-          <Text className="text-slate-300 text-xs leading-5 mb-4">
+
+          <Text className="text-blue-100 text-xs leading-5 mb-4">
             {(() => {
               const rec = practiceRepository.getRecommendedNextAction(userId);
               if (rec.status === "UNAVAILABLE") return "Loading practice data...";
@@ -116,24 +117,24 @@ export default function PracticeScreen() {
             if (rec.status !== "AVAILABLE" || rec.action === "NONE") return null;
 
             let label = "";
-            let variant: "primary" | "rose" | "purple" | "emerald" = "primary";
+            let variant: "emerald" | "primary" | "rose" | "outline" | "white" = "white";
             let onPress = () => {};
 
             switch (rec.action) {
               case "REVIEW_MISTAKES":
                 label = "Review Mistakes →";
-                variant = "rose";
+                variant = "white";
                 onPress = handleOpenMistakeBank;
                 break;
               case "SPACED_REVIEW":
                 label = "Start Spaced Review →";
-                variant = "purple";
+                variant = "white";
                 onPress = () => router.push({ pathname: "/practice-session", params: { isReviewSession: "true" } });
                 break;
               case "PRACTICE":
                 label = "Start Practice →";
-                variant = "emerald";
-                onPress = () => handleLaunchMode("MCQ"); // default general practice
+                variant = "white";
+                onPress = () => handleLaunchMode("MCQ");
                 break;
             }
 
@@ -145,17 +146,17 @@ export default function PracticeScreen() {
               />
             );
           })()}
-        </GlassCard>
+        </View>
       </View>
 
       {/* Active Mistake Review Card */}
       <View className="mb-6">
         <SectionHeader title="Your Focus" />
-        <GlassCard variant={activeMistakes.length > 0 ? "accent" : "default"}>
+        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-xl p-4 min-h-[44px]">
           <View className="flex-row items-center justify-between mb-2">
             <View className="flex-row items-center flex-1 mr-2">
               <Text className="text-xl mr-2">🚨</Text>
-              <Text className="text-white font-extrabold text-base flex-1">
+              <Text className="text-navy dark:text-white font-bold text-base flex-1">
                 Active Mistake Review
               </Text>
             </View>
@@ -166,7 +167,7 @@ export default function PracticeScreen() {
             />
           </View>
 
-          <Text className="text-slate-300 text-xs leading-5 mb-4">
+          <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 mb-4">
             {activeMistakes.length > 0
               ? `${activeMistakes.length} concepts require 2 consecutive correct retrieval attempts to resolve.`
               : "All weak concepts resolved! Keep practicing to maintain retrieval strength."}
@@ -177,17 +178,17 @@ export default function PracticeScreen() {
             variant={activeMistakes.length > 0 ? "rose" : "primary"}
             onPress={handleOpenMistakeBank}
           />
-        </GlassCard>
+        </View>
       </View>
 
       {/* Spaced Review Card */}
       <View className="mb-6">
         <SectionHeader title="Retention" />
-        <GlassCard variant="default">
+        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-xl p-4 min-h-[44px]">
           <View className="flex-row items-center justify-between mb-2">
             <View className="flex-row items-center flex-1 mr-2" accessibilityRole="header">
               <Text className="text-xl mr-2">🧠</Text>
-              <Text className="text-white font-extrabold text-base flex-1">
+              <Text className="text-navy dark:text-white font-bold text-base flex-1">
                 Spaced Review
               </Text>
             </View>
@@ -196,7 +197,7 @@ export default function PracticeScreen() {
               if (hydration.status === "LOADING" || hydration.status === "UNHYDRATED") {
                 return (
                   <View className="flex-row items-center" accessibilityLabel="Loading spaced review status">
-                    <ActivityIndicator size="small" color="#818CF8" />
+                    <ActivityIndicator size="small" color="#2563EB" />
                   </View>
                 );
               }
@@ -205,13 +206,13 @@ export default function PracticeScreen() {
               }
               const dueCount = practiceRepository.getDueForReview(userId).length;
               if (dueCount === 0) {
-                return <Pill label="All caught up" variant="success" size="sm" />;
+                return <Pill label="No Review Due" variant="success" size="sm" />;
               }
               return <Pill label={`${dueCount} Due`} variant="info" size="sm" />;
             })()}
           </View>
 
-          <Text className="text-slate-300 text-xs leading-5 mb-4" accessibilityLabel="Review concepts due for retention practice">
+          <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 mb-4" accessibilityLabel="Review concepts due for retention practice">
             {(() => {
               const hydration = practiceRepository.getHydrationState(userId);
               if (hydration.status === "LOADING" || hydration.status === "UNHYDRATED") {
@@ -233,64 +234,44 @@ export default function PracticeScreen() {
             const dueCount = hydration.status === "HYDRATED" ? practiceRepository.getDueForReview(userId).length : 0;
             return (
               <PrimaryButton
-                label={dueCount > 0 ? "Start Review →" : "All Caught Up"}
-                variant={dueCount > 0 ? "purple" : "primary"}
+                label={dueCount > 0 ? "Start Review →" : "No Review Due"}
+                variant="primary"
                 onPress={() => router.push({ pathname: "/practice-session", params: { isReviewSession: "true" } })}
                 disabled={dueCount === 0 || hydration.status !== "HYDRATED"}
               />
             );
           })()}
-        </GlassCard>
+        </View>
       </View>
 
       {/* Global Progress Dashboard Entry */}
       <View className="mb-6">
-        <GlassCard variant="default" onPress={() => router.push("/progress")}>
-          <View className="flex-row items-center flex-1">
-            <Text className="text-3xl mr-3.5">📊</Text>
-            <View className="flex-1">
-              <View className="flex-row items-center justify-between mb-1">
-                <Text className="text-white font-bold text-base flex-1 mr-2">
-                  Global Progress
-                </Text>
-                <Pill label="Dashboard" variant="info" size="sm" />
-              </View>
-              <Text className="text-slate-400 text-xs leading-4">
-                View your mastery profile and overall practice performance.
-              </Text>
-            </View>
-          </View>
-        </GlassCard>
+        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-xl overflow-hidden">
+          <PrimaryButton 
+            label="📊 View Global Progress Dashboard →"
+            variant="outline"
+            onPress={() => router.push("/progress")}
+          />
+        </View>
       </View>
 
-      {/* Concept-Anchored Practice Modes */}
+      {/* Practice Modes */}
       <View className="mb-6">
         <SectionHeader
-          title="Your Retrieval Modes"
+          title="Practice Modes"
           subtitle="Concept-anchored active practice loops"
         />
 
         {PRACTICE_MODES.map((item) => (
-          <GlassCard
+          <ModeCard
             key={item.mode}
-            variant="default"
+            mode={item.mode}
+            title={item.title}
+            subtitle={item.subtitle}
+            icon={item.icon}
+            badge={item.badge}
             onPress={() => handleLaunchMode(item.mode)}
-          >
-            <View className="flex-row items-center flex-1">
-              <Text className="text-3xl mr-3.5">{item.icon}</Text>
-              <View className="flex-1">
-                <View className="flex-row items-center justify-between mb-1">
-                  <Text className="text-white font-bold text-base flex-1 mr-2">
-                    {item.title}
-                  </Text>
-                  <Pill label={item.badge} variant="info" size="sm" />
-                </View>
-                <Text className="text-slate-400 text-xs leading-4">
-                  {item.subtitle}
-                </Text>
-              </View>
-            </View>
-          </GlassCard>
+          />
         ))}
       </View>
     </AppScreen>

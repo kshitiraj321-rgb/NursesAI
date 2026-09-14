@@ -31,14 +31,12 @@ export default function PracticeSessionScreen() {
   // Query concept-anchored questions
   let sessionQuestions: PracticeQuestion[] = [];
   if (isReviewSession === "true" && userId) {
-    // Spaced Review: query due concepts and resolve one question each
     const hydration = practiceRepository.getHydrationState(userId);
     if (hydration.status === "HYDRATED") {
       const dueConcepts = practiceRepository.getDueForReview(userId);
       for (const concept of dueConcepts) {
         const questions = practiceRepository.getQuestionsForConcept(concept.conceptId);
         if (questions.length > 0) {
-          // Select at most one practice question per due concept for this session
           sessionQuestions.push(questions[0]);
         }
       }
@@ -67,7 +65,7 @@ export default function PracticeSessionScreen() {
   // Immutable session start timestamp — captured once on mount
   const startedAt = useRef<string>(new Date().toISOString());
   // Idempotency guard: prevents double-submission on same question
-  const isSubmitting = useRef(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   // Track which questions have already been submitted to prevent duplicate counter increments
   const submittedQuestionIds = useRef<Set<string>>(new Set());
 
@@ -84,21 +82,26 @@ export default function PracticeSessionScreen() {
     ? knowledgeRepository.getMnemonicById(currentQ.mnemonicId)
     : undefined;
 
-  const handleSelectOption = async (index: number) => {
-    if (answered || !currentQ || isSubmitting.current) return;
-
-    isSubmitting.current = true;
-
+  const handleSelectOption = (index: number) => {
+    if (answered || !currentQ || isSubmitting) return;
     setSelectedIndex(index);
+    // CRITICAL: We do NOT setAnswered(true) here. 
+    // This maintains anti-cheating logic until confirmation.
+  };
+
+  const handleConfirmAnswer = async () => {
+    if (selectedIndex === null || answered || !currentQ || isSubmitting) return;
+
+    setIsSubmitting(true);
     setAnswered(true);
-    const correct = index === currentQ.correctOptionIndex;
+    
+    const correct = selectedIndex === currentQ.correctOptionIndex;
     setIsCorrect(correct);
 
     if (correct) {
       setScore((s) => s + 1);
     }
 
-    // Track per-question submission exactly once
     if (!submittedQuestionIds.current.has(currentQ.id)) {
       submittedQuestionIds.current.add(currentQ.id);
       setAttemptedQuestions((n) => n + 1);
@@ -107,7 +110,6 @@ export default function PracticeSessionScreen() {
       }
     }
 
-    // Record attempt in repository (triggers mastery & mistake updates)
     const result = await practiceRepository.recordAttempt({
       id: `attempt_${crypto.randomUUID()}`,
       userId,
@@ -115,7 +117,7 @@ export default function PracticeSessionScreen() {
       conceptId: currentQ.conceptId,
       topicId: currentQ.topicId,
       mode: currentQ.mode,
-      selectedOptionIndex: index,
+      selectedOptionIndex: selectedIndex,
       correctOptionIndex: currentQ.correctOptionIndex,
       isCorrect: correct,
       timeSpentSeconds: 10,
@@ -132,7 +134,7 @@ export default function PracticeSessionScreen() {
     setSelectedIndex(null);
     setAnswered(false);
     setIsCorrect(false);
-    isSubmitting.current = false;
+    setIsSubmitting(false);
 
     const isLastQuestion = currentIndex + 1 >= sessionQuestions.length;
 
@@ -141,9 +143,6 @@ export default function PracticeSessionScreen() {
       return;
     }
 
-    // Final question — compute and store ephemeral session result.
-    // Use functional updater snapshots where needed; score/attemptedQuestions may
-    // still be pending their setState batches here, so derive directly.
     const finalCorrect = score;
     const finalAttempted = attemptedQuestions;
     const finalIncorrect = finalAttempted - finalCorrect;
@@ -176,12 +175,12 @@ export default function PracticeSessionScreen() {
     return (
       <AppScreen edges={["top", "bottom"]}>
         <View className="flex-1 justify-center items-center px-4">
-          <View className="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl items-center w-full max-w-sm">
+          <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 p-6 rounded-2xl items-center w-full max-w-sm">
             <Text className="text-3xl mb-2">🎯</Text>
-            <Text className="text-white font-bold text-lg mb-1 text-center">
+            <Text className="text-navy dark:text-white font-bold text-lg mb-1 text-center">
               No Questions Available
             </Text>
-            <Text className="text-slate-400 text-sm mb-6 text-center leading-5">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm mb-6 text-center leading-5">
               No concept-anchored questions found for this selection.
             </Text>
             <View className="w-full">
@@ -208,19 +207,19 @@ export default function PracticeSessionScreen() {
           <TouchableOpacity
             onPress={() => router.replace("/(tabs)/practice" as any)}
             activeOpacity={0.7}
-            className="py-1 flex-row items-center"
+            className="py-1 flex-row items-center min-h-[44px]"
             accessibilityRole="button"
             accessibilityLabel="Exit Practice Session"
           >
-            <Text className="text-cyan-400 font-bold text-sm">← Practice</Text>
+            <Text className="text-clinical-blue dark:text-sky-400 font-bold text-sm">← Exit</Text>
           </TouchableOpacity>
 
           <View className="flex-row items-center space-x-3">
-            <Text className="text-slate-400 font-medium text-xs">
-              Score: <Text className="text-emerald-400 font-bold">{score}</Text>
+            <Text className="text-slate-500 dark:text-slate-400 font-medium text-xs">
+              Score: <Text className="text-navy dark:text-white font-bold">{score}</Text>
             </Text>
-            <View className="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700/60">
-              <Text className="text-slate-300 font-semibold text-xs tracking-wider">
+            <View className="bg-surface dark:bg-slate-800 px-2.5 py-1 rounded-md border border-border-subtle dark:border-slate-700/60">
+              <Text className="text-navy dark:text-slate-300 font-semibold text-xs tracking-wider">
                 {questionNumStr} / {totalNumStr}
               </Text>
             </View>
@@ -234,7 +233,7 @@ export default function PracticeSessionScreen() {
       <ScrollView
         className="flex-1"
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 24 }}
+        contentContainerStyle={{ paddingBottom: 32 }}
       >
         {/* Practice Question Cards */}
         {currentQ.mode === "CONCEPT_CHECK" && (
@@ -242,6 +241,7 @@ export default function PracticeSessionScreen() {
             question={currentQ}
             selectedIndex={selectedIndex}
             onSelectOption={handleSelectOption}
+            isAnswered={answered}
             disabled={answered}
           />
         )}
@@ -251,6 +251,7 @@ export default function PracticeSessionScreen() {
             question={currentQ}
             selectedIndex={selectedIndex}
             onSelectOption={handleSelectOption}
+            isAnswered={answered}
             disabled={answered}
           />
         )}
@@ -260,6 +261,7 @@ export default function PracticeSessionScreen() {
             question={currentQ}
             selectedIndex={selectedIndex}
             onSelectOption={handleSelectOption}
+            isAnswered={answered}
             disabled={answered}
           />
         )}
@@ -269,8 +271,21 @@ export default function PracticeSessionScreen() {
             question={currentQ}
             selectedIndex={selectedIndex}
             onSelectOption={handleSelectOption}
+            isAnswered={answered}
             disabled={answered}
           />
+        )}
+
+        {/* Confirm Answer Button (Only show if selected but not yet confirmed) */}
+        {selectedIndex !== null && !answered && (
+          <View className="mt-2">
+            <PrimaryButton
+              label="Confirm Answer"
+              variant="primary"
+              onPress={handleConfirmAnswer}
+              disabled={isSubmitting}
+            />
+          </View>
         )}
 
         {/* Instant Feedback Banner when answered */}
@@ -291,7 +306,7 @@ export default function PracticeSessionScreen() {
                     ? "Next Question →"
                     : "Finish Practice Session"
                 }
-                variant={isCorrect ? "emerald" : "primary"}
+                variant="primary"
                 onPress={handleNextQuestion}
               />
             </View>
@@ -303,7 +318,7 @@ export default function PracticeSessionScreen() {
       <BottomSheet
         visible={showTutorModal}
         onClose={() => setShowTutorModal(false)}
-        title="🤖 AI Educational Explanation"
+        title="AI Educational Explanation"
       >
         <ScrollView className="max-h-[500px]" showsVerticalScrollIndicator={false}>
           {topic && (

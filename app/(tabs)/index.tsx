@@ -98,12 +98,9 @@ export default function HomeScreen() {
     }
 
     router.push({
-      pathname: "/quiz" as any,
+      pathname: "/practice-session" as any,
       params: {
-        type: "pyq",
-        mode: "revision",
-        topic: recommendedTopic,
-        topics: JSON.stringify([recommendedTopic]),
+        isReviewSession: "true",
       },
     });
   };
@@ -148,7 +145,7 @@ export default function HomeScreen() {
 
         {mistakeCount !== null && mistakeCount > 0 ? (
           <AnimatedPressable
-            onPress={() => router.push({ pathname: "/quiz" as any, params: { type: "mistake", mode: "revision", topic: "Mistake Bank" } })}
+            onPress={() => router.push({ pathname: "/mistake-bank" as any })}
             className="mb-6"
           >
             <GlassCard className="p-4 border-l-4 border-l-rose-500 flex-row items-center justify-between bg-rose-950/20">
@@ -197,12 +194,9 @@ export default function HomeScreen() {
                   onPress={() => {
                     setDismissedComeback(true);
                     router.push({
-                      pathname: "/quiz" as any,
+                      pathname: "/practice-session" as any,
                       params: {
-                        type: "pyq",
-                        mode: "revision",
-                        topic: comebackTopicDerived,
-                        topics: JSON.stringify([comebackTopicDerived]),
+                        isReviewSession: "true",
                       },
                     });
                   }}

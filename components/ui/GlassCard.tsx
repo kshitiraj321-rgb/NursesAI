@@ -1,13 +1,26 @@
 /**
- * NurseAI UI Primitive — GlassCard (Renamed visually to Card)
+ * NurseAI UI Primitive — GlassCard (now: Card)
  *
- * Restrained surface card matching Level 1 (flat with border) or Level 2 (elevated) rules.
- * Supports press interaction via AnimatedPressable.
+ * Clean surface card. Moved away from dark/glass visual treatment to:
+ * - white surface
+ * - subtle #E5E9F0-style border
+ * - minimal neutral shadow
+ * - moderate 12px radius
+ *
+ * Variant matrix:
+ *   default     — white surface, subtle border, card shadow
+ *   elevated    — white surface, stronger shadow
+ *   interactive — light blue tint, interactive border
+ *   accent      — light blue fill, blue border (use very sparingly)
+ *
+ * File name retained as GlassCard.tsx to preserve all existing imports.
+ * Dark mode support retained via dark: modifiers.
  */
 
 import React from "react";
 import { View, type ViewStyle } from "react-native";
 import { AnimatedPressable } from "./AnimatedPressable";
+import { shadows } from "../../constants/shadows";
 
 interface GlassCardProps {
   children: React.ReactNode;
@@ -24,25 +37,23 @@ export function GlassCard({
   style,
   className = "",
 }: GlassCardProps) {
-  const getVariantStyle = () => {
+  const getVariantClass = () => {
     switch (variant) {
       case "elevated":
-        // Level 2
-        return "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 shadow-sm";
+        return "bg-surface dark:bg-slate-800 border-border-subtle dark:border-slate-700";
       case "interactive":
-        return "bg-slate-50 dark:bg-slate-900 border-sky-200 dark:border-sky-800";
+        return "bg-clinical-blue-light dark:bg-slate-900 border-clinical-blue-border dark:border-sky-800";
       case "accent":
-        return "bg-indigo-50 dark:bg-indigo-900/40 border-indigo-200 dark:border-indigo-500/50";
+        return "bg-clinical-blue-light dark:bg-indigo-900/40 border-clinical-blue-border dark:border-indigo-500/50";
       default:
-        // Level 1
-        return "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700";
+        return "bg-surface dark:bg-slate-800 border-border-subtle dark:border-slate-700";
     }
   };
 
   const cardContent = (
     <View
-      className={`p-4 rounded-xl border ${getVariantStyle()} ${className}`}
-      style={style}
+      className={`p-4 rounded-xl border ${getVariantClass()} ${className}`}
+      style={[variant === "elevated" ? shadows.sm : shadows.card, style]}
     >
       {children}
     </View>

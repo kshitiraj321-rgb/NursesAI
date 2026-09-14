@@ -39,18 +39,18 @@ export function FeedbackBanner({
   return (
     <Animated.View style={animatedStyle}>
       <View
-        className={`p-4 rounded-2xl border mb-6 ${
+        className={`p-5 rounded-2xl border mb-6 ${
           isCorrect
-            ? "bg-emerald-950/90 border-emerald-600/80"
-            : "bg-rose-950/90 border-rose-600/80"
+            ? "bg-emerald-50 dark:bg-emerald-950/90 border-emerald-200 dark:border-emerald-600/80"
+            : "bg-rose-50 dark:bg-rose-950/90 border-rose-200 dark:border-rose-600/80"
         }`}
       >
         {/* Outcome Header */}
-        <View className="flex-row items-center justify-between mb-2">
+        <View className="flex-row items-center justify-between mb-3">
           <View className="flex-row items-center">
             <Text
               className={`font-extrabold text-base mr-2 ${
-                isCorrect ? "text-emerald-300" : "text-rose-300"
+                isCorrect ? "text-emerald-700 dark:text-emerald-300" : "text-rose-700 dark:text-rose-300"
               }`}
             >
               {isCorrect ? "✓ Correct Retrieval" : "✕ Incorrect Answer"}
@@ -60,28 +60,28 @@ export function FeedbackBanner({
         </View>
 
         {/* Authoritative Repository Rationale */}
-        <View className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 mb-3">
-          <Text className="text-slate-400 text-[10px] font-extrabold uppercase mb-1">
-            Authoritative Clinical Rationale (Source of Truth)
+        <View className="bg-surface dark:bg-slate-900/80 p-4 rounded-xl border border-border-subtle dark:border-slate-800 mb-4">
+          <Text className="text-slate-500 dark:text-slate-400 text-[10px] font-extrabold uppercase mb-1">
+            Authoritative Clinical Rationale
           </Text>
-          <Text className="text-slate-200 text-xs leading-5">
+          <Text className="text-navy dark:text-slate-200 text-sm leading-6">
             {question.explanation}
           </Text>
         </View>
 
-        {/* Associated Mnemonic (Omitted if absent) */}
+        {/* Associated Mnemonic */}
         {mnemonic && (
-          <View className="bg-purple-950/80 border border-purple-700/60 p-3 rounded-xl mb-3">
-            <View className="flex-row items-center justify-between mb-1">
-              <Text className="text-purple-300 font-extrabold text-[10px] uppercase">
-                💡 Associated Memory Hook (Mnemonic)
+          <View className="bg-amber-50 dark:bg-purple-950/80 border border-amber-200 dark:border-purple-700/60 p-4 rounded-xl mb-4">
+            <View className="flex-row items-center justify-between mb-2">
+              <Text className="text-amber-700 dark:text-purple-300 font-extrabold text-[10px] uppercase">
+                💡 Associated Memory Hook
               </Text>
-              <Pill label="Mnemonic" variant="AI" size="sm" />
+              <Pill label="Mnemonic" variant="warning" size="sm" />
             </View>
-            <Text className="text-white font-extrabold text-base mb-0.5">
+            <Text className="text-navy dark:text-white font-extrabold text-base mb-1">
               {mnemonic.mnemonic}
             </Text>
-            <Text className="text-purple-200 text-xs leading-4">
+            <Text className="text-amber-800 dark:text-purple-200 text-xs leading-5">
               {mnemonic.expansion}
             </Text>
           </View>
@@ -89,10 +89,12 @@ export function FeedbackBanner({
 
         {/* AI Tutor Explanation Action */}
         {onAskTutor && (
-          <SecondaryButton
-            label="🤖 Ask AI Tutor to Explain This Concept"
-            onPress={onAskTutor}
-          />
+          <View className="mt-2">
+            <SecondaryButton
+              label="Ask AI Tutor to Explain This Concept"
+              onPress={onAskTutor}
+            />
+          </View>
         )}
       </View>
     </Animated.View>

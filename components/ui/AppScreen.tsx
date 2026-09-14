@@ -1,8 +1,11 @@
 /**
  * NurseAI UI Primitive — AppScreen
  *
- * Generic screen shell with SafeArea, clinical background (Light: slate-50, Dark: slate-900),
+ * Generic screen shell with SafeArea, clinical background (light: warm-bg, dark: slate-900),
  * and optional scrollable container with horizontal padding.
+ *
+ * Light-first: base class is warm off-white (#F7F8FA).
+ * Dark mode support retained via dark: modifiers.
  */
 
 import React from "react";
@@ -24,7 +27,7 @@ export function AppScreen({
   contentStyle,
 }: AppScreenProps) {
   return (
-    <View className="flex-1 bg-slate-50 dark:bg-slate-900">
+    <View className="flex-1 bg-warm-bg dark:bg-slate-900">
       <SafeAreaView style={{ flex: 1 }} edges={edges}>
         {scrollable ? (
           <ScrollView

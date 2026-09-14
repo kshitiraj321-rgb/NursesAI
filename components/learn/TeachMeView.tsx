@@ -10,6 +10,15 @@ import {
 import type { Topic, Concept } from "../../data/types/knowledge";
 import { TrustBadge } from "./TrustBadge";
 
+/**
+ * TeachMeView — SLICE 2 Light-First Update
+ *
+ * Interactive AI tutor context view for a topic/concept.
+ * Light-first: white/warm surfaces. No purple AI aesthetic.
+ * The "teach me" header uses clinical-blue (action color).
+ * AI disclaimer uses neutral slate.
+ * All simulated tutor response logic unchanged.
+ */
 interface TeachMeViewProps {
   topic: Topic;
   concept?: Concept;
@@ -57,84 +66,101 @@ export function TeachMeView({ topic, concept }: TeachMeViewProps) {
   };
 
   return (
-    <ScrollView className="flex-1 space-y-4">
-      {/* AI Context Banner */}
-      <View className="bg-purple-950/80 border border-purple-700/60 p-4 rounded-xl mb-4">
-        <View className="flex-row items-center justify-between mb-1">
-          <Text className="text-purple-300 font-bold text-xs uppercase">
-            🤖 AI Tutor — Interactive Concept Explanation
+    <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
+
+      {/* ── Context Banner ─────────────────────────────────────────── */}
+      <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 p-4 rounded-xl mb-3">
+        <View className="flex-row items-center justify-between mb-1.5">
+          <Text className="text-clinical-blue dark:text-sky-400 font-bold text-xs uppercase tracking-wide flex-1 mr-2">
+            AI Tutor — Contextual Explanation
           </Text>
           <TrustBadge status="AI_GENERATED" size="sm" />
         </View>
-        <Text className="text-purple-100 text-xs leading-5">
-          Ask specific questions about <Text className="font-bold text-white">{topic.name}</Text>
-          {concept ? ` (${concept.title})` : ""}. Explanations are attached to verified clinical context.
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5">
+          Ask questions about{" "}
+          <Text className="font-semibold text-navy dark:text-white">{topic.name}</Text>
+          {concept ? ` › ${concept.title}` : ""}. Explanations are attached to verified clinical context.
         </Text>
       </View>
 
-      {/* Question Input */}
-      <View className="bg-slate-800 p-4 rounded-xl border border-slate-700 mb-4 space-y-3">
-        <Text className="text-slate-200 font-semibold text-xs">
+      {/* ── Question Input ─────────────────────────────────────────── */}
+      <View className="bg-surface dark:bg-slate-800 p-4 rounded-xl border border-border-subtle dark:border-slate-700 mb-4">
+        <Text className="text-navy dark:text-slate-200 font-semibold text-xs mb-2">
           Ask NurseAI Tutor a Question
         </Text>
         <TextInput
-          className="bg-slate-900 text-white p-3 rounded-lg border border-slate-700 text-xs"
-          placeholder={`e.g., Explain the pathophysiology of ${topic.name} in simple terms...`}
-          placeholderTextColor="#64748b"
+          className="bg-warm-bg dark:bg-slate-900 text-navy dark:text-white p-3 rounded-lg border border-border-subtle dark:border-slate-700 text-xs mb-3"
+          placeholder={`e.g., Explain the pathophysiology of ${topic.name}…`}
+          placeholderTextColor="#94A3B8"
           value={question}
           onChangeText={setQuestion}
           multiline
+          accessibilityLabel="Ask the AI tutor a question"
         />
 
         <TouchableOpacity
           onPress={handleAskTutor}
-          disabled={loading}
-          className="bg-purple-600 active:bg-purple-700 p-3 rounded-lg items-center"
+          disabled={loading || !question.trim()}
+          activeOpacity={0.85}
+          accessibilityRole="button"
+          accessibilityLabel="Submit question to AI tutor"
+          className={`p-3 rounded-lg items-center justify-center min-h-[44px] ${
+            loading || !question.trim()
+              ? "bg-slate-200 dark:bg-slate-700"
+              : "bg-clinical-blue active:bg-clinical-blue-pressed"
+          }`}
         >
           {loading ? (
-            <ActivityIndicator color="#ffffff" size="small" />
+            <ActivityIndicator color="#2563EB" size="small" />
           ) : (
-            <Text className="text-white font-bold text-xs">Ask AI Tutor</Text>
+            <Text className={`font-bold text-xs ${
+              !question.trim() ? "text-slate-400 dark:text-slate-500" : "text-white"
+            }`}>
+              Ask AI Tutor
+            </Text>
           )}
         </TouchableOpacity>
       </View>
 
-      {/* Tutor Response Thread */}
+      {/* ── Tutor Thread ──────────────────────────────────────────── */}
       {responses.length > 0 && (
-        <View className="space-y-3 mb-8">
-          <Text className="text-slate-300 font-bold text-xs uppercase mb-1">
+        <View className="mb-4">
+          <Text className="text-slate-500 dark:text-slate-400 font-bold text-xs uppercase tracking-wider mb-2 px-1">
             Tutor Thread ({responses.length})
           </Text>
           {responses.map((item) => (
             <View
               key={item.id}
-              className="bg-slate-800 p-4 rounded-xl border border-slate-700 mb-3"
+              className="bg-surface dark:bg-slate-800 p-4 rounded-xl border border-border-subtle dark:border-slate-700 mb-3"
             >
-              <View className="flex-row items-center justify-between mb-2">
-                <Text className="text-purple-300 font-bold text-xs">
+              <View className="flex-row items-start justify-between mb-2">
+                <Text className="text-navy dark:text-slate-200 font-bold text-xs flex-1 mr-2" numberOfLines={2}>
                   Q: {item.q}
                 </Text>
-                <Text className="text-slate-500 text-[10px]">{item.timestamp}</Text>
+                <Text className="text-muted dark:text-slate-500 text-[10px]">
+                  {item.timestamp}
+                </Text>
               </View>
 
-              <View className="bg-slate-900/90 p-3 rounded-lg border border-purple-900/50">
-                <Text className="text-slate-200 text-xs leading-5">
+              <View className="bg-warm-bg dark:bg-slate-900 p-3 rounded-lg border border-border-subtle dark:border-slate-700 mb-2">
+                <Text className="text-slate-600 dark:text-slate-300 text-xs leading-5">
                   {item.a}
                 </Text>
               </View>
 
-              <Text className="text-slate-500 text-[10px] italic mt-2">
-                ⚠ Ephemeral tutor explanation. Knowledge base records remain unmutated.
+              <Text className="text-muted dark:text-slate-500 text-[10px] italic">
+                Ephemeral tutor explanation. Knowledge base records remain unmutated.
               </Text>
             </View>
           ))}
         </View>
       )}
 
+      {/* Empty thread state */}
       {responses.length === 0 && (
-        <View className="bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 mb-8">
-          <Text className="text-slate-400 text-xs leading-4 text-center">
-            No questions asked yet. Type a question above to get instant clinical tutoring for {topic.name}.
+        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 p-4 rounded-xl mb-8">
+          <Text className="text-slate-400 dark:text-slate-500 text-xs leading-5 text-center">
+            No questions yet. Ask something about {topic.name} to get clinical tutoring.
           </Text>
         </View>
       )}

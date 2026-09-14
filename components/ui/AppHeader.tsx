@@ -2,6 +2,9 @@
  * NurseAI UI Primitive — AppHeader
  *
  * Quiet clinical screen header supporting title, subtitle, back action, and optional right action.
+ *
+ * Light-first: deep navy title (#0E1E3A via navy token) on warm off-white background.
+ * Dark mode support retained.
  */
 
 import React from "react";
@@ -50,11 +53,11 @@ export function AppHeader({
         <TouchableOpacity
           onPress={handleBack}
           activeOpacity={0.7}
-          className="mb-2 flex-row items-center py-1"
+          className="mb-2 flex-row items-center py-1 min-h-[44px] justify-start"
           accessibilityRole="button"
           accessibilityLabel={`Go back to ${backText}`}
         >
-          <Text className="text-slate-600 dark:text-slate-400 font-semibold text-sm">
+          <Text className="text-clinical-blue dark:text-sky-400 font-semibold text-sm">
             ← {backText}
           </Text>
         </TouchableOpacity>
@@ -62,7 +65,7 @@ export function AppHeader({
 
       <View className="flex-row items-center justify-between">
         <View className="flex-1 mr-2">
-          <Text className="text-slate-900 dark:text-slate-50 text-2xl font-bold tracking-tight">
+          <Text className="text-navy dark:text-slate-50 text-2xl font-bold tracking-tight">
             {title}
           </Text>
           {subtitle && (
@@ -77,11 +80,11 @@ export function AppHeader({
             <TouchableOpacity
               onPress={handleHome}
               activeOpacity={0.7}
-              className="flex-row items-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3 py-1.5 rounded-xl shadow-sm"
+              className="flex-row items-center bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 px-3 py-1.5 rounded-xl min-h-[44px] min-w-[44px] justify-center"
               accessibilityRole="button"
               accessibilityLabel="Go to Home"
             >
-              <IconSymbol name="house.fill" size={15} color="#0EA5E9" />
+              <IconSymbol name="house.fill" size={15} color="#2563EB" />
               <Text className="text-slate-700 dark:text-slate-300 text-xs font-semibold ml-1.5">Home</Text>
             </TouchableOpacity>
           )}

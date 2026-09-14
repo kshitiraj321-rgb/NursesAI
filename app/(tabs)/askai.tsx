@@ -393,7 +393,7 @@ export default function AskAI() {
 
   return (
     <KeyboardAvoidingView
-      className="flex-1 bg-[#0F172A]"
+      className="flex-1 bg-warm-bg dark:bg-[#0F172A]"
       behavior={Platform.OS === "ios" ? "padding" : "padding"}
       keyboardVerticalOffset={Platform.OS === "ios" ? 60 : 25}
     >
@@ -416,8 +416,8 @@ export default function AskAI() {
         <TypingIndicator isTyping={isTyping} text={loadingText} />
 
         {showThanks && (
-          <View className="absolute bottom-24 self-center bg-[#1c1c1e] py-2 px-4 rounded-full border border-[#2a2a2a] z-50">
-            <Text className="text-white text-[13px] font-medium">Thanks for your feedback 🙌</Text>
+          <View className="absolute bottom-24 self-center bg-surface dark:bg-slate-800 py-2.5 px-5 rounded-full border border-border-subtle shadow-sm z-50">
+            <Text className="text-navy dark:text-white text-[13px] font-bold">Thanks for your feedback 🙌</Text>
           </View>
         )}
 

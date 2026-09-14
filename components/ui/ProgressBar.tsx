@@ -2,6 +2,9 @@
  * NurseAI UI Primitive — ProgressBar
  *
  * Deterministic progress visualization with animated width interpolation.
+ *
+ * Light-first: track uses light grey (#E5E9F0) on white/warm-bg backgrounds.
+ * Dark mode support retained via dark: modifier.
  */
 
 import React, { useEffect } from "react";
@@ -20,7 +23,7 @@ interface ProgressBarProps {
 
 export function ProgressBar({
   progress,
-  color = "#3B82F6",
+  color = "#2563EB",
   height = 6,
 }: ProgressBarProps) {
   const clamped = Math.min(Math.max(progress, 0), 1);
@@ -36,7 +39,7 @@ export function ProgressBar({
 
   return (
     <View
-      className="w-full bg-slate-800 rounded-full overflow-hidden"
+      className="w-full bg-border-subtle dark:bg-slate-700 rounded-full overflow-hidden"
       style={{ height }}
       accessibilityRole="progressbar"
       accessibilityValue={{ min: 0, max: 100, now: Math.round(clamped * 100) }}

@@ -1,28 +1,36 @@
 import React, { useState, useMemo } from "react";
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { knowledgeRepository } from "../../data/knowledge/repository";
 import {
   AppScreen,
   AppHeader,
-  GlassCard,
   SectionHeader,
-  Pill,
   AnimatedPressable,
 } from "../../components/ui";
 
+/**
+ * Learn Hub — SLICE 2 Redesign
+ *
+ * Primary hierarchy: Continue Learning → Subjects
+ * Answers: "What should I learn next?"
+ * No invented statistics, streaks, XP, or fake data.
+ */
 export default function LearnScreen() {
   const [searchQuery, setSearchQuery] = useState("");
   const subjects = knowledgeRepository.getAllSubjects();
 
-  // Primary concept anchor for "Continue Learning" banner
+  // Continue Learning — uses first available subject/topic/concept
   const continueSubject = subjects.length > 0 ? subjects[0] : undefined;
-  const continueTopics = continueSubject ? knowledgeRepository.getTopicsForSubject(continueSubject.id) : [];
+  const continueTopics = continueSubject
+    ? knowledgeRepository.getTopicsForSubject(continueSubject.id)
+    : [];
   const continueTopic = continueTopics.length > 0 ? continueTopics[0] : undefined;
-  const continueConcepts = continueTopic ? knowledgeRepository.getConceptsForTopic(continueTopic.id) : [];
+  const continueConcepts = continueTopic
+    ? knowledgeRepository.getConceptsForTopic(continueTopic.id)
+    : [];
   const continueConcept = continueConcepts.length > 0 ? continueConcepts[0] : undefined;
 
-  // Filter subjects based on search query
   const filteredSubjects = useMemo(() => {
     if (!searchQuery.trim()) return subjects;
     const q = searchQuery.toLowerCase();
@@ -35,10 +43,7 @@ export default function LearnScreen() {
   }, [subjects, searchQuery]);
 
   const handleSelectSubject = (subjectId: string) => {
-    router.push({
-      pathname: "/topics",
-      params: { subjectId },
-    });
+    router.push({ pathname: "/topics", params: { subjectId } });
   };
 
   const handleContinueLearning = () => {
@@ -52,108 +57,116 @@ export default function LearnScreen() {
     }
   };
 
+  const isSearching = searchQuery.trim().length > 0;
+
   return (
     <AppScreen scrollable edges={["top"]}>
-      {/* App Header */}
-      <AppHeader
-        title="Learn"
-        subtitle="Learn with purpose · Subject Index & Knowledge Graph"
-        showHome
-      />
+      <AppHeader title="Learn" subtitle="Clinical knowledge library" />
 
-      {/* Continue Learning Banner */}
-      {continueSubject && continueTopic && (
+      {/* ── Continue Learning ─────────────────────────────────────────── */}
+      {!isSearching && continueSubject && continueTopic && (
         <View className="mb-6">
           <SectionHeader title="Continue Learning" />
-          <GlassCard variant="interactive" onPress={handleContinueLearning}>
-            <View className="flex-row items-center justify-between mb-1.5">
-              <Text className="text-cyan-400 font-extrabold text-xs uppercase tracking-wider">
-                {continueSubject.displayName}
-              </Text>
-              <Pill label="Active" variant="trust" size="sm" />
-            </View>
-            <Text className="text-white font-bold text-lg mb-1">
+          <TouchableOpacity
+            onPress={handleContinueLearning}
+            activeOpacity={0.92}
+            accessibilityRole="button"
+            accessibilityLabel={`Continue learning ${continueTopic.displayName || continueTopic.name}`}
+            className="bg-clinical-blue rounded-xl p-4 min-h-[44px]"
+          >
+            <Text className="text-blue-100 text-xs font-semibold uppercase tracking-wider mb-1">
+              {continueSubject.displayName}
+            </Text>
+            <Text className="text-white font-bold text-lg leading-snug mb-1">
               {continueTopic.displayName || continueTopic.name}
             </Text>
             {continueConcept && (
-              <Text className="text-slate-300 text-xs mb-3">
-                Module: {continueConcept.title}
+              <Text className="text-blue-100 text-xs mb-3">
+                Up next: {continueConcept.title}
               </Text>
             )}
-            <View className="flex-row items-center justify-between pt-2 border-t border-slate-800">
-              <Text className="text-cyan-400 font-bold text-xs">
-                Resume Concept Workspace →
-              </Text>
-              <Text className="text-slate-400 text-xs font-semibold">
-                {continueConcepts.length} Concept Modules
+            <View className="flex-row items-center justify-between">
+              <Text className="text-white font-bold text-sm">Continue →</Text>
+              <Text className="text-blue-200 text-xs">
+                {continueConcepts.length} concepts
               </Text>
             </View>
-          </GlassCard>
+          </TouchableOpacity>
         </View>
       )}
 
-      {/* Search Input Field */}
-      <View className="mb-6">
-        <View className="bg-slate-900/90 border border-slate-800 rounded-xl px-3.5 py-2.5 flex-row items-center">
-          <Text className="text-slate-400 text-base mr-2">🔍</Text>
+      {/* ── Search ───────────────────────────────────────────────────── */}
+      <View className="mb-5">
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-700 rounded-xl flex-row items-center px-3.5 min-h-[44px]">
+          <Text className="text-muted text-sm mr-2">🔍</Text>
           <TextInput
             value={searchQuery}
             onChangeText={setSearchQuery}
-            placeholder="Search subjects, topics, and clinical concepts..."
-            placeholderTextColor="#64748B"
-            className="flex-1 text-white text-sm font-normal py-0"
-            accessibilityLabel="Search subjects, topics, and clinical concepts"
+            placeholder="Search subjects and topics…"
+            placeholderTextColor="#94A3B8"
+            className="flex-1 text-navy dark:text-white text-sm py-2.5"
+            accessibilityLabel="Search subjects and topics"
           />
           {searchQuery.length > 0 && (
             <AnimatedPressable onPress={() => setSearchQuery("")}>
-              <Text className="text-slate-400 text-xs font-bold px-1">✕</Text>
+              <View className="ml-1 items-center justify-center w-7 h-7 rounded-full bg-slate-100 dark:bg-slate-700">
+                <Text className="text-slate-500 dark:text-slate-300 text-xs font-bold">✕</Text>
+              </View>
             </AnimatedPressable>
           )}
         </View>
       </View>
 
-      {/* Explore Subjects Section */}
+      {/* ── Subjects ─────────────────────────────────────────────────── */}
       <View className="mb-6">
         <SectionHeader
-          title={`Explore Subjects (${filteredSubjects.length})`}
-          subtitle="Clinical Nursing Taxonomy"
+          title={isSearching ? `Results (${filteredSubjects.length})` : `Subjects (${subjects.length})`}
+          subtitle={isSearching ? undefined : "Clinical nursing taxonomy"}
         />
 
-        {filteredSubjects.map((subject) => {
+        {filteredSubjects.map((subject, index) => {
           const topicCount = knowledgeRepository.getTopicsForSubject(subject.id).length;
+          const isLast = index === filteredSubjects.length - 1;
+
           return (
-            <GlassCard
+            <TouchableOpacity
               key={subject.id}
-              variant="default"
               onPress={() => handleSelectSubject(subject.id)}
+              activeOpacity={0.7}
+              accessibilityRole="button"
+              accessibilityLabel={`Open ${subject.displayName}`}
+              className={`bg-surface dark:bg-slate-800 flex-row items-center px-4 py-3.5 min-h-[56px] ${
+                index === 0 ? "rounded-t-xl" : ""
+              } ${isLast ? "rounded-b-xl" : ""} border-x border-t border-border-subtle dark:border-slate-700 ${
+                isLast ? "border-b" : ""
+              }`}
             >
-              <View className="flex-row items-center justify-between mb-1.5">
-                <Text className="text-white font-bold text-base flex-1 mr-2">
+              {/* Left: text */}
+              <View className="flex-1 mr-3">
+                <Text className="text-navy dark:text-white font-semibold text-sm leading-snug">
                   {subject.displayName}
                 </Text>
-                <Pill label={subject.meta.verificationStatus} variant="trust" size="sm" />
+                {subject.description ? (
+                  <Text className="text-slate-500 dark:text-slate-400 text-xs leading-4 mt-0.5" numberOfLines={1}>
+                    {subject.description}
+                  </Text>
+                ) : null}
               </View>
-
-              <Text className="text-slate-300 text-xs leading-5 mb-3">
-                {subject.description}
-              </Text>
-
-              <View className="flex-row items-center justify-between pt-2 border-t border-slate-800/80">
-                <Text className="text-cyan-400 text-xs font-semibold">
-                  Browse {topicCount} Clinical Topics →
+              {/* Right: count + chevron */}
+              <View className="flex-row items-center">
+                <Text className="text-muted dark:text-slate-500 text-xs mr-2">
+                  {topicCount} topics
                 </Text>
-                <Text className="text-slate-500 text-[11px] font-bold uppercase tracking-wider">
-                  Verified Backbone
-                </Text>
+                <Text className="text-muted dark:text-slate-500 text-base">›</Text>
               </View>
-            </GlassCard>
+            </TouchableOpacity>
           );
         })}
 
         {filteredSubjects.length === 0 && (
-          <View className="bg-slate-900/60 p-6 rounded-2xl border border-slate-800/80 items-center">
-            <Text className="text-slate-400 text-sm text-center">
-              No subjects found matching &quot;{searchQuery}&quot;.
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-xl p-6 items-center">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
+              No subjects found for &quot;{searchQuery}&quot;.
             </Text>
           </View>
         )}

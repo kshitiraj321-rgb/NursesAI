@@ -4,12 +4,11 @@ import { router } from "expo-router";
 import type { ToolMeta } from "../../data/types/knowledge";
 import { AppScreen } from "../../components/ui/AppScreen";
 import { AppHeader } from "../../components/ui/AppHeader";
-import { GlassCard } from "../../components/ui/GlassCard";
 import { Pill, type PillVariant } from "../../components/ui/Pill";
 import { AnimatedPressable } from "../../components/ui/AnimatedPressable";
 
 /**
- * Toolbox Screen — Phase 5.5 Modernized Hub
+ * Toolbox Screen — SLICE 5 Light-First Design
  *
  * Clinical utilities for fast, precise decisions.
  * ALL calculators are deterministic. AI may explain, but NEVER calculate.
@@ -151,31 +150,29 @@ const TOOL_ROUTE_MAP: Record<string, string> = {
   pain_scales: "/toolbox/pain-scales",
 };
 
-function ToolCard({ tool, onPress }: { tool: ToolMeta; onPress: () => void }) {
+function ToolRow({ tool, onPress, isLast }: { tool: ToolMeta; onPress: () => void, isLast?: boolean }) {
   const pillVariant = RISK_PILL_VARIANT[tool.riskLevel] || "neutral";
 
   return (
     <AnimatedPressable
       onPress={onPress}
       activeScale={0.98}
-      className="mb-3"
+      className={`p-4 flex-row items-center justify-between ${!isLast ? "border-b border-border-subtle dark:border-slate-800" : ""}`}
       accessibilityRole="button"
       accessibilityLabel={`Open ${tool.name}`}
     >
-      <GlassCard variant="default" className="p-4">
-        <View className="flex-row items-center justify-between mb-1.5">
-          <Text className="text-white font-bold text-base flex-1 mr-2 tracking-tight">
+      <View className="flex-1 mr-3">
+        <View className="flex-row items-center mb-1">
+          <Text className="text-navy dark:text-white font-bold text-base mr-2">
             {tool.name}
           </Text>
           <Pill label={tool.riskLevel} variant={pillVariant} size="sm" />
         </View>
-        <Text className="text-slate-300 text-xs leading-5 mb-2.5">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5">
           {tool.description}
         </Text>
-        <Text className="text-amber-400/80 text-[11px] leading-4 italic">
-          ⚠ {tool.safetyNote}
-        </Text>
-      </GlassCard>
+      </View>
+      <Text className="text-slate-400 dark:text-slate-500 text-lg">›</Text>
     </AnimatedPressable>
   );
 }
@@ -190,7 +187,7 @@ export default function ToolboxScreen() {
 
   return (
     <AppScreen scrollable edges={["top"]}>
-      {/* Quiet Header */}
+      {/* Header */}
       <AppHeader
         title="Toolbox"
         subtitle="Clinical utilities for fast, precise decisions"
@@ -198,66 +195,55 @@ export default function ToolboxScreen() {
       />
 
       {/* Safety Disclaimer Banner */}
-      <GlassCard variant="accent" className="mb-6 p-4">
-        <View className="flex-row items-start space-x-3">
-          <Text className="text-xl">⚠</Text>
+      <View className="mb-6 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/50 rounded-xl p-4">
+        <View className="flex-row items-start">
+          <Text className="text-amber-500 text-base mr-3 mt-0.5">⚠</Text>
           <View className="flex-1">
-            <Text className="text-white font-bold text-sm mb-1">
+            <Text className="text-amber-800 dark:text-amber-300 font-bold text-sm mb-1">
               Clinical Reference & Safety Warning
             </Text>
-            <Text className="text-slate-300 text-xs leading-5">
-              These tools are reference aids only and are <Text className="font-bold text-amber-300">NEVER</Text> a substitute for hospital protocol, prescriber order, institutional guidelines, or clinical judgment.
+            <Text className="text-amber-700/80 dark:text-amber-400/80 text-xs leading-5">
+              These tools are reference aids only and are{" "}
+              <Text className="font-bold">NEVER</Text> a substitute for hospital protocol,
+              prescriber order, institutional guidelines, or clinical judgment.
             </Text>
           </View>
         </View>
-      </GlassCard>
+      </View>
 
       {/* Calculators Section */}
-      <View className="mb-6">
-        <View className="flex-row items-center justify-between mb-3 px-1">
-          <Text className="text-white text-lg font-bold">
-            🧮 Deterministic Calculators
-          </Text>
-          <Pill label="V1 RELEASE" variant="trust" size="sm" />
+      <View className="mb-8">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+          Calculators
+        </Text>
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm">
+          {V1_TOOL_REGISTRY.map((tool, idx) => (
+            <ToolRow
+              key={tool.id}
+              tool={tool}
+              onPress={() => handleToolPress(tool)}
+              isLast={idx === V1_TOOL_REGISTRY.length - 1}
+            />
+          ))}
         </View>
-        {V1_TOOL_REGISTRY.map((tool) => (
-          <ToolCard
-            key={tool.id}
-            tool={tool}
-            onPress={() => handleToolPress(tool)}
-          />
-        ))}
       </View>
 
       {/* Quick References Section */}
-      <View className="mb-6">
-        <View className="flex-row items-center justify-between mb-3 px-1">
-          <Text className="text-white text-lg font-bold">
-            📋 Clinical Quick References
-          </Text>
-          <Pill label="V1 RELEASE" variant="trust" size="sm" />
+      <View className="mb-8">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+          References
+        </Text>
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm">
+          {V1_REFERENCE_REGISTRY.map((tool, idx) => (
+            <ToolRow
+              key={tool.id}
+              tool={tool}
+              onPress={() => handleToolPress(tool)}
+              isLast={idx === V1_REFERENCE_REGISTRY.length - 1}
+            />
+          ))}
         </View>
-        {V1_REFERENCE_REGISTRY.map((tool) => (
-          <ToolCard
-            key={tool.id}
-            tool={tool}
-            onPress={() => handleToolPress(tool)}
-          />
-        ))}
-      </View>
-
-      {/* Deferred Roadmap Section */}
-      <View className="mb-4 opacity-50 space-y-2">
-        {["💊 Medication Safety", "🚨 Clinical Decision Support"].map((label) => (
-          <GlassCard key={label} variant="default" className="p-3.5 flex-row items-center justify-between">
-            <Text className="text-slate-400 font-semibold text-sm">
-              {label}
-            </Text>
-            <Pill label="PLANNED V1.5" variant="neutral" size="sm" />
-          </GlassCard>
-        ))}
       </View>
     </AppScreen>
   );
 }
-

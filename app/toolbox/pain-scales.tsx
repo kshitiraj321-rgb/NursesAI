@@ -1,63 +1,62 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { AppScreen } from "../../components/ui/AppScreen";
-import { GlassCard } from "../../components/ui/GlassCard";
 import { Pill } from "../../components/ui/Pill";
 
 export default function PainScalesScreen() {
   return (
     <AppScreen scrollable edges={["top", "bottom"]}>
       {/* Header Overview Card */}
-      <GlassCard variant="default" className="mb-6 p-4">
-        <Text className="text-xl font-bold text-white mb-1 tracking-tight">
+      <View className="mb-6 bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-4 shadow-sm">
+        <Text className="text-xl font-bold text-navy dark:text-white mb-2 tracking-tight">
           Pain Assessment Reference Scales
         </Text>
-        <Text className="text-slate-300 text-xs leading-5">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5">
           Validated clinical tools for assessing pain intensity in verbal and preverbal/non-verbal patients.
         </Text>
-      </GlassCard>
+      </View>
 
       {/* Scale 1: Numeric Rating Scale (NRS) */}
-      <GlassCard variant="default" className="mb-6 p-4">
-        <View className="flex-row items-center justify-between mb-2">
-          <Text className="text-cyan-400 font-bold text-base">
+      <View className="mb-6 bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 shadow-sm">
+        <View className="flex-row items-center justify-between mb-3">
+          <Text className="text-navy dark:text-white font-bold text-base">
             1. Numeric Rating Scale (NRS)
           </Text>
           <Pill label="Adults & Children ≥ 8 yrs" variant="trust" size="sm" />
         </View>
-        <Text className="text-slate-300 text-xs mb-3">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs mb-4 leading-5">
           Self-report scale. Patient rates pain intensity from 0 (&quot;No pain&quot;) to 10 (&quot;Worst pain imaginable&quot;).
         </Text>
 
-        <View className="space-y-2">
-          <GlassCard className="p-3 border-l-4 border-l-emerald-500 flex-row items-center justify-between mb-2">
-            <Text className="text-emerald-400 font-bold text-xs">Score 0: No Pain</Text>
-            <Text className="text-slate-300 text-xs">Patient completely comfortable</Text>
-          </GlassCard>
-          <GlassCard className="p-3 border-l-4 border-l-sky-500 flex-row items-center justify-between mb-2">
-            <Text className="text-sky-400 font-bold text-xs">Score 1 – 3: Mild Pain</Text>
-            <Text className="text-slate-300 text-xs">Noticeable but doesn&apos;t interfere with activity</Text>
-          </GlassCard>
-          <GlassCard className="p-3 border-l-4 border-l-amber-500 flex-row items-center justify-between mb-2">
-            <Text className="text-amber-400 font-bold text-xs">Score 4 – 6: Moderate Pain</Text>
-            <Text className="text-slate-300 text-xs">Interferes significantly with activity/sleep</Text>
-          </GlassCard>
-          <GlassCard className="p-3 border-l-4 border-l-rose-500 flex-row items-center justify-between mb-2">
-            <Text className="text-rose-400 font-bold text-xs">Score 7 – 10: Severe Pain</Text>
-            <Text className="text-rose-200 text-xs font-semibold">Disabling pain — urgent analgesia required</Text>
-          </GlassCard>
+        <View className="space-y-3">
+          <View className="p-4 bg-warm-bg dark:bg-slate-950 rounded-xl border border-border-subtle dark:border-slate-800 border-l-4 border-l-emerald-500 flex-row items-center justify-between mb-3">
+            <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-xs">Score 0: No Pain</Text>
+            <Text className="text-slate-600 dark:text-slate-300 text-xs text-right w-1/2">Patient completely comfortable</Text>
+          </View>
+          <View className="p-4 bg-warm-bg dark:bg-slate-950 rounded-xl border border-border-subtle dark:border-slate-800 border-l-4 border-l-sky-500 flex-row items-center justify-between mb-3">
+            <Text className="text-sky-700 dark:text-sky-400 font-bold text-xs">Score 1 – 3: Mild Pain</Text>
+            <Text className="text-slate-600 dark:text-slate-300 text-xs text-right w-1/2">Noticeable but doesn&apos;t interfere with activity</Text>
+          </View>
+          <View className="p-4 bg-warm-bg dark:bg-slate-950 rounded-xl border border-border-subtle dark:border-slate-800 border-l-4 border-l-amber-500 flex-row items-center justify-between mb-3">
+            <Text className="text-amber-700 dark:text-amber-400 font-bold text-xs">Score 4 – 6: Moderate Pain</Text>
+            <Text className="text-slate-600 dark:text-slate-300 text-xs text-right w-1/2">Interferes significantly with activity/sleep</Text>
+          </View>
+          <View className="p-4 bg-warm-bg dark:bg-slate-950 rounded-xl border border-border-subtle dark:border-slate-800 border-l-4 border-l-rose-500 flex-row items-center justify-between mb-3">
+            <Text className="text-rose-700 dark:text-rose-400 font-bold text-xs">Score 7 – 10: Severe Pain</Text>
+            <Text className="text-rose-600 dark:text-rose-300 text-xs font-semibold text-right w-1/2">Disabling pain — urgent analgesia required</Text>
+          </View>
         </View>
-      </GlassCard>
+      </View>
 
       {/* Scale 2: FLACC Scale */}
-      <GlassCard variant="default" className="mb-6 p-4">
-        <View className="flex-row items-center justify-between mb-2">
-          <Text className="text-cyan-400 font-bold text-base">
+      <View className="mb-6 bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 shadow-sm">
+        <View className="flex-row items-center justify-between mb-3">
+          <Text className="text-navy dark:text-white font-bold text-base">
             2. FLACC Scale (Behavioral Assessment)
           </Text>
           <Pill label="2 mos – 7 yrs / Non-verbal" variant="trust" size="sm" />
         </View>
-        <Text className="text-slate-300 text-xs mb-3">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs mb-4 leading-5">
           Observational scoring tool. Score 0, 1, or 2 across 5 categories (Total 0–10).
         </Text>
 
@@ -94,28 +93,26 @@ export default function PainScalesScreen() {
               s2: "Difficult to console or comfort",
             },
           ].map((item, idx) => (
-            <GlassCard key={idx} className="p-3 mb-2 border border-slate-700/60 bg-slate-900/60">
-              <Text className="text-cyan-300 font-bold text-xs mb-1.5">{item.cat}</Text>
-              <Text className="text-slate-300 text-xs mb-1"><Text className="font-semibold text-slate-100">0 pts:</Text> {item.s0}</Text>
-              <Text className="text-slate-300 text-xs mb-1"><Text className="font-semibold text-slate-100">1 pt:</Text> {item.s1}</Text>
-              <Text className="text-slate-300 text-xs"><Text className="font-semibold text-slate-100">2 pts:</Text> {item.s2}</Text>
-            </GlassCard>
+            <View key={idx} className="p-4 mb-3 rounded-xl border border-border-subtle dark:border-slate-800 bg-warm-bg dark:bg-slate-950">
+              <Text className="text-clinical-blue dark:text-clinical-blue font-bold text-xs mb-2 uppercase tracking-wider">{item.cat}</Text>
+              <Text className="text-slate-600 dark:text-slate-300 text-xs mb-1.5"><Text className="font-bold text-navy dark:text-white">0 pts:</Text> {item.s0}</Text>
+              <Text className="text-slate-600 dark:text-slate-300 text-xs mb-1.5"><Text className="font-bold text-navy dark:text-white">1 pt:</Text> {item.s1}</Text>
+              <Text className="text-slate-600 dark:text-slate-300 text-xs"><Text className="font-bold text-navy dark:text-white">2 pts:</Text> {item.s2}</Text>
+            </View>
           ))}
         </View>
-      </GlassCard>
+      </View>
 
       {/* Safety Disclaimer */}
-      <GlassCard className="mb-8 p-4 border border-amber-500/30 bg-amber-950/20">
-        <Text className="text-amber-400 font-bold text-xs mb-1">
-          ⚠ ASSESSMENT REFERENCE NOTICE
+      <View className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/50 rounded-2xl p-4 mb-8 shadow-sm">
+        <Text className="text-amber-800 dark:text-amber-400 font-bold text-xs mb-1.5 uppercase tracking-wider">
+          ⚠ Assessment Reference Notice
         </Text>
-        <Text className="text-slate-400 text-xs leading-4">
+        <Text className="text-amber-700/90 dark:text-amber-300/80 text-xs leading-5">
           Pain assessment is subjective and multidimensional. Pain scale scores guide
           clinical judgment and response evaluation, but do not replace holistic assessment.
         </Text>
-      </GlassCard>
+      </View>
     </AppScreen>
   );
 }
-
-

@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { AppScreen } from "../../components/ui/AppScreen";
-import { GlassCard } from "../../components/ui/GlassCard";
 import { Pill } from "../../components/ui/Pill";
 
 interface VitalParam {
@@ -53,54 +52,53 @@ export default function VitalSignsScreen() {
   return (
     <AppScreen scrollable edges={["top", "bottom"]}>
       {/* Title */}
-      <GlassCard variant="default" className="mb-6 p-4">
-        <Text className="text-xl font-bold text-white mb-1 tracking-tight">
+      <View className="mb-6 bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-4 shadow-sm">
+        <Text className="text-xl font-bold text-navy dark:text-white mb-2 tracking-tight">
           Adult Vital Signs Reference
         </Text>
-        <Text className="text-slate-300 text-xs leading-5">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5">
           Standard physiological baseline reference ranges for healthy adult patients.
         </Text>
-      </GlassCard>
+      </View>
 
       {/* Vital Cards */}
       <View className="space-y-4 mb-6">
         {VITAL_SIGNS.map((item, idx) => (
-          <GlassCard key={idx} variant="default" className="p-4 mb-3">
-            <View className="flex-row items-center justify-between mb-2">
-              <Text className="text-white font-bold text-base flex-1 mr-2">
+          <View key={idx} className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 shadow-sm">
+            <View className="flex-row items-center justify-between mb-3">
+              <Text className="text-navy dark:text-white font-bold text-base flex-1 mr-2">
                 {item.name}
               </Text>
               <Pill label={item.badge} variant="trust" size="sm" />
             </View>
 
-            <View className="bg-slate-950/80 p-3 rounded-xl border border-slate-800 mb-3">
-              <Text className="text-slate-400 text-[10px] uppercase font-bold tracking-wider mb-0.5">
+            <View className="bg-warm-bg dark:bg-slate-950 p-4 rounded-xl border border-border-subtle dark:border-slate-800 mb-3">
+              <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-bold tracking-wider mb-1">
                 Normal Adult Range
               </Text>
-              <Text className="text-cyan-400 font-extrabold text-lg">
+              <Text className="text-clinical-blue dark:text-clinical-blue font-extrabold text-lg">
                 {item.range}
               </Text>
             </View>
 
-            <Text className="text-slate-300 text-xs leading-5">
+            <Text className="text-slate-600 dark:text-slate-300 text-xs leading-5">
               {item.notes}
             </Text>
-          </GlassCard>
+          </View>
         ))}
       </View>
 
       {/* Scope Disclaimer */}
-      <GlassCard variant="default" className="p-4 mb-6 border-slate-800">
-        <Text className="text-amber-400 font-bold text-xs mb-1">
-          ⚠ POPULATION SCOPE NOTICE
+      <View className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/50 rounded-2xl p-4 mb-6 shadow-sm">
+        <Text className="text-amber-800 dark:text-amber-400 font-bold text-xs mb-1.5 uppercase tracking-wider">
+          ⚠ Population Scope Notice
         </Text>
-        <Text className="text-slate-400 text-xs leading-4">
+        <Text className="text-amber-700/90 dark:text-amber-300/80 text-xs leading-5">
           Adult baseline reference ranges only. Ranges vary significantly for
           paediatric, neonatal, pregnant, or critical care patients. Always document
           and evaluate vitals in patient context per facility protocol.
         </Text>
-      </GlassCard>
+      </View>
     </AppScreen>
   );
 }
-

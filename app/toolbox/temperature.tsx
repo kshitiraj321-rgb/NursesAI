@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { View, Text, TextInput } from "react-native";
 import { calcTemperature, TempDirection, CalcResult } from "../../utils/calculators";
 import { AppScreen } from "../../components/ui/AppScreen";
-import { GlassCard } from "../../components/ui/GlassCard";
 import { PrimaryButton } from "../../components/ui/PrimaryButton";
 import { Pill } from "../../components/ui/Pill";
 import { AnimatedPressable } from "../../components/ui/AnimatedPressable";
@@ -21,42 +20,42 @@ export default function TemperatureScreen() {
   return (
     <AppScreen scrollable edges={["top", "bottom"]}>
       {/* Header */}
-      <GlassCard variant="default" className="mb-6 p-4">
-        <View className="flex-row items-center justify-between mb-1">
-          <Text className="text-xl font-bold text-white tracking-tight">
+      <View className="mb-6 bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-4 shadow-sm">
+        <View className="flex-row items-center justify-between mb-2">
+          <Text className="text-xl font-bold text-navy dark:text-white tracking-tight">
             Temperature Unit Converter
           </Text>
           <Pill label="LOW RISK" variant="info" size="sm" />
         </View>
-        <Text className="text-slate-300 text-xs leading-5">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5">
           Converts patient temperature readings between Celsius (°C) and Fahrenheit (°F).
         </Text>
-      </GlassCard>
+      </View>
 
       {/* Form Container */}
-      <GlassCard variant="default" className="p-4 mb-6 space-y-4">
+      <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 mb-6 shadow-sm space-y-5">
         <View>
-          <Text className="text-slate-200 font-semibold mb-1.5 text-xs uppercase tracking-wider">
+          <Text className="text-navy dark:text-white font-bold mb-2 text-xs uppercase tracking-wider">
             Conversion Direction
           </Text>
           <View className="flex-row gap-2">
             <AnimatedPressable
               onPress={() => setDirection("C_to_F")}
               activeScale={0.98}
-              className={`flex-1 p-3 rounded-xl border items-center ${
+              className={`flex-1 p-3.5 rounded-xl border items-center ${
                 direction === "C_to_F"
-                  ? "bg-cyan-600/90 border-cyan-400"
-                  : "bg-slate-950/60 border-slate-800"
+                  ? "bg-clinical-blue/10 border-clinical-blue"
+                  : "bg-warm-bg dark:bg-slate-950 border-border-subtle dark:border-slate-800"
               }`}
             >
               <Text
                 className={`font-bold text-sm ${
-                  direction === "C_to_F" ? "text-white" : "text-slate-300"
+                  direction === "C_to_F" ? "text-clinical-blue dark:text-clinical-blue" : "text-slate-600 dark:text-slate-300"
                 }`}
               >
                 °C → °F
               </Text>
-              <Text className={`text-[10px] ${direction === "C_to_F" ? "text-cyan-100" : "text-slate-400"}`}>
+              <Text className={`text-[10px] mt-0.5 ${direction === "C_to_F" ? "text-clinical-blue/80 font-medium" : "text-slate-500 dark:text-slate-400"}`}>
                 Celsius to Fahrenheit
               </Text>
             </AnimatedPressable>
@@ -64,105 +63,104 @@ export default function TemperatureScreen() {
             <AnimatedPressable
               onPress={() => setDirection("F_to_C")}
               activeScale={0.98}
-              className={`flex-1 p-3 rounded-xl border items-center ${
+              className={`flex-1 p-3.5 rounded-xl border items-center ${
                 direction === "F_to_C"
-                  ? "bg-cyan-600/90 border-cyan-400"
-                  : "bg-slate-950/60 border-slate-800"
+                  ? "bg-clinical-blue/10 border-clinical-blue"
+                  : "bg-warm-bg dark:bg-slate-950 border-border-subtle dark:border-slate-800"
               }`}
             >
               <Text
                 className={`font-bold text-sm ${
-                  direction === "F_to_C" ? "text-white" : "text-slate-300"
+                  direction === "F_to_C" ? "text-clinical-blue dark:text-clinical-blue" : "text-slate-600 dark:text-slate-300"
                 }`}
               >
                 °F → °C
               </Text>
-              <Text className={`text-[10px] ${direction === "F_to_C" ? "text-cyan-100" : "text-slate-400"}`}>
+              <Text className={`text-[10px] mt-0.5 ${direction === "F_to_C" ? "text-clinical-blue/80 font-medium" : "text-slate-500 dark:text-slate-400"}`}>
                 Fahrenheit to Celsius
               </Text>
             </AnimatedPressable>
           </View>
         </View>
 
-        <View className="mt-3">
-          <Text className="text-slate-200 font-semibold mb-1.5 text-xs uppercase tracking-wider">
+        <View className="mt-4">
+          <Text className="text-navy dark:text-white font-bold mb-2 text-xs uppercase tracking-wider">
             Temperature Value ({direction === "C_to_F" ? "°C" : "°F"})
           </Text>
           <TextInput
-            className="bg-slate-950/80 text-white p-3.5 rounded-xl border border-slate-800 text-base font-semibold focus:border-cyan-500"
+            className="bg-warm-bg dark:bg-slate-950 text-navy dark:text-white p-4 rounded-xl border border-border-subtle dark:border-slate-800 text-base font-semibold focus:border-clinical-blue focus:bg-white dark:focus:bg-slate-900 transition-colors"
             placeholder={direction === "C_to_F" ? "e.g. 37.0" : "e.g. 98.6"}
-            placeholderTextColor="#64748b"
+            placeholderTextColor="#94a3b8"
             keyboardType="numeric"
             value={value}
             onChangeText={setValue}
           />
         </View>
 
-        <View className="pt-2">
+        <View className="pt-3">
           <PrimaryButton
             label="Convert Temperature"
             onPress={handleCalculate}
           />
         </View>
-      </GlassCard>
+      </View>
 
       {/* Result Display */}
       {result && (
         <View className="mb-6">
           {!result.ok ? (
-            <GlassCard variant="accent" className="p-4 border-rose-600/80 bg-rose-950/60">
-              <Text className="text-rose-300 font-bold text-sm mb-1">
+            <View className="bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900/50 rounded-2xl p-4 shadow-sm">
+              <Text className="text-rose-700 dark:text-rose-400 font-bold text-sm mb-1.5">
                 ⚠ Validation Notice
               </Text>
-              <Text className="text-rose-100 text-xs leading-5">{result.error}</Text>
-            </GlassCard>
+              <Text className="text-rose-600 dark:text-rose-300 text-xs leading-5">{result.error}</Text>
+            </View>
           ) : (
-            <GlassCard variant="accent" className="p-5 border-cyan-500/50">
-              <Text className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">
+            <View className="bg-white dark:bg-slate-900 border-2 border-clinical-blue/30 dark:border-clinical-blue/50 rounded-2xl p-5 shadow-sm">
+              <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2">
                 Converted Temperature
               </Text>
-              <View className="flex-row items-baseline mb-3">
-                <Text className="text-4xl font-extrabold text-cyan-400 mr-2">
+              <View className="flex-row items-baseline mb-4">
+                <Text className="text-5xl font-extrabold text-clinical-blue dark:text-clinical-blue mr-2 tracking-tighter">
                   {result.value.toFixed(1)}
                 </Text>
-                <Text className="text-lg font-bold text-slate-200">
+                <Text className="text-xl font-bold text-slate-700 dark:text-slate-200">
                   {result.unit}
                 </Text>
               </View>
 
-              <View className="bg-slate-950/80 p-3 rounded-xl border border-slate-800 mb-3">
-                <Text className="text-slate-400 text-[11px] font-semibold mb-1">Formula used:</Text>
-                <Text className="text-cyan-300 font-mono text-xs">
+              <View className="bg-warm-bg dark:bg-slate-950 p-3 rounded-xl border border-border-subtle dark:border-slate-800 mb-4">
+                <Text className="text-slate-500 dark:text-slate-400 text-[11px] font-semibold mb-1">Formula used:</Text>
+                <Text className="text-slate-700 dark:text-slate-300 font-mono text-xs">
                   {result.formulaDisplay}
                 </Text>
               </View>
 
               {result.warning && (
-                <View className="bg-amber-950/60 border border-amber-600/80 p-3 rounded-xl">
-                  <Text className="text-amber-300 font-bold text-xs mb-1">
+                <View className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 p-3.5 rounded-xl">
+                  <Text className="text-amber-800 dark:text-amber-400 font-bold text-xs mb-1.5">
                     PHYSIOLOGICAL ADVISORY
                   </Text>
-                  <Text className="text-amber-100 text-xs leading-4">
+                  <Text className="text-amber-700 dark:text-amber-300 text-xs leading-5">
                     {result.warning}
                   </Text>
                 </View>
               )}
-            </GlassCard>
+            </View>
           )}
         </View>
       )}
 
       {/* Safety Disclaimer */}
-      <GlassCard variant="default" className="p-4 mb-6 border-slate-800">
-        <Text className="text-amber-400 font-bold text-xs mb-1">
-          ⚠ CLINICAL REFERENCE DISCLAIMER
+      <View className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/50 rounded-2xl p-4 mb-6 shadow-sm">
+        <Text className="text-amber-800 dark:text-amber-400 font-bold text-xs mb-1.5 uppercase tracking-wider">
+          ⚠ Clinical Reference Disclaimer
         </Text>
-        <Text className="text-slate-400 text-xs leading-4">
+        <Text className="text-amber-700/90 dark:text-amber-300/80 text-xs leading-5">
           Always use a calibrated clinical thermometer for patient measurements.
           This tool is for mathematical unit conversion reference only.
         </Text>
-      </GlassCard>
+      </View>
     </AppScreen>
   );
 }
-

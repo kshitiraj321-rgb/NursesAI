@@ -4,7 +4,6 @@ import { useAuth } from "../../context/AuthContext";
 import { practiceRepository } from "../../data/practice/repository";
 import { AppScreen } from "../../components/ui/AppScreen";
 import { AppHeader } from "../../components/ui/AppHeader";
-import { GlassCard } from "../../components/ui/GlassCard";
 import { Pill } from "../../components/ui/Pill";
 
 export default function ProgressScreen() {
@@ -15,7 +14,7 @@ export default function ProgressScreen() {
       <AppScreen edges={["top", "bottom"]}>
         <AppHeader title="Global Progress" showHome />
         <View className="flex-1 justify-center items-center px-4">
-          <Text className="text-slate-400">Please sign in to view progress.</Text>
+          <Text className="text-slate-500 dark:text-slate-400">Please sign in to view progress.</Text>
         </View>
       </AppScreen>
     );
@@ -28,8 +27,8 @@ export default function ProgressScreen() {
       <AppScreen edges={["top", "bottom"]}>
         <AppHeader title="Global Progress" showHome />
         <View className="flex-1 justify-center items-center px-4" accessibilityRole="progressbar" accessibilityLabel="Loading your progress">
-          <ActivityIndicator size="large" color="#38BDF8" />
-          <Text className="text-slate-400 mt-4 text-sm">Loading your mastery records...</Text>
+          <ActivityIndicator size="large" color="#2563EB" />
+          <Text className="text-slate-500 dark:text-slate-400 mt-4 text-sm">Loading your mastery records...</Text>
         </View>
       </AppScreen>
     );
@@ -40,15 +39,14 @@ export default function ProgressScreen() {
       <AppScreen edges={["top", "bottom"]}>
         <AppHeader title="Global Progress" showHome />
         <View className="flex-1 justify-center items-center px-4">
-          <GlassCard className="p-6 items-center w-full max-w-sm border-rose-500/30 bg-rose-950/10">
-            <Text className="text-3xl mb-2">⚠️</Text>
-            <Text className="text-rose-400 font-bold text-lg mb-1 text-center">
+          <View className="p-8 items-center bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-900/50 rounded-2xl w-full max-w-sm">
+            <Text className="text-rose-700 dark:text-rose-400 font-bold text-lg mb-2 text-center">
               Data Unavailable
             </Text>
-            <Text className="text-slate-400 text-sm text-center leading-5">
+            <Text className="text-slate-600 dark:text-slate-400 text-sm text-center leading-5">
               Could not load your mastery progress. Please try again later.
             </Text>
-          </GlassCard>
+          </View>
         </View>
       </AppScreen>
     );
@@ -63,15 +61,14 @@ export default function ProgressScreen() {
       <AppScreen edges={["top", "bottom"]}>
         <AppHeader title="Global Progress" showHome />
         <View className="flex-1 justify-center items-center px-4">
-          <GlassCard className="p-6 items-center w-full max-w-sm">
-            <Text className="text-3xl mb-2">🌱</Text>
-            <Text className="text-white font-bold text-lg mb-1 text-center">
+          <View className="p-8 items-center bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl w-full max-w-sm">
+            <Text className="text-navy dark:text-white font-bold text-lg mb-2 text-center">
               No Practice Data Yet
             </Text>
-            <Text className="text-slate-400 text-sm text-center leading-5">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center leading-5">
               Complete practice sessions to start building your mastery profile.
             </Text>
-          </GlassCard>
+          </View>
         </View>
       </AppScreen>
     );
@@ -79,90 +76,81 @@ export default function ProgressScreen() {
 
   return (
     <AppScreen edges={["top", "bottom"]}>
-      <AppHeader title="Global Progress" subtitle="Your Mastery & Performance" showHome />
+      <AppHeader title="Global Progress" subtitle="How am I progressing?" showHome />
       <ScrollView
         className="flex-1 px-4"
         contentContainerStyle={{ paddingBottom: 40 }}
         showsVerticalScrollIndicator={false}
       >
         {/* Top level stats */}
-        <View className="flex-row gap-3 mb-6 mt-2">
+        <View className="flex-row gap-4 mb-8 mt-2">
           <View className="flex-1">
-            <GlassCard className="p-4 items-center border-sky-500/20 bg-sky-950/10">
-              <Text className="text-sky-400 font-bold text-3xl mb-1">{metrics.accuracy}%</Text>
-              <Text className="text-slate-400 text-xs font-semibold uppercase tracking-wider text-center">
-                Global Accuracy
+            <View className="bg-clinical-blue/10 dark:bg-sky-900/20 border border-clinical-blue/20 dark:border-sky-800/50 p-5 rounded-2xl items-center">
+              <Text className="text-clinical-blue dark:text-sky-400 font-bold text-3xl mb-1">{metrics.accuracy}%</Text>
+              <Text className="text-clinical-blue/80 dark:text-sky-400/80 text-xs font-semibold uppercase tracking-wider text-center">
+                Accuracy
               </Text>
-            </GlassCard>
+            </View>
           </View>
           <View className="flex-1">
-            <GlassCard className="p-4 items-center">
-              <Text className="text-slate-200 font-bold text-3xl mb-1">{metrics.totalConcepts}</Text>
-              <Text className="text-slate-400 text-xs font-semibold uppercase tracking-wider text-center">
-                Concepts Practiced
+            <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 p-5 rounded-2xl items-center">
+              <Text className="text-navy dark:text-white font-bold text-3xl mb-1">{metrics.totalConcepts}</Text>
+              <Text className="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider text-center">
+                Concepts
               </Text>
-            </GlassCard>
+            </View>
           </View>
         </View>
 
         {/* Mastery Breakdown */}
-        <Text className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-3 px-1">
-          Concept Mastery States
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+          Mastery States
         </Text>
-        <GlassCard className="mb-6 p-1">
-          <View className="flex-row items-center justify-between p-3 border-b border-slate-800/50">
-            <View className="flex-row items-center">
-              <Text className="text-emerald-400 mr-3 text-lg">🏆</Text>
-              <Text className="text-slate-200 font-semibold text-base">Mastered</Text>
-            </View>
-            <Text className="text-white font-bold text-lg">{metrics.mastered}</Text>
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden mb-8 shadow-sm">
+          <View className="flex-row items-center justify-between p-4 border-b border-border-subtle dark:border-slate-800">
+            <Text className="text-navy dark:text-white font-medium text-base">Mastered</Text>
+            <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-lg">{metrics.mastered}</Text>
           </View>
-          <View className="flex-row items-center justify-between p-3 border-b border-slate-800/50">
-            <View className="flex-row items-center">
-              <Text className="text-sky-400 mr-3 text-lg">📈</Text>
-              <Text className="text-slate-200 font-semibold text-base">Improving</Text>
-            </View>
-            <Text className="text-white font-bold text-lg">{metrics.improving}</Text>
+          <View className="flex-row items-center justify-between p-4 border-b border-border-subtle dark:border-slate-800">
+            <Text className="text-navy dark:text-white font-medium text-base">Improving</Text>
+            <Text className="text-clinical-blue dark:text-sky-400 font-bold text-lg">{metrics.improving}</Text>
           </View>
-          <View className="flex-row items-center justify-between p-3">
-            <View className="flex-row items-center">
-              <Text className="text-rose-400 mr-3 text-lg">⚠️</Text>
-              <Text className="text-slate-200 font-semibold text-base">Weak</Text>
-            </View>
-            <Text className="text-white font-bold text-lg">{metrics.weak}</Text>
+          <View className="flex-row items-center justify-between p-4">
+            <Text className="text-navy dark:text-white font-medium text-base">Weak</Text>
+            <Text className="text-rose-700 dark:text-rose-400 font-bold text-lg">{metrics.weak}</Text>
           </View>
-        </GlassCard>
-
-        {/* Mistake Relationship */}
-        <Text className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-3 px-1">
-          Mistakes & Weaknesses
-        </Text>
-        <GlassCard className="mb-6 p-4">
-          <View className="flex-row items-center justify-between mb-2">
-            <Text className="text-slate-200 font-bold text-base">Active Weaknesses</Text>
-            <Pill label={String(activeMistakesCount)} variant={activeMistakesCount > 0 ? "error" : "success"} size="sm" />
-          </View>
-          <Text className="text-slate-400 text-xs leading-5">
-            Concepts currently flagged as weak due to recent mistakes. They require 2 consecutive correct attempts to resolve.
-          </Text>
-        </GlassCard>
-
-        {/* Global Attempts */}
-        <Text className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-3 px-1">
-          Volume
-        </Text>
-        <View className="flex-row gap-3 mb-6">
-          <GlassCard className="flex-1 p-4 items-center">
-            <Text className="text-white font-bold text-xl mb-1">{metrics.totalAttempts}</Text>
-            <Text className="text-slate-400 text-[10px] uppercase font-semibold">Total Attempts</Text>
-          </GlassCard>
-          <GlassCard className="flex-1 p-4 items-center">
-            <Text className="text-emerald-400 font-bold text-xl mb-1">{metrics.correctAttempts}</Text>
-            <Text className="text-slate-400 text-[10px] uppercase font-semibold">Correct Attempts</Text>
-          </GlassCard>
         </View>
 
-        <Text className="text-slate-500 text-[10px] text-center px-4 uppercase tracking-wider mb-4">
+        {/* Mistake Relationship */}
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+          Active Weaknesses
+        </Text>
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 mb-8 shadow-sm">
+          <View className="flex-row items-center justify-between mb-3">
+            <Text className="text-navy dark:text-white font-semibold text-base">Current Focus</Text>
+            <Pill label={String(activeMistakesCount)} variant={activeMistakesCount > 0 ? "error" : "success"} size="sm" />
+          </View>
+          <Text className="text-slate-500 dark:text-slate-400 text-sm leading-6">
+            Concepts currently flagged as weak due to recent mistakes. They require 2 consecutive correct attempts to resolve.
+          </Text>
+        </View>
+
+        {/* Global Attempts */}
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+          Practice Volume
+        </Text>
+        <View className="flex-row gap-4 mb-8">
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 flex-1 p-5 rounded-2xl items-center">
+            <Text className="text-navy dark:text-white font-bold text-xl mb-1">{metrics.totalAttempts}</Text>
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-wider font-semibold">Total Attempts</Text>
+          </View>
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 flex-1 p-5 rounded-2xl items-center">
+            <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-xl mb-1">{metrics.correctAttempts}</Text>
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-wider font-semibold">Correct Attempts</Text>
+          </View>
+        </View>
+
+        <Text className="text-slate-400 dark:text-slate-500 text-[10px] text-center px-4 uppercase tracking-wider leading-4 mb-4">
           Mastery is derived from your performance on current practice content and does not guarantee clinical accuracy in a real-world setting.
         </Text>
       </ScrollView>

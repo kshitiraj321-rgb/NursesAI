@@ -2,6 +2,10 @@
  * NurseAI UI Primitive — IconButton
  *
  * Compact circular/square icon button with accessibility label.
+ *
+ * Light-first: default variant uses light surface with border.
+ * Minimum 44x44 touch target enforced.
+ * Dark mode support retained.
  */
 
 import React from "react";
@@ -26,22 +30,22 @@ export function IconButton({
   const getSizeStyle = () => {
     switch (size) {
       case "sm":
-        return "w-8 h-8 rounded-lg";
+        return "w-11 h-11 rounded-lg";
       case "lg":
         return "w-12 h-12 rounded-2xl";
       default:
-        return "w-10 h-10 rounded-xl";
+        return "w-11 h-11 rounded-xl";
     }
   };
 
   const getVariantStyle = () => {
     switch (variant) {
       case "subtle":
-        return "bg-slate-800/60 border border-slate-700/60";
+        return "bg-slate-100 dark:bg-slate-800/60 border border-border-subtle dark:border-slate-700/60";
       case "glass":
-        return "bg-white/10 border border-white/15";
+        return "bg-slate-100/80 dark:bg-white/10 border border-border-subtle dark:border-white/15";
       default:
-        return "bg-slate-800 border border-slate-700";
+        return "bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700";
     }
   };
 
@@ -53,7 +57,7 @@ export function IconButton({
       accessibilityRole="button"
       accessibilityLabel={accessibilityLabel}
     >
-      <Text className="text-white text-base">{icon}</Text>
+      <Text className="text-navy dark:text-white text-base">{icon}</Text>
     </AnimatedPressable>
   );
 }
