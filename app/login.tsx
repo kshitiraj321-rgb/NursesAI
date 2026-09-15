@@ -126,17 +126,17 @@ export default function Login() {
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-slate-50 dark:bg-slate-900">
+    <SafeAreaView className="flex-1 bg-warm-bg dark:bg-slate-900">
       <KeyboardAvoidingView 
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         className="flex-1"
       >
         <View className="p-6 flex-1 justify-center max-w-md w-full self-center">
           <View className="mb-8">
-            <Text className="text-slate-900 dark:text-slate-50 text-2xl font-bold tracking-tight mb-2">
+            <Text className="text-clinical-pine dark:text-white text-3xl font-bold tracking-tight mb-2 font-sans">
               {isLoginMode ? "NurseAI" : "Create Account"}
             </Text>
-            <Text className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+            <Text className="text-slate-body dark:text-slate-400 text-base leading-relaxed font-sans">
               {isLoginMode 
                 ? "Sign in to access your professional nursing education resources and personalized mastery tracking." 
                 : "Join NurseAI to track your mastery, identify knowledge gaps, and prepare for exams."}
@@ -162,7 +162,7 @@ export default function Login() {
           <View className="mb-4">
             <Text 
               nativeID="email-label"
-              className="text-slate-900 dark:text-slate-50 text-sm font-semibold mb-1.5"
+              className="text-navy dark:text-slate-50 text-sm font-semibold mb-1.5 font-sans"
             >
               Email Address
             </Text>
@@ -172,7 +172,7 @@ export default function Login() {
               placeholderTextColor="#94A3B8"
               value={email}
               onChangeText={setEmail}
-              className="bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-50 p-4 rounded-xl text-base border border-slate-200 dark:border-slate-700 min-h-[48px]"
+              className="bg-surface dark:bg-slate-800 text-navy dark:text-slate-50 p-4 rounded-2xl text-base border border-border-subtle dark:border-slate-700 min-h-[54px] font-sans"
               keyboardType="email-address"
               autoCapitalize="none"
               autoComplete="email"
@@ -183,7 +183,7 @@ export default function Login() {
           <View className="mb-6">
             <Text 
               nativeID="password-label"
-              className="text-slate-900 dark:text-slate-50 text-sm font-semibold mb-1.5"
+              className="text-navy dark:text-slate-50 text-sm font-semibold mb-1.5 font-sans"
             >
               Password
             </Text>
@@ -194,7 +194,7 @@ export default function Login() {
               secureTextEntry
               value={password}
               onChangeText={setPassword}
-              className="bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-50 p-4 rounded-xl text-base border border-slate-200 dark:border-slate-700 min-h-[48px]"
+              className="bg-surface dark:bg-slate-800 text-navy dark:text-slate-50 p-4 rounded-2xl text-base border border-border-subtle dark:border-slate-700 min-h-[54px] font-sans"
               autoCapitalize="none"
               autoComplete="password"
               editable={!loading}
@@ -209,7 +209,7 @@ export default function Login() {
                   accessibilityRole="button"
                   accessibilityLabel="Reset password"
                 >
-                  <Text className="text-indigo-600 dark:text-indigo-400 text-sm font-medium">
+                  <Text className="text-clinical-teal dark:text-teal-400 text-sm font-medium font-sans">
                     Forgot password?
                   </Text>
                 </TouchableOpacity>

@@ -15,34 +15,34 @@
 export const shadows = {
   /** Very light neutral card shadow — primary card elevation */
   card: {
-    shadowColor: "#0E1E3A",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.06,
-    shadowRadius: 3,
-    elevation: 1,
+    shadowColor: "#0D9488",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.08,
+    shadowRadius: 16,
+    elevation: 2,
   },
   /** Barely-visible surface shadow — headers, tab bar */
   subtle: {
-    shadowColor: "#0E1E3A",
-    shadowOffset: { width: 0, height: 1 },
+    shadowColor: "#0D9488",
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.04,
-    shadowRadius: 2,
+    shadowRadius: 8,
     elevation: 1,
   },
   /** General-purpose small elevation */
   sm: {
-    shadowColor: "#0E1E3A",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: 4,
-    elevation: 2,
+    shadowColor: "#0D9488",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.12,
+    shadowRadius: 12,
+    elevation: 3,
   },
   /** Medium elevation — modals, bottom sheets */
   md: {
-    shadowColor: "#0E1E3A",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.10,
-    shadowRadius: 8,
-    elevation: 4,
+    shadowColor: "#0D9488",
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.15,
+    shadowRadius: 30,
+    elevation: 5,
   },
 };

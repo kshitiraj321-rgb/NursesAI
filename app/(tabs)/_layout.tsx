@@ -31,13 +31,13 @@ export default function TabLayout() {
           shadowOpacity: 0.04,
           shadowRadius: 4,
         },
-        tabBarActiveTintColor: "#2563EB",
+        tabBarActiveTintColor: "#0F766E", // clinical-pine
         tabBarInactiveTintColor: "#94A3B8",
         tabBarHideOnKeyboard: true,
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: "600",
-          fontFamily: "Inter_600SemiBold",
+          fontFamily: "PlusJakartaSans_600SemiBold",
         },
       }}
     >

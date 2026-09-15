@@ -17,7 +17,7 @@ import {
  * Concept Detail Screen — SLICE 2 Redesign
  *
  * Three learning modes: Quick Revision | Full Answer | Teach Me
- * Mode switcher uses clinical blue for active state (no purple/cyan).
+ * Mode switcher uses clinical pine for active state.
  * All learning data and navigation logic unchanged.
  */
 type LearningMode = "quick_revision" | "full_answer" | "teach_me";
@@ -67,14 +67,14 @@ export default function ConceptDetailScreen() {
       {topic && (
         <GlassCard variant="default" style={{ marginBottom: 16 }}>
           <View className="flex-row items-center justify-between mb-3">
-            <Text className="text-clinical-blue dark:text-sky-400 text-xs font-semibold uppercase tracking-wider flex-1 mr-2">
+            <Text className="text-clinical-teal dark:text-teal-400 text-xs font-semibold uppercase tracking-wider flex-1 mr-2 font-sans">
               {topic.displayName || topic.name}
             </Text>
             <Pill label={topic.meta.verificationStatus} variant="trust" size="sm" />
           </View>
 
           {activeConcept && (
-            <Text className="text-navy dark:text-white font-bold text-lg leading-snug mb-3">
+            <Text className="text-navy dark:text-white font-bold text-lg leading-snug mb-3 font-sans">
               {activeConcept.title}
             </Text>
           )}
@@ -101,12 +101,12 @@ export default function ConceptDetailScreen() {
               accessibilityState={{ selected: isActive }}
               className={`flex-1 py-2.5 rounded-lg items-center justify-center min-h-[44px] ${
                 isActive
-                  ? "bg-clinical-blue"
+                  ? "bg-clinical-pine"
                   : "bg-transparent"
               }`}
             >
               <Text
-                className={`text-xs font-bold ${
+                className={`text-xs font-bold font-sans ${
                   isActive
                     ? "text-white"
                     : "text-slate-500 dark:text-slate-400"
@@ -130,8 +130,8 @@ export default function ConceptDetailScreen() {
             />
           )}
           {mode === "quick_revision" && !topic.quickRevision && (
-            <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-xl p-6 items-center">
-              <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
+            <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-6 items-center">
+              <Text className="text-slate-500 dark:text-slate-400 text-sm text-center font-sans">
                 Quick revision content is not yet available for this topic.
               </Text>
             </View>
@@ -141,8 +141,8 @@ export default function ConceptDetailScreen() {
             <FullAnswerView fullAnswer={topic.fullAnswer} concepts={concepts} />
           )}
           {mode === "full_answer" && !topic.fullAnswer && (
-            <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-xl p-6 items-center">
-              <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
+            <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-6 items-center">
+              <Text className="text-slate-500 dark:text-slate-400 text-sm text-center font-sans">
                 Full answer content is not yet available for this topic.
               </Text>
             </View>
@@ -153,8 +153,8 @@ export default function ConceptDetailScreen() {
           )}
         </View>
       ) : (
-        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-xl p-6 items-center my-6">
-          <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-6 items-center my-6">
+          <Text className="text-slate-500 dark:text-slate-400 text-sm text-center font-sans">
             Topic not found. Please select a topic from the Learn index.
           </Text>
         </View>

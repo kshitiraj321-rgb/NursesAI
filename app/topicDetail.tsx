@@ -53,42 +53,42 @@ export default function TopicDetailScreen() {
           accessibilityRole="button"
           accessibilityLabel="Go back"
         >
-          <Text className="text-clinical-blue dark:text-sky-400 font-semibold text-[15px]">← Back</Text>
+          <Text className="text-clinical-pine dark:text-teal-400 font-semibold text-[15px] font-sans">← Back</Text>
         </TouchableOpacity>
 
         {/* Title */}
-        <Text className="text-navy dark:text-white text-2xl font-bold tracking-tight mb-1">
+        <Text className="text-navy dark:text-white text-2xl font-bold tracking-tight mb-1 font-sans">
           {parsedTopic.name}
         </Text>
-        <Text className="text-slate-500 dark:text-slate-400 mb-1 text-sm">
+        <Text className="text-slate-500 dark:text-slate-400 mb-1 text-sm font-sans">
           {parsedTopic.subjectName || "Nursing"}
         </Text>
 
         {/* Metadata */}
         <View className="flex-row gap-4 mb-5">
           <View className="flex-row items-center">
-            <Text className="text-slate-400 dark:text-slate-500 text-xs">PYQs: </Text>
-            <Text className="text-navy dark:text-white text-xs font-semibold">{pyqCount}</Text>
+            <Text className="text-slate-400 dark:text-slate-500 text-xs font-sans">PYQs: </Text>
+            <Text className="text-navy dark:text-white text-xs font-semibold font-sans">{pyqCount}</Text>
           </View>
           <View className="flex-row items-center">
-            <Text className="text-slate-400 dark:text-slate-500 text-xs">Notes: </Text>
-            <Text className="text-navy dark:text-white text-xs font-semibold">{noteCount}</Text>
+            <Text className="text-slate-400 dark:text-slate-500 text-xs font-sans">Notes: </Text>
+            <Text className="text-navy dark:text-white text-xs font-semibold font-sans">{noteCount}</Text>
           </View>
           <View className="flex-row items-center">
-            <Text className="text-slate-400 dark:text-slate-500 text-xs">Quiz-ready: </Text>
-            <Text className="text-navy dark:text-white text-xs font-semibold">{quizReadyCount}</Text>
+            <Text className="text-slate-400 dark:text-slate-500 text-xs font-sans">Quiz-ready: </Text>
+            <Text className="text-navy dark:text-white text-xs font-semibold font-sans">{quizReadyCount}</Text>
           </View>
         </View>
 
         {pyqCount === 0 && (
-          <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-xl p-4 mb-4">
-            <Text className="text-slate-500 dark:text-slate-400 text-sm">
+          <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-[20px] p-4 mb-4">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm font-sans">
               More questions coming soon.
             </Text>
           </View>
         )}
 
-        <Text className="text-slate-500 dark:text-slate-400 mb-4 text-sm">
+        <Text className="text-slate-500 dark:text-slate-400 mb-4 text-sm font-sans">
           How would you like to prepare?
         </Text>
 
@@ -103,11 +103,11 @@ export default function TopicDetailScreen() {
               } as never,
             })
           }
-          className="bg-clinical-blue active:bg-clinical-blue-pressed p-4 rounded-xl mb-3 min-h-[52px] items-center justify-center"
+          className="bg-clinical-pine active:bg-clinical-pine/90 p-4 rounded-[20px] mb-3 min-h-[52px] items-center justify-center"
           accessibilityRole="button"
           accessibilityLabel="Learn with AI"
         >
-          <Text className="text-white font-bold tracking-wide">Learn with AI</Text>
+          <Text className="text-white font-bold tracking-wide font-sans">Learn with AI</Text>
         </TouchableOpacity>
 
         {/* Practice PYQs */}
@@ -119,11 +119,11 @@ export default function TopicDetailScreen() {
               params: { type: "pyq", topic: parsedTopic.name } as never,
             })
           }
-          className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 p-4 rounded-xl mb-3 min-h-[52px] items-center justify-center"
+          className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 p-4 rounded-[20px] mb-3 min-h-[52px] items-center justify-center"
           accessibilityRole="button"
           accessibilityLabel="Practice PYQs"
         >
-          <Text className="text-navy dark:text-white font-bold tracking-wide">Practice PYQs</Text>
+          <Text className="text-navy dark:text-white font-bold tracking-wide font-sans">Practice PYQs</Text>
         </TouchableOpacity>
 
         {/* Generate AI Quiz */}
@@ -135,12 +135,12 @@ export default function TopicDetailScreen() {
               params: { topic: JSON.stringify(parsedTopic) } as never,
             })
           }
-          className="bg-emerald-500 active:bg-emerald-600 p-4 rounded-xl mb-5 min-h-[52px] items-center justify-center"
+          className="bg-emerald-500 active:bg-emerald-600 p-4 rounded-[20px] mb-5 min-h-[52px] items-center justify-center"
           accessibilityRole="button"
           accessibilityLabel="Generate AI Quiz"
         >
-          <Text className="text-white font-bold tracking-wide">Generate AI Quiz</Text>
-          <Text className="text-emerald-100 text-xs mt-0.5">AI-generated practice questions</Text>
+          <Text className="text-white font-bold tracking-wide font-sans">Generate AI Quiz</Text>
+          <Text className="text-emerald-100 text-xs mt-0.5 font-sans">AI-generated practice questions</Text>
         </TouchableOpacity>
 
         {/* Read Notes */}
@@ -153,11 +153,11 @@ export default function TopicDetailScreen() {
                 params: { topic: parsedTopic.name, subject: parsedTopic.subjectName || "" } as never,
               })
             }
-            className="bg-surface dark:bg-slate-800 border border-clinical-blue-border dark:border-sky-800 p-4 rounded-xl mb-5 min-h-[52px] items-center justify-center"
+            className="bg-surface dark:bg-slate-800 border border-clinical-pine/30 dark:border-teal-800 p-4 rounded-[20px] mb-5 min-h-[52px] items-center justify-center"
             accessibilityRole="button"
             accessibilityLabel={`Read ${noteCount} notes`}
           >
-            <Text className="text-clinical-blue dark:text-sky-400 font-bold tracking-wide">
+            <Text className="text-clinical-pine dark:text-teal-400 font-bold tracking-wide font-sans">
               Read Notes ({noteCount})
             </Text>
           </TouchableOpacity>

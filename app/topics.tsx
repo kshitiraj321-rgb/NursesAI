@@ -67,18 +67,18 @@ export default function TopicsScreen() {
               accessibilityLabel={`Open topic: ${t.displayName || t.name}`}
               className={`bg-surface dark:bg-slate-800 px-4 py-3.5 min-h-[60px] flex-row items-center
                 border-x border-t border-border-subtle dark:border-slate-700
-                ${isFirst ? "rounded-t-xl" : ""}
-                ${isLast ? "rounded-b-xl border-b" : ""}
+                ${isFirst ? "rounded-t-[20px]" : ""}
+                ${isLast ? "rounded-b-[20px] border-b" : ""}
               `}
             >
               {/* Text content */}
               <View className="flex-1 mr-3">
-                <Text className="text-navy dark:text-white font-semibold text-sm leading-snug">
+                <Text className="text-navy dark:text-white font-semibold text-sm leading-snug font-sans">
                   {t.displayName || t.name}
                 </Text>
                 {definition ? (
                   <Text
-                    className="text-slate-500 dark:text-slate-400 text-xs leading-4 mt-0.5"
+                    className="text-slate-500 dark:text-slate-400 text-xs leading-4 mt-0.5 font-sans"
                     numberOfLines={1}
                   >
                     {definition}
@@ -88,7 +88,7 @@ export default function TopicsScreen() {
 
               {/* Right side: count + verification + chevron */}
               <View className="flex-row items-center gap-2">
-                <Text className="text-muted dark:text-slate-500 text-xs">
+                <Text className="text-muted dark:text-slate-500 text-xs font-sans">
                   {conceptCount}
                 </Text>
                 <Pill label={t.meta.verificationStatus} variant="trust" size="sm" />
@@ -99,8 +99,8 @@ export default function TopicsScreen() {
         })}
 
         {topics.length === 0 && (
-          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-xl p-6 items-center">
-            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-6 items-center">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center font-sans">
               No clinical topics found for this subject.
             </Text>
           </View>

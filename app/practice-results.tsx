@@ -59,10 +59,10 @@ export default function PracticeResultsScreen() {
           <Text className="text-4xl mb-3" accessibilityLabel={isPerfect ? "Perfect score" : "Results"}>
             {isPerfect ? "🏆" : scorePercent >= 70 ? "✅" : "📚"}
           </Text>
-          <Text className="text-navy dark:text-white font-bold text-2xl mb-1 text-center">
+          <Text className="text-navy dark:text-white font-bold text-2xl mb-1 text-center font-sans">
             {isPerfect ? "Perfect Session!" : "Session Complete"}
           </Text>
-          <Text className="text-slate-500 dark:text-slate-400 text-sm text-center capitalize">
+          <Text className="text-slate-500 dark:text-slate-400 text-sm text-center capitalize font-sans">
             {mode.replace(/_/g, " ")} Practice
           </Text>
         </View>
@@ -72,21 +72,21 @@ export default function PracticeResultsScreen() {
           className="bg-surface dark:bg-slate-900/80 border border-border-subtle dark:border-slate-700 rounded-2xl p-6 mb-4"
           accessibilityLabel={`Score: ${scorePercent} percent`}
         >
-          <Text className="text-slate-500 dark:text-slate-400 text-xs font-semibold tracking-wider uppercase mb-3">
+          <Text className="text-slate-500 dark:text-slate-400 text-xs font-semibold tracking-wider uppercase mb-3 font-sans">
             Your Score
           </Text>
 
           {/* Large Score */}
           <View className="flex-row items-end mb-2">
-            <Text className="text-emerald-600 dark:text-emerald-400 font-bold text-6xl leading-none">
+            <Text className="text-emerald-600 dark:text-emerald-400 font-bold text-6xl leading-none font-sans">
               {scorePercent}
             </Text>
-            <Text className="text-slate-500 dark:text-slate-400 text-2xl font-semibold ml-1 mb-2">%</Text>
+            <Text className="text-slate-500 dark:text-slate-400 text-2xl font-semibold ml-1 mb-2 font-sans">%</Text>
           </View>
 
           {/* Text-based status indicator */}
           <View className="flex-row items-center mb-4">
-            <Text className={`font-bold text-sm ${scorePercent >= 70 ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400"}`}>
+            <Text className={`font-bold text-sm font-sans ${scorePercent >= 70 ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400"}`}>
               {scorePercent >= 70 ? "✓ Passing Score" : "⚠️ Needs Improvement"}
             </Text>
           </View>
@@ -111,26 +111,26 @@ export default function PracticeResultsScreen() {
               className="flex-1 bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/30 rounded-xl p-3 items-center"
               accessibilityLabel={`${correctAnswers} correct answers`}
             >
-              <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-2xl">{correctAnswers}</Text>
-              <Text className="text-emerald-600 dark:text-slate-400 text-xs mt-0.5">Correct</Text>
+              <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-2xl font-sans">{correctAnswers}</Text>
+              <Text className="text-emerald-600 dark:text-slate-400 text-xs mt-0.5 font-sans">Correct</Text>
             </View>
 
             <View
               className="flex-1 bg-rose-50 dark:bg-red-500/10 border border-rose-200 dark:border-red-500/30 rounded-xl p-3 items-center"
               accessibilityLabel={`${incorrectAnswers} incorrect answers`}
             >
-              <Text className="text-rose-700 dark:text-red-400 font-bold text-2xl">{incorrectAnswers}</Text>
-              <Text className="text-rose-600 dark:text-slate-400 text-xs mt-0.5">Incorrect</Text>
+              <Text className="text-rose-700 dark:text-red-400 font-bold text-2xl font-sans">{incorrectAnswers}</Text>
+              <Text className="text-rose-600 dark:text-slate-400 text-xs mt-0.5 font-sans">Incorrect</Text>
             </View>
 
             <View
               className="flex-1 bg-slate-50 dark:bg-slate-800/60 border border-border-subtle dark:border-slate-700 rounded-xl p-3 items-center"
               accessibilityLabel={`${attemptedQuestions} of ${totalQuestions} questions attempted`}
             >
-              <Text className="text-navy dark:text-slate-200 font-bold text-2xl">
+              <Text className="text-navy dark:text-slate-200 font-bold text-2xl font-sans">
                 {attemptedQuestions}/{totalQuestions}
               </Text>
-              <Text className="text-slate-500 dark:text-slate-400 text-xs mt-0.5">Attempted</Text>
+              <Text className="text-slate-500 dark:text-slate-400 text-xs mt-0.5 font-sans">Attempted</Text>
             </View>
           </View>
         </View>

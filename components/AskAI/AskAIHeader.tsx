@@ -22,7 +22,7 @@ export default function AskAIHeader({ selectedMode, setSelectedMode }: AskAIHead
         <TouchableOpacity onPress={() => router.back()} activeOpacity={0.7} className="w-8 h-8 items-center justify-center bg-warm-bg dark:bg-slate-800 rounded-full border border-border-subtle dark:border-slate-700">
           <IconSymbol name="chevron.left" size={18} color="#0F172A" />
         </TouchableOpacity>
-        <Text className="text-navy dark:text-white text-xl font-bold tracking-tight">
+        <Text className="text-navy dark:text-white text-xl font-bold tracking-tight font-sans">
           NurseAI Assistant
         </Text>
       </View>
@@ -38,12 +38,12 @@ export default function AskAIHeader({ selectedMode, setSelectedMode }: AskAIHead
             onPress={() => setSelectedMode(mode.id)}
             className={`px-4 py-2 rounded-full border ${
               selectedMode === mode.id 
-              ? "bg-clinical-blue/10 border-clinical-blue dark:bg-clinical-blue/20" 
+              ? "bg-clinical-teal/10 border-clinical-teal dark:bg-clinical-teal/20" 
               : "bg-warm-bg dark:bg-slate-800 border-border-subtle dark:border-slate-700"
             }`}
           >
-            <Text className={`text-[13px] font-semibold tracking-wide ${
-              selectedMode === mode.id ? "text-clinical-blue dark:text-clinical-blue" : "text-slate-600 dark:text-slate-300"
+            <Text className={`text-[13px] font-semibold tracking-wide font-sans ${
+              selectedMode === mode.id ? "text-clinical-teal dark:text-teal-400" : "text-slate-600 dark:text-slate-300"
             }`}>
               {mode.label}
             </Text>

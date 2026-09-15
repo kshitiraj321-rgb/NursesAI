@@ -30,14 +30,14 @@ export function SecondaryButton({
       onPress={onPress}
       disabled={disabled}
       activeScale={0.98}
-      className={`p-3.5 rounded-xl border border-border-subtle dark:border-slate-600 bg-transparent items-center flex-row justify-center min-h-[44px] ${
+      className={`p-4 rounded-full border-2 border-border-subtle dark:border-slate-600 bg-transparent items-center flex-row justify-center min-h-[54px] ${
         disabled ? "opacity-40" : "active:bg-slate-100 dark:active:bg-slate-800"
       }`}
       accessibilityRole="button"
       accessibilityState={{ disabled }}
     >
       {icon && <Text className="mr-2 text-base">{icon}</Text>}
-      <Text className="text-navy dark:text-slate-100 font-semibold text-sm">
+      <Text className="text-navy dark:text-slate-100 font-semibold text-[15px] font-sans">
         {label}
       </Text>
     </AnimatedPressable>

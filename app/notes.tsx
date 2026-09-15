@@ -51,7 +51,7 @@ export default function NotesScreen() {
     <SafeAreaView className="flex-1 bg-black">
       <View className="flex-1 p-5 pt-3">
         <TouchableOpacity onPress={() => router.back()} className="mb-4">
-          <Text className="text-blue-500 font-semibold text-[15px]">← Back</Text>
+          <Text className="text-clinical-pine dark:text-teal-400 font-semibold text-[15px] font-sans">← Back</Text>
         </TouchableOpacity>
 
         <Text className="text-white text-3xl font-bold tracking-tight mb-2">{topic as string}</Text>
@@ -66,15 +66,15 @@ export default function NotesScreen() {
             notes.map((note, index) => (
               <View key={note.id || index} className="bg-[#1c1c1e] p-5 rounded-2xl border border-[#2c2c2e] mb-5 shadow-lg">
                 {note.verifiedLevel === "curated" && (
-                  <View className="mb-4 self-start bg-blue-500/20 px-3 py-1 rounded-full border border-blue-500/40">
-                    <Text className="text-blue-300 text-xs font-bold uppercase tracking-wider">Curated NORCET Notes ✨</Text>
+                  <View className="mb-4 self-start bg-clinical-pine/20 dark:bg-teal-500/20 px-3 py-1 rounded-full border border-clinical-pine/40 dark:border-teal-500/40">
+                    <Text className="text-clinical-pine dark:text-teal-400 text-xs font-bold uppercase tracking-wider font-sans">Curated NORCET Notes ✨</Text>
                   </View>
                 )}
 
                 {note.definition && (
                   <View className="mb-4">
-                    <Text className="text-blue-400 font-bold mb-1 text-sm uppercase tracking-wider">Definition</Text>
-                    <Text className="text-white text-[15px] leading-6">{note.definition}</Text>
+                    <Text className="text-clinical-pine dark:text-teal-400 font-bold mb-1 text-sm uppercase tracking-wider font-sans">Definition</Text>
+                    <Text className="text-white text-[15px] leading-6 font-sans">{note.definition}</Text>
                   </View>
                 )}
 

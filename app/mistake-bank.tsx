@@ -38,9 +38,9 @@ export default function MistakeBankScreen() {
       />
 
       {/* Active Weaknesses Header Card */}
-      <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 mb-6 shadow-sm">
+      <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-5 mb-6 shadow-sm">
         <View className="flex-row items-center justify-between mb-2">
-          <Text className="text-navy dark:text-white font-bold text-base">
+          <Text className="text-navy dark:text-white font-bold text-base font-sans">
             Active Weaknesses
           </Text>
           <Pill
@@ -50,25 +50,25 @@ export default function MistakeBankScreen() {
           />
         </View>
 
-        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 mb-5">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 mb-5 font-sans">
           Concepts where retrieval errors occurred. Resolve each concept with 2 consecutive correct retrieval attempts.
         </Text>
 
         <View className="flex-row items-center justify-between">
           <View className="items-center flex-1 border-r border-border-subtle dark:border-slate-800">
-            <Text className="text-navy dark:text-white font-bold text-2xl">
+            <Text className="text-navy dark:text-white font-bold text-2xl font-sans">
               {activeMistakes.length}
             </Text>
-            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-semibold mt-1">
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-semibold mt-1 font-sans">
               Active
             </Text>
           </View>
 
           <View className="items-center flex-1">
-            <Text className="text-navy dark:text-white font-bold text-2xl">
+            <Text className="text-navy dark:text-white font-bold text-2xl font-sans">
               {resolvedCount}
             </Text>
-            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-semibold mt-1">
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-semibold mt-1 font-sans">
               Resolved
             </Text>
           </View>
@@ -76,12 +76,12 @@ export default function MistakeBankScreen() {
       </View>
 
       {/* Section Title */}
-      <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+      <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
         Your Weak Concepts
       </Text>
 
       {/* Active Mistakes Grouped List */}
-      <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden mb-6">
+      <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] overflow-hidden mb-6">
         {activeMistakes.map((m, index) => (
           <MistakeListItem
             key={m.id}
@@ -93,10 +93,10 @@ export default function MistakeBankScreen() {
         {/* Empty State when zero active mistakes */}
         {activeMistakes.length === 0 && (
           <View className="p-8 items-center">
-            <Text className="text-navy dark:text-white font-bold text-lg mb-2 text-center">
+            <Text className="text-navy dark:text-white font-bold text-lg mb-2 text-center font-sans">
               No Active Weaknesses
             </Text>
-            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center leading-5 max-w-xs">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center leading-5 max-w-xs font-sans">
               Great job! All weak concepts have been resolved through successful retrieval sessions.
             </Text>
           </View>

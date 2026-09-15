@@ -33,12 +33,12 @@ export default function QuickActions(_props: Props) {
           <AnimatedPressable
             onPress={() => handleNavigate("/(tabs)/askai")}
           >
-            <GlassCard className="p-4 border-l-4 border-l-sky-500 min-h-[90px] justify-between">
+            <GlassCard className="p-4 border-l-[6px] border-l-clinical-teal min-h-[100px] justify-between">
               <View className="flex-row items-center space-x-2">
-                <Ionicons name="chatbubble-outline" size={18} color="#38bdf8" />
-                <Text className="text-white font-bold text-sm">Ask AI</Text>
+                <Ionicons name="chatbubble-outline" size={20} color="#0D9488" />
+                <Text className="text-navy dark:text-white font-bold text-[15px] font-sans">Ask AI</Text>
               </View>
-              <Text className="text-slate-400 text-xs mt-2">AI tutor & explanation</Text>
+              <Text className="text-slate-body dark:text-slate-400 text-sm mt-2 font-sans">AI tutor & explanation</Text>
             </GlassCard>
           </AnimatedPressable>
         </View>
@@ -47,12 +47,12 @@ export default function QuickActions(_props: Props) {
           <AnimatedPressable
             onPress={() => handleNavigate("/(tabs)/learn")}
           >
-            <GlassCard className="p-4 border-l-4 border-l-emerald-500 min-h-[90px] justify-between">
+            <GlassCard className="p-4 border-l-[6px] border-l-clinical-pine min-h-[100px] justify-between">
               <View className="flex-row items-center space-x-2">
-                <Ionicons name="book-outline" size={18} color="#34d399" />
-                <Text className="text-white font-bold text-sm">Quick Learn</Text>
+                <Ionicons name="book-outline" size={20} color="#134E4A" />
+                <Text className="text-navy dark:text-white font-bold text-[15px] font-sans">Quick Learn</Text>
               </View>
-              <Text className="text-slate-400 text-xs mt-2">Subject index & concepts</Text>
+              <Text className="text-slate-body dark:text-slate-400 text-sm mt-2 font-sans">Subject index & concepts</Text>
             </GlassCard>
           </AnimatedPressable>
         </View>

@@ -43,11 +43,10 @@ export function PrimaryButton({
         return "bg-white active:bg-slate-50";
       case "outline":
         return "bg-transparent border border-border-subtle dark:border-slate-600 active:bg-slate-100 dark:active:bg-slate-800";
-      // purple was a gaming-adjacent aesthetic — mapped to professional blue
       case "purple":
       case "primary":
       default:
-        return "bg-clinical-blue active:bg-clinical-blue-pressed";
+        return "bg-clinical-teal active:bg-clinical-teal-pressed";
     }
   };
 
@@ -62,7 +61,7 @@ export function PrimaryButton({
       onPress={onPress}
       disabled={disabled || loading}
       activeScale={0.98}
-      className={`p-3.5 rounded-xl items-center flex-row justify-center min-h-[44px] ${getVariantStyle()}`}
+      className={`p-4 rounded-full items-center flex-row justify-center min-h-[54px] ${getVariantStyle()}`}
       accessibilityRole="button"
       accessibilityState={{ disabled: disabled || loading }}
     >
@@ -71,7 +70,7 @@ export function PrimaryButton({
       ) : (
         <>
           {icon && <Text className="mr-2 text-base">{icon}</Text>}
-          <Text className={`font-bold text-sm tracking-wide ${getTextColor()}`}>
+          <Text className={`font-bold text-[15px] tracking-wide font-sans ${getTextColor()}`}>
             {label}
           </Text>
         </>

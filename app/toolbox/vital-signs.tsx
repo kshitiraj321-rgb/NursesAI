@@ -53,10 +53,10 @@ export default function VitalSignsScreen() {
     <AppScreen scrollable edges={["top", "bottom"]}>
       {/* Title */}
       <View className="mb-6 bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-4 shadow-sm">
-        <Text className="text-xl font-bold text-navy dark:text-white mb-2 tracking-tight">
+        <Text className="text-xl font-bold text-navy dark:text-white mb-2 tracking-tight font-sans">
           Adult Vital Signs Reference
         </Text>
-        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 font-sans">
           Standard physiological baseline reference ranges for healthy adult patients.
         </Text>
       </View>
@@ -66,22 +66,22 @@ export default function VitalSignsScreen() {
         {VITAL_SIGNS.map((item, idx) => (
           <View key={idx} className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 shadow-sm">
             <View className="flex-row items-center justify-between mb-3">
-              <Text className="text-navy dark:text-white font-bold text-base flex-1 mr-2">
+              <Text className="text-navy dark:text-white font-bold text-base flex-1 mr-2 font-sans">
                 {item.name}
               </Text>
               <Pill label={item.badge} variant="trust" size="sm" />
             </View>
 
             <View className="bg-warm-bg dark:bg-slate-950 p-4 rounded-xl border border-border-subtle dark:border-slate-800 mb-3">
-              <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-bold tracking-wider mb-1">
+              <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-bold tracking-wider mb-1 font-sans">
                 Normal Adult Range
               </Text>
-              <Text className="text-clinical-blue dark:text-clinical-blue font-extrabold text-lg">
+              <Text className="text-clinical-pine dark:text-teal-400 font-extrabold text-lg font-sans">
                 {item.range}
               </Text>
             </View>
 
-            <Text className="text-slate-600 dark:text-slate-300 text-xs leading-5">
+            <Text className="text-slate-600 dark:text-slate-300 text-xs leading-5 font-sans">
               {item.notes}
             </Text>
           </View>
@@ -90,10 +90,10 @@ export default function VitalSignsScreen() {
 
       {/* Scope Disclaimer */}
       <View className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/50 rounded-2xl p-4 mb-6 shadow-sm">
-        <Text className="text-amber-800 dark:text-amber-400 font-bold text-xs mb-1.5 uppercase tracking-wider">
+        <Text className="text-amber-800 dark:text-amber-400 font-bold text-xs mb-1.5 uppercase tracking-wider font-sans">
           ⚠ Population Scope Notice
         </Text>
-        <Text className="text-amber-700/90 dark:text-amber-300/80 text-xs leading-5">
+        <Text className="text-amber-700/90 dark:text-amber-300/80 text-xs leading-5 font-sans">
           Adult baseline reference ranges only. Ranges vary significantly for
           paediatric, neonatal, pregnant, or critical care patients. Always document
           and evaluate vitals in patient context per facility protocol.

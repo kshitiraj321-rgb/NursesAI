@@ -211,15 +211,15 @@ export default function PracticeSessionScreen() {
             accessibilityRole="button"
             accessibilityLabel="Exit Practice Session"
           >
-            <Text className="text-clinical-blue dark:text-sky-400 font-bold text-sm">← Exit</Text>
+            <Text className="text-clinical-pine dark:text-teal-400 font-bold text-sm font-sans">← Exit</Text>
           </TouchableOpacity>
 
           <View className="flex-row items-center space-x-3">
-            <Text className="text-slate-500 dark:text-slate-400 font-medium text-xs">
-              Score: <Text className="text-navy dark:text-white font-bold">{score}</Text>
+            <Text className="text-slate-500 dark:text-slate-400 font-medium text-xs font-sans">
+              Score: <Text className="text-navy dark:text-white font-bold font-sans">{score}</Text>
             </Text>
             <View className="bg-surface dark:bg-slate-800 px-2.5 py-1 rounded-md border border-border-subtle dark:border-slate-700/60">
-              <Text className="text-navy dark:text-slate-300 font-semibold text-xs tracking-wider">
+              <Text className="text-navy dark:text-slate-300 font-semibold text-xs tracking-wider font-sans">
                 {questionNumStr} / {totalNumStr}
               </Text>
             </View>
@@ -227,7 +227,7 @@ export default function PracticeSessionScreen() {
         </View>
 
         {/* Progress Bar */}
-        <ProgressBar progress={progressFraction} color="#3B82F6" height={5} />
+        <ProgressBar progress={progressFraction} color="#0F766E" height={5} />
       </View>
 
       <ScrollView

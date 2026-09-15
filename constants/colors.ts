@@ -25,26 +25,26 @@
 export const colors = {
   // ─── Light Theme Semantic Tokens ──────────────────────────────────────────
   light: {
-    /** Page/screen background — warm off-white */
-    bg: "#F7F8FA",
-    /** Card/surface background — pure white */
+    /** Page/screen background — Oatmeal */
+    bg: "#FAF9F6",
+    /** Card/surface background — Pure White */
     surface: "#FFFFFF",
-    /** Primary text — deep navy, high contrast */
-    textPrimary: "#0E1E3A",
-    /** Secondary text — muted slate, readable */
-    textSecondary: "#475569",
+    /** Primary text — Midnight */
+    textPrimary: "#1E293B",
+    /** Secondary text — Slate */
+    textSecondary: "#64748B",
     /** Tertiary/muted text — for captions, metadata */
     textMuted: "#94A3B8",
     /** Subtle divider and card border */
     border: "#E5E9F0",
     /** Interactive element border (focus/hover) */
-    borderInteractive: "#BFDBFE",
+    borderInteractive: "#99F6E4",
   },
 
   // ─── Dark Theme Semantic Tokens ────────────────────────────────────────────
   dark: {
     /** Page/screen background */
-    bg: "#0F172A",
+    bg: "#0A0F1C",
     /** Card/surface background */
     surface: "#1E293B",
     /** Primary text */
@@ -56,16 +56,16 @@ export const colors = {
     /** Subtle divider and card border */
     border: "#334155",
     /** Interactive element border */
-    borderInteractive: "#1D4ED8",
+    borderInteractive: "#0D9488",
   },
 
   // ─── Brand Palette ─────────────────────────────────────────────────────────
   brand: {
-    /** Primary action — professional blue */
-    primary: "#2563EB",
+    /** Primary action — Deep Pine */
+    primary: "#134E4A",
     /** Primary action hover/pressed */
-    primaryPressed: "#1D4ED8",
-    /** Secondary accent — muted teal (use more sparingly than primary) */
+    primaryPressed: "#0F3D3A",
+    /** Secondary accent — Soft Teal */
     secondary: "#0D9488",
     /** Secondary accent hover/pressed */
     secondaryPressed: "#0F766E",
@@ -79,12 +79,12 @@ export const colors = {
     warning: "#F59E0B",
     warningBg: "#FFFBEB",
     warningBorder: "#FDE68A",
-    error: "#EF4444",
-    errorBg: "#FEF2F2",
+    error: "#E11D48",
+    errorBg: "#FFF1F2",
     errorBorder: "#FECACA",
-    info: "#3B82F6",
-    infoBg: "#EFF6FF",
-    infoBorder: "#BFDBFE",
+    info: "#0D9488",
+    infoBg: "#F0FDFA",
+    infoBorder: "#99F6E4",
   },
 
   // ─── Legacy Namespaces (deprecated — for backward-compat only) ─────────────

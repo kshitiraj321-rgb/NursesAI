@@ -72,22 +72,22 @@ export default function LearnScreen() {
             activeOpacity={0.92}
             accessibilityRole="button"
             accessibilityLabel={`Continue learning ${continueTopic.displayName || continueTopic.name}`}
-            className="bg-clinical-blue rounded-xl p-4 min-h-[44px]"
+            className="bg-clinical-pine rounded-[20px] p-5 min-h-[54px]"
           >
-            <Text className="text-blue-100 text-xs font-semibold uppercase tracking-wider mb-1">
+            <Text className="text-teal-100 text-xs font-semibold uppercase tracking-widest mb-1 font-sans">
               {continueSubject.displayName}
             </Text>
-            <Text className="text-white font-bold text-lg leading-snug mb-1">
+            <Text className="text-white font-bold text-xl leading-snug mb-1 font-sans">
               {continueTopic.displayName || continueTopic.name}
             </Text>
             {continueConcept && (
-              <Text className="text-blue-100 text-xs mb-3">
+              <Text className="text-teal-100/80 text-sm mb-4 font-sans">
                 Up next: {continueConcept.title}
               </Text>
             )}
             <View className="flex-row items-center justify-between">
-              <Text className="text-white font-bold text-sm">Continue →</Text>
-              <Text className="text-blue-200 text-xs">
+              <Text className="text-white font-bold text-[15px] font-sans">Continue →</Text>
+              <Text className="text-teal-200/60 text-xs font-sans">
                 {continueConcepts.length} concepts
               </Text>
             </View>
@@ -97,14 +97,14 @@ export default function LearnScreen() {
 
       {/* ── Search ───────────────────────────────────────────────────── */}
       <View className="mb-5">
-        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-700 rounded-xl flex-row items-center px-3.5 min-h-[44px]">
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-700 rounded-full flex-row items-center px-4 min-h-[50px]">
           <Text className="text-muted text-sm mr-2">🔍</Text>
           <TextInput
             value={searchQuery}
             onChangeText={setSearchQuery}
             placeholder="Search subjects and topics…"
             placeholderTextColor="#94A3B8"
-            className="flex-1 text-navy dark:text-white text-sm py-2.5"
+            className="flex-1 text-navy dark:text-white text-sm py-2.5 font-sans"
             accessibilityLabel="Search subjects and topics"
           />
           {searchQuery.length > 0 && (
@@ -135,26 +135,26 @@ export default function LearnScreen() {
               activeOpacity={0.7}
               accessibilityRole="button"
               accessibilityLabel={`Open ${subject.displayName}`}
-              className={`bg-surface dark:bg-slate-800 flex-row items-center px-4 py-3.5 min-h-[56px] ${
-                index === 0 ? "rounded-t-xl" : ""
-              } ${isLast ? "rounded-b-xl" : ""} border-x border-t border-border-subtle dark:border-slate-700 ${
+              className={`bg-surface dark:bg-slate-800 flex-row items-center px-5 py-4 min-h-[64px] ${
+                index === 0 ? "rounded-t-3xl" : ""
+              } ${isLast ? "rounded-b-3xl" : ""} border-x border-t border-border-subtle dark:border-slate-700 ${
                 isLast ? "border-b" : ""
               }`}
             >
               {/* Left: text */}
               <View className="flex-1 mr-3">
-                <Text className="text-navy dark:text-white font-semibold text-sm leading-snug">
+                <Text className="text-navy dark:text-white font-bold text-[15px] leading-snug font-sans">
                   {subject.displayName}
                 </Text>
                 {subject.description ? (
-                  <Text className="text-slate-500 dark:text-slate-400 text-xs leading-4 mt-0.5" numberOfLines={1}>
+                  <Text className="text-slate-body dark:text-slate-400 text-xs leading-4 mt-1 font-sans" numberOfLines={1}>
                     {subject.description}
                   </Text>
                 ) : null}
               </View>
               {/* Right: count + chevron */}
               <View className="flex-row items-center">
-                <Text className="text-muted dark:text-slate-500 text-xs mr-2">
+                <Text className="text-muted dark:text-slate-500 text-xs mr-2 font-sans font-medium">
                   {topicCount} topics
                 </Text>
                 <Text className="text-muted dark:text-slate-500 text-base">›</Text>

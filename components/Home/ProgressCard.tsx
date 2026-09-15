@@ -16,24 +16,24 @@ export default function ProgressCard({ todayProgress, dailyGoal, streak }: Props
 
   return (
     <GlassCard variant="default" className="mb-6 p-5">
-      <View className="flex-row items-center justify-between mb-2">
-        <Text className="text-white text-base font-bold">Today&apos;s Study Goal</Text>
-        <Text className="text-slate-400 text-xs font-semibold">
+      <View className="flex-row items-center justify-between mb-3">
+        <Text className="text-navy dark:text-white text-base font-bold font-sans">Today&apos;s Study Goal</Text>
+        <Text className="text-slate-body dark:text-slate-400 text-sm font-semibold font-sans">
           {todayProgress} / {dailyGoal} questions
         </Text>
       </View>
 
-      <View className="mb-4">
-        <ProgressBar progress={progressRatio} height={8} color="#10b981" />
+      <View className="mb-5">
+        <ProgressBar progress={progressRatio} height={8} color="#0D9488" />
       </View>
 
-      <View className="flex-row items-center justify-between pt-2 border-t border-slate-800">
+      <View className="flex-row items-center justify-between pt-3 border-t border-border-subtle dark:border-slate-700">
         <View className="flex-row items-center space-x-2">
-          <Text className="text-sky-400 text-2xl font-extrabold">{streak}</Text>
+          <Text className="text-clinical-teal dark:text-teal-400 text-3xl font-extrabold font-sans">{streak}</Text>
           <Text className="text-xl">🔥</Text>
           <View>
-            <Text className="text-white text-xs font-bold">{streak} Day Streak</Text>
-            <Text className="text-slate-400 text-[11px]">
+            <Text className="text-navy dark:text-white text-sm font-bold font-sans">{streak} Day Streak</Text>
+            <Text className="text-slate-body dark:text-slate-400 text-[12px] font-sans">
               {streak > 0 ? "Consistency building" : "Start your streak today"}
             </Text>
           </View>

@@ -27,7 +27,7 @@ export default function ProgressScreen() {
       <AppScreen edges={["top", "bottom"]}>
         <AppHeader title="Global Progress" showHome />
         <View className="flex-1 justify-center items-center px-4" accessibilityRole="progressbar" accessibilityLabel="Loading your progress">
-          <ActivityIndicator size="large" color="#2563EB" />
+          <ActivityIndicator size="large" color="#0F766E" />
           <Text className="text-slate-500 dark:text-slate-400 mt-4 text-sm">Loading your mastery records...</Text>
         </View>
       </AppScreen>
@@ -85,17 +85,17 @@ export default function ProgressScreen() {
         {/* Top level stats */}
         <View className="flex-row gap-4 mb-8 mt-2">
           <View className="flex-1">
-            <View className="bg-clinical-blue/10 dark:bg-sky-900/20 border border-clinical-blue/20 dark:border-sky-800/50 p-5 rounded-2xl items-center">
-              <Text className="text-clinical-blue dark:text-sky-400 font-bold text-3xl mb-1">{metrics.accuracy}%</Text>
-              <Text className="text-clinical-blue/80 dark:text-sky-400/80 text-xs font-semibold uppercase tracking-wider text-center">
+            <View className="bg-clinical-teal/10 dark:bg-teal-900/20 border border-clinical-teal/20 dark:border-teal-800/50 p-5 rounded-[20px] items-center">
+              <Text className="text-clinical-pine dark:text-teal-400 font-bold text-3xl mb-1 font-sans">{metrics.accuracy}%</Text>
+              <Text className="text-clinical-pine/80 dark:text-teal-400/80 text-xs font-semibold uppercase tracking-wider text-center font-sans">
                 Accuracy
               </Text>
             </View>
           </View>
           <View className="flex-1">
-            <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 p-5 rounded-2xl items-center">
-              <Text className="text-navy dark:text-white font-bold text-3xl mb-1">{metrics.totalConcepts}</Text>
-              <Text className="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider text-center">
+            <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 p-5 rounded-[20px] items-center">
+              <Text className="text-navy dark:text-white font-bold text-3xl mb-1 font-sans">{metrics.totalConcepts}</Text>
+              <Text className="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider text-center font-sans">
                 Concepts
               </Text>
             </View>
@@ -103,50 +103,50 @@ export default function ProgressScreen() {
         </View>
 
         {/* Mastery Breakdown */}
-        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
           Mastery States
         </Text>
-        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden mb-8 shadow-sm">
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] overflow-hidden mb-8 shadow-sm">
           <View className="flex-row items-center justify-between p-4 border-b border-border-subtle dark:border-slate-800">
-            <Text className="text-navy dark:text-white font-medium text-base">Mastered</Text>
-            <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-lg">{metrics.mastered}</Text>
+            <Text className="text-navy dark:text-white font-medium text-base font-sans">Mastered</Text>
+            <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-lg font-sans">{metrics.mastered}</Text>
           </View>
           <View className="flex-row items-center justify-between p-4 border-b border-border-subtle dark:border-slate-800">
-            <Text className="text-navy dark:text-white font-medium text-base">Improving</Text>
-            <Text className="text-clinical-blue dark:text-sky-400 font-bold text-lg">{metrics.improving}</Text>
+            <Text className="text-navy dark:text-white font-medium text-base font-sans">Improving</Text>
+            <Text className="text-clinical-pine dark:text-teal-400 font-bold text-lg font-sans">{metrics.improving}</Text>
           </View>
           <View className="flex-row items-center justify-between p-4">
-            <Text className="text-navy dark:text-white font-medium text-base">Weak</Text>
-            <Text className="text-rose-700 dark:text-rose-400 font-bold text-lg">{metrics.weak}</Text>
+            <Text className="text-navy dark:text-white font-medium text-base font-sans">Weak</Text>
+            <Text className="text-rose-700 dark:text-rose-400 font-bold text-lg font-sans">{metrics.weak}</Text>
           </View>
         </View>
 
         {/* Mistake Relationship */}
-        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
           Active Weaknesses
         </Text>
-        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 mb-8 shadow-sm">
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-5 mb-8 shadow-sm">
           <View className="flex-row items-center justify-between mb-3">
-            <Text className="text-navy dark:text-white font-semibold text-base">Current Focus</Text>
+            <Text className="text-navy dark:text-white font-semibold text-base font-sans">Current Focus</Text>
             <Pill label={String(activeMistakesCount)} variant={activeMistakesCount > 0 ? "error" : "success"} size="sm" />
           </View>
-          <Text className="text-slate-500 dark:text-slate-400 text-sm leading-6">
+          <Text className="text-slate-500 dark:text-slate-400 text-sm leading-6 font-sans">
             Concepts currently flagged as weak due to recent mistakes. They require 2 consecutive correct attempts to resolve.
           </Text>
         </View>
 
         {/* Global Attempts */}
-        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
           Practice Volume
         </Text>
         <View className="flex-row gap-4 mb-8">
-          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 flex-1 p-5 rounded-2xl items-center">
-            <Text className="text-navy dark:text-white font-bold text-xl mb-1">{metrics.totalAttempts}</Text>
-            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-wider font-semibold">Total Attempts</Text>
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 flex-1 p-5 rounded-[20px] items-center">
+            <Text className="text-navy dark:text-white font-bold text-xl mb-1 font-sans">{metrics.totalAttempts}</Text>
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-wider font-semibold font-sans">Total Attempts</Text>
           </View>
-          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 flex-1 p-5 rounded-2xl items-center">
-            <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-xl mb-1">{metrics.correctAttempts}</Text>
-            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-wider font-semibold">Correct Attempts</Text>
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 flex-1 p-5 rounded-[20px] items-center">
+            <Text className="text-emerald-700 dark:text-emerald-400 font-bold text-xl mb-1 font-sans">{metrics.correctAttempts}</Text>
+            <Text className="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-wider font-semibold font-sans">Correct Attempts</Text>
           </View>
         </View>
 

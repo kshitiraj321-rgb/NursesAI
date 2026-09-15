@@ -192,44 +192,44 @@ export default function DailyTopics() {
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-black">
+    <SafeAreaView className="flex-1 bg-warm-bg dark:bg-slate-900">
       <View className="flex-1 px-5 pt-4">
         <TouchableOpacity onPress={() => router.back()} className="mb-4">
-          <Text className="text-blue-500 font-semibold text-[15px]">← Back</Text>
+          <Text className="text-clinical-pine dark:text-teal-400 font-semibold text-[15px] font-sans">← Back</Text>
         </TouchableOpacity>
 
-        <Text className="text-white text-3xl font-bold tracking-tight mb-1">📌 Daily Topic</Text>
-        <Text className="text-blue-400 text-lg font-semibold mb-3">{topic}</Text>
+        <Text className="text-navy dark:text-white text-3xl font-bold tracking-tight mb-1 font-sans">📌 Daily Topic</Text>
+        <Text className="text-clinical-pine dark:text-teal-400 text-lg font-semibold mb-3 font-sans">{topic}</Text>
 
         <View className="flex-row my-3 gap-2">
           {[1, 2, 3].map((s) => (
             <View 
               key={s} 
-              className={`flex-1 h-1.5 rounded-full ${step >= s ? "bg-blue-500" : ""}`} 
+              className={`flex-1 h-1.5 rounded-full ${step >= s ? "bg-clinical-pine dark:bg-teal-500" : ""}`} 
               style={step < s ? { backgroundColor: 'rgba(255, 255, 255, 0.1)' } : undefined}
             />
           ))}
         </View>
 
-        <Text className="text-neutral-400 text-[13px] font-medium mb-3">Step {step} of 3</Text>
+        <Text className="text-slate-500 dark:text-slate-400 text-[13px] font-medium mb-3 font-sans">Step {step} of 3</Text>
 
         {step === 1 && !quizMode ? (
           <>
             {loading ? (
               <View className="flex-1 mt-6 px-4">
                 {[1, 2, 3].map((key) => (
-                  <View key={key} className="mb-6 bg-[#1c1c1e] p-5 rounded-2xl border border-[#2c2c2e]">
-                    <View className="h-5 bg-white/10 rounded-full w-2/3 mb-4" />
-                    <View className="h-4 bg-white/5 rounded-full w-full mb-3" />
-                    <View className="h-4 bg-white/5 rounded-full w-5/6 mb-3" />
-                    <View className="h-4 bg-white/5 rounded-full w-full" />
+                  <View key={key} className="mb-6 bg-surface dark:bg-slate-800 p-5 rounded-[20px] border border-border-subtle dark:border-slate-700">
+                    <View className="h-5 bg-slate-200 dark:bg-slate-700 rounded-full w-2/3 mb-4" />
+                    <View className="h-4 bg-slate-200 dark:bg-slate-700 rounded-full w-full mb-3" />
+                    <View className="h-4 bg-slate-200 dark:bg-slate-700 rounded-full w-5/6 mb-3" />
+                    <View className="h-4 bg-slate-200 dark:bg-slate-700 rounded-full w-full" />
                   </View>
                 ))}
               </View>
             ) : (
               <ScrollView className="flex-1" contentContainerStyle={{ paddingBottom: 60 }} showsVerticalScrollIndicator={false}>
-                <View className="bg-[#1c1c1e] p-5 rounded-2xl border border-[#2c2c2e]">
-                  <Text className="text-white text-[15px] leading-6 tracking-wide">{content}</Text>
+                <View className="bg-surface dark:bg-slate-800 p-5 rounded-[20px] border border-border-subtle dark:border-slate-700">
+                  <Text className="text-navy dark:text-slate-200 text-[15px] leading-6 tracking-wide font-sans">{content}</Text>
                 </View>
               </ScrollView>
             )}
@@ -237,30 +237,30 @@ export default function DailyTopics() {
             {content.includes("high demand") ? (
               <TouchableOpacity
                 onPress={() => { if (passedTopic) { /* loadTopic is inside useEffect, we will use fetchTopic as a fallback */ fetchTopic(); } else fetchTopic(); }}
-                className="mt-4 p-4 bg-red-500/20 rounded-xl items-center border border-red-500/50"
+                className="mt-4 p-4 bg-rose-50 dark:bg-rose-950/20 rounded-[20px] items-center border border-rose-200 dark:border-rose-900/50"
               >
-                <Text className="text-red-400 font-bold">Retry Loading Topic 🔄</Text>
+                <Text className="text-rose-700 dark:text-rose-400 font-bold font-sans">Retry Loading Topic 🔄</Text>
               </TouchableOpacity>
             ) : (
               <TouchableOpacity
                 disabled={unlockedStep < 2}
                 onPress={() => { if (unlockedStep >= 2) { setStep(2); generateQuiz(); } }}
-                className={`p-4 rounded-xl mt-4 items-center ${unlockedStep >= 2 ? "bg-blue-600" : "bg-[#2c2c2e] opacity-50"}`}
+                className={`p-4 rounded-[20px] mt-4 items-center ${unlockedStep >= 2 ? "bg-clinical-pine dark:bg-teal-600" : "bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 opacity-50"}`}
                 style={unlockedStep >= 2 ? { elevation: 5, shadowColor: '#3b82f6', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 4 } : undefined}
               >
-                <Text className="text-white font-bold tracking-wide">Start AI Quiz 🧠 →</Text>
+                <Text className="text-white dark:text-slate-200 font-bold tracking-wide font-sans">Start AI Quiz 🧠 →</Text>
               </TouchableOpacity>
             )}
           </>
         ) : step === 2 ? (
           quizError ? (
             <View className="flex-1 justify-center items-center mt-10">
-              <Text className="text-white text-center mb-4">Our AI service is experiencing high demand. Failed to generate quiz.</Text>
+              <Text className="text-navy dark:text-slate-300 text-center mb-4 font-sans">Our AI service is experiencing high demand. Failed to generate quiz.</Text>
               <TouchableOpacity
                 onPress={() => generateQuiz()}
-                className="p-4 bg-red-500/20 rounded-xl border border-red-500/50"
+                className="p-4 bg-rose-50 dark:bg-rose-950/20 rounded-[20px] border border-rose-200 dark:border-rose-900/50"
               >
-                <Text className="text-red-400 font-bold">Retry Generating Quiz 🔄</Text>
+                <Text className="text-rose-700 dark:text-rose-400 font-bold font-sans">Retry Generating Quiz 🔄</Text>
               </TouchableOpacity>
             </View>
           ) : (
@@ -275,10 +275,10 @@ export default function DailyTopics() {
 
         {step === 3 && finalScore !== null && (
           <View className="items-center mt-10">
-            <Text className="text-white text-xl font-bold mb-2">
+            <Text className="text-navy dark:text-white text-xl font-bold mb-2 font-sans">
               {finalScore >= 4 ? "🎉 Excellent Work!" : finalScore >= 2 ? "👍 Good job!" : "📚 Keep practicing!"}
             </Text>
-            <Text className="text-blue-400 text-lg font-semibold">Score: {finalScore}/{questions.length}</Text>
+            <Text className="text-clinical-pine dark:text-teal-400 text-lg font-semibold font-sans">Score: {finalScore}/{questions.length}</Text>
           </View>
         )}
 
@@ -292,19 +292,19 @@ export default function DailyTopics() {
                 setShowConfetti(true); setTimeout(() => setShowConfetti(false), 4000);
               }
             }}
-            className={`p-4 rounded-xl mt-8 items-center ${unlockedStep >= 3 ? "bg-blue-600" : "bg-[#2c2c2e] opacity-50"}`}
+            className={`p-4 rounded-[20px] mt-8 items-center ${unlockedStep >= 3 ? "bg-clinical-pine dark:bg-teal-600" : "bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 opacity-50"}`}
             style={unlockedStep >= 3 ? { elevation: 5, shadowColor: '#3b82f6', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 4 } : undefined}
           >
-            <Text className="text-white font-bold tracking-wide">Mark as Completed ✅</Text>
+            <Text className="text-white dark:text-slate-200 font-bold tracking-wide font-sans">Mark as Completed ✅</Text>
           </TouchableOpacity>
         )}
 
         {completed && (
-          <Text className="text-green-500 mt-6 text-center text-lg font-bold">🎉 Topic Completed! +1 Streak</Text>
+          <Text className="text-emerald-600 dark:text-emerald-400 mt-6 text-center text-lg font-bold font-sans">🎉 Topic Completed! +1 Streak</Text>
         )}
 
         {Object.keys(unlockedStep < 3 && step === 3 ? { a: 1 } : {}).map(() => (
-          <Text key="1" className="text-neutral-500 text-center mt-3 text-sm">🔒 Complete quiz to unlock</Text>
+          <Text key="1" className="text-slate-500 dark:text-slate-400 text-center mt-3 text-sm font-sans">🔒 Complete quiz to unlock</Text>
         ))}
       </View>
 

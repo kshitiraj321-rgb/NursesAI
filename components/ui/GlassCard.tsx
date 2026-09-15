@@ -42,9 +42,9 @@ export function GlassCard({
       case "elevated":
         return "bg-surface dark:bg-slate-800 border-border-subtle dark:border-slate-700";
       case "interactive":
-        return "bg-clinical-blue-light dark:bg-slate-900 border-clinical-blue-border dark:border-sky-800";
+        return "bg-clinical-teal-light dark:bg-slate-900 border-clinical-teal-border dark:border-teal-800";
       case "accent":
-        return "bg-clinical-blue-light dark:bg-indigo-900/40 border-clinical-blue-border dark:border-indigo-500/50";
+        return "bg-clinical-pine-light dark:bg-slate-900 border-clinical-pine-border dark:border-teal-800";
       default:
         return "bg-surface dark:bg-slate-800 border-border-subtle dark:border-slate-700";
     }
@@ -52,8 +52,8 @@ export function GlassCard({
 
   const cardContent = (
     <View
-      className={`p-4 rounded-xl border ${getVariantClass()} ${className}`}
-      style={[variant === "elevated" ? shadows.sm : shadows.card, style]}
+      className={`p-5 rounded-[24px] border ${getVariantClass()} ${className}`}
+      style={[variant === "elevated" ? shadows.md : shadows.card, style]}
     >
       {children}
     </View>

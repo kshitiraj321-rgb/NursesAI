@@ -36,16 +36,16 @@ export default function DailyFocusCard({ dailyTopic, progress, topicStat }: Prop
   return (
     <GlassCard variant="elevated" className="mb-6 p-5">
       <View className="flex-row items-center justify-between mb-2">
-        <Text className="text-sky-400 font-bold text-sm">
+        <Text className="text-clinical-teal dark:text-teal-400 font-bold text-sm font-sans uppercase tracking-widest">
           {dailyTopic ? "Recommended Focus" : "Start Your Journey"}
         </Text>
         <Pill label="Daily Anchor" variant="info" size="sm" />
       </View>
 
       {dailyTopic ? (
-        <View className="mb-3">
-          <Text className="text-white text-xl font-bold mb-1 tracking-tight">{dailyTopic}</Text>
-          <Text className="text-slate-400 text-xs mb-2">Based on your weakness profile & active recall history</Text>
+        <View className="mb-4 mt-2">
+          <Text className="text-navy dark:text-white text-2xl font-bold mb-1 tracking-tight font-sans">{dailyTopic}</Text>
+          <Text className="text-slate-body dark:text-slate-400 text-sm mb-3 font-sans">Based on your weakness profile & active recall history</Text>
           {topicStat && (
             <View className="flex-row items-center space-x-2">
               <Pill label={`Accuracy: ${topicStat.accuracy}%`} variant="success" size="sm" />
@@ -54,11 +54,11 @@ export default function DailyFocusCard({ dailyTopic, progress, topicStat }: Prop
           )}
         </View>
       ) : (
-        <Text className="text-slate-300 text-xs mb-3">Begin exploring core nursing topics in the Learn workspace.</Text>
+        <Text className="text-slate-body dark:text-slate-400 text-sm mb-3 mt-2 font-sans">Begin exploring core nursing topics in the Learn workspace.</Text>
       )}
 
-      <View className="mb-4">
-        <ProgressBar progress={progress} height={6} color="#38bdf8" />
+      <View className="mb-5">
+        <ProgressBar progress={progress} height={8} color="#0D9488" />
       </View>
 
       <PrimaryButton

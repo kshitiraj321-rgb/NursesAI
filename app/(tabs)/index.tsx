@@ -110,22 +110,6 @@ export default function HomeScreen() {
       <ScrollView className="flex-1 px-4" showsVerticalScrollIndicator={false}>
         <HomeHeader greeting={greeting} userName={userName} onLogout={handleLogout} />
 
-        <View className="bg-amber-500/10 border border-amber-500/40 rounded-xl p-4 mb-6 flex-row items-start">
-          <Text className="text-amber-400 text-base mr-3">⚠️</Text>
-          <View className="flex-1">
-            <Text className="text-amber-300 font-bold text-sm mb-1">
-              Legacy Dashboard
-            </Text>
-            <Text className="text-amber-400/80 text-xs leading-5 mb-3">
-              The statistics on this screen use deprecated data. For an accurate view of your mastery, please use the new Global Progress dashboard.
-            </Text>
-            <PrimaryButton
-              label="Go to Practice →"
-              onPress={() => router.replace("/(tabs)/practice" as any)}
-            />
-          </View>
-        </View>
-
         <DailyFocusCard
           dailyTopic={recommendedTopic}
           topicStat={topicStat}
@@ -134,10 +118,10 @@ export default function HomeScreen() {
         />
 
         <AnimatedPressable onPress={handleSmartRevision} className="mb-4">
-          <GlassCard className="p-4 border-l-4 border-l-sky-500 flex-row items-center justify-between">
+          <GlassCard className="p-4 border-l-[6px] border-l-clinical-teal flex-row items-center justify-between">
             <View>
-              <Text className="text-white font-bold text-base mb-0.5">Improve Weak Areas</Text>
-              <Text className="text-slate-400 text-xs">Targeted revision based on performance analytics</Text>
+              <Text className="text-navy dark:text-white font-bold text-base mb-0.5 font-sans">Improve Weak Areas</Text>
+              <Text className="text-slate-body dark:text-slate-400 text-xs font-sans">Targeted revision based on performance analytics</Text>
             </View>
             <Pill label="Smart Review" variant="info" size="sm" />
           </GlassCard>
@@ -148,10 +132,10 @@ export default function HomeScreen() {
             onPress={() => router.push({ pathname: "/mistake-bank" as any })}
             className="mb-6"
           >
-            <GlassCard className="p-4 border-l-4 border-l-rose-500 flex-row items-center justify-between bg-rose-950/20">
+            <GlassCard className="p-4 border-l-[6px] border-l-danger flex-row items-center justify-between bg-danger/5">
               <View>
-                <Text className="text-rose-400 font-bold text-base mb-0.5">Conquer Active Mistakes</Text>
-                <Text className="text-slate-300 text-xs">{mistakeCount} active items requiring 2-attempt resolution</Text>
+                <Text className="text-danger font-bold text-base mb-0.5 font-sans">Conquer Active Mistakes</Text>
+                <Text className="text-slate-body dark:text-slate-300 text-xs font-sans">{mistakeCount} active items requiring 2-attempt resolution</Text>
               </View>
               <Pill label={`${mistakeCount} Due`} variant="error" size="sm" />
             </GlassCard>
@@ -161,8 +145,8 @@ export default function HomeScreen() {
             onPress={() => Alert.alert("All Clear! 🎉", "You have successfully conquered all your mistakes. Keep studying to build up your knowledge!")}
             className="mb-6"
           >
-            <GlassCard className="p-4 border-l-4 border-l-emerald-500 flex-row items-center justify-between bg-emerald-950/20">
-              <Text className="text-emerald-400 font-bold text-sm">Mistake Bank Clear 🎉</Text>
+            <GlassCard className="p-4 border-l-[6px] border-l-success flex-row items-center justify-between bg-success/5">
+              <Text className="text-success font-bold text-sm font-sans">Mistake Bank Clear 🎉</Text>
               <Pill label="100% Mastered" variant="success" size="sm" />
             </GlassCard>
           </AnimatedPressable>
@@ -174,11 +158,11 @@ export default function HomeScreen() {
 
       {/* Comeback Modal */}
       <Modal visible={shouldShowComeback} transparent animationType="fade">
-        <View className="flex-1 bg-black/80 justify-center items-center px-5">
+        <View className="flex-1 bg-navy/80 justify-center items-center px-5">
           <GlassCard variant="elevated" className="w-full p-6">
-            <Text className="text-white text-2xl font-bold mb-2">Welcome Back!</Text>
-            <Text className="text-slate-300 text-sm mb-6">
-              You left off at <Text className="text-white font-semibold">{comebackTopicDerived}</Text> — continue?
+            <Text className="text-navy dark:text-white text-2xl font-bold mb-2 font-sans">Welcome Back!</Text>
+            <Text className="text-slate-body dark:text-slate-300 text-sm mb-6 font-sans">
+              You left off at <Text className="text-clinical-pine dark:text-white font-semibold">{comebackTopicDerived}</Text> — continue?
             </Text>
 
             <View className="flex-row space-x-3">

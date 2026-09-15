@@ -29,16 +29,16 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
   const renderFormattedText = (text: string) => {
     return text.split('\n').map((line, index) => {
       if (line.startsWith('## ')) {
-        return <Text key={index} className="text-navy dark:text-white text-[16px] font-bold mt-4 mb-2 tracking-tight">{line.replace('## ', '')}</Text>;
+        return <Text key={index} className="text-navy dark:text-white text-[16px] font-bold mt-4 mb-2 tracking-tight font-sans">{line.replace('## ', '')}</Text>;
       } else if (line.startsWith('### ')) {
-        return <Text key={index} className="text-clinical-blue dark:text-clinical-blue text-[14px] font-bold mt-3 mb-1 uppercase tracking-wider">{line.replace('### ', '')}</Text>;
+        return <Text key={index} className="text-clinical-teal dark:text-teal-400 text-[14px] font-bold mt-3 mb-1 uppercase tracking-wider font-sans">{line.replace('### ', '')}</Text>;
       } else if (line.trim() === '---') {
         return <View key={index} className="h-[1px] bg-border-subtle dark:bg-slate-800 my-4" />;
       } else if (line.startsWith('- ')) {
         return (
           <View key={index} className="flex-row pl-1 mb-1.5 pr-2">
-            <Text className="text-slate-400 dark:text-slate-500 mr-2 mt-0.5 font-bold">•</Text>
-            <Text className="text-slate-700 dark:text-slate-300 text-[14px] leading-[22px] flex-1">
+            <Text className="text-slate-400 dark:text-slate-500 mr-2 mt-0.5 font-bold font-sans">•</Text>
+            <Text className="text-slate-700 dark:text-slate-300 text-[14px] leading-[22px] flex-1 font-sans">
                {line.substring(2)}
             </Text>
           </View>
@@ -48,10 +48,10 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
       } else {
         const parts = line.split(/(\*\*.*?\*\*)/g);
         return (
-          <Text key={index} className="text-slate-600 dark:text-slate-300 text-[14.5px] leading-[24px] mb-0.5">
+          <Text key={index} className="text-slate-600 dark:text-slate-300 text-[14.5px] leading-[24px] mb-0.5 font-sans">
             {parts.map((part, i) => {
               if (part.startsWith('**') && part.endsWith('**')) {
-                return <Text key={i} className="font-bold text-navy dark:text-white">{part.slice(2, -2)}</Text>;
+                return <Text key={i} className="font-bold text-navy dark:text-white font-sans">{part.slice(2, -2)}</Text>;
               }
               return part;
             })}
@@ -68,7 +68,7 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
     >
       {isUser ? (
         <View 
-          className="bg-clinical-blue px-5 py-3.5 shadow-sm max-w-[85%]" 
+          className="bg-clinical-pine px-5 py-3.5 shadow-sm max-w-[85%]" 
           style={{ 
             borderTopLeftRadius: 24, 
             borderBottomLeftRadius: 24, 
@@ -76,8 +76,8 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
             borderBottomRightRadius: 8 
           }}
         >
-          <Text className="text-white text-[15px] font-medium leading-[22px] tracking-tight">{item.content}</Text>
-          <Text className="text-[10px] mt-1.5 self-end text-blue-100/70 font-semibold tracking-wider">
+          <Text className="text-white text-[15px] font-medium leading-[22px] tracking-tight font-sans">{item.content}</Text>
+          <Text className="text-[10px] mt-1.5 self-end text-teal-100/70 font-semibold tracking-wider font-sans">
             {formatTime(item.createdAt)}
           </Text>
         </View>
@@ -92,7 +92,7 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
           }}
         >
           <View>{renderFormattedText(item.content)}</View>
-          <Text className="text-[10px] mt-2 self-end text-slate-400 font-bold tracking-wider uppercase">
+          <Text className="text-[10px] mt-2 self-end text-slate-400 font-bold tracking-wider uppercase font-sans">
             {formatTime(item.createdAt)}
           </Text>
 
@@ -104,7 +104,7 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
               activeOpacity={0.6}
               className={`${feedbackMap[item.id] ? 'opacity-40' : 'opacity-100'} bg-warm-bg dark:bg-slate-950 border border-border-subtle dark:border-slate-800 py-1.5 rounded-full px-4`}
             >
-              <Text className="text-[12px] text-slate-600 dark:text-slate-300 font-bold tracking-wide">
+              <Text className="text-[12px] text-slate-600 dark:text-slate-300 font-bold tracking-wide font-sans">
                 {feedbackMap[item.id] === "helpful" ? "✅ Helpful" : "👍 Helpful"}
               </Text>
             </TouchableOpacity>
@@ -115,7 +115,7 @@ const ChatBubble = memo(({ item, isSameSender, feedbackMap, handleFeedback, form
               activeOpacity={0.6}
               className={`${feedbackMap[item.id] ? 'opacity-40' : 'opacity-100'} bg-warm-bg dark:bg-slate-950 border border-border-subtle dark:border-slate-800 py-1.5 rounded-full px-4`}
             >
-              <Text className="text-[12px] text-slate-600 dark:text-slate-300 font-bold tracking-wide">
+              <Text className="text-[12px] text-slate-600 dark:text-slate-300 font-bold tracking-wide font-sans">
                 {feedbackMap[item.id] === "not_helpful" ? "❌ Not Helpful" : "👎 Unhelpful"}
               </Text>
             </TouchableOpacity>

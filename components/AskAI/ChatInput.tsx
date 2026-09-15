@@ -22,7 +22,7 @@ export default function ChatInput({ question, setQuestion, onSend, loading }: Ch
         onChangeText={setQuestion}
         placeholder="Type to ask NurseAI..."
         placeholderTextColor="#94a3b8"
-        className="flex-1 bg-warm-bg dark:bg-slate-950 border border-border-subtle dark:border-slate-800 px-5 py-3.5 text-navy dark:text-white rounded-full text-[15px] font-medium"
+        className="flex-1 bg-warm-bg dark:bg-slate-950 border border-border-subtle dark:border-slate-800 px-5 py-3.5 text-navy dark:text-white rounded-full text-[15px] font-medium font-sans"
         editable={!loading}
       />
       <TouchableOpacity
@@ -30,10 +30,10 @@ export default function ChatInput({ question, setQuestion, onSend, loading }: Ch
         disabled={loading || !question.trim()}
         activeOpacity={0.7}
         className={`ml-2 px-6 py-3.5 rounded-full justify-center items-center ${
-          loading || !question.trim() ? "bg-clinical-blue/40" : "bg-clinical-blue"
+          loading || !question.trim() ? "bg-clinical-pine/40" : "bg-clinical-pine"
         }`}
       >
-        <Text className="text-white font-bold tracking-wide">
+        <Text className="text-white font-bold tracking-wide font-sans">
           {loading ? "Wait" : "Send"}
         </Text>
       </TouchableOpacity>

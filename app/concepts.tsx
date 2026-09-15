@@ -52,13 +52,13 @@ export default function ConceptsScreen() {
           <GlassCard variant="interactive">
             <View className="flex-row items-center justify-between mb-2">
               <Pill label={topic.meta.verificationStatus} variant="trust" size="sm" />
-              <Text className="text-slate-500 dark:text-slate-400 text-xs">
+              <Text className="text-slate-500 dark:text-slate-400 text-xs font-sans">
                 {concepts.length} concepts
               </Text>
             </View>
 
             {topic.quickRevision?.definition ? (
-              <Text className="text-slate-600 dark:text-slate-300 text-xs leading-5 mb-4">
+              <Text className="text-slate-600 dark:text-slate-300 text-xs leading-5 mb-4 font-sans">
                 {topic.quickRevision.definition}
               </Text>
             ) : null}
@@ -109,18 +109,18 @@ export default function ConceptsScreen() {
               accessibilityLabel={`Study concept: ${c.title}`}
               className={`bg-surface dark:bg-slate-800 px-4 py-3.5 min-h-[60px]
                 border-x border-t border-border-subtle dark:border-slate-700
-                ${isFirst ? "rounded-t-xl" : ""}
-                ${isLast ? "rounded-b-xl border-b" : ""}
+                ${isFirst ? "rounded-t-[20px]" : ""}
+                ${isLast ? "rounded-b-[20px] border-b" : ""}
               `}
             >
               <View className="flex-row items-start justify-between">
                 <View className="flex-1 mr-3">
-                  <Text className="text-navy dark:text-white font-semibold text-sm leading-snug">
+                  <Text className="text-navy dark:text-white font-semibold text-sm leading-snug font-sans">
                     {c.title}
                   </Text>
                   {c.content ? (
                     <Text
-                      className="text-slate-500 dark:text-slate-400 text-xs leading-4 mt-0.5"
+                      className="text-slate-500 dark:text-slate-400 text-xs leading-4 mt-0.5 font-sans"
                       numberOfLines={2}
                     >
                       {c.content}
@@ -128,7 +128,7 @@ export default function ConceptsScreen() {
                   ) : null}
                   {c.keyTakeaways && c.keyTakeaways.length > 0 && (
                     <Text
-                      className="text-clinical-teal dark:text-teal-400 text-xs mt-1.5"
+                      className="text-clinical-teal dark:text-teal-400 text-xs mt-1.5 font-sans"
                       numberOfLines={1}
                     >
                       → {c.keyTakeaways[0]}
@@ -145,8 +145,8 @@ export default function ConceptsScreen() {
         })}
 
         {concepts.length === 0 && (
-          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-xl p-6 items-center">
-            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-6 items-center">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm text-center font-sans">
               No individual concept modules found.{"\n"}Tap above to open the Topic Learning Suite.
             </Text>
           </View>

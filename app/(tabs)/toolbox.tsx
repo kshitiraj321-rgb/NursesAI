@@ -163,12 +163,12 @@ function ToolRow({ tool, onPress, isLast }: { tool: ToolMeta; onPress: () => voi
     >
       <View className="flex-1 mr-3">
         <View className="flex-row items-center mb-1">
-          <Text className="text-navy dark:text-white font-bold text-base mr-2">
+          <Text className="text-navy dark:text-white font-bold text-base mr-2 font-sans">
             {tool.name}
           </Text>
           <Pill label={tool.riskLevel} variant={pillVariant} size="sm" />
         </View>
-        <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5">
+        <Text className="text-slate-body dark:text-slate-400 text-[13px] leading-5 font-sans">
           {tool.description}
         </Text>
       </View>
@@ -199,10 +199,10 @@ export default function ToolboxScreen() {
         <View className="flex-row items-start">
           <Text className="text-amber-500 text-base mr-3 mt-0.5">⚠</Text>
           <View className="flex-1">
-            <Text className="text-amber-800 dark:text-amber-300 font-bold text-sm mb-1">
+            <Text className="text-amber-800 dark:text-amber-300 font-bold text-sm mb-1 font-sans">
               Clinical Reference & Safety Warning
             </Text>
-            <Text className="text-amber-700/80 dark:text-amber-400/80 text-xs leading-5">
+            <Text className="text-amber-700/80 dark:text-amber-400/80 text-[13px] leading-5 font-sans">
               These tools are reference aids only and are{" "}
               <Text className="font-bold">NEVER</Text> a substitute for hospital protocol,
               prescriber order, institutional guidelines, or clinical judgment.
@@ -213,7 +213,7 @@ export default function ToolboxScreen() {
 
       {/* Calculators Section */}
       <View className="mb-8">
-        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+        <Text className="text-slate-body dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
           Calculators
         </Text>
         <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm">
@@ -230,7 +230,7 @@ export default function ToolboxScreen() {
 
       {/* Quick References Section */}
       <View className="mb-8">
-        <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+        <Text className="text-slate-body dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
           References
         </Text>
         <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm">

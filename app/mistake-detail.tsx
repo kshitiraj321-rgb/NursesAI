@@ -25,11 +25,11 @@ export default function MistakeDetailScreen() {
       <AppScreen edges={["top", "bottom"]}>
         <AppHeader title="Mistake Details" showBack onBack={() => router.back()} />
         <View className="flex-1 justify-center items-center px-4">
-          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 p-8 rounded-2xl items-center w-full max-w-sm">
-            <Text className="text-navy dark:text-white font-bold text-lg mb-2 text-center">
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 p-8 rounded-[20px] items-center w-full max-w-sm">
+            <Text className="text-navy dark:text-white font-bold text-lg mb-2 text-center font-sans">
               Mistake Not Found
             </Text>
-            <Text className="text-slate-500 dark:text-slate-400 text-sm mb-6 text-center leading-5">
+            <Text className="text-slate-500 dark:text-slate-400 text-sm mb-6 text-center leading-5 font-sans">
               We could not locate this mistake record. It may have been already resolved.
             </Text>
             <PrimaryButton label="Return to Mistake Bank" onPress={() => router.back()} />
@@ -68,10 +68,10 @@ export default function MistakeDetailScreen() {
       >
         <Text className="text-amber-500 text-base mr-3 mt-0.5">ℹ️</Text>
         <View className="flex-1">
-          <Text className="text-amber-800 dark:text-amber-300 font-semibold text-sm mb-1">
+          <Text className="text-amber-800 dark:text-amber-300 font-semibold text-sm mb-1 font-sans">
             Exact selected answer unavailable
           </Text>
-          <Text className="text-amber-700/80 dark:text-amber-400/80 text-xs leading-5">
+          <Text className="text-amber-700/80 dark:text-amber-400/80 text-xs leading-5 font-sans">
             We know you struggled with this concept on the question below, but we cannot deterministically link the exact historical answer you selected during that session.
           </Text>
         </View>
@@ -80,11 +80,11 @@ export default function MistakeDetailScreen() {
       {/* 4. The Question */}
       {failedQuestion ? (
         <View className="mb-8">
-          <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+          <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
             Latest Failed Question
           </Text>
-          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 mb-6">
-            <Text className="text-navy dark:text-white text-base leading-6 mb-5">
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-5 mb-6">
+            <Text className="text-navy dark:text-white text-base leading-6 mb-5 font-sans">
               {failedQuestion.questionText}
             </Text>
 
@@ -102,9 +102,9 @@ export default function MistakeDetailScreen() {
                     }`}
                     accessibilityLabel={isCorrect ? "Correct answer" : "Option"}
                   >
-                    <Text className={`text-sm flex-1 leading-5 ${isCorrect ? 'text-emerald-900 dark:text-emerald-100' : 'text-slate-600 dark:text-slate-300'}`}>{option}</Text>
+                    <Text className={`text-sm flex-1 leading-5 font-sans ${isCorrect ? 'text-emerald-900 dark:text-emerald-100' : 'text-slate-600 dark:text-slate-300'}`}>{option}</Text>
                     {isCorrect && (
-                      <Text className="text-emerald-700 dark:text-emerald-400 font-bold ml-3">✓ Correct</Text>
+                      <Text className="text-emerald-700 dark:text-emerald-400 font-bold ml-3 font-sans">✓ Correct</Text>
                     )}
                   </View>
                 );
@@ -113,31 +113,31 @@ export default function MistakeDetailScreen() {
           </View>
 
           {/* 5. Why Wrong / Explanation */}
-          <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1">
+          <Text className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 px-1 font-sans">
             Why Wrong? (Explanation)
           </Text>
-          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-5 mb-6">
+          <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-5 mb-6">
             {/* Safety Guard: Check verification status */}
             {failedQuestion.meta.verificationStatus === "REVIEW_REQUIRED" && (
               <View className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/50 rounded-xl p-3 mb-4 flex-row items-center">
                 <Text className="text-amber-500 mr-2">⚠️</Text>
-                <Text className="text-amber-800 dark:text-amber-300 font-semibold text-xs flex-1 leading-5">
+                <Text className="text-amber-800 dark:text-amber-300 font-semibold text-xs flex-1 leading-5 font-sans">
                   UNVERIFIED: This explanation requires clinical review and is not authoritative.
                 </Text>
               </View>
             )}
 
-            <Text className="text-navy dark:text-slate-200 text-sm leading-6">
+            <Text className="text-navy dark:text-slate-200 text-sm leading-6 font-sans">
               {failedQuestion.explanation}
             </Text>
-            <Text className="text-slate-400 dark:text-slate-500 text-[10px] mt-5 uppercase tracking-widest font-semibold">
+            <Text className="text-slate-400 dark:text-slate-500 text-[10px] mt-5 uppercase tracking-widest font-semibold font-sans">
               Note: The correct answer above is not necessarily the one you selected.
             </Text>
           </View>
         </View>
       ) : (
-        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-2xl p-6 items-center mb-6">
-          <Text className="text-slate-500 dark:text-slate-400 text-sm text-center">
+        <View className="bg-surface dark:bg-slate-900 border border-border-subtle dark:border-slate-800 rounded-[20px] p-6 items-center mb-6">
+          <Text className="text-slate-500 dark:text-slate-400 text-sm text-center font-sans">
             Question data is currently unavailable.
           </Text>
         </View>

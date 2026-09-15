@@ -80,11 +80,11 @@ export default function PracticeScreen() {
       {/* Recommended Next Action */}
       <View className="mb-6">
         <SectionHeader title="Recommended Next" />
-        <View className="bg-clinical-blue dark:bg-sky-900 rounded-xl p-4 min-h-[44px]">
+        <View className="bg-clinical-pine dark:bg-sky-900 rounded-[20px] p-5 min-h-[54px]">
           <View className="flex-row items-center justify-between mb-2">
             <View className="flex-row items-center flex-1 mr-2" accessibilityRole="header">
               <Text className="text-xl mr-2">🧭</Text>
-              <Text className="text-white font-bold text-base flex-1">
+              <Text className="text-white font-bold text-lg flex-1 font-sans">
                 Recommendation
               </Text>
             </View>
@@ -103,7 +103,7 @@ export default function PracticeScreen() {
             })()}
           </View>
 
-          <Text className="text-blue-100 text-xs leading-5 mb-4">
+          <Text className="text-teal-100/90 text-sm leading-5 mb-5 font-sans">
             {(() => {
               const rec = practiceRepository.getRecommendedNextAction(userId);
               if (rec.status === "UNAVAILABLE") return "Loading practice data...";
@@ -152,11 +152,11 @@ export default function PracticeScreen() {
       {/* Active Mistake Review Card */}
       <View className="mb-6">
         <SectionHeader title="Your Focus" />
-        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-xl p-4 min-h-[44px]">
+        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-[20px] p-5 min-h-[54px]">
           <View className="flex-row items-center justify-between mb-2">
             <View className="flex-row items-center flex-1 mr-2">
               <Text className="text-xl mr-2">🚨</Text>
-              <Text className="text-navy dark:text-white font-bold text-base flex-1">
+              <Text className="text-navy dark:text-white font-bold text-base flex-1 font-sans">
                 Active Mistake Review
               </Text>
             </View>
@@ -167,7 +167,7 @@ export default function PracticeScreen() {
             />
           </View>
 
-          <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 mb-4">
+          <Text className="text-slate-body dark:text-slate-400 text-[13px] leading-5 mb-4 font-sans">
             {activeMistakes.length > 0
               ? `${activeMistakes.length} concepts require 2 consecutive correct retrieval attempts to resolve.`
               : "All weak concepts resolved! Keep practicing to maintain retrieval strength."}
@@ -184,11 +184,11 @@ export default function PracticeScreen() {
       {/* Spaced Review Card */}
       <View className="mb-6">
         <SectionHeader title="Retention" />
-        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-xl p-4 min-h-[44px]">
+        <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-[20px] p-5 min-h-[54px]">
           <View className="flex-row items-center justify-between mb-2">
             <View className="flex-row items-center flex-1 mr-2" accessibilityRole="header">
               <Text className="text-xl mr-2">🧠</Text>
-              <Text className="text-navy dark:text-white font-bold text-base flex-1">
+              <Text className="text-navy dark:text-white font-bold text-base flex-1 font-sans">
                 Spaced Review
               </Text>
             </View>
@@ -197,7 +197,7 @@ export default function PracticeScreen() {
               if (hydration.status === "LOADING" || hydration.status === "UNHYDRATED") {
                 return (
                   <View className="flex-row items-center" accessibilityLabel="Loading spaced review status">
-                    <ActivityIndicator size="small" color="#2563EB" />
+                    <ActivityIndicator size="small" color="#0d9488" />
                   </View>
                 );
               }
@@ -212,7 +212,7 @@ export default function PracticeScreen() {
             })()}
           </View>
 
-          <Text className="text-slate-500 dark:text-slate-400 text-xs leading-5 mb-4" accessibilityLabel="Review concepts due for retention practice">
+          <Text className="text-slate-body dark:text-slate-400 text-[13px] leading-5 mb-4 font-sans" accessibilityLabel="Review concepts due for retention practice">
             {(() => {
               const hydration = practiceRepository.getHydrationState(userId);
               if (hydration.status === "LOADING" || hydration.status === "UNHYDRATED") {

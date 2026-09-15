@@ -6,7 +6,6 @@ import { generateMistakeId } from "../utils/hash";
 import { useCallback, useEffect, useState, useRef, useMemo } from "react";
 import { ActivityIndicator, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { LinearGradient } from "expo-linear-gradient";
 import ConfettiCannon from "react-native-confetti-cannon";
 
 import QuizView, { QuizQuestion } from "../components/Shared/QuizView";
@@ -281,58 +280,57 @@ export default function QuizScreen() {
   };
 
   return (
-    <LinearGradient colors={["#1E1B4B", "#0F172A"]} style={{ flex: 1 }}>
-      <SafeAreaView style={{ flex: 1 }}>
-        <View className="flex-1 p-5 pt-3">
-          <TouchableOpacity onPress={() => router.back()} className="mb-4"><Text className="text-blue-500 font-semibold text-[15px]">← Back</Text></TouchableOpacity>
-          <Text className="text-white text-3xl font-bold tracking-tight mb-2 mt-4">Quiz</Text>
-          <Text className="text-blue-400 text-xl font-bold tracking-wide mb-6">{parsedTopic.name}</Text>
+    <SafeAreaView className="flex-1 bg-warm-bg dark:bg-slate-900">
+      <View className="flex-1 p-5 pt-3">
+        <TouchableOpacity onPress={() => router.back()} className="mb-4"><Text className="text-clinical-pine dark:text-teal-400 font-semibold text-[15px] font-sans">← Back</Text></TouchableOpacity>
+        <Text className="text-navy dark:text-white text-3xl font-bold tracking-tight mb-2 mt-4 font-sans">Quiz</Text>
+        <Text className="text-clinical-pine dark:text-teal-400 text-xl font-bold tracking-wide mb-6 font-sans">{parsedTopic.name}</Text>
 
           {!hasStarted ? (
-            <View className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-6">
-              <Text className="text-white/60 text-sm font-medium mb-1">Topic</Text>
-              <Text className="text-white text-lg font-bold mb-4">{parsedTopic.name}</Text>
-              <Text className="text-white/60 text-sm font-medium mb-1">Details</Text>
-              <Text className="text-white text-[15px] font-medium mb-6">10 questions • {modeParam === "revision" ? "Based on weak areas" : "Real Exam Questions"}</Text>
+            <View className="bg-surface dark:bg-slate-800 border border-border-subtle dark:border-slate-700 rounded-[20px] p-5 mb-6">
+              <Text className="text-slate-500 dark:text-slate-400 text-sm font-medium mb-1 font-sans">Topic</Text>
+              <Text className="text-navy dark:text-white text-lg font-bold mb-4 font-sans">{parsedTopic.name}</Text>
+              <Text className="text-slate-500 dark:text-slate-400 text-sm font-medium mb-1 font-sans">Details</Text>
+              <Text className="text-navy dark:text-slate-200 text-[15px] font-medium mb-6 font-sans">10 questions • {modeParam === "revision" ? "Based on weak areas" : "Real Exam Questions"}</Text>
               {typeParam === "pyq" ? (
                 pyqTotal === 0 ? (
-                  <Text className="text-neutral-400 text-xs mb-4">Loading PYQs...</Text>
+                  <Text className="text-slate-500 dark:text-slate-400 text-xs mb-4 font-sans">Loading PYQs...</Text>
                 ) : topicPyqCount > 0 ? (
-                  <Text className="text-neutral-400 text-xs mb-4">Available for this topic: {topicPyqCount} PYQs</Text>
+                  <Text className="text-slate-500 dark:text-slate-400 text-xs mb-4 font-sans">Available for this topic: {topicPyqCount} PYQs</Text>
                 ) : (
-                  <Text className="text-amber-400 text-xs mb-4">No verified PYQs available. AI will generate a custom quiz.</Text>
+                  <Text className="text-amber-600 dark:text-amber-400 text-xs mb-4 font-sans">No verified PYQs available. AI will generate a custom quiz.</Text>
                 )
               ) : null}
-              <TouchableOpacity onPress={handleStartQuiz} className="bg-green-600 p-4 rounded-xl items-center"><Text className="text-white font-bold tracking-wide text-[16px]">Start Assessment</Text></TouchableOpacity>
+              <TouchableOpacity onPress={handleStartQuiz} className="bg-emerald-600 dark:bg-emerald-500 p-4 rounded-[20px] items-center"><Text className="text-white font-bold tracking-wide text-[16px] font-sans">Start Assessment</Text></TouchableOpacity>
             </View>
           ) : loading ? (
             <View className="flex-1 justify-center items-center">
-              <ActivityIndicator size="large" color="#4FC3F7" />
-              <Text className="text-neutral-400 mt-4 text-[15px] font-medium">{typeParam === "pyq" ? "Loading PYQs..." : "Generating questions with AI..."}</Text>
+              <ActivityIndicator size="large" color="#0d9488" />
+              <Text className="text-slate-500 dark:text-slate-400 mt-4 text-[15px] font-medium font-sans">{typeParam === "pyq" ? "Loading PYQs..." : "Generating questions with AI..."}</Text>
             </View>
           ) : showResult ? (
-            <View className="items-center mt-10 p-8 bg-white/10 rounded-[30px] border border-white/20">
-              <Text className="text-white text-[28px] font-black tracking-tight mb-2">{score >= 4 ? "Excellent! 🏆" : score >= 2 ? "Good Try! 👍" : "Keep Learning! 📚"}</Text>
-              <View className="items-center justify-center bg-[#0F172A]/80 w-32 h-32 rounded-full mt-4 border-4 border-indigo-500/50 mb-4"><Text className="text-indigo-300 text-3xl font-black">{score}<Text className="text-xl text-indigo-500/80">/{questions.length}</Text></Text></View>
-              <TouchableOpacity onPress={() => router.back()} className="bg-indigo-600 px-10 py-4 rounded-full mt-6"><Text className="text-white font-bold text-[16px] tracking-wide">Continue Journey</Text></TouchableOpacity>
+            <View className="items-center mt-10 p-8 bg-surface dark:bg-slate-800 rounded-[30px] border border-border-subtle dark:border-slate-700">
+              <Text className="text-navy dark:text-white text-[28px] font-black tracking-tight mb-2 font-sans">{score >= 4 ? "Excellent! 🏆" : score >= 2 ? "Good Try! 👍" : "Keep Learning! 📚"}</Text>
+              <View className="items-center justify-center bg-slate-100 dark:bg-slate-900/80 w-32 h-32 rounded-full mt-4 border-4 border-clinical-pine/30 dark:border-teal-500/50 mb-4"><Text className="text-clinical-pine dark:text-teal-400 text-3xl font-black font-sans">{score}<Text className="text-xl text-clinical-pine/60 dark:text-teal-500/80 font-sans">/{questions.length}</Text></Text></View>
+              <TouchableOpacity onPress={() => router.back()} className="bg-clinical-pine dark:bg-teal-600 px-10 py-4 rounded-full mt-6"><Text className="text-white font-bold text-[16px] tracking-wide font-sans">Continue Journey</Text></TouchableOpacity>
             </View>
           ) : quizError ? (
             <View className="flex-1 justify-center items-center mt-10">
-              <Text style={{ color: "white", textAlign: "center", marginTop: 20 }}>Our AI service is experiencing high demand. Failed to generate quiz.</Text>
-              <TouchableOpacity onPress={() => handleStartQuiz()} className="mt-6 p-4 bg-red-500/20 rounded-xl border border-red-500/50"><Text className="text-red-400 font-bold">Retry Generation 🔄</Text></TouchableOpacity>
-              <TouchableOpacity onPress={() => router.back()} className="mt-4 p-3"><Text className="text-blue-500 font-semibold">← Go Back</Text></TouchableOpacity>
+              <Text className="text-navy dark:text-slate-300 text-center mt-5 font-sans">Our AI service is experiencing high demand. Failed to generate quiz.</Text>
+              <TouchableOpacity onPress={() => handleStartQuiz()} className="mt-6 p-4 bg-rose-50 dark:bg-rose-950/20 rounded-[20px] border border-rose-200 dark:border-rose-900/50"><Text className="text-rose-700 dark:text-rose-400 font-bold font-sans">Retry Generation 🔄</Text></TouchableOpacity>
+              <TouchableOpacity onPress={() => router.back()} className="mt-4 p-3"><Text className="text-clinical-pine dark:text-teal-400 font-semibold font-sans">← Go Back</Text></TouchableOpacity>
             </View>
           ) : questions.length === 0 && typeParam === "pyq" ? (
             <View className="flex-1 justify-center items-center mt-10">
-              <Text style={{ color: "white", textAlign: "center", marginTop: 20 }}>No verified PYQs available for this topic yet</Text>
-              <TouchableOpacity onPress={() => router.back()} className="mt-6 p-3"><Text className="text-blue-500 font-semibold">← Go Back</Text></TouchableOpacity>
+              <Text className="text-navy dark:text-slate-300 text-center mt-5 font-sans">No verified PYQs available for this topic yet</Text>
+              <TouchableOpacity onPress={() => router.back()} className="mt-6 p-3"><Text className="text-clinical-pine dark:text-teal-400 font-semibold font-sans">← Go Back</Text></TouchableOpacity>
             </View>
           ) : questions.length === 0 && typeParam === "mistake" ? (
             <View className="flex-1 justify-center items-center mt-10">
               <Text className="text-[50px] mb-4">🎉</Text>
-              <Text className="text-white text-2xl font-bold mb-2">Your mistake bank is clear!</Text>
-              <Text className="text-neutral-400 text-center px-4">Start a new quiz to continue improving and conquering your weak areas.</Text>
-              <TouchableOpacity onPress={() => router.back()} className="mt-8 p-4 bg-blue-600 rounded-xl"><Text className="text-white font-bold tracking-wide">Return to Dashboard</Text></TouchableOpacity>
+              <Text className="text-navy dark:text-white text-2xl font-bold mb-2 font-sans">Your mistake bank is clear!</Text>
+              <Text className="text-slate-500 dark:text-slate-400 text-center px-4 font-sans">Start a new quiz to continue improving and conquering your weak areas.</Text>
+              <TouchableOpacity onPress={() => router.back()} className="mt-8 p-4 bg-clinical-pine dark:bg-teal-600 rounded-[20px]"><Text className="text-white font-bold tracking-wide font-sans">Return to Dashboard</Text></TouchableOpacity>
             </View>
           ) : (
             <QuizView questions={questions} loading={loading} onExit={() => router.back()} onComplete={onQuizComplete} type={typeParam} />
@@ -340,6 +338,5 @@ export default function QuizScreen() {
         </View>
         {showResult && score >= 4 && <ConfettiCannon count={150} origin={{ x: 200, y: -20 }} fadeOut={true} fallSpeed={3000} colors={["#818cf8", "#34d399", "#fbbf24", "#f472b6", "#38bdf8"]} />}
       </SafeAreaView>
-    </LinearGradient>
   );
 }
